@@ -11,6 +11,11 @@
 	--color-gray-90: #333;
 
 	--background-color: #fff;
+	--footer-background-color: #333;
+	--footer-font-color: #fff;
+	--header-background-color: #333;
+	--header-font-color: #fff;
+	--footer-height: 4rem;
 
 	--text-color: var(--color-gray-90);
 	--text-color-link: #082840;
@@ -48,16 +53,13 @@
 html,
 body {
 	padding: 0;
-	margin: 0 auto;
+	margin: 0;
 	font-family: var(--font-family);
 	color: var(--text-color);
 	background-color: var(--background-color);
 }
 html {
 	overflow-y: scroll;
-}
-body {
-	max-width: 40em;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -93,18 +95,32 @@ a[href]:active {
 	color: var(--text-color-link-active);
 }
 
-main,
-footer {
+main {
 	padding: 1rem;
+	max-width: 40em;
+	margin: 0 auto;
+	margin-bottom: var(--footer-height)
 }
 main :first-child {
 	margin-top: 0;
 }
 
-header {
-    background: var(--background-color);
-    padding: 20px;
+footer {
+	height: var(--footer-height);
+    background: var(--footer-background-color);
+    color: var(--footer-font-color);
     text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+	p {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+	}
 }
 
 .links-nextprev {
@@ -156,19 +172,20 @@ code {
 
 /* Header */
 header {
-	display: flex;
-	gap: 1em .5em;
-	flex-wrap: wrap;
-	align-items: center;
-	padding: 1em;
+	background: var(--header-background-color);
+	color: var(--header-font-color);
+	padding: 1rem 0;
+	text-align: center;
+	a[href] {
+		color: var(--header-font-color);
+	}
+	a[href]:visited {
+		color: var(--header-font-color);
+	}
 }
-.home-link {
-	font-size: 1em; /* 16px /16 */
-	font-weight: 700;
-	margin-right: 2em;
-}
-.home-link:link:not(:hover) {
-	text-decoration: none;
+.site-title {
+	font-size: 2em;
+	padding-bottom: 0.4em;
 }
 
 /* Nav */
@@ -177,6 +194,9 @@ header {
 	padding: 0;
 	margin: 0;
 	list-style: none;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
 }
 .nav-item {
 	display: inline-block;
