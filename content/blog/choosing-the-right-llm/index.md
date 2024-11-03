@@ -1,8 +1,21 @@
 ---
 title: Choosing the Right LLM for Your Needs - Key Considerations 
-description: 
 date: 2018-09-30
 tags:
+preview: |
+    Consider the key factors when selecting a Large Language Model (LLM) for your project.
+
+    ## Key Considerations
+
+    * Benchmark Performance
+    * License
+    * Model Size
+    * Alignment
+
+    ### Benchmark Performance
+
+    * Consider the model's performance on relevant benchmarks known from Open LLM Leaderboard and especially Arena Elo.
+    * [Link to Open LLM Leaderboard](https://lnkd.in/eSkeAUV7)
 ---
 
 Consider the key factors when selecting a Large Language Model (LLM) for your project.

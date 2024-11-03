@@ -2,6 +2,7 @@
 title: How Far Are We Really from Reasoning within GenAI? My Perspective in GPT-o1 times and Possible Ways to Get There 
 description: My Perspective in GPT-o1 times and Possible Ways to Get There
 date: 2018-09-30
+preview: Blabla
 tags: second tag
 ---
 

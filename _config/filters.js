@@ -1,4 +1,5 @@
 import { DateTime } from "luxon";
+import markdownit from 'markdown-it'
 
 export default function(eleventyConfig) {
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
@@ -26,6 +27,11 @@ export default function(eleventyConfig) {
 	// Return the smallest number argument
 	eleventyConfig.addFilter("min", (...numbers) => {
 		return Math.min.apply(null, numbers);
+	});
+
+	eleventyConfig.addFilter("markdownify", (markdownString) => {
+		const md = markdownit()
+		md.render(markdownString)
 	});
 
 	// Return the keys used in an object

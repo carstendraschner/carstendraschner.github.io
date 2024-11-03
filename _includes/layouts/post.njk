@@ -14,6 +14,15 @@ layout: layouts/base.njk
 	{%- endfor %}
 </ul>
 
+{%- set currentPost = collections.posts | getCollectionItem %}
+
+<p>
+Preview start
+{{ preview | markdownify | safe }}
+Preview end
+.
+</p>
+
 {{ content | safe }}
 
 {%- if collections.posts %}
