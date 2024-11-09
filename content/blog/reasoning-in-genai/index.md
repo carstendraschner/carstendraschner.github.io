@@ -3,6 +3,7 @@ title: How Far Are We Really from Reasoning within GenAI? My Perspective in GPT-
 description: My Perspective in GPT-o1 times and Possible Ways to Get There
 date: 2018-09-30
 linkedInUrl: https://lnkd.in/eSkeAUV7
+tags: blog
 ---
 
 Exploring the current state of reasoning in GenAI, the challenges faced, and potential approaches to achieving true reasoning capabilities.

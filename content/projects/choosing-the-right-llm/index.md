@@ -1,11 +1,14 @@
 ---
-title: Choosing the Right LLM for Your Needs - Key Considerations 
+title: Sample Projects 
 date: 2018-09-30
 linkedInUrl: https://lnkd.in/eSkeAUV7
+tags: project
 ---
 
 
 Consider the key factors when selecting a Large Language Model (LLM) for your project.
+  
+<!-- excerpt -->
 
 ## Key Considerations
 
@@ -14,7 +17,7 @@ Consider the key factors when selecting a Large Language Model (LLM) for your pr
 * Model Size
 * Alignment
 
-<!-- excerpt -->
+
 
 ### Benchmark Performance
 

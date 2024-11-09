@@ -102,6 +102,19 @@ export default async function(eleventyConfig) {
 		return (new Date()).toISOString();
 	});
 
+	// Collections for blog and research
+	eleventyConfig.addCollection("blog", function(collectionApi) {
+		return collectionApi.getFilteredByGlob("./content/blog/**/*.md");
+	});
+
+	eleventyConfig.addCollection("research", function(collectionApi) {
+		return collectionApi.getFilteredByGlob("./content/research/**/*.md");
+	});
+
+	eleventyConfig.addCollection("projects", function(collectionApi) {
+		return collectionApi.getFilteredByGlob("./content/projects/**/*.md");
+	});
+
 	// Features to make your build faster (when you need them)
 
 	// If your passthrough copy gets heavy and cumbersome, add this line
