@@ -16,12 +16,6 @@ layout: layouts/base.njk
 
 {%- set currentPost = collections.posts | getCollectionItem %}
 
-<p>
-Preview start
-{{ preview | markdownify | safe }}
-Preview end
-.
-</p>
 
 {{ content | safe }}
 

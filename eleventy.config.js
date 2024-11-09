@@ -83,6 +83,12 @@ export default async function(eleventyConfig) {
 		}
 	});
 
+	eleventyConfig.setFrontMatterParsingOptions({
+		excerpt: true,
+		// Optional, default is "---"
+		excerpt_separator: "<!-- excerpt -->",
+	});
+
 	// Filters
 	eleventyConfig.addPlugin(pluginFilters);
 

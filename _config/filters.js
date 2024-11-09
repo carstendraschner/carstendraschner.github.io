@@ -31,7 +31,7 @@ export default function(eleventyConfig) {
 
 	eleventyConfig.addFilter("markdownify", (markdownString) => {
 		const md = markdownit()
-		md.render(markdownString)
+		return md.render(markdownString)
 	});
 
 	// Return the keys used in an object
