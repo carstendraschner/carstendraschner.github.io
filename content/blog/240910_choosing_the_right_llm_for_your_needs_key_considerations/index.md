@@ -7,7 +7,7 @@ tags: blog
 
 Consider the key factors when selecting a Large Language Model (LLM) for your project.
 
-![Image 1](./1729591519087.jpeg)
+![Image 1](/img/blog_images/1729591519087.jpeg)
 
 **TL;DR ⏱️**
 - Benchmark Performance
@@ -37,5 +37,3 @@ Consider the key factors when selecting a Large Language Model (LLM) for your pr
 - If you like to see more of best practice content, follow me, share your thoughts, and leave me a like ❤️
 
 #LostInGenai #artificialintelligence #selectllm
-
-[LinkedIn Post](https://www.linkedin.com/posts/carsten-draschner_lostingenai-artificialintelligence-selectllm-activity-7254502008827658241-5TRJ?utm_source=share&utm_medium=member_desktop)
