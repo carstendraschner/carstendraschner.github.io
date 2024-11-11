@@ -65,6 +65,12 @@ html {
 	color:var(--color-gray-50)
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 /* .h-excerpt{
 	font-size: 1em;
 } */
@@ -111,6 +117,8 @@ main {
 main :first-child {
 	margin-top: 0;
 }
+
+
 
 footer {
 	height: var(--footer-height);
