@@ -1,7 +1,7 @@
 ---
 title: DistRDF2ML - Scalable Distributed In-Memory Machine Learning Pipelines for RDF Knowledge Graphs
 description: Proceedings of the 30th ACM International Conference on Information & Knowledge Management (CIKM), Carsten Felix Draschner, Claus Stadler, Farshad B. Moghaddam, Jens Lehmann, and Hajira Jabeen
-date: 2021-09-30
+date: 2021-12-01
 linkedInUrl: https://dl.acm.org/doi/10.1145/3459637.3481999
 tags: research
 ---

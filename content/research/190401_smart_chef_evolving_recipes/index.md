@@ -1,7 +1,7 @@
 ---
 title: Smart Chef - Evolving Recipes
 description: Master Thesis - Carsten Felix Draschner
-date: 2019-09-30
+date: 2019-04-01
 linkedInUrl: https://www.researchgate.net/publication/357910428_SmartChef_Evolving_Recipes_Poster
 tags: research
 ---

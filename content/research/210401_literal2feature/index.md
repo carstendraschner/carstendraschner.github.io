@@ -1,7 +1,7 @@
 ---
 title: Literal2Feature - An automatic scalable RDF graph feature extractor
 description: International Conference on Semantic Systems (SEMANTICS), Farshad B. Moghaddam, Carsten Felix Draschner, Jens Lehmann and Hajira Jabeen
-date: 2021-09-30
+date: 2021-08-01
 linkedInUrl: https://ebooks.iospress.nl/volumearticle/57407
 tags: research
 ---

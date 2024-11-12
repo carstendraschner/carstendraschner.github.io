@@ -1,7 +1,7 @@
 ---
 title: SimE4KG - Distributed Explainable multi-modal Semantic Similarity Estimation for Knowledge Graphs
 description: 2023 International Journal of Semantic Computing, Carsten Felix Draschner, Hajira Jabeen, Jens Lehmann
-date: 2023-09-30
+date: 2023-02-01
 linkedInUrl: https://doi.org/10.1142/S1793351X23600012
 tags: research
 ---

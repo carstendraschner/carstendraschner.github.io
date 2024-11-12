@@ -1,7 +1,7 @@
 ---
 title: Scalable Distributed Machine Learning for Knowledge Graphs
 description: PhD Thesis - Carsten Felix Draschner, Dr.rer.nat, supervisors - Jens Lehmann and Stefan Wrobel
-date: 2022-12-14
+date: 2023-07-01
 linkedInUrl: https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/10945
 tags: research
 ---
