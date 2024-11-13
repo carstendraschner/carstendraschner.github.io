@@ -248,6 +248,29 @@ header {
 	text-decoration: underline;
 }
 
+.card {
+	display: flex;
+	align-items: center;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	background-color: var(--background-color);
+}
+.card img {
+	margin-right: 10px;
+	border-radius: 8px;
+	height: 70px;
+	width: auto;
+}
+
+
+@media (prefers-color-scheme: dark) {
+	.invert-for-dark-mode {
+		filter: invert(100%);
+	}
+}
+
 /* Posts list */
 .postlist {
 	list-style: none;
