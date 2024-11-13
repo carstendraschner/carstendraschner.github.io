@@ -1,12 +1,11 @@
 ---
 title: Smart Chef - Evolving Recipes
-description: Master Thesis - Carsten Felix Draschner
 date: 2019-04-01
 linkedInUrl: https://www.researchgate.net/publication/357910428_SmartChef_Evolving_Recipes_Poster
 tags: research
 ---
 
-Smart Chef demonstrates the creativity of evolution in culinary arts by autonomously evolving novel and human readable recipes.
+Proceedings of Evostar 2019 and Master Thesis - Carsten Felix Draschner supervised by Hajira Jabeen, Jens Lehmann
 
 ![Smart Chef](/img/research_images/mt.png)
 

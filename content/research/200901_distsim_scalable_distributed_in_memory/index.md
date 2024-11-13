@@ -1,12 +1,11 @@
 ---
 title: DistSim - Scalable Distributed in-Memory Semantic Similarity Estimation for RDF Knowledge Graphs
-description: 2021 IEEE 15th International Conference on Semantic Computing (ICSC), Carsten Felix Draschner, Jens Lehmann and Hajira Jabeen
 date: 2021-01-01
 linkedInUrl: https://ieeexplore.ieee.org/document/9364473
 tags: research
 ---
 
-A semantic similarity estimation extension to SANSA.
+2021 IEEE 15th International Conference on Semantic Computing (ICSC), Carsten Felix Draschner, Jens Lehmann and Hajira Jabeen
 
 ![DistSim](/img/research_images/distsim.png)
 

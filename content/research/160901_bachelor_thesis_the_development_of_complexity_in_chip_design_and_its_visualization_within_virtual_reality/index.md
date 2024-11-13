@@ -1,12 +1,11 @@
 ---
 title: The development of complexity in chip design and its visualization within Virtual Reality
-description: Bachelor Thesis - Carsten Felix Draschner in colab with Jonas Weinz ❤️
 date: 2016-09-30
 linkedInUrl: https://youtu.be/bwYKVCDIPbE?si=EflQEBoH0PjjDvKD&t=373
 tags: research
 ---
 
-This research project presents a novel approach to visualizing complex chip designs using Virtual Reality (VR) technology.
+Chip-Design Exhibition in Arithmeum and Bachelor Thesis - Carsten Felix Draschner in colab with Jonas Weinz ❤️
 
 ![Model Size](/img/research_images/bt.png)
 

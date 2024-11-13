@@ -1,12 +1,11 @@
 ---
 title: Ethical and Sustainability considerations for Knowledge Graphs based Machine Learning
-description: 2022 IEEE Fifth International Conference on Artificial Intelligence and Knowledge Engineering (AIKE), Carsten Felix Draschner, Hajira Jabeen, Jens Lehmann
 date: 2022-09-01
 linkedInUrl: https://ieeexplore.ieee.org/document/9939282
 tags: research
 ---
 
-Ethical and sustainability considerations in KG-based ML.
+2022 IEEE Fifth International Conference on Artificial Intelligence and Knowledge Engineering (AIKE), Carsten Felix Draschner, Hajira Jabeen, Jens Lehmann
 
 ![Ethical and Sustainability considerations for Knowledge Graphs based Machine Learning](/img/research_images/kg_ethics.png)
 
