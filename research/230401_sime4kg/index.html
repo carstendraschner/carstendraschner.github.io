@@ -3,11 +3,179 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Carsten Felix Draschner, PhD</title>
-		<meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
+		<title>SimE4KG - Distributed Explainable multi-modal Semantic Similarity Estimation for Knowledge Graphs</title>
+		<meta name="description" content="2023 International Journal of Semantic Computing, Carsten Felix Draschner, Hajira Jabeen, Jens Lehmann">
 		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
 		
-		<style>/* This is an arbitrary CSS string added to the bundle */
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
 /* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
@@ -33,9 +201,6 @@
 	--text-color-link-visited: #245242;
 
 	--syntax-tab-size: 2;
-
-	--card-background-color: #f9f9f9;
-	--card-border-color: #ccc;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,30 +215,9 @@
 		--text-color-link-visited: #a6a6f8;
 
 		--background-color: #15202b;
-
-		/* Dark mode card colors */
-		--card-background-color: #333;
-		--card-border-color: #555;
 	}
 }
 
-.card {
-	display: flex;
-	align-items: center;
-	border: 1px solid var(--card-border-color);
-	padding: 10px;
-	margin-bottom: 10px;
-	border-radius: 8px;
-	background-color: var(--card-background-color);
-}
-
-.card h3 {
-	margin: 0;
-  }
-  
-.card p {
-	margin: 0;
-}
 
 /* Global stylesheet */
 * {
@@ -258,29 +402,6 @@ header {
 	text-decoration: underline;
 }
 
-.card {
-	display: flex;
-	align-items: center;
-	border: 1px solid #ccc;
-	padding: 10px;
-	margin-bottom: 10px;
-	border-radius: 8px;
-	background-color: var(--background-color);
-}
-.card img {
-	margin-right: 10px;
-	border-radius: 8px;
-	height: 70px;
-	width: auto;
-}
-
-
-@media (prefers-color-scheme: dark) {
-	.invert-for-dark-mode {
-		filter: invert(100%);
-	}
-}
-
 /* Posts list */
 .postlist {
 	list-style: none;
@@ -365,19 +486,26 @@ header {
 		<main id="skip">
 			<heading-anchors>
 				
-<h1 id="content-not-found">Content not found.</h1>
-<p>Go <a href="index.njk">home</a>.</p>
-<!--
+<h1 id="sime4kg-distributed-explainable-multi-modal-semantic-similarity-estimation-for-knowledge-graphs">SimE4KG - Distributed Explainable multi-modal Semantic Similarity Estimation for Knowledge Graphs</h1>
 
-Read more: https://www.11ty.dev/docs/quicktips/not-found/
+<ul class="post-metadata">
+	<li><time datetime="2023-09-30">30 September 2023</time></li>
+	<li><a href="/tags/research/" class="post-tag">research</a></li>
+</ul>
 
-This will work for both GitHub pages and Netlify:
 
-* https://help.github.com/articles/creating-a-custom-404-page-for-your-github-pages-site/
-* https://www.netlify.com/docs/redirects/#custom-404
+<p>A semantic similarity estimation extension for multoi modal Knowledge structures to SANSA.</p>
+<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%2Fimg%2Fresearch_images%2Fsime.png&width=2162&format=avif&via=transform 2162w"><source type="image/webp" srcset="/.11ty/image/?src=content%2Fimg%2Fresearch_images%2Fsime.png&width=2162&format=webp&via=transform 2162w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%2Fimg%2Fresearch_images%2Fsime.png&width=2162&format=png&via=transform" alt="SimE4KG" width="2162" height="1198"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Distributed Explainable multi-modal Semantic Similarity Estimation for Knowledge Graphs</li>
+<li>Reproducible, reusable, and explainable results</li>
+<li>SANSA stack integration</li>
+</ul>
+<p>We present the SimE4KG framework, which provides generic open-source modules for computing semantic similarity estimation in multi-modal KGs. SimE4KG delivers reproducible, reusable, and explainable results to justify the computing costs of similarity estimation. The pipeline outcomes are a native semantic RDF-KG, including the experiment results, hyper-parameter setup, and result explanation, as the most influential features. We utilized Apache Spark to develop a distributed strategy for efficient and scalable execution in memory. This framework's overall development is integrated into the SANSA distributed semantic analytics stack.</p>
 
--->
-
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/research/221214_scalable_distributed_machine_learning_for_knowledge_graphs/">Scalable Distributed Machine Learning for Knowledge Graphs</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/240806_do_we_need_another_genai_solution_how_why/">Do we need another GenAI solution? How &amp; why we developed a full-stack GenAI LLM+RAG tool called Alan. A sneak peek at what I am currently working on.</a></li>
+</ul>
 
 			</heading-anchors>
 		</main>
@@ -386,7 +514,7 @@ This will work for both GitHub pages and Netlify:
 			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
 		</footer>
 
-		<!-- This page `/404.html` was built on 2024-11-13T16:30:41.726Z -->
+		<!-- This page `/research/230401_sime4kg/` was built on 2024-11-12T21:02:23.359Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

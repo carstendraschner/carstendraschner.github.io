@@ -3,11 +3,179 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Carsten Felix Draschner, PhD</title>
-		<meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
+		<title>The development of complexity in chip design and its visualization within Virtual Reality</title>
+		<meta name="description" content="Bachelor Thesis - Carsten Felix Draschner in colab with Jonas Weinz ❤️">
 		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
 		
-		<style>/* This is an arbitrary CSS string added to the bundle */
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
 /* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
@@ -33,9 +201,6 @@
 	--text-color-link-visited: #245242;
 
 	--syntax-tab-size: 2;
-
-	--card-background-color: #f9f9f9;
-	--card-border-color: #ccc;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,30 +215,9 @@
 		--text-color-link-visited: #a6a6f8;
 
 		--background-color: #15202b;
-
-		/* Dark mode card colors */
-		--card-background-color: #333;
-		--card-border-color: #555;
 	}
 }
 
-.card {
-	display: flex;
-	align-items: center;
-	border: 1px solid var(--card-border-color);
-	padding: 10px;
-	margin-bottom: 10px;
-	border-radius: 8px;
-	background-color: var(--card-background-color);
-}
-
-.card h3 {
-	margin: 0;
-  }
-  
-.card p {
-	margin: 0;
-}
 
 /* Global stylesheet */
 * {
@@ -258,29 +402,6 @@ header {
 	text-decoration: underline;
 }
 
-.card {
-	display: flex;
-	align-items: center;
-	border: 1px solid #ccc;
-	padding: 10px;
-	margin-bottom: 10px;
-	border-radius: 8px;
-	background-color: var(--background-color);
-}
-.card img {
-	margin-right: 10px;
-	border-radius: 8px;
-	height: 70px;
-	width: auto;
-}
-
-
-@media (prefers-color-scheme: dark) {
-	.invert-for-dark-mode {
-		filter: invert(100%);
-	}
-}
-
 /* Posts list */
 .postlist {
 	list-style: none;
@@ -365,19 +486,27 @@ header {
 		<main id="skip">
 			<heading-anchors>
 				
-<h1 id="content-not-found">Content not found.</h1>
-<p>Go <a href="index.njk">home</a>.</p>
-<!--
+<h1 id="the-development-of-complexity-in-chip-design-and-its-visualization-within-virtual-reality">The development of complexity in chip design and its visualization within Virtual Reality</h1>
 
-Read more: https://www.11ty.dev/docs/quicktips/not-found/
+<ul class="post-metadata">
+	<li><time datetime="2016-09-30">30 September 2016</time></li>
+	<li><a href="/tags/research/" class="post-tag">research</a></li>
+</ul>
 
-This will work for both GitHub pages and Netlify:
 
-* https://help.github.com/articles/creating-a-custom-404-page-for-your-github-pages-site/
-* https://www.netlify.com/docs/redirects/#custom-404
+<p>This research project presents a novel approach to visualizing complex chip designs using Virtual Reality (VR) technology.</p>
+<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%2Fimg%2Fresearch_images%2Fbt.png&width=1436&format=avif&via=transform 1436w"><source type="image/webp" srcset="/.11ty/image/?src=content%2Fimg%2Fresearch_images%2Fbt.png&width=1436&format=webp&via=transform 1436w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%2Fimg%2Fresearch_images%2Fbt.png&width=1436&format=png&via=transform" alt="Model Size" width="1436" height="928"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Visualize Complexity of modern Chip Designs</li>
+<li>Visualization in VR Environment</li>
+<li>Bachelor Thesis</li>
+<li>University of Bonn</li>
+</ul>
+<p>By dynamically loading detailed 3D models, we enable users to interactively explore and understand the intricate structures of chip designs without noticeable loading times. Our VR application provides an immersive experience, offering a more engaging and informative way to visualize chip designs compared to traditional 2D plots or 3D applications on a monitor. The integration of various views and tools enhances the user experience, providing valuable insights for both experts and non-experts. User testing with a diverse group of participants yielded overwhelmingly positive feedback, confirming the effectiveness of our approach. This project demonstrates the potential of VR technology in facilitating the understanding and exploration of complex technical designs, and contributes to the development of innovative applications in the field of chip design and visualization.</p>
 
--->
-
+<ul class="links-nextprev"><li class="links-nextprev-next">Next →<br><a href="/projects/choosing_the_right_llm_for_your_needs_key_considerations/">Sample Projects</a></li>
+</ul>
 
 			</heading-anchors>
 		</main>
@@ -386,7 +515,7 @@ This will work for both GitHub pages and Netlify:
 			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
 		</footer>
 
-		<!-- This page `/404.html` was built on 2024-11-13T16:30:41.726Z -->
+		<!-- This page `/research/201601_ bachelor_thesis_the_development_of_complexity_in_chip_design_and_its_visualization_within_virtual_reality/` was built on 2024-11-12T20:24:06.086Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

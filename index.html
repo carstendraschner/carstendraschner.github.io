@@ -33,6 +33,9 @@
 	--text-color-link-visited: #245242;
 
 	--syntax-tab-size: 2;
+
+	--card-background-color: #f9f9f9;
+	--card-border-color: #ccc;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -47,9 +50,30 @@
 		--text-color-link-visited: #a6a6f8;
 
 		--background-color: #15202b;
+
+		/* Dark mode card colors */
+		--card-background-color: #333;
+		--card-border-color: #555;
 	}
 }
 
+.card {
+	display: flex;
+	align-items: center;
+	border: 1px solid var(--card-border-color);
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	background-color: var(--card-background-color);
+}
+
+.card h3 {
+	margin: 0;
+  }
+  
+.card p {
+	margin: 0;
+}
 
 /* Global stylesheet */
 * {
@@ -234,6 +258,29 @@ header {
 	text-decoration: underline;
 }
 
+.card {
+	display: flex;
+	align-items: center;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	background-color: var(--background-color);
+}
+.card img {
+	margin-right: 10px;
+	border-radius: 8px;
+	height: 70px;
+	width: auto;
+}
+
+
+@media (prefers-color-scheme: dark) {
+	.invert-for-dark-mode {
+		filter: invert(100%);
+	}
+}
+
 /* Posts list */
 .postlist {
 	list-style: none;
@@ -321,8 +368,8 @@ header {
 <h1 id="home">Home</h1>
 <p>Welcome to my personal website where you can find information about my projects, blog posts, publications, and more. I Carsten Felix Draschner, an AI Researcher with 8+ years of experience in AI, ML, DS. I am motivated by Science and AI for Social Good! I love to connect my passion for cutting-edge AI with my intrinsic motivation to bring myself into projects which make our life on earth more sustainable, our lives better, and our democracies more stable.</p>
 <a href="/blog/" style="text-decoration: none; color: inherit;">
-  <div style="display: flex; align-items: center; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #f9f9f9;">
-    <picture><source type="image/avif" srcset="/udEqHNkYWC-492.avif 492w"><source type="image/webp" srcset="/udEqHNkYWC-492.webp 492w"><img loading="lazy" decoding="async" src="/udEqHNkYWC-492.png" alt="BlogIcon" style="margin-right: 10px; border-radius: 8px; height: 70px; width: auto;" width="492" height="452"></picture>
+  <div class="card">
+    <picture><source type="image/avif" srcset="/udEqHNkYWC-492.avif 492w"><source type="image/webp" srcset="/udEqHNkYWC-492.webp 492w"><img loading="lazy" decoding="async" src="/udEqHNkYWC-492.png" alt="BlogIcon" width="492" height="452"></picture>
     <div>
       <h3 id="blog">Blog</h3>
       <p>Recent AI innovations, ethical implications, and observations</p>
@@ -330,8 +377,8 @@ header {
   </div>
 </a>
 <a href="/research/" style="text-decoration: none; color: inherit;">
-  <div style="display: flex; align-items: center; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #f9f9f9;">
-    <picture><source type="image/avif" srcset="/jcmTrm5QRz-492.avif 492w"><source type="image/webp" srcset="/jcmTrm5QRz-492.webp 492w"><img loading="lazy" decoding="async" src="/jcmTrm5QRz-492.png" alt="ResearchIcon" style="margin-right: 10px; border-radius: 8px; height: 70px; width: auto;" width="492" height="452"></picture>
+  <div class="card">
+    <picture><source type="image/avif" srcset="/jcmTrm5QRz-492.avif 492w"><source type="image/webp" srcset="/jcmTrm5QRz-492.webp 492w"><img loading="lazy" decoding="async" src="/jcmTrm5QRz-492.png" alt="ResearchIcon" width="492" height="452"></picture>
     <div>
       <h3 id="research">Research</h3>
       <p>Journal and Conference Publications and Thesis.</p>
@@ -339,8 +386,8 @@ header {
   </div>
 </a>
 <a href="/projects/" style="text-decoration: none; color: inherit;">
-  <div style="display: flex; align-items: center; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #f9f9f9;">
-    <picture><source type="image/avif" srcset="/LJSKtHcjWl-492.avif 492w"><source type="image/webp" srcset="/LJSKtHcjWl-492.webp 492w"><img loading="lazy" decoding="async" src="/LJSKtHcjWl-492.png" alt="ProjectsIcon" style="margin-right: 10px; border-radius: 8px; height: 70px; width: auto;" width="492" height="452"></picture>
+  <div class="card">
+    <picture><source type="image/avif" srcset="/LJSKtHcjWl-492.avif 492w"><source type="image/webp" srcset="/LJSKtHcjWl-492.webp 492w"><img loading="lazy" decoding="async" src="/LJSKtHcjWl-492.png" alt="ProjectsIcon" width="492" height="452"></picture>
     <div>
       <h3 id="projects">Projects</h3>
       <p>Sneak previews and Reports of my work experiences.</p>
@@ -348,8 +395,8 @@ header {
   </div>
 </a>
 <a href="/about/" style="text-decoration: none; color: inherit;">
-  <div style="display: flex; align-items: center; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #f9f9f9;">
-    <picture><source type="image/avif" srcset="/lZdMHmHDSu-492.avif 492w"><source type="image/webp" srcset="/lZdMHmHDSu-492.webp 492w"><img loading="lazy" decoding="async" src="/lZdMHmHDSu-492.png" alt="CvIcon" style="margin-right: 10px; border-radius: 8px; height: 70px; width: auto;" width="492" height="452"></picture>
+  <div class="card">
+    <picture><source type="image/avif" srcset="/lZdMHmHDSu-492.avif 492w"><source type="image/webp" srcset="/lZdMHmHDSu-492.webp 492w"><img loading="lazy" decoding="async" src="/lZdMHmHDSu-492.png" alt="CvIcon" width="492" height="452"></picture>
     <div>
       <h3 id="about-cv">About/CV</h3>
       <p>Overview of Educational Background and Job Experiences</p>
@@ -357,14 +404,15 @@ header {
   </div>
 </a>
 <a href="/contact/" style="text-decoration: none; color: inherit;">
-  <div style="display: flex; align-items: center; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #f9f9f9;">
-    <picture><source type="image/avif" srcset="/Jof3D2TJcH-492.avif 492w"><source type="image/webp" srcset="/Jof3D2TJcH-492.webp 492w"><img loading="lazy" decoding="async" src="/Jof3D2TJcH-492.png" alt="ContactIcon" style="margin-right: 10px; border-radius: 8px; height: 70px; width: auto;" width="492" height="452"></picture>
+  <div class="card">
+    <picture><source type="image/avif" srcset="/Jof3D2TJcH-492.avif 492w"><source type="image/webp" srcset="/Jof3D2TJcH-492.webp 492w"><img loading="lazy" decoding="async" src="/Jof3D2TJcH-492.png" alt="ContactIcon" width="492" height="452"></picture>
     <div>
       <h3 id="contact">Contact</h3>
       <p>Opportunities to reach out to me and sources for more content</p>
     </div>
   </div>
 </a>
+
 
 			</heading-anchors>
 		</main>
@@ -373,7 +421,7 @@ header {
 			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
 		</footer>
 
-		<!-- This page `/` was built on 2024-11-13T12:07:03.670Z -->
+		<!-- This page `/` was built on 2024-11-13T16:30:41.726Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

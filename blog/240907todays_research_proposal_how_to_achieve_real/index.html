@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Sustainable Air-Gapped On-Prem LLM Solution! How can we make GenAI available on almost any hardware, and how is it also available as a portable demo on our Alan Notebook</title>
+		<title>Today&#39;s Research Proposal - How to achieve &quot;real&quot; thinking and reasoning in GenAI, rather than just relying on a silent Chain of Thought, as seen in ReflectionAI or possibly GPT-o1?</title>
 		<meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
 		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
 		
@@ -201,9 +201,6 @@ pre[class*="language-diff-"] {
 	--text-color-link-visited: #245242;
 
 	--syntax-tab-size: 2;
-
-	--card-background-color: #f9f9f9;
-	--card-border-color: #ccc;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -218,30 +215,9 @@ pre[class*="language-diff-"] {
 		--text-color-link-visited: #a6a6f8;
 
 		--background-color: #15202b;
-
-		/* Dark mode card colors */
-		--card-background-color: #333;
-		--card-border-color: #555;
 	}
 }
 
-.card {
-	display: flex;
-	align-items: center;
-	border: 1px solid var(--card-border-color);
-	padding: 10px;
-	margin-bottom: 10px;
-	border-radius: 8px;
-	background-color: var(--card-background-color);
-}
-
-.card h3 {
-	margin: 0;
-  }
-  
-.card p {
-	margin: 0;
-}
 
 /* Global stylesheet */
 * {
@@ -426,29 +402,6 @@ header {
 	text-decoration: underline;
 }
 
-.card {
-	display: flex;
-	align-items: center;
-	border: 1px solid #ccc;
-	padding: 10px;
-	margin-bottom: 10px;
-	border-radius: 8px;
-	background-color: var(--background-color);
-}
-.card img {
-	margin-right: 10px;
-	border-radius: 8px;
-	height: 70px;
-	width: auto;
-}
-
-
-@media (prefers-color-scheme: dark) {
-	.invert-for-dark-mode {
-		filter: invert(100%);
-	}
-}
-
 /* Posts list */
 .postlist {
 	list-style: none;
@@ -533,7 +486,7 @@ header {
 		<main id="skip">
 			<heading-anchors>
 				
-<h1 id="sustainable-air-gapped-on-prem-llm-solution-how-can-we-make-genai-available-on-almost-any-hardware-and-how-is-it-also-available-as-a-portable-demo-on-our-alan-notebook">Sustainable Air-Gapped On-Prem LLM Solution! How can we make GenAI available on almost any hardware, and how is it also available as a portable demo on our Alan Notebook</h1>
+<h1 id="todays-research-proposal-how-to-achieve-real-thinking-and-reasoning-in-genai-rather-than-just-relying-on-a-silent-chain-of-thought-as-seen-in-reflectionai-or-possibly-gpt-o1">Today&#39;s Research Proposal - How to achieve &quot;real&quot; thinking and reasoning in GenAI, rather than just relying on a silent Chain of Thought, as seen in ReflectionAI or possibly GPT-o1?</h1>
 
 <ul class="post-metadata">
 	<li><time datetime="2024-09-30">30 September 2024</time></li>
@@ -541,45 +494,46 @@ header {
 </ul>
 
 
-<p>Exploring the development of a full-stack GenAI LLM solution that can run on a variety of hardware configurations, including a portable demo setup.</p>
-<p><picture><source type="image/avif" srcset="/img/rVdiXLZ0_K-800.avif 800w"><source type="image/webp" srcset="/img/rVdiXLZ0_K-800.webp 800w"><img loading="lazy" decoding="async" src="/img/rVdiXLZ0_K-800.jpeg" alt="Alan Notebook" width="800" height="879"></picture></p>
+<p>Exploring the potential for achieving true reasoning and thinking in Generative AI models beyond the current Chain of Thought methodologies.</p>
+<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%2Fimg%2Fblog_images%2F1726499742573.jpeg&width=800&format=avif&via=transform 800w"><source type="image/webp" srcset="/.11ty/image/?src=content%2Fimg%2Fblog_images%2F1726499742573.jpeg&width=800&format=webp&via=transform 800w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%2Fimg%2Fblog_images%2F1726499742573.jpeg&width=800&format=jpeg&via=transform" alt="Image 1" width="800" height="696"></picture></p>
 <p><strong>TL;DR ⏱️</strong></p>
 <ul>
-<li>Developing Alan, a full-stack GenAI LLM solution</li>
-<li>Hosted on German hyperscaler infrastructure</li>
-<li>Offers a smaller version, Alan-S-LLM</li>
-<li>Portable demo available on Alan Notebook</li>
+<li>Current state of reasoning in models</li>
+<li>Possibilities for transformers to learn to think</li>
+<li>Customization ideas for achieving true reasoning</li>
+<li>Open questions and discussion points</li>
 </ul>
-<h2 id="what-we-re-working-on-when-we-talk-about-alan-r-and-d">What We're Working on When We Talk About Alan R&amp;D 👨🏼‍💻</h2>
+<h2 id="currently-reasoning-more-through-silent-the-cot">Currently, reasoning more through silent the CoT 😥</h2>
 <ul>
-<li>In a recent post, I introduced how we're developing Alan, a full-stack GenAI LLM solution.</li>
-<li>We host our solution within German hyperscaler infrastructure to deal with the requirements of multiple customer tenants and our large language models, including retrieval augmented generation pipelines.</li>
-<li>The requirements of our strongest Alan LLM require current top-notch Nvidia GPUs (Ampere+, 80GB VRAM), but we also offer a smaller Alan-S-LLM, which still has tremendous capabilities with fewer hardware requirements.</li>
+<li>There are currently models that claim to possess reasoning capabilities.</li>
+<li>However, this is more about the Chain of Thought and the use of special tokens.</li>
+<li>These enable the model to generate more text, thereby increasing the stability of its answers.</li>
+<li>This process of &quot;reasoning&quot; is not transparently/barely shown.</li>
+<li>I believe this is less about reasoning or thinking and more about statistical stability.</li>
+<li>Moreover, it is not possible to observe the reasoning process, and it is often difficult to identify when a model has gone astray.</li>
 </ul>
-<h2 id="how-to-shrink-llms">How to Shrink LLMs 🤖</h2>
+<h2 id="how-could-transformers-learn-to-think">How could transformers learn to think? 🤯</h2>
 <ul>
-<li>Models are smaller in dimensions like the number of transformer layers, heads, hidden dimensions, and other hyperparameters.</li>
-<li>Current smaller GenAI LLMs can be designed by model distillation and model pruning, which try to keep model quality high while reducing the number of parameters.</li>
-<li>The reduced number of parameters reduces VRAM requirements. Fewer parameters, especially fewer transformer layers, increase the throughput and inference performance as well.</li>
-<li>The reduction of bits used to represent each parameter of the LLM reduces the required total GPU VRAM.</li>
+<li>Why can I still imagine that it is possible to learn to think or reason with the transformer architecture?</li>
+<li>Due to the transformer architecture, which includes tokenization, attention, and multi-layer perceptron elements, as well as the universal function approximation hypothesis, the following can be imagined:
+<ol>
+<li>In early layers, the network learns something akin to named entity recognition.</li>
+<li>Later layers and embedding dimensions create structures that learn propositional logic and structures similar to knowledge graphs or their embeddings.</li>
+<li>Finally, based on this, resonating and reflecting completeness of output logic components could be achieved.</li>
+</ol>
+</li>
 </ul>
-<h2 id="our-alan-demo-notebook">Our Alan Demo Notebook 💻</h2>
-<ul>
-<li>To demonstrate that our entire tech stack is capable of running entirely air-gapped and to showcase that we're truly capable of showing this on even a portable system, we developed the Alan-Notebook.</li>
-<li>This notebook uses the entire tech stack, which includes all the components that offer Multi-GPU Cluster setups, handling of users, RAG pipelines, and, of course, LLM text inference.</li>
-<li>The model behind is our fastest and most efficient Alan-S-Model. The notebook has limited hardware capabilities, especially within the GPU (16GB, Nvidia), but can still run the entire tech stack.</li>
-</ul>
-<h2 id="further-reading">Further Reading:</h2>
-<ul>
-<li>LLM Model Sizes: <a href="https://shorturl.at/6ZxMq">https://shorturl.at/6ZxMq</a></li>
-<li>Alan - Our Developer Journey: <a href="https://shorturl.at/PqLdE">https://shorturl.at/PqLdE</a></li>
-<li>Full details of how infrastructure is scaled down by Dr. Laura Maaßen see <a href="https://lmy.de/eicOw">https://lmy.de/eicOw</a></li>
-</ul>
-<p>If you're interested in how we develop an entire scalable GenAI solution and you want to see some details into our R&amp;D, follow me on LinkedIn and reach out to us. Thanks to my wonderful teammates Dr. Laura Maaßen and Lars Flöer, who made this Alan Notebook possible, and to the entire Alan Development Team Comma Soft AG for supporting this great project and product.</p>
-<p>#genai #onprem #llm #alan</p>
-<p><a href="https://www.linkedin.com/posts/carsten-draschner_genai-onprem-llm-activity-7233851548349444097-lF4N?utm_source=share&amp;utm_medium=member_desktop">LinkedIn Post</a></p>
+<h2 id="what-else-would-i-customize-imho">What else would I customize? 👨🏼‍💻 (IMHO)</h2>
+<p>I would find it interesting to combine this with thought-diffusion models, making hierarchical planning possible. I have several more ideas..., reach out to me if you like to start a discussion ❤️</p>
+<h2 id="questions">Questions:</h2>
+<p>Are you aware of any approaches or research projects that attempt this?
+What are your thoughts on that, how would you build &quot;AGI&quot; it?</p>
+<p>I had great idea exchanges on this with colleagues from Comma Soft AG, Lamarr-Institut &amp; Smart Data Analytics.</p>
+<p>Let's not waste money and time on believing in marketing claims and rebranding of the word &quot;reasoning&quot;, but let's start to think of how it could actually be achieved 🤗</p>
+<p>#AGI #GenAI #artificialintelligence #research</p>
+<p><a href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-sustainability-activity-7243978164564111361-12R6?utm_source=share&amp;utm_medium=member_desktop">LinkedIn Post</a></p>
 
-<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/240904_combining_the_hugging_face_model_platform_and_knowledge/">Combining the Hugging Face Model Platform and Knowledge Graph trend analysis over time could improve GenAI research and reduce waste of energy!</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/240906_for_more_sustainability_transparency_in_genai_share/">For more sustainability transparency in GenAI! Share your knowledge and reduce energy waste!</a></li>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/240906_for_more_sustainability_transparency_in_genai_share/">For more sustainability transparency in GenAI! Share your knowledge and reduce energy waste!</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/240908_where_science_meets_innovation_my_personal/">Where Science Meets Innovation - My personal Highlights &amp; Insights into the PG 2024! Do you have answers to the open Questions?</a></li>
 </ul>
 
 			</heading-anchors>
@@ -589,7 +543,7 @@ header {
 			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
 		</footer>
 
-		<!-- This page `/blog/240905_ sustainable_air_gapped_on_prem_llm_solution/` was built on 2024-11-13T16:30:41.725Z -->
+		<!-- This page `/blog/240907todays_research_proposal_how_to_achieve_real/` was built on 2024-11-11T21:54:46.377Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

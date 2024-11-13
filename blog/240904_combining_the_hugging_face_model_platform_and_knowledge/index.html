@@ -201,6 +201,9 @@ pre[class*="language-diff-"] {
 	--text-color-link-visited: #245242;
 
 	--syntax-tab-size: 2;
+
+	--card-background-color: #f9f9f9;
+	--card-border-color: #ccc;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -215,9 +218,30 @@ pre[class*="language-diff-"] {
 		--text-color-link-visited: #a6a6f8;
 
 		--background-color: #15202b;
+
+		/* Dark mode card colors */
+		--card-background-color: #333;
+		--card-border-color: #555;
 	}
 }
 
+.card {
+	display: flex;
+	align-items: center;
+	border: 1px solid var(--card-border-color);
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	background-color: var(--card-background-color);
+}
+
+.card h3 {
+	margin: 0;
+  }
+  
+.card p {
+	margin: 0;
+}
 
 /* Global stylesheet */
 * {
@@ -402,6 +426,29 @@ header {
 	text-decoration: underline;
 }
 
+.card {
+	display: flex;
+	align-items: center;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	background-color: var(--background-color);
+}
+.card img {
+	margin-right: 10px;
+	border-radius: 8px;
+	height: 70px;
+	width: auto;
+}
+
+
+@media (prefers-color-scheme: dark) {
+	.invert-for-dark-mode {
+		filter: invert(100%);
+	}
+}
+
 /* Posts list */
 .postlist {
 	list-style: none;
@@ -516,7 +563,7 @@ header {
 			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
 		</footer>
 
-		<!-- This page `/blog/240904_combining_the_hugging_face_model_platform_and_knowledge/` was built on 2024-11-13T12:07:03.669Z -->
+		<!-- This page `/blog/240904_combining_the_hugging_face_model_platform_and_knowledge/` was built on 2024-11-13T16:30:41.725Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

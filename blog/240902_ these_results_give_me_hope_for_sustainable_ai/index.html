@@ -3,11 +3,179 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Carsten Felix Draschner, PhD</title>
+		<title>These results give me hope for sustainable AI 🌱</title>
 		<meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
 		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
 		
-		<style>/* This is an arbitrary CSS string added to the bundle */
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
 /* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
@@ -33,9 +201,6 @@
 	--text-color-link-visited: #245242;
 
 	--syntax-tab-size: 2;
-
-	--card-background-color: #f9f9f9;
-	--card-border-color: #ccc;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,30 +215,9 @@
 		--text-color-link-visited: #a6a6f8;
 
 		--background-color: #15202b;
-
-		/* Dark mode card colors */
-		--card-background-color: #333;
-		--card-border-color: #555;
 	}
 }
 
-.card {
-	display: flex;
-	align-items: center;
-	border: 1px solid var(--card-border-color);
-	padding: 10px;
-	margin-bottom: 10px;
-	border-radius: 8px;
-	background-color: var(--card-background-color);
-}
-
-.card h3 {
-	margin: 0;
-  }
-  
-.card p {
-	margin: 0;
-}
 
 /* Global stylesheet */
 * {
@@ -258,29 +402,6 @@ header {
 	text-decoration: underline;
 }
 
-.card {
-	display: flex;
-	align-items: center;
-	border: 1px solid #ccc;
-	padding: 10px;
-	margin-bottom: 10px;
-	border-radius: 8px;
-	background-color: var(--background-color);
-}
-.card img {
-	margin-right: 10px;
-	border-radius: 8px;
-	height: 70px;
-	width: auto;
-}
-
-
-@media (prefers-color-scheme: dark) {
-	.invert-for-dark-mode {
-		filter: invert(100%);
-	}
-}
-
 /* Posts list */
 .postlist {
 	list-style: none;
@@ -365,19 +486,34 @@ header {
 		<main id="skip">
 			<heading-anchors>
 				
-<h1 id="content-not-found">Content not found.</h1>
-<p>Go <a href="index.njk">home</a>.</p>
-<!--
+<h1 id="these-results-give-me-hope-for-sustainable-ai">These results give me hope for sustainable AI 🌱</h1>
 
-Read more: https://www.11ty.dev/docs/quicktips/not-found/
+<ul class="post-metadata">
+	<li><time datetime="2024-09-30">30 September 2024</time></li>
+	<li><a href="/tags/blog/" class="post-tag">blog</a></li>
+</ul>
 
-This will work for both GitHub pages and Netlify:
 
-* https://help.github.com/articles/creating-a-custom-404-page-for-your-github-pages-site/
-* https://www.netlify.com/docs/redirects/#custom-404
+<p>I'm impressed by some of the recent advances in the field of &quot;small&quot; open-weight Language Models (LLMs).</p>
+<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%2Fimg%2Fblog_images%2F1722508519413.jpeg&width=800&format=avif&via=transform 800w"><source type="image/webp" srcset="/.11ty/image/?src=content%2Fimg%2Fblog_images%2F1722508519413.jpeg&width=800&format=webp&via=transform 800w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%2Fimg%2Fblog_images%2F1722508519413.jpeg&width=800&format=jpeg&via=transform" alt="Sustainable AI" width="800" height="450"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Increased documentation supports reproducibility</li>
+<li>Data quality improves model performance</li>
+<li>Model distillation reduces hardware needs</li>
+</ul>
+<h2 id="more-documentation">More Documentation 📚</h2>
+<p>They're accompanied by increased documentation, as seen with efforts from Apple and Meta, which support reproducibility and reduce wasted effort and energy on less promising pre-training and fine-tuning iterations.</p>
+<h2 id="data-quality-as-chance">Data Quality as Chance 🔎</h2>
+<p>They demonstrate that a focus on data quality can improve model performance, as evidenced by Phi-3. However, it's also clear that the total number of tokens contributes to improvements, as seen with LLAMA3(.1).</p>
+<h2 id="model-distillation">Model Distillation 👩🏽‍🔬</h2>
+<p>Model Distillation has been effective in reducing total hardware requirements and inference time, which saves energy and resources. It will be interesting to see how quickly distilled models like Gemma2 can outperform 6-month-old state-of-the-art models like LLAMA2.</p>
+<p>I appreciate the efforts to decrease hardware and energy demands while still providing helpful model responses.</p>
+<p>#artificialintelligence #genai #sustainableai #llm</p>
+<p><a href="https://www.linkedin.com/posts/carsten-draschner_ai-google-tech-activity-7224785383237001216-HDyZ?utm_source=share&amp;utm_medium=member_desktop">LinkedIn Post</a></p>
 
--->
-
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/research/reasoning-in-genai/">Sample research</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/240903_ what_is_the_perfect_approach_to_adjust_an_llm_to_your_genai_use_case/">What is the perfect approach to adjust an LLM to your GenAI use case?</a></li>
+</ul>
 
 			</heading-anchors>
 		</main>
@@ -386,7 +522,7 @@ This will work for both GitHub pages and Netlify:
 			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
 		</footer>
 
-		<!-- This page `/404.html` was built on 2024-11-13T16:30:41.726Z -->
+		<!-- This page `/blog/240902_ these_results_give_me_hope_for_sustainable_ai/` was built on 2024-11-11T21:54:46.377Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Sustainable Air-Gapped On-Prem LLM Solution! How can we make GenAI available on almost any hardware, and how is it also available as a portable demo on our Alan Notebook</title>
+		<title>Stop adding Languages to LLMs! The Potential Drawbacks of Training Multilingual Large Language Models (LLMs) for Performance and Sustainability!</title>
 		<meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
 		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
 		
@@ -201,9 +201,6 @@ pre[class*="language-diff-"] {
 	--text-color-link-visited: #245242;
 
 	--syntax-tab-size: 2;
-
-	--card-background-color: #f9f9f9;
-	--card-border-color: #ccc;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -218,30 +215,9 @@ pre[class*="language-diff-"] {
 		--text-color-link-visited: #a6a6f8;
 
 		--background-color: #15202b;
-
-		/* Dark mode card colors */
-		--card-background-color: #333;
-		--card-border-color: #555;
 	}
 }
 
-.card {
-	display: flex;
-	align-items: center;
-	border: 1px solid var(--card-border-color);
-	padding: 10px;
-	margin-bottom: 10px;
-	border-radius: 8px;
-	background-color: var(--card-background-color);
-}
-
-.card h3 {
-	margin: 0;
-  }
-  
-.card p {
-	margin: 0;
-}
 
 /* Global stylesheet */
 * {
@@ -426,29 +402,6 @@ header {
 	text-decoration: underline;
 }
 
-.card {
-	display: flex;
-	align-items: center;
-	border: 1px solid #ccc;
-	padding: 10px;
-	margin-bottom: 10px;
-	border-radius: 8px;
-	background-color: var(--background-color);
-}
-.card img {
-	margin-right: 10px;
-	border-radius: 8px;
-	height: 70px;
-	width: auto;
-}
-
-
-@media (prefers-color-scheme: dark) {
-	.invert-for-dark-mode {
-		filter: invert(100%);
-	}
-}
-
 /* Posts list */
 .postlist {
 	list-style: none;
@@ -533,7 +486,7 @@ header {
 		<main id="skip">
 			<heading-anchors>
 				
-<h1 id="sustainable-air-gapped-on-prem-llm-solution-how-can-we-make-genai-available-on-almost-any-hardware-and-how-is-it-also-available-as-a-portable-demo-on-our-alan-notebook">Sustainable Air-Gapped On-Prem LLM Solution! How can we make GenAI available on almost any hardware, and how is it also available as a portable demo on our Alan Notebook</h1>
+<h1 id="stop-adding-languages-to-llms-the-potential-drawbacks-of-training-multilingual-large-language-models-llms-for-performance-and-sustainability">Stop adding Languages to LLMs! The Potential Drawbacks of Training Multilingual Large Language Models (LLMs) for Performance and Sustainability!</h1>
 
 <ul class="post-metadata">
 	<li><time datetime="2024-09-30">30 September 2024</time></li>
@@ -541,45 +494,44 @@ header {
 </ul>
 
 
-<p>Exploring the development of a full-stack GenAI LLM solution that can run on a variety of hardware configurations, including a portable demo setup.</p>
-<p><picture><source type="image/avif" srcset="/img/rVdiXLZ0_K-800.avif 800w"><source type="image/webp" srcset="/img/rVdiXLZ0_K-800.webp 800w"><img loading="lazy" decoding="async" src="/img/rVdiXLZ0_K-800.jpeg" alt="Alan Notebook" width="800" height="879"></picture></p>
+<p>Exploring the downsides of creating multilingual LLMs and their impact on performance and resource utilization.</p>
+<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%2Fimg%2Fblog_images%2F1727692358797.jpeg&width=800&format=avif&via=transform 800w"><source type="image/webp" srcset="/.11ty/image/?src=content%2Fimg%2Fblog_images%2F1727692358797.jpeg&width=800&format=webp&via=transform 800w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%2Fimg%2Fblog_images%2F1727692358797.jpeg&width=800&format=jpeg&via=transform" alt="Image 1" width="800" height="800"></picture></p>
 <p><strong>TL;DR ⏱️</strong></p>
 <ul>
-<li>Developing Alan, a full-stack GenAI LLM solution</li>
-<li>Hosted on German hyperscaler infrastructure</li>
-<li>Offers a smaller version, Alan-S-LLM</li>
-<li>Portable demo available on Alan Notebook</li>
+<li>Challenges of building multilingual LLMs</li>
+<li>Inefficiencies in token usage and context length</li>
+<li>Increased hardware costs and reduced token training</li>
+<li>Weighing multilingual models against language-specific models</li>
 </ul>
-<h2 id="what-we-re-working-on-when-we-talk-about-alan-r-and-d">What We're Working on When We Talk About Alan R&amp;D 👨🏼‍💻</h2>
+<h2 id="building-a-multi-lang-llm">Building a Multi-Lang-LLM 🛠️🐣</h2>
 <ul>
-<li>In a recent post, I introduced how we're developing Alan, a full-stack GenAI LLM solution.</li>
-<li>We host our solution within German hyperscaler infrastructure to deal with the requirements of multiple customer tenants and our large language models, including retrieval augmented generation pipelines.</li>
-<li>The requirements of our strongest Alan LLM require current top-notch Nvidia GPUs (Ampere+, 80GB VRAM), but we also offer a smaller Alan-S-LLM, which still has tremendous capabilities with fewer hardware requirements.</li>
+<li>When pretraining LLMs, one of the key decisions is which data to include.</li>
+<li>This choice also influences the selection of the tokenizer, which optimizes the number of tokens for the texts used.</li>
+<li>As a result, different characters and character sequences are mapped in the tokenizers for each language.</li>
 </ul>
-<h2 id="how-to-shrink-llms">How to Shrink LLMs 🤖</h2>
+<h2 id="when-you-finally-use-such-a-llm-in-only-a-subset-of-available-languages-you-face-following-problems">When you finally use such a LLM in only a subset of available languages you face following problems 🇪🇺🤖</h2>
 <ul>
-<li>Models are smaller in dimensions like the number of transformer layers, heads, hidden dimensions, and other hyperparameters.</li>
-<li>Current smaller GenAI LLMs can be designed by model distillation and model pruning, which try to keep model quality high while reducing the number of parameters.</li>
-<li>The reduced number of parameters reduces VRAM requirements. Fewer parameters, especially fewer transformer layers, increase the throughput and inference performance as well.</li>
-<li>The reduction of bits used to represent each parameter of the LLM reduces the required total GPU VRAM.</li>
+<li>Inefficient token usage: If the model is only used for one or two languages, many tokens may be rarely or never needed, leading to shorter token sequences in the required language.</li>
+<li>Limited context length: LLMs have a limited context length, measured in tokens, which can result in more expensive inference as the model scales linearly to quadratically with prompt length.</li>
+<li>Increased hardware costs: This can lead to higher hardware costs and omissions.</li>
+<li>Reduced relevant token training: With a multilingual model, fewer relevant tokens and token sequences may have been seen and trained in the required languages.</li>
 </ul>
-<h2 id="our-alan-demo-notebook">Our Alan Demo Notebook 💻</h2>
+<h2 id="the-trade-off-multilingual-models-vs-language-specific-models">The Trade-Off: Multilingual Models vs. Language-Specific Models 💰📊</h2>
 <ul>
-<li>To demonstrate that our entire tech stack is capable of running entirely air-gapped and to showcase that we're truly capable of showing this on even a portable system, we developed the Alan-Notebook.</li>
-<li>This notebook uses the entire tech stack, which includes all the components that offer Multi-GPU Cluster setups, handling of users, RAG pipelines, and, of course, LLM text inference.</li>
-<li>The model behind is our fastest and most efficient Alan-S-Model. The notebook has limited hardware capabilities, especially within the GPU (16GB, Nvidia), but can still run the entire tech stack.</li>
+<li>We need to weigh the benefits of multilingual models against the potential drawbacks and decide whether to prioritize language coverage or risk wasting resources.</li>
+<li>This is particularly important when dealing with languages that are not closely related, such as those with different character sets.</li>
 </ul>
-<h2 id="further-reading">Further Reading:</h2>
+<h2 id="your-opinion">Your Opinion 🤗</h2>
 <ul>
-<li>LLM Model Sizes: <a href="https://shorturl.at/6ZxMq">https://shorturl.at/6ZxMq</a></li>
-<li>Alan - Our Developer Journey: <a href="https://shorturl.at/PqLdE">https://shorturl.at/PqLdE</a></li>
-<li>Full details of how infrastructure is scaled down by Dr. Laura Maaßen see <a href="https://lmy.de/eicOw">https://lmy.de/eicOw</a></li>
+<li>What do you think?</li>
+<li>Have you ever chosen a model especially with reduced number of languages outside English?</li>
+<li>Some more details about Multi-Lang-GenAI can be found here: <a href="https://lnkd.in/edgPsdKz">https://lnkd.in/edgPsdKz</a></li>
 </ul>
-<p>If you're interested in how we develop an entire scalable GenAI solution and you want to see some details into our R&amp;D, follow me on LinkedIn and reach out to us. Thanks to my wonderful teammates Dr. Laura Maaßen and Lars Flöer, who made this Alan Notebook possible, and to the entire Alan Development Team Comma Soft AG for supporting this great project and product.</p>
-<p>#genai #onprem #llm #alan</p>
-<p><a href="https://www.linkedin.com/posts/carsten-draschner_genai-onprem-llm-activity-7233851548349444097-lF4N?utm_source=share&amp;utm_medium=member_desktop">LinkedIn Post</a></p>
+<p>For more content, follow me or reach out to me over DM ❤️</p>
+<p>#artificialintelligence #genai #llm #languages</p>
+<p><a href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-llm-activity-7246524467034689537-nZ-f?utm_source=share&amp;utm_medium=member_desktop">LinkedIn Post</a></p>
 
-<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/240904_combining_the_hugging_face_model_platform_and_knowledge/">Combining the Hugging Face Model Platform and Knowledge Graph trend analysis over time could improve GenAI research and reduce waste of energy!</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/240906_for_more_sustainability_transparency_in_genai_share/">For more sustainability transparency in GenAI! Share your knowledge and reduce energy waste!</a></li>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/choosing_the_right_llm_for_your_needs_key_considerations/">Choosing the Right LLM for Your Needs - Key Considerations</a></li>
 </ul>
 
 			</heading-anchors>
@@ -589,7 +541,7 @@ header {
 			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
 		</footer>
 
-		<!-- This page `/blog/240905_ sustainable_air_gapped_on_prem_llm_solution/` was built on 2024-11-13T16:30:41.725Z -->
+		<!-- This page `/blog/stop_adding_languages_to_llms_the_potential/` was built on 2024-11-11T20:34:50.681Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

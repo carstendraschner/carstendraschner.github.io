@@ -33,6 +33,9 @@
 	--text-color-link-visited: #245242;
 
 	--syntax-tab-size: 2;
+
+	--card-background-color: #f9f9f9;
+	--card-border-color: #ccc;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -47,9 +50,30 @@
 		--text-color-link-visited: #a6a6f8;
 
 		--background-color: #15202b;
+
+		/* Dark mode card colors */
+		--card-background-color: #333;
+		--card-border-color: #555;
 	}
 }
 
+.card {
+	display: flex;
+	align-items: center;
+	border: 1px solid var(--card-border-color);
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	background-color: var(--card-background-color);
+}
+
+.card h3 {
+	margin: 0;
+  }
+  
+.card p {
+	margin: 0;
+}
 
 /* Global stylesheet */
 * {
@@ -234,6 +258,29 @@ header {
 	text-decoration: underline;
 }
 
+.card {
+	display: flex;
+	align-items: center;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	background-color: var(--background-color);
+}
+.card img {
+	margin-right: 10px;
+	border-radius: 8px;
+	height: 70px;
+	width: auto;
+}
+
+
+@media (prefers-color-scheme: dark) {
+	.invert-for-dark-mode {
+		filter: invert(100%);
+	}
+}
+
 /* Posts list */
 .postlist {
 	list-style: none;
@@ -321,8 +368,8 @@ header {
 <h1 id="contact">Contact</h1>
 <p>Welcome! If you would like to get in touch with me or follow my work, here are the best ways to do so:</p>
 <a href="https://www.linkedin.com/in/carsten-draschner/" target="_blank" style="text-decoration: none; color: inherit;">
-  <div style="display: flex; align-items: center; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #f9f9f9;">
-    <picture><source type="image/avif" srcset="/contact/Ha4NRKcVwn-225.avif 225w"><source type="image/webp" srcset="/contact/Ha4NRKcVwn-225.webp 225w"><img loading="lazy" decoding="async" src="/contact/Ha4NRKcVwn-225.png" alt="LinkedInIcon" style="margin-right: 10px; border-radius: 8px; height: 70px; width: auto;" width="225" height="225"></picture>
+  <div class="card">
+    <picture><source type="image/avif" srcset="/contact/Ha4NRKcVwn-225.avif 225w"><source type="image/webp" srcset="/contact/Ha4NRKcVwn-225.webp 225w"><img loading="lazy" decoding="async" src="/contact/Ha4NRKcVwn-225.png" alt="LinkedInIcon" width="225" height="225"></picture>
     <div>
       <h3 id="linkedin">LinkedIn</h3>
       <p>Connect with me on LinkedIn to chat follow my content.</p>
@@ -330,23 +377,24 @@ header {
   </div>
 </a>
 <a href="https://github.com/carstendraschner" target="_blank" style="text-decoration: none; color: inherit;">
-  <div style="display: flex; align-items: center; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #f9f9f9;">
-    <picture><source type="image/avif" srcset="/contact/AL73eiEoTL-512.avif 512w"><source type="image/webp" srcset="/contact/AL73eiEoTL-512.webp 512w"><img loading="lazy" decoding="async" src="/contact/AL73eiEoTL-512.png" alt="GitHubIcon" style="margin-right: 10px; border-radius: 8px; height: 70px; width: auto;" width="512" height="512"></picture>
+  <div class="card">
+    <picture><source type="image/avif" srcset="/contact/AL73eiEoTL-512.avif 512w"><source type="image/webp" srcset="/contact/AL73eiEoTL-512.webp 512w"><img loading="lazy" decoding="async" src="/contact/AL73eiEoTL-512.png" alt="GitHubIcon" class="invert-for-dark-mode" width="512" height="512"></picture>
     <div>
       <h3 id="github">GitHub</h3>
-      <p>Check out my (non-vompany-IP) projects.</p>
+      <p>Check out my (non-company-IP) projects.</p>
     </div>
   </div>
 </a>
 <a href="https://www.researchgate.net/profile/Carsten-Draschner" target="_blank" style="text-decoration: none; color: inherit;">
-  <div style="display: flex; align-items: center; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #f9f9f9;">
-    <picture><source type="image/avif" srcset="/contact/JJ8I4c-eQJ-512.avif 512w"><source type="image/webp" srcset="/contact/JJ8I4c-eQJ-512.webp 512w"><img loading="lazy" decoding="async" src="/contact/JJ8I4c-eQJ-512.png" alt="ResearchGateIcon" style="margin-right: 10px; border-radius: 8px; height: 70px; width: auto;" width="512" height="512"></picture>
+  <div class="card">
+    <picture><source type="image/avif" srcset="/contact/JJ8I4c-eQJ-512.avif 512w"><source type="image/webp" srcset="/contact/JJ8I4c-eQJ-512.webp 512w"><img loading="lazy" decoding="async" src="/contact/JJ8I4c-eQJ-512.png" alt="ResearchGateIcon" class="invert-for-dark-mode" width="512" height="512"></picture>
     <div>
-      <h3 id="research-gate">Research Gate</h3>
-      <p>Visit my Research Gate profile to access my research .</p>
+      <h3 id="researchgate">ResearchGate</h3>
+      <p>Visit my ResearchGate profile to access my research.</p>
     </div>
   </div>
 </a>
+
 
 			</heading-anchors>
 		</main>
@@ -355,7 +403,7 @@ header {
 			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
 		</footer>
 
-		<!-- This page `/contact/` was built on 2024-11-13T12:07:03.670Z -->
+		<!-- This page `/contact/` was built on 2024-11-13T16:30:41.726Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>
