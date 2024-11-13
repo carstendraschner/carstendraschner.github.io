@@ -23,6 +23,9 @@
 	--text-color-link-visited: #245242;
 
 	--syntax-tab-size: 2;
+
+	--card-background-color: #f9f9f9;
+	--card-border-color: #ccc;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,9 +40,34 @@
 		--text-color-link-visited: #a6a6f8;
 
 		--background-color: #15202b;
+
+		/* Dark mode card colors */
+		--card-background-color: #333;
+		--card-border-color: #555;
 	}
 }
 
+.card {
+	display: flex;
+	align-items: center;
+	border: 1px solid var(--card-border-color);
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	background-color: var(--card-background-color);
+}
+
+.card h3 {
+	margin: 0;
+  }
+  
+.card p {
+	margin: 0;
+}
+
+.card div {
+	padding-left: 10px;
+}
 
 /* Global stylesheet */
 * {
@@ -234,10 +262,9 @@ header {
 	background-color: var(--background-color);
 }
 .card img {
-	margin-right: 10px;
 	border-radius: 8px;
-	height: 70px;
-	width: auto;
+	height: auto;
+	width: 90px;
 }
 .card .card-title {
 	font-size: 1.17em;
