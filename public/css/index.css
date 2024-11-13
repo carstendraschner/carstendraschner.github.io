@@ -285,6 +285,20 @@ header {
 	font-weight: bold;
 }
 
+/* Anchor links next to heading */
+.ha-placeholder {
+	opacity: 0 !important;
+}
+h2:has(.ha-placeholder):hover,
+h3:has(.ha-placeholder):hover,
+h4:has(.ha-placeholder):hover,
+h5:has(.ha-placeholder):hover,
+h6:has(.ha-placeholder):hover {
+	.ha-placeholder {
+		opacity: 0.3 !important;
+	}
+}
+
 /* Tags */
 .post-tag {
 	display: inline-flex;
