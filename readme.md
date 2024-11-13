@@ -20,7 +20,7 @@ cd my-blog-name
 2. Clone this Repository
 
 ```
-git clone https://github.com/carstendraschner/my_website.git .
+git clone https://github.com/carstendraschner/carstendraschner.github.io.git .
 ```
 
 3. Install dependencies

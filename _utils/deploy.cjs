@@ -6,7 +6,7 @@ ghpages.publish(
   '_site',
   {
     branch: 'gh-pages',
-    repo: 'https://github.com/carstendraschner/my_website.git',
+    repo: 'https://github.com/carstendraschner/carstendraschner.github.io.git',
   },
   function (err) {
     if (err) {
