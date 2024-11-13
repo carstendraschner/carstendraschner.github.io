@@ -239,6 +239,14 @@ header {
 	height: 70px;
 	width: auto;
 }
+.card .card-title {
+	font-size: 1.17em;
+	font-weight: bold;
+}
+.card-navigation ul {
+	list-style: none;
+	padding: 0;
+}
 
 
 @media (prefers-color-scheme: dark) {
