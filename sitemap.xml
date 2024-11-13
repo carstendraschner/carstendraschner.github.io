@@ -127,16 +127,6 @@
 	</url>
 	
 	<url>
-		<loc>https://example.com/contact/</loc>
-		<lastmod>2024-11-13</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/</loc>
-		<lastmod>2024-11-13</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://example.com/projects/</loc>
 		<lastmod>2024-11-13</lastmod>
 	</url>
@@ -148,6 +138,16 @@
 	
 	<url>
 		<loc>https://example.com/tags/</loc>
+		<lastmod>2024-11-13</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/contact/</loc>
+		<lastmod>2024-11-13</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/</loc>
 		<lastmod>2024-11-13</lastmod>
 	</url>
 	

@@ -276,6 +276,14 @@ header {
 	height: auto;
 	width: 90px;
 }
+.card .card-title {
+	font-size: 1.17em;
+	font-weight: bold;
+}
+.card-navigation ul {
+	list-style: none;
+	padding: 0;
+}
 
 
 @media (prefers-color-scheme: dark) {
@@ -320,6 +328,20 @@ header {
 }
 .postlist-item-active .postlist-link {
 	font-weight: bold;
+}
+
+/* Anchor links next to heading */
+.ha-placeholder {
+	opacity: 0 !important;
+}
+h2:has(.ha-placeholder):hover,
+h3:has(.ha-placeholder):hover,
+h4:has(.ha-placeholder):hover,
+h5:has(.ha-placeholder):hover,
+h6:has(.ha-placeholder):hover {
+	.ha-placeholder {
+		opacity: 0.3 !important;
+	}
 }
 
 /* Tags */
@@ -370,34 +392,43 @@ header {
 				
 <h1 id="contact">Contact</h1>
 <p>Welcome! If you would like to get in touch with me or follow my work, here are the best ways to do so:</p>
-<a href="https://www.linkedin.com/in/carsten-draschner/" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card">
-    <picture><source type="image/avif" srcset="/contact/Ha4NRKcVwn-225.avif 225w"><source type="image/webp" srcset="/contact/Ha4NRKcVwn-225.webp 225w"><img loading="lazy" decoding="async" src="/contact/Ha4NRKcVwn-225.png" alt="LinkedInIcon" width="225" height="225"></picture>
-    <div>
-      <h3 id="linkedin">LinkedIn</h3>
-      <p>Connect with me on LinkedIn to chat follow my content.</p>
-    </div>
-  </div>
-</a>
-<a href="https://github.com/carstendraschner" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card">
-    <picture><source type="image/avif" srcset="/contact/AL73eiEoTL-512.avif 512w"><source type="image/webp" srcset="/contact/AL73eiEoTL-512.webp 512w"><img loading="lazy" decoding="async" src="/contact/AL73eiEoTL-512.png" alt="GitHubIcon" class="invert-for-dark-mode" width="512" height="512"></picture>
-    <div>
-      <h3 id="github">GitHub</h3>
-      <p>Check out my (non-company-IP) projects.</p>
-    </div>
-  </div>
-</a>
-<a href="https://www.researchgate.net/profile/Carsten-Draschner" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card">
-    <picture><source type="image/avif" srcset="/contact/JJ8I4c-eQJ-512.avif 512w"><source type="image/webp" srcset="/contact/JJ8I4c-eQJ-512.webp 512w"><img loading="lazy" decoding="async" src="/contact/JJ8I4c-eQJ-512.png" alt="ResearchGateIcon" class="invert-for-dark-mode" width="512" height="512"></picture>
-    <div>
-      <h3 id="researchgate">ResearchGate</h3>
-      <p>Visit my ResearchGate profile to access my research.</p>
-    </div>
-  </div>
-</a>
-
+<nav class="card-navigation">
+  <ul>
+    <li>
+      <a href="https://www.linkedin.com/in/carsten-draschner/" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="card">
+          <picture><source type="image/avif" srcset="/contact/Ha4NRKcVwn-225.avif 225w"><source type="image/webp" srcset="/contact/Ha4NRKcVwn-225.webp 225w"><img loading="lazy" decoding="async" src="/contact/Ha4NRKcVwn-225.png" alt="LinkedInIcon" width="225" height="225"></picture>
+          <div>
+            <span class="card-title">LinkedIn</span>
+            <p>Connect with me on LinkedIn to chat follow my content.</p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/carstendraschner" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="card">
+          <picture><source type="image/avif" srcset="/contact/AL73eiEoTL-512.avif 512w"><source type="image/webp" srcset="/contact/AL73eiEoTL-512.webp 512w"><img loading="lazy" decoding="async" src="/contact/AL73eiEoTL-512.png" alt="GitHubIcon" class="invert-for-dark-mode" width="512" height="512"></picture>
+          <div>
+            <span class="card-title">GitHub</span>
+            <p>Check out my (non-vompany-IP) projects.</p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.researchgate.net/profile/Carsten-Draschner" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="card">
+          <picture><source type="image/avif" srcset="/contact/JJ8I4c-eQJ-512.avif 512w"><source type="image/webp" srcset="/contact/JJ8I4c-eQJ-512.webp 512w"><img loading="lazy" decoding="async" src="/contact/JJ8I4c-eQJ-512.png" alt="ResearchGateIcon" class="invert-for-dark-mode" width="512" height="512"></picture>
+          <div>
+            <span class="card-title">Research Gate</span>
+            <p>Visit my Research Gate profile to access my research .</p>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</nav>
 
 			</heading-anchors>
 		</main>
@@ -406,7 +437,7 @@ header {
 			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
 		</footer>
 
-		<!-- This page `/contact/` was built on 2024-11-13T16:58:39.499Z -->
+		<!-- This page `/contact/` was built on 2024-11-13T17:58:52.279Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

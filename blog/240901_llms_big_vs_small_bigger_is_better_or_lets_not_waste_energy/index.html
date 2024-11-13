@@ -444,6 +444,14 @@ header {
 	height: auto;
 	width: 90px;
 }
+.card .card-title {
+	font-size: 1.17em;
+	font-weight: bold;
+}
+.card-navigation ul {
+	list-style: none;
+	padding: 0;
+}
 
 
 @media (prefers-color-scheme: dark) {
@@ -488,6 +496,20 @@ header {
 }
 .postlist-item-active .postlist-link {
 	font-weight: bold;
+}
+
+/* Anchor links next to heading */
+.ha-placeholder {
+	opacity: 0 !important;
+}
+h2:has(.ha-placeholder):hover,
+h3:has(.ha-placeholder):hover,
+h4:has(.ha-placeholder):hover,
+h5:has(.ha-placeholder):hover,
+h6:has(.ha-placeholder):hover {
+	.ha-placeholder {
+		opacity: 0.3 !important;
+	}
 }
 
 /* Tags */
@@ -601,7 +623,7 @@ We provide models of various sizes to align with your unique requirements for ca
 			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
 		</footer>
 
-		<!-- This page `/blog/240901_llms_big_vs_small_bigger_is_better_or_lets_not_waste_energy/` was built on 2024-11-13T16:58:39.498Z -->
+		<!-- This page `/blog/240901_llms_big_vs_small_bigger_is_better_or_lets_not_waste_energy/` was built on 2024-11-13T17:58:52.278Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>
