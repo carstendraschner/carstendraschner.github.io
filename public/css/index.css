@@ -65,6 +65,10 @@
 	margin: 0;
 }
 
+.card div {
+	padding-left: 10px;
+}
+
 /* Global stylesheet */
 * {
 	box-sizing: border-box;
@@ -258,10 +262,9 @@ header {
 	background-color: var(--background-color);
 }
 .card img {
-	margin-right: 10px;
 	border-radius: 8px;
-	height: 70px;
-	width: auto;
+	height: auto;
+	width: 90px;
 }
 
 
