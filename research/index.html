@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Carsten Felix Draschner, PhD</title>
+		<meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
+		
+		<style>/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+	--footer-background-color: #333;
+	--footer-font-color: #fff;
+	--header-background-color: #333;
+	--header-font-color: #fff;
+	--footer-height: 4rem;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #4e5f93;
+	--text-color-link-visited: #245242;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+.color-gray-50{
+	color:var(--color-gray-50)
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* .h-excerpt{
+	font-size: 1em;
+} */
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main {
+	padding: 1rem;
+	max-width: 40em;
+	margin: 0 auto;
+	margin-bottom: var(--footer-height)
+}
+main :first-child {
+	margin-top: 0;
+}
+
+
+
+footer {
+	height: var(--footer-height);
+    background: var(--footer-background-color);
+    color: var(--footer-font-color);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+	p {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+	}
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	background: var(--header-background-color);
+	color: var(--header-font-color);
+	padding: 1rem 0;
+	text-align: center;
+	a[href] {
+		color: var(--header-font-color);
+	}
+	a[href]:visited {
+		color: var(--header-font-color);
+	}
+}
+.site-title {
+	font-size: 2em;
+	padding-bottom: 0.4em;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	margin-top: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	border-bottom: 1px solid var(--color-gray-50);
+}
+.postlist-item:last-child{
+	border-bottom: 0;
+}
+
+.postlist-date {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}</style>
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<div class="site-title">Carsten Felix Draschner, PhD</div>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/blog/">Blog</a></li>
+					<li class="nav-item"><a href="/research/" aria-current="page">Research</a></li>
+					<li class="nav-item"><a href="/projects/">Projects</a></li>
+					<li class="nav-item"><a href="/about/">CV</a></li>
+					<li class="nav-item"><a href="/contact/">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+<h1 id="research">Research</h1>
+
+
+
+<ol reversed="" class="postlist">
+
+	<li class="postlist-item">
+		<span class="postlist-link">Scalable Distributed Machine Learning for Knowledge Graphs</span>
+		<time class="postlist-date" datetime="2023-07-01">July 2023</time>
+		<div><p>PhD Thesis - Carsten Felix Draschner, Dr.rer.nat, supervisors - Jens Lehmann and Stefan Wrobel</p>
+<p><picture><source type="image/avif" srcset="/img/W6q2vqhLSY-640.avif 640w"><source type="image/webp" srcset="/img/W6q2vqhLSY-640.webp 640w"><img loading="lazy" decoding="async" src="/img/W6q2vqhLSY-640.jpeg" alt="PhD Thesis" width="640" height="373"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Scalable Distributed Machine Learning</li>
+<li>Knowledge Graphs</li>
+<li>Ethical and Sustainability Dimensions</li>
+</ul>
+</div>
+		(<a class="color-gray-50" href="/research/221214_scalable_distributed_machine_learning_for_knowledge_graphs/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/10945">ResearchGate/LinkedIn</a>)
+	</li>
+
+	<li class="postlist-item">
+		<span class="postlist-link">SimE4KG - Distributed Explainable multi-modal Semantic Similarity Estimation for Knowledge Graphs</span>
+		<time class="postlist-date" datetime="2023-02-01">February 2023</time>
+		<div><p>2023 International Journal of Semantic Computing, Carsten Felix Draschner, Hajira Jabeen, Jens Lehmann</p>
+<p><picture><source type="image/avif" srcset="/img/3JX90K_eZD-2162.avif 2162w"><source type="image/webp" srcset="/img/3JX90K_eZD-2162.webp 2162w"><img loading="lazy" decoding="async" src="/img/3JX90K_eZD-2162.png" alt="SimE4KG" width="2162" height="1198"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Distributed Explainable multi-modal Semantic Similarity Estimation for Knowledge Graphs</li>
+<li>Reproducible, reusable, and explainable results</li>
+<li>SANSA stack integration</li>
+</ul>
+</div>
+		(<a class="color-gray-50" href="/research/230701_sime4kg/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://doi.org/10.1142/S1793351X23600012">ResearchGate/LinkedIn</a>)
+	</li>
+
+	<li class="postlist-item">
+		<span class="postlist-link">Ethical and Sustainability considerations for Knowledge Graphs based Machine Learning</span>
+		<time class="postlist-date" datetime="2022-09-01">September 2022</time>
+		<div><p>2022 IEEE Fifth International Conference on Artificial Intelligence and Knowledge Engineering (AIKE), Carsten Felix Draschner, Hajira Jabeen, Jens Lehmann</p>
+<p><picture><source type="image/avif" srcset="/img/s2F-IyvD5y-2160.avif 2160w"><source type="image/webp" srcset="/img/s2F-IyvD5y-2160.webp 2160w"><img loading="lazy" decoding="async" src="/img/s2F-IyvD5y-2160.png" alt="Ethical and Sustainability considerations for Knowledge Graphs based Machine Learning" width="2160" height="1418"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Ethical and sustainability considerations in KG-based ML</li>
+<li>Responsible AI check, technical system setup</li>
+<li>Data insights, machine learning, training &amp; evaluation, deployment</li>
+</ul>
+</div>
+		(<a class="color-gray-50" href="/research/220902_ethical_and_sustainability/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://ieeexplore.ieee.org/document/9939282">ResearchGate/LinkedIn</a>)
+	</li>
+
+	<li class="postlist-item">
+		<span class="postlist-link">DistRDF2ML - Scalable Distributed In-Memory Machine Learning Pipelines for RDF Knowledge Graphs</span>
+		<time class="postlist-date" datetime="2021-12-01">December 2021</time>
+		<div><p>Proceedings of the 30th ACM International Conference on Information &amp; Knowledge Management (CIKM), Carsten Felix Draschner, Claus Stadler, Farshad B. Moghaddam, Jens Lehmann, and Hajira Jabeen</p>
+<p><picture><source type="image/avif" srcset="/img/VM8OQars5F-2152.avif 2152w"><source type="image/webp" srcset="/img/VM8OQars5F-2152.webp 2152w"><img loading="lazy" decoding="async" src="/img/VM8OQars5F-2152.png" alt="DistRDF2ML" width="2152" height="1034"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Scalable Machine Learning Pipelines for RDF Knowledge Graphs</li>
+<li>Fixed-length numeric feature vectors for ML</li>
+<li>Semantic structure for enhanced reusability, explainability, and reproducibility</li>
+</ul>
+</div>
+		(<a class="color-gray-50" href="/research/210501_distrdf2ml/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://dl.acm.org/doi/10.1145/3459637.3481999">ResearchGate/LinkedIn</a>)
+	</li>
+
+	<li class="postlist-item">
+		<span class="postlist-link">Literal2Feature - An automatic scalable RDF graph feature extractor</span>
+		<time class="postlist-date" datetime="2021-08-01">August 2021</time>
+		<div><p>International Conference on Semantic Systems (SEMANTICS), Farshad B. Moghaddam, Carsten Felix Draschner, Jens Lehmann and Hajira Jabeen</p>
+<p><picture><source type="image/avif" srcset="/img/XjbqPJbDAi-2158.avif 2158w"><source type="image/webp" srcset="/img/XjbqPJbDAi-2158.webp 2158w"><img loading="lazy" decoding="async" src="/img/XjbqPJbDAi-2158.png" alt="Literal2Feature" width="2158" height="600"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Scalable RDF graph feature extraction</li>
+<li>Explainable feature matrix</li>
+<li>Integration with the Semantic Analytics Stack</li>
+</ul>
+</div>
+		(<a class="color-gray-50" href="/research/210401_literal2feature/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://ebooks.iospress.nl/volumearticle/57407">ResearchGate/LinkedIn</a>)
+	</li>
+
+	<li class="postlist-item">
+		<span class="postlist-link">DistSim - Scalable Distributed in-Memory Semantic Similarity Estimation for RDF Knowledge Graphs</span>
+		<time class="postlist-date" datetime="2021-01-01">January 2021</time>
+		<div><p>2021 IEEE 15th International Conference on Semantic Computing (ICSC), Carsten Felix Draschner, Jens Lehmann and Hajira Jabeen</p>
+<p><picture><source type="image/avif" srcset="/img/wkamPx25bm-1544.avif 1544w"><source type="image/webp" srcset="/img/wkamPx25bm-1544.webp 1544w"><img loading="lazy" decoding="async" src="/img/wkamPx25bm-1544.png" alt="DistSim" width="1544" height="892"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Scalable Similarity Estimation for RDF Knowledge Graphs</li>
+<li>MinHash with locality sensitivity hashing</li>
+<li>SANSA stack integration</li>
+</ul>
+</div>
+		(<a class="color-gray-50" href="/research/200901_distsim_scalable_distributed_in_memory/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://ieeexplore.ieee.org/document/9364473">ResearchGate/LinkedIn</a>)
+	</li>
+
+	<li class="postlist-item">
+		<span class="postlist-link">Smart Chef - Evolving Recipes</span>
+		<time class="postlist-date" datetime="2019-04-01">April 2019</time>
+		<div><p>Proceedings of Evostar 2019 and Master Thesis - Carsten Felix Draschner supervised by Hajira Jabeen, Jens Lehmann</p>
+<p><picture><source type="image/avif" srcset="/img/6OqZKEjv01-1712.avif 1712w"><source type="image/webp" srcset="/img/6OqZKEjv01-1712.webp 1712w"><img loading="lazy" decoding="async" src="/img/6OqZKEjv01-1712.png" alt="Smart Chef" width="1712" height="1076"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Evolutionary Algorithm for Culinary Arts</li>
+<li>Autonomous Recipe Evolution</li>
+<li>Master Thesis</li>
+<li>University of Bonn</li>
+</ul>
+</div>
+		(<a class="color-gray-50" href="/research/190401_smart_chef_evolving_recipes/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.researchgate.net/publication/357910428_SmartChef_Evolving_Recipes_Poster">ResearchGate/LinkedIn</a>)
+	</li>
+
+	<li class="postlist-item">
+		<span class="postlist-link">The development of complexity in chip design and its visualization within Virtual Reality</span>
+		<time class="postlist-date" datetime="2016-09-30">September 2016</time>
+		<div><p>Chip-Design Exhibition in Arithmeum and Bachelor Thesis - Carsten Felix Draschner in colab with Jonas Weinz ❤️</p>
+<p><picture><source type="image/avif" srcset="/img/97xVwjtvBo-1436.avif 1436w"><source type="image/webp" srcset="/img/97xVwjtvBo-1436.webp 1436w"><img loading="lazy" decoding="async" src="/img/97xVwjtvBo-1436.png" alt="Model Size" width="1436" height="928"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Visualize Complexity of modern Chip Designs</li>
+<li>Visualization in VR Environment</li>
+<li>Bachelor Thesis</li>
+<li>University of Bonn</li>
+</ul>
+</div>
+		(<a class="color-gray-50" href="/research/160901_bachelor_thesis_the_development_of_complexity_in_chip_design_and_its_visualization_within_virtual_reality/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://youtu.be/bwYKVCDIPbE?si=EflQEBoH0PjjDvKD&amp;t=373">ResearchGate/LinkedIn</a>)
+	</li>
+
+</ol>
+
+
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
+		</footer>
+
+		<!-- This page `/research/` was built on 2024-11-13T12:07:03.670Z -->
+		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
+	</body>
+</html>

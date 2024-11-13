@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Carsten Felix Draschner, PhD</title>
+		<meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
+		
+		<style>/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+	--footer-background-color: #333;
+	--footer-font-color: #fff;
+	--header-background-color: #333;
+	--header-font-color: #fff;
+	--footer-height: 4rem;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #4e5f93;
+	--text-color-link-visited: #245242;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+.color-gray-50{
+	color:var(--color-gray-50)
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* .h-excerpt{
+	font-size: 1em;
+} */
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main {
+	padding: 1rem;
+	max-width: 40em;
+	margin: 0 auto;
+	margin-bottom: var(--footer-height)
+}
+main :first-child {
+	margin-top: 0;
+}
+
+
+
+footer {
+	height: var(--footer-height);
+    background: var(--footer-background-color);
+    color: var(--footer-font-color);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+	p {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+	}
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	background: var(--header-background-color);
+	color: var(--header-font-color);
+	padding: 1rem 0;
+	text-align: center;
+	a[href] {
+		color: var(--header-font-color);
+	}
+	a[href]:visited {
+		color: var(--header-font-color);
+	}
+}
+.site-title {
+	font-size: 2em;
+	padding-bottom: 0.4em;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	margin-top: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	border-bottom: 1px solid var(--color-gray-50);
+}
+.postlist-item:last-child{
+	border-bottom: 0;
+}
+
+.postlist-date {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}</style>
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<div class="site-title">Carsten Felix Draschner, PhD</div>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="/blog/">Blog</a></li>
+					<li class="nav-item"><a href="/research/">Research</a></li>
+					<li class="nav-item"><a href="/projects/">Projects</a></li>
+					<li class="nav-item"><a href="/about/">CV</a></li>
+					<li class="nav-item"><a href="/contact/">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+<h1 id="home">Home</h1>
+<p>Welcome to my personal website where you can find information about my projects, blog posts, publications, and more. I Carsten Felix Draschner, an AI Researcher with 8+ years of experience in AI, ML, DS. I am motivated by Science and AI for Social Good! I love to connect my passion for cutting-edge AI with my intrinsic motivation to bring myself into projects which make our life on earth more sustainable, our lives better, and our democracies more stable.</p>
+<a href="/blog/" style="text-decoration: none; color: inherit;">
+  <div style="display: flex; align-items: center; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #f9f9f9;">
+    <picture><source type="image/avif" srcset="/udEqHNkYWC-492.avif 492w"><source type="image/webp" srcset="/udEqHNkYWC-492.webp 492w"><img loading="lazy" decoding="async" src="/udEqHNkYWC-492.png" alt="BlogIcon" style="margin-right: 10px; border-radius: 8px; height: 70px; width: auto;" width="492" height="452"></picture>
+    <div>
+      <h3 id="blog">Blog</h3>
+      <p>Recent AI innovations, ethical implications, and observations</p>
+    </div>
+  </div>
+</a>
+<a href="/research/" style="text-decoration: none; color: inherit;">
+  <div style="display: flex; align-items: center; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #f9f9f9;">
+    <picture><source type="image/avif" srcset="/jcmTrm5QRz-492.avif 492w"><source type="image/webp" srcset="/jcmTrm5QRz-492.webp 492w"><img loading="lazy" decoding="async" src="/jcmTrm5QRz-492.png" alt="ResearchIcon" style="margin-right: 10px; border-radius: 8px; height: 70px; width: auto;" width="492" height="452"></picture>
+    <div>
+      <h3 id="research">Research</h3>
+      <p>Journal and Conference Publications and Thesis.</p>
+    </div>
+  </div>
+</a>
+<a href="/projects/" style="text-decoration: none; color: inherit;">
+  <div style="display: flex; align-items: center; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #f9f9f9;">
+    <picture><source type="image/avif" srcset="/LJSKtHcjWl-492.avif 492w"><source type="image/webp" srcset="/LJSKtHcjWl-492.webp 492w"><img loading="lazy" decoding="async" src="/LJSKtHcjWl-492.png" alt="ProjectsIcon" style="margin-right: 10px; border-radius: 8px; height: 70px; width: auto;" width="492" height="452"></picture>
+    <div>
+      <h3 id="projects">Projects</h3>
+      <p>Sneak previews and Reports of my work experiences.</p>
+    </div>
+  </div>
+</a>
+<a href="/about/" style="text-decoration: none; color: inherit;">
+  <div style="display: flex; align-items: center; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #f9f9f9;">
+    <picture><source type="image/avif" srcset="/lZdMHmHDSu-492.avif 492w"><source type="image/webp" srcset="/lZdMHmHDSu-492.webp 492w"><img loading="lazy" decoding="async" src="/lZdMHmHDSu-492.png" alt="CvIcon" style="margin-right: 10px; border-radius: 8px; height: 70px; width: auto;" width="492" height="452"></picture>
+    <div>
+      <h3 id="about-cv">About/CV</h3>
+      <p>Overview of Educational Background and Job Experiences</p>
+    </div>
+  </div>
+</a>
+<a href="/contact/" style="text-decoration: none; color: inherit;">
+  <div style="display: flex; align-items: center; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #f9f9f9;">
+    <picture><source type="image/avif" srcset="/Jof3D2TJcH-492.avif 492w"><source type="image/webp" srcset="/Jof3D2TJcH-492.webp 492w"><img loading="lazy" decoding="async" src="/Jof3D2TJcH-492.png" alt="ContactIcon" style="margin-right: 10px; border-radius: 8px; height: 70px; width: auto;" width="492" height="452"></picture>
+    <div>
+      <h3 id="contact">Contact</h3>
+      <p>Opportunities to reach out to me and sources for more content</p>
+    </div>
+  </div>
+</a>
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
+		</footer>
+
+		<!-- This page `/` was built on 2024-11-13T12:07:03.670Z -->
+		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
+	</body>
+</html>

@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Carsten Felix Draschner, PhD</title>
+		<meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
+		
+		<style>/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+	--footer-background-color: #333;
+	--footer-font-color: #fff;
+	--header-background-color: #333;
+	--header-font-color: #fff;
+	--footer-height: 4rem;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #4e5f93;
+	--text-color-link-visited: #245242;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+.color-gray-50{
+	color:var(--color-gray-50)
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* .h-excerpt{
+	font-size: 1em;
+} */
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main {
+	padding: 1rem;
+	max-width: 40em;
+	margin: 0 auto;
+	margin-bottom: var(--footer-height)
+}
+main :first-child {
+	margin-top: 0;
+}
+
+
+
+footer {
+	height: var(--footer-height);
+    background: var(--footer-background-color);
+    color: var(--footer-font-color);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+	p {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+	}
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	background: var(--header-background-color);
+	color: var(--header-font-color);
+	padding: 1rem 0;
+	text-align: center;
+	a[href] {
+		color: var(--header-font-color);
+	}
+	a[href]:visited {
+		color: var(--header-font-color);
+	}
+}
+.site-title {
+	font-size: 2em;
+	padding-bottom: 0.4em;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	margin-top: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	border-bottom: 1px solid var(--color-gray-50);
+}
+.postlist-item:last-child{
+	border-bottom: 0;
+}
+
+.postlist-date {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}</style>
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<div class="site-title">Carsten Felix Draschner, PhD</div>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/blog/" aria-current="page">Blog</a></li>
+					<li class="nav-item"><a href="/research/">Research</a></li>
+					<li class="nav-item"><a href="/projects/">Projects</a></li>
+					<li class="nav-item"><a href="/about/">CV</a></li>
+					<li class="nav-item"><a href="/contact/">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+<h1 id="blog-posts">Blog Posts</h1>
+
+
+
+<ol reversed="" class="postlist">
+
+	<li class="postlist-item">
+		<span class="postlist-link">Choosing the Right LLM for Your Needs - Key Considerations</span>
+		<time class="postlist-date" datetime="2024-09-30">September 2024</time>
+		<div><p>Consider the key factors when selecting a Large Language Model (LLM) for your project.</p>
+<p><picture><source type="image/avif" srcset="/img/TSnOnDgQhc-800.avif 800w"><source type="image/webp" srcset="/img/TSnOnDgQhc-800.webp 800w"><img loading="lazy" decoding="async" src="/img/TSnOnDgQhc-800.jpeg" alt="Image 1" width="800" height="800"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Benchmark Performance</li>
+<li>License</li>
+<li>Model Size</li>
+<li>Alignment</li>
+</ul>
+</div>
+		(<a class="color-gray-50" href="/blog/240910_choosing_the_right_llm_for_your_needs_key_considerations/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_lostingenai-artificialintelligence-selectllm-activity-7254502008827658241-5TRJ?utm_source=share&amp;utm_medium=member_desktop">ResearchGate/LinkedIn</a>)
+	</li>
+
+	<li class="postlist-item">
+		<span class="postlist-link">Stop adding Languages to LLMs! The Potential Drawbacks of Training Multilingual Large Language Models (LLMs) for Performance and Sustainability!</span>
+		<time class="postlist-date" datetime="2024-09-30">September 2024</time>
+		<div><p>Exploring the downsides of creating multilingual LLMs and their impact on performance and resource utilization.</p>
+<p><picture><source type="image/avif" srcset="/img/JA9fsEHeRy-800.avif 800w"><source type="image/webp" srcset="/img/JA9fsEHeRy-800.webp 800w"><img loading="lazy" decoding="async" src="/img/JA9fsEHeRy-800.jpeg" alt="Image 1" width="800" height="800"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Challenges of building multilingual LLMs</li>
+<li>Inefficiencies in token usage and context length</li>
+<li>Increased hardware costs and reduced token training</li>
+<li>Weighing multilingual models against language-specific models</li>
+</ul>
+</div>
+		(<a class="color-gray-50" href="/blog/240909_stop_adding_languages_to_llms_the_potential/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-llm-activity-7246524467034689537-nZ-f?utm_source=share&amp;utm_medium=member_desktop">ResearchGate/LinkedIn</a>)
+	</li>
+
+	<li class="postlist-item">
+		<span class="postlist-link">Where Science Meets Innovation - My personal Highlights &amp; Insights into the PG 2024! Do you have answers to the open Questions?</span>
+		<time class="postlist-date" datetime="2024-09-30">September 2024</time>
+		<div><p>Highlights and open questions from the Petersberger Gespräche (PG) 2024, covering AI, energy transition, chip technologies, and more.</p>
+<p><picture><source type="image/avif" srcset="/img/vuj-G2c0U--2198.avif 2198w"><source type="image/webp" srcset="/img/vuj-G2c0U--2198.webp 2198w"><img loading="lazy" decoding="async" src="/img/vuj-G2c0U--2198.png" alt="PG 2024 Highlights" width="2198" height="952"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>AI and consciousness discussions</li>
+<li>Energy transition and regulatory challenges</li>
+<li>Distributed chip technologies in Europe</li>
+<li>Generative AI in media</li>
+<li>Metaverse applications beyond gaming</li>
+</ul>
+</div>
+		(<a class="color-gray-50" href="/blog/240908_where_science_meets_innovation_my_personal/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-sustainability-activity-7243978164564111361-12R6?utm_source=share&amp;utm_medium=member_desktop">ResearchGate/LinkedIn</a>)
+	</li>
+
+	<li class="postlist-item">
+		<span class="postlist-link">Today&#39;s Research Proposal - How to achieve &quot;real&quot; thinking and reasoning in GenAI, rather than just relying on a silent Chain of Thought, as seen in ReflectionAI or possibly GPT-o1?</span>
+		<time class="postlist-date" datetime="2024-09-30">September 2024</time>
+		<div><p>Exploring the potential for achieving true reasoning and thinking in Generative AI models beyond the current Chain of Thought methodologies.</p>
+<p><picture><source type="image/avif" srcset="/img/W1uRDiZMha-800.avif 800w"><source type="image/webp" srcset="/img/W1uRDiZMha-800.webp 800w"><img loading="lazy" decoding="async" src="/img/W1uRDiZMha-800.jpeg" alt="Image 1" width="800" height="696"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Current state of reasoning in models</li>
+<li>Possibilities for transformers to learn to think</li>
+<li>Customization ideas for achieving true reasoning</li>
+<li>Open questions and discussion points</li>
+</ul>
+</div>
+		(<a class="color-gray-50" href="/blog/240907_todays_research_proposal_how_to_achieve_real/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-sustainability-activity-7243978164564111361-12R6?utm_source=share&amp;utm_medium=member_desktop">ResearchGate/LinkedIn</a>)
+	</li>
+
+	<li class="postlist-item">
+		<span class="postlist-link">For more sustainability transparency in GenAI! Share your knowledge and reduce energy waste!</span>
+		<time class="postlist-date" datetime="2024-09-30">September 2024</time>
+		<div><p>Emphasizing the importance of transparency and shared knowledge to enhance sustainability in GenAI.</p>
+<p><picture><source type="image/avif" srcset="/img/6P9nHx-165-800.avif 800w"><source type="image/webp" srcset="/img/6P9nHx-165-800.webp 800w"><img loading="lazy" decoding="async" src="/img/6P9nHx-165-800.jpeg" alt="Image 1" width="800" height="538"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>GenAI involves very large models and significant training efforts</li>
+<li>Transparency can help share emissions and reduce energy waste</li>
+<li>Open source models can optimize future development</li>
+</ul>
+</div>
+		(<a class="color-gray-50" href="/blog/240906_for_more_sustainability_transparency_in_genai_share/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_environmental-impact-of-ai-some-model-activity-7236647589096361986-9rSm?utm_source=share&amp;utm_medium=member_desktop">ResearchGate/LinkedIn</a>)
+	</li>
+
+	<li class="postlist-item">
+		<span class="postlist-link">Sustainable Air-Gapped On-Prem LLM Solution! How can we make GenAI available on almost any hardware, and how is it also available as a portable demo on our Alan Notebook</span>
+		<time class="postlist-date" datetime="2024-09-30">September 2024</time>
+		<div><p>Exploring the development of a full-stack GenAI LLM solution that can run on a variety of hardware configurations, including a portable demo setup.</p>
+<p><picture><source type="image/avif" srcset="/img/rVdiXLZ0_K-800.avif 800w"><source type="image/webp" srcset="/img/rVdiXLZ0_K-800.webp 800w"><img loading="lazy" decoding="async" src="/img/rVdiXLZ0_K-800.jpeg" alt="Alan Notebook" width="800" height="879"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Developing Alan, a full-stack GenAI LLM solution</li>
+<li>Hosted on German hyperscaler infrastructure</li>
+<li>Offers a smaller version, Alan-S-LLM</li>
+<li>Portable demo available on Alan Notebook</li>
+</ul>
+</div>
+		(<a class="color-gray-50" href="/blog/240905_ sustainable_air_gapped_on_prem_llm_solution/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_genai-onprem-llm-activity-7233851548349444097-lF4N?utm_source=share&amp;utm_medium=member_desktop">ResearchGate/LinkedIn</a>)
+	</li>
+
+	<li class="postlist-item">
+		<span class="postlist-link">Combining the Hugging Face Model Platform and Knowledge Graph trend analysis over time could improve GenAI research and reduce waste of energy!</span>
+		<time class="postlist-date" datetime="2024-09-30">September 2024</time>
+		<div><p>Exploring the potential of leveraging knowledge graphs to analyze trends in evolving models for better GenAI research and efficiency.</p>
+<p><picture><source type="image/avif" srcset="/img/Z0Z_6VvJDf-800.avif 800w"><source type="image/webp" srcset="/img/Z0Z_6VvJDf-800.webp 800w"><img loading="lazy" decoding="async" src="/img/Z0Z_6VvJDf-800.jpeg" alt="Image 1" width="800" height="545"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Leveraging knowledge graphs for GenAI trends</li>
+<li>Identifying high-performing models and best practices</li>
+<li>Potential for a crowd-sourced GenAI cookbook</li>
+</ul>
+</div>
+		(<a class="color-gray-50" href="/blog/240904_combining_the_hugging_face_model_platform_and_knowledge/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_have-you-noticed-the-new-model-tree-section-activity-7229418184590737409-UoNB?utm_source=share&amp;utm_medium=member_desktop">ResearchGate/LinkedIn</a>)
+	</li>
+
+	<li class="postlist-item">
+		<span class="postlist-link">What is the perfect approach to adjust an LLM to your GenAI use case?</span>
+		<time class="postlist-date" datetime="2024-09-30">September 2024</time>
+		<div><p>Exploring various methods to customize LLMs for specific GenAI use cases, ranging from simple to complex approaches.</p>
+<p><picture><source type="image/avif" srcset="/img/lT6_3qh0Is-926.avif 926w"><source type="image/webp" srcset="/img/lT6_3qh0Is-926.webp 926w"><img loading="lazy" decoding="async" src="/img/lT6_3qh0Is-926.png" alt="Model Training" width="926" height="512"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Various ways to customize LLMs for specific use cases</li>
+<li>Approaches vary in difficulty and complexity</li>
+<li>Pros and cons of different methods</li>
+<li>More dimensions to improve GenAI use cases</li>
+</ul>
+</div>
+		(<a class="color-gray-50" href="/blog/240903_what_is_the_perfect_approach_to_adjust_an_llm_to_your_genai_use_case/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-llm-activity-7228755735776546817-cUi0?utm_source=share&amp;utm_medium=member_desktop">ResearchGate/LinkedIn</a>)
+	</li>
+
+	<li class="postlist-item">
+		<span class="postlist-link">These results give me hope for sustainable AI 🌱</span>
+		<time class="postlist-date" datetime="2024-09-30">September 2024</time>
+		<div><p>I'm impressed by some of the recent advances in the field of &quot;small&quot; open-weight Language Models (LLMs).</p>
+<p><picture><source type="image/avif" srcset="/img/huHTF98SzS-800.avif 800w"><source type="image/webp" srcset="/img/huHTF98SzS-800.webp 800w"><img loading="lazy" decoding="async" src="/img/huHTF98SzS-800.jpeg" alt="Sustainable AI" width="800" height="450"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Increased documentation supports reproducibility</li>
+<li>Data quality improves model performance</li>
+<li>Model distillation reduces hardware needs</li>
+</ul>
+</div>
+		(<a class="color-gray-50" href="/blog/240902_these_results_give_me_hope_for_sustainable_ai/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_ai-google-tech-activity-7224785383237001216-HDyZ?utm_source=share&amp;utm_medium=member_desktop">ResearchGate/LinkedIn</a>)
+	</li>
+
+	<li class="postlist-item">
+		<span class="postlist-link">LLMs - Big vs Small. Bigger is Better!? OR Let&#39;s not waste energy!?</span>
+		<time class="postlist-date" datetime="2024-09-30">September 2024</time>
+		<div><p>The AI community is abuzz with debates over the efficacy of large versus small language models. Both have their own merits and limitations.</p>
+<p><picture><source type="image/avif" srcset="/img/0XqP1_E6uN-926.avif 926w"><source type="image/webp" srcset="/img/0XqP1_E6uN-926.webp 926w"><img loading="lazy" decoding="async" src="/img/0XqP1_E6uN-926.png" alt="Model Size" width="926" height="512"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>AI community debates model sizes</li>
+<li>Massive models vs. smaller, efficient models</li>
+<li>Insights and future predictions</li>
+<li>Links to further reading</li>
+</ul>
+</div>
+		(<a class="color-gray-50" href="/blog/240901_llms_big_vs_small_bigger_is_better_or_lets_not_waste_energy/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_machinelearning-ai-modelsize-activity-7221169255419969536-IQnL?utm_source=share&amp;utm_medium=member_desktop">ResearchGate/LinkedIn</a>)
+	</li>
+
+	<li class="postlist-item">
+		<span class="postlist-link">GenAI, what is plagiarism? Its Impact on Science. How should it be handled? What is your perspective?</span>
+		<time class="postlist-date" datetime="2024-09-30">September 2024</time>
+		<div><p>Discussing the implications of GenAI on scientific work and the thin line between acceptable use and plagiarism.</p>
+<p><picture><source type="image/avif" srcset="/img/PLpWNuwzop-800.avif 800w"><source type="image/webp" srcset="/img/PLpWNuwzop-800.webp 800w"><img loading="lazy" decoding="async" src="/img/PLpWNuwzop-800.jpeg" alt="Image 1" width="800" height="800"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Use of GenAI in scientific work</li>
+<li>Acceptable vs. debatable vs. critical usage</li>
+<li>Questions and concerns about plagiarism</li>
+<li>The pressure on researchers and students</li>
+<li>Opportunities for better research</li>
+</ul>
+</div>
+		(<a class="color-gray-50" href="/blog/240809_genai_what_is_plagiarism_its_impact/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_genai-plagiarism-research-activity-7216090153457463298-37OX?utm_source=share&amp;utm_medium=member_desktop">ResearchGate/LinkedIn</a>)
+	</li>
+
+	<li class="postlist-item">
+		<span class="postlist-link">Adjust GenAI responses towards more ethical behavior possible through system prompts!? Do you trust in such LLM-chat prepended pamphlets?</span>
+		<time class="postlist-date" datetime="2024-09-30">September 2024</time>
+		<div><p>Exploring the potential and challenges of using system prompts to guide LLM behavior towards ethical outputs.</p>
+<p><picture><source type="image/avif" srcset="/img/x7ZX3a4wEx-800.avif 800w"><source type="image/webp" srcset="/img/x7ZX3a4wEx-800.webp 800w"><img loading="lazy" decoding="async" src="/img/x7ZX3a4wEx-800.jpeg" alt="Ethical AI" width="800" height="800"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>GenAI chat interactions often include system prompts</li>
+<li>System prompts aim to guide ethical LLM behavior</li>
+<li>Challenges exist in ensuring compliance and formulation</li>
+<li>Questions on designing and revealing system prompts</li>
+</ul>
+</div>
+		(<a class="color-gray-50" href="/blog/240808_adjust_genai_responses_towards_more_ethical_behavior_possible/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-responsibleai-llm-activity-7214141563738750976-ywik?utm_source=share&amp;utm_medium=member_desktop">ResearchGate/LinkedIn</a>)
+	</li>
+
+	<li class="postlist-item">
+		<span class="postlist-link">Alternative to GenAI creativity? Watch and try out these fun Evolutionary Algorithms. Problem-solving without GenAI and SGD-based approaches explained!</span>
+		<time class="postlist-date" datetime="2024-09-30">September 2024</time>
+		<div><p>Exploring Evolutionary Algorithms as an alternative to GenAI for problem-solving, using a fun 2D vehicle race example.</p>
+<p><picture><source type="image/avif" srcset="/img/D6xLKFbtVN-986.avif 986w"><source type="image/webp" srcset="/img/D6xLKFbtVN-986.webp 986w"><img loading="lazy" decoding="async" src="/img/D6xLKFbtVN-986.png" alt="Evo Cars" width="986" height="498"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>There is hype around GenAI and LLMs</li>
+<li>Evolutionary Algorithms (EAs) offer an alternative</li>
+<li>A fun example of EAs using a 2D vehicle race</li>
+<li>Steps involved in EAs explained</li>
+</ul>
+</div>
+		(<a class="color-gray-50" href="/blog/240807_alternative_to_genai_creativity_watch_and_try/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-evolutionaryalgorithms-activity-7211741750673973248-V4Ej?utm_source=share&amp;utm_medium=member_desktop">ResearchGate/LinkedIn</a>)
+	</li>
+
+	<li class="postlist-item">
+		<span class="postlist-link">Do we need another GenAI solution? How &amp; why we developed a full-stack GenAI LLM+RAG tool called Alan. A sneak peek at what I am currently working on.</span>
+		<time class="postlist-date" datetime="2024-09-30">September 2024</time>
+		<div><p>An overview of the motivations and technical aspects behind developing our own GenAI solution, Alan, at Comma Soft AG.</p>
+<p><picture><source type="image/avif" srcset="/img/UXAYbK_4C8-986.avif 986w"><source type="image/webp" srcset="/img/UXAYbK_4C8-986.webp 986w"><img loading="lazy" decoding="async" src="/img/UXAYbK_4C8-986.png" alt="Alan PDF" width="986" height="668"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Diverse GenAI solutions exist</li>
+<li>Unique motivations for developing our own tool</li>
+<li>Technical advantages of our solution</li>
+<li>Questions on custom development vs. wrappers</li>
+</ul>
+</div>
+		(<a class="color-gray-50" href="/blog/240806_do_we_need_another_genai_solution_how_why/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_humboldt-travel-report-alan-llm-genai-activity-7208854388101005312-Xr_o?utm_source=share&amp;utm_medium=member_desktop">ResearchGate/LinkedIn</a>)
+	</li>
+
+</ol>
+
+
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
+		</footer>
+
+		<!-- This page `/blog/` was built on 2024-11-13T12:07:03.670Z -->
+		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
+	</body>
+</html>
