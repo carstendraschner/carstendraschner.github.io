@@ -22,7 +22,7 @@ Welcome! If you would like to get in touch with me or follow my work, here are t
     <img src="img/github.png" alt="GitHubIcon" class="invert-for-dark-mode">
     <div>
       <h3>GitHub</h3>
-      <p>Check out my (non-vompany-IP) projects.</p>
+      <p>Check out my (non-company-IP) projects.</p>
     </div>
   </div>
 </a>
@@ -31,8 +31,8 @@ Welcome! If you would like to get in touch with me or follow my work, here are t
   <div class="card">
     <img src="img/researchgate.png" alt="ResearchGateIcon" class="invert-for-dark-mode">
     <div>
-      <h3>Research Gate</h3>
-      <p>Visit my Research Gate profile to access my research .</p>
+      <h3>ResearchGate</h3>
+      <p>Visit my ResearchGate profile to access my research.</p>
     </div>
   </div>
 </a>
