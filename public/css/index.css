@@ -266,6 +266,14 @@ header {
 	height: auto;
 	width: 90px;
 }
+.card .card-title {
+	font-size: 1.17em;
+	font-weight: bold;
+}
+.card-navigation ul {
+	list-style: none;
+	padding: 0;
+}
 
 
 @media (prefers-color-scheme: dark) {
@@ -310,6 +318,20 @@ header {
 }
 .postlist-item-active .postlist-link {
 	font-weight: bold;
+}
+
+/* Anchor links next to heading */
+.ha-placeholder {
+	opacity: 0 !important;
+}
+h2:has(.ha-placeholder):hover,
+h3:has(.ha-placeholder):hover,
+h4:has(.ha-placeholder):hover,
+h5:has(.ha-placeholder):hover,
+h6:has(.ha-placeholder):hover {
+	.ha-placeholder {
+		opacity: 0.3 !important;
+	}
 }
 
 /* Tags */
