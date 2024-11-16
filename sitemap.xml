@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
-		<loc>https://example.com/research/160901_bachelor_thesis_the_development_of_complexity_in_chip_design_and_its_visualization_within_virtual_reality/</loc>
+		<loc>https://example.com/projects/2016_Chip_VR/</loc>
 		<lastmod>2016-09-30</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/projects/choosing_the_right_llm_for_your_needs_key_considerations/</loc>
-		<lastmod>2018-09-30</lastmod>
+		<loc>https://example.com/research/160901_bachelor_thesis_the_development_of_complexity_in_chip_design_and_its_visualization_within_virtual_reality/</loc>
+		<lastmod>2016-09-30</lastmod>
 	</url>
 	
 	<url>
@@ -153,6 +153,6 @@
 	
 	<url>
 		<loc>https://example.com/feed/feed.xml</loc>
-		<lastmod>2024-11-13</lastmod>
+		<lastmod>2024-11-16</lastmod>
 	</url>
 </urlset>
