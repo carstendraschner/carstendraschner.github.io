@@ -1,7 +1,7 @@
 ---
 title: Literal2Feature - An automatic scalable RDF graph feature extractor
 date: 2021-08-01
-linkedInUrl: https://ebooks.iospress.nl/volumearticle/57407
+linkedInUrl: https://youtu.be/bwYKVCDIPbE?si=fAuev5CPgs_LfMhU&t=398
 tags: research
 ---
 
