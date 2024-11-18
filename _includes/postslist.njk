@@ -5,7 +5,7 @@
 		<span class="postlist-link">{{post.data.title}}</span>
 		<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
 		<div>{{post.data.page.excerpt | markdownify | safe}}</div>
-		(<a class="color-gray-50" href="{{ post.url }}">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="{{ post.data.linkedInUrl }}">ResearchGate/LinkedIn</a>)
+		(<a class="color-gray-50" href="{{ post.url }}">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="{{ post.data.linkedInUrl }}">Original-Websource</a>)
 	</li>
 {% endfor %}
 </ol>
