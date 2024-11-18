@@ -17,6 +17,11 @@
 	</url>
 	
 	<url>
+		<loc>https://example.com/projects/2019_Menu_CV/</loc>
+		<lastmod>2019-08-30</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://example.com/research/200901_distsim_scalable_distributed_in_memory/</loc>
 		<lastmod>2021-01-01</lastmod>
 	</url>
@@ -29,6 +34,11 @@
 	<url>
 		<loc>https://example.com/research/210501_distrdf2ml/</loc>
 		<lastmod>2021-12-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/projects/2022_SANSA/</loc>
+		<lastmod>2022-08-30</lastmod>
 	</url>
 	
 	<url>
@@ -153,6 +163,6 @@
 	
 	<url>
 		<loc>https://example.com/feed/feed.xml</loc>
-		<lastmod>2024-11-16</lastmod>
+		<lastmod>2024-11-18</lastmod>
 	</url>
 </urlset>
