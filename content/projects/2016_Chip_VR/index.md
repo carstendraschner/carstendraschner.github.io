@@ -1,5 +1,5 @@
 ---
-title: How we Made Modern Chip design Explorable within Virtual Reality
+title: Modern Chip Design Explorable within Virtual Reality
 date: 2016-09-30
 linkedInUrl: https://lnkd.in/eSkeAUV7
 tags: project
