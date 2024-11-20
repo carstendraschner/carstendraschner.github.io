@@ -57,6 +57,86 @@
 	</url>
 	
 	<url>
+		<loc>https://example.com/blog/240702_llama2_13b_is_faster_than_llama2_7b/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240703_evil_llms_available_break_genai/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240704_dalle_has_surprising_guardrails/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240705_ever_wondered_about_open_source_llm_sizes/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240707_not_prompting_in_english/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240708_the_major_players_in_genai_are_facing_challenges/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240709_be_careful_when_you_are_using_llama/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240709_too_many_llms_how_to_keep_track_with_all/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240710_nvidia_benchmark_might_be_wrong/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240711_what_is_your_preferred_llm_family/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240712_who_will_take_care_of_truly_low_resource_languages/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240801_thanks_to_the_open_source_community/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240802_be_careful_when_you_speak_of_open_source_genai/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240803_what_expectations_do_you_have_regarding_the_values_and_norms/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240804_do_you_differentiate_ai_ethics/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240805_will_we_reach_agi_and_if/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://example.com/blog/240806_do_we_need_another_genai_solution_how_why/</loc>
 		<lastmod>2024-09-30</lastmod>
 	</url>
@@ -163,6 +243,6 @@
 	
 	<url>
 		<loc>https://example.com/feed/feed.xml</loc>
-		<lastmod>2024-11-19</lastmod>
+		<lastmod>2024-11-20</lastmod>
 	</url>
 </urlset>

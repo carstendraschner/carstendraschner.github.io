@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Who will take care of truly low-resource languages? A good step towards more fair GenAI LLM pricing at OpenAI for Japanese-using people!</title>
+		<meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+	--footer-background-color: #333;
+	--footer-font-color: #fff;
+	--header-background-color: #333;
+	--header-font-color: #fff;
+	--footer-height: 4rem;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #4e5f93;
+	--text-color-link-visited: #245242;
+
+	--syntax-tab-size: 2;
+
+	--card-background-color: #f9f9f9;
+	--card-border-color: #ccc;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+
+		/* Dark mode card colors */
+		--card-background-color: #333;
+		--card-border-color: #555;
+	}
+}
+
+.card {
+	display: flex;
+	align-items: center;
+	border: 1px solid var(--card-border-color);
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	background-color: var(--card-background-color);
+}
+
+.card h3 {
+	margin: 0;
+  }
+  
+.card p {
+	margin: 0;
+}
+
+.card div {
+	padding-left: 10px;
+}
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+.color-gray-50{
+	color:var(--color-gray-50)
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* .h-excerpt{
+	font-size: 1em;
+} */
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main {
+	padding: 1rem;
+	max-width: 40em;
+	margin: 0 auto;
+	margin-bottom: var(--footer-height)
+}
+main :first-child {
+	margin-top: 0;
+}
+
+
+
+footer {
+	height: var(--footer-height);
+    background: var(--footer-background-color);
+    color: var(--footer-font-color);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+	p {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+	}
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	background: var(--header-background-color);
+	color: var(--header-font-color);
+	padding: 1rem 0;
+	text-align: center;
+	a[href] {
+		color: var(--header-font-color);
+	}
+	a[href]:visited {
+		color: var(--header-font-color);
+	}
+}
+.site-title {
+	font-size: 2em;
+	padding-bottom: 0.4em;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+.card {
+	display: flex;
+	align-items: center;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	background-color: var(--background-color);
+}
+.card img {
+	border-radius: 8px;
+	height: auto;
+	width: 90px;
+}
+.card .card-title {
+	font-size: 1.17em;
+	font-weight: bold;
+}
+.card-navigation ul {
+	list-style: none;
+	padding: 0;
+}
+
+
+@media (prefers-color-scheme: dark) {
+	.invert-for-dark-mode {
+		filter: invert(100%);
+	}
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	margin-top: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	border-bottom: 1px solid var(--color-gray-50);
+}
+.postlist-item:last-child{
+	border-bottom: 0;
+}
+
+.postlist-date {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Anchor links next to heading */
+.ha-placeholder {
+	opacity: 0 !important;
+}
+h2:has(.ha-placeholder):hover,
+h3:has(.ha-placeholder):hover,
+h4:has(.ha-placeholder):hover,
+h5:has(.ha-placeholder):hover,
+h6:has(.ha-placeholder):hover {
+	.ha-placeholder {
+		opacity: 0.3 !important;
+	}
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}</style>
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<div class="site-title">Carsten Felix Draschner, PhD</div>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/blog/">Blog</a></li>
+					<li class="nav-item"><a href="/research/">Research</a></li>
+					<li class="nav-item"><a href="/projects/">Projects</a></li>
+					<li class="nav-item"><a href="/about/">CV</a></li>
+					<li class="nav-item"><a href="/contact/">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+<h1 id="who-will-take-care-of-truly-low-resource-languages-a-good-step-towards-more-fair-genai-llm-pricing-at-openai-for-japanese-using-people">Who will take care of truly low-resource languages? A good step towards more fair GenAI LLM pricing at OpenAI for Japanese-using people!</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2024-09-30">30 September 2024</time></li>
+	<li><a href="/tags/blog/" class="post-tag">blog</a></li>
+</ul>
+
+
+<p>Exploring the challenges and recent developments in addressing low-resource languages within the GenAI landscape, with a focus on OpenAI's efforts for the Japanese language.</p>
+<p><picture><source type="image/avif" srcset="/img/MQeZ4f0S9i-800.avif 800w"><source type="image/webp" srcset="/img/MQeZ4f0S9i-800.webp 800w"><img loading="lazy" decoding="async" src="/img/MQeZ4f0S9i-800.jpeg" alt="Image 1" width="800" height="800"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Issues with LLMs for low-resource languages</li>
+<li>Major challenges with different character languages</li>
+<li>OpenAI's new dedicated model for Japanese</li>
+<li>Concerns about AI ethics and inequality</li>
+</ul>
+<h2 id="recap">Recap 🔁</h2>
+<ul>
+<li>In a recent post, I described the issues of LLM solutions with &quot;low resource&quot; languages (see link below)</li>
+<li>Those issues are even more complex with languages using entirely different characters than the majorly used language English</li>
+</ul>
+<h2 id="the-major-issues">The major issues ⚙️</h2>
+<ul>
+<li>The same text needs more tokens to be represented</li>
+<li>More tokens need more time to be generated and are more costly e.g. in the OpenAI API pricing</li>
+<li>The quality of results is less good if a dedicated language is not in focus of model training.</li>
+<li>RAG use cases and also bigger task descriptions are more limited as fixed context size might limit the expression of details and context</li>
+</ul>
+<h2 id="news-by-openai">News by OpenAI 📰</h2>
+<ul>
+<li>Dedicated Model for Japan</li>
+<li>Focus on their tokens leading to improvements in quality and lowering effective costs (see link)</li>
+</ul>
+<h2 id="my-take">My Take 🤗</h2>
+<ul>
+<li>I appreciate these efforts by Open AI</li>
+<li>We might need more such efforts towards further democratizing LLMs to different language heritages.</li>
+</ul>
+<h2 id="my-major-worry-ai-ethics">My Major worry (AI Ethics) 😓</h2>
+<ul>
+<li>GenAI will provide major gains in economic efficiency and productivity</li>
+<li>The development of competitive models needs huge financial investments.</li>
+<li>This leads to the fact that already rich countries with their languages will have access to those technologies and will over proportionally make use of those efficiency gains.</li>
+<li>It is unclear to what extent low-resource languages with different characters are part of LLM training.</li>
+<li>I fear that this can further improve inequality as the invested resources (electric energy, hardware production...) and its footprint will influence our whole planet but its gains once again only &quot;our&quot; privileged lives.</li>
+</ul>
+<h2 id="credit">Credit 😍</h2>
+<ul>
+<li>To OpenAI for tackling this &quot;known&quot; issue of unfair and inefficient handling Japanese Language</li>
+<li>To all R&amp;D Teams driving efforts towards low resource language GenAI</li>
+</ul>
+<p>We @Comma Soft AG provide a B2B LLM as a Service with a focus on German and English Language and even though German is less complicated than other truly low-resource languages, it was already quite a challenge to reach high-quality results.</p>
+<h2 id="links">Links 📚</h2>
+<ul>
+<li>Unfair Tokenizer: <a href="https://lnkd.in/edgPsdKz">https://lnkd.in/edgPsdKz</a></li>
+<li>OpenAI Japan: <a href="https://lnkd.in/eSwnMgJv">https://lnkd.in/eSwnMgJv</a></li>
+</ul>
+<p>Do you develop LLMs with a focus outside of the English Language?</p>
+<p>For more content, follow me ❤️</p>
+<p>#artificialintelligence #genai #llm #aiethics #japan #openai</p>
+<p><a href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-llm-activity-7186662551923884032-mz7m?utm_source=share&amp;utm_medium=member_desktop">LinkedIn Post</a></p>
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/240711_what_is_your_preferred_llm_family/">What is your preferred LLM family? And do you start with an already finetuned LLM? Why you have chosen this LLM? I love to hear your perspective!</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/240801_thanks_to_the_open_source_community/">Thanks to the Open Source Community for all their efforts! Greetings from PyCon 2024</a></li>
+</ul>
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
+		</footer>
+
+		<!-- This page `/blog/240712_who_will_take_care_of_truly_low_resource_languages/` was built on 2024-11-20T15:25:57.269Z -->
+		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
+	</body>
+</html>
