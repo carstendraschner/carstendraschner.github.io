@@ -13,7 +13,7 @@ Welcome! If you would like to get in touch with me or follow my work, here are t
           <li>
             <a href="https://www.linkedin.com/in/carsten-draschner/" target="_blank" style="text-decoration: none; color: inherit;">
               <div class="card">
-                <img src="img/svg/linkedin-svgrepo-com.svg" alt="LinkedInIcon">
+                <img src="img/svg/linkedin-svgrepo-com.svg" alt="LinkedInIcon" class="invert-for-dark-mode">
                 <div>
                   <span class="card-title">LinkedIn</span>
                   <p>Connect with me on LinkedIn to chat follow my content.</p>
