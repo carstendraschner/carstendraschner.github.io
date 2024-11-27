@@ -12,7 +12,7 @@ Welcome to my personal website where you can find information about my projects,
     <li>
       <a href="/blog/" style="text-decoration: none; color: inherit;">
         <div class="card">
-          <img src="img/blog.png" alt="BlogIcon">
+          <img src="img/svg/blog-svgrepo-com.svg" alt="BlogIcon">
           <div>
             <span class="card-title">Blog</span>
             <p>Recent AI innovations, ethical implications, and observations</p>
@@ -23,7 +23,7 @@ Welcome to my personal website where you can find information about my projects,
     <li>
       <a href="/research/" style="text-decoration: none; color: inherit;">
         <div class="card">
-          <img src="img/research.png" alt="ResearchIcon">
+          <img src="img/svg/research-3-svgrepo-com.svg" alt="ResearchIcon">
           <div>
             <span class="card-title">Research</span>
             <p>Journal and Conference Publications and Thesis.</p>
@@ -34,7 +34,7 @@ Welcome to my personal website where you can find information about my projects,
     <li>
       <a href="/projects/" style="text-decoration: none; color: inherit;">
         <div class="card">
-          <img src="img/projects.png" alt="ProjectsIcon">
+          <img src="img/svg/projects-svgrepo-com.svg" alt="ProjectsIcon">
           <div>
             <span class="card-title">Projects</span>
             <p>Sneak previews and Reports of my work experiences.</p>
@@ -45,7 +45,7 @@ Welcome to my personal website where you can find information about my projects,
     <li>
       <a href="/about/" style="text-decoration: none; color: inherit;">
         <div class="card">
-          <img src="img/cv.png" alt="CvIcon">
+          <img src="img/svg/resume-business-cv-work-job-curriculum-svgrepo-com.svg" alt="CvIcon">
           <div>
             <span class="card-title">About/CV</span>
             <p>Overview of Educational Background and Job Experiences</p>
@@ -56,7 +56,7 @@ Welcome to my personal website where you can find information about my projects,
     <li>
       <a href="/contact/" style="text-decoration: none; color: inherit;">
         <div class="card">
-          <img src="img/contact.png" alt="ContactIcon">
+          <img src="img/svg/contact-chatting-communication-svgrepo-com.svg" alt="ContactIcon">
           <div>
             <span class="card-title">Contact</span>
             <p>Opportunities to reach out to me and sources for more content</p>
