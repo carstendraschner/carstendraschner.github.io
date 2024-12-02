@@ -207,6 +207,36 @@
 	</url>
 	
 	<url>
+		<loc>https://example.com/blog/241104_a_genai_solution_tweak_to_rescue_ard_tagesschau_webpage/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/241105_the_uncanny_valley_phenomenon_in_genai_face_synthesis/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/241106_new_official_osi_open_source_ai_definition_attacks_metas_llama_as_open_washing/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/241107_we_cannot_waste_time_and_resources_through_regenerating_genai_creations_genai_control_is_key_for_productivity/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/241108_were_dealing_with_the_butterfly_effect_in_llm_creation_pipelines/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/241110_Teuken_Review/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://example.com/about/</loc>
 		<lastmod>2024-11-13</lastmod>
 	</url>
@@ -243,6 +273,6 @@
 	
 	<url>
 		<loc>https://example.com/feed/feed.xml</loc>
-		<lastmod>2024-11-27</lastmod>
+		<lastmod>2024-12-02</lastmod>
 	</url>
 </urlset>
