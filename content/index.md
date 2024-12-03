@@ -5,7 +5,7 @@ const eleventyNavigation = {
 };
 ---
 # Home
-Welcome to my personal website where you can find information about my projects, blog posts, publications, and more. I Carsten Felix Draschner, an AI Researcher with 8+ years of experience in AI, ML, DS. I am motivated by Science and AI for Social Good! I love to connect my passion for cutting-edge AI with my intrinsic motivation to bring myself into projects which make our life on earth more sustainable, our lives better, and our democracies more stable.
+Welcome to my personal website where you can find information about my projects, blog posts, publications, and more. I'm Carsten Felix Draschner, an AI Researcher with 8+ years of experience in AI, ML, DS. I am motivated by Science and AI for Social Good! I love to connect my passion for cutting-edge AI with my intrinsic motivation to bring myself into projects which make our life on earth more sustainable, our lives better, and our democracies more stable.
 <div class="container">
   <nav class="card-navigation">
     <ul>
@@ -15,7 +15,7 @@ Welcome to my personal website where you can find information about my projects,
             <img src="img/svg/blog-svgrepo-com.svg" alt="BlogIcon" class="invert-for-dark-mode">
             <div>
               <span class="card-title">Blog</span>
-              <p>Recent AI innovations, ethical implications, and observations</p>
+              <p>Recent AI innovations, ethical implications, and my perspective</p>
             </div>
           </div>
         </a>
@@ -26,7 +26,7 @@ Welcome to my personal website where you can find information about my projects,
             <img src="img/svg/research-3-svgrepo-com.svg" alt="ResearchIcon" class="invert-for-dark-mode">
             <div>
               <span class="card-title">Research</span>
-              <p>Journal and Conference Publications and Thesis.</p>
+              <p>Journal and Conference Publications and Thesises.</p>
             </div>
           </div>
         </a>
