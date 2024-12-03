@@ -1,6 +1,6 @@
 ---
 title: The Uncanny Valley Phenomenon in GenAI Face Synthesis
-date: 2024-09-30
+date: 2024-11-05
 linkedInUrl: https://www.linkedin.com/posts/carsten-draschner_ai-tech-innovation-activity-7255148987660267520-VImJ?utm_source=share&utm_medium=member_desktop
 tags: blog
 ---
