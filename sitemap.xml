@@ -67,6 +67,11 @@
 	</url>
 	
 	<url>
+		<loc>https://example.com/blog/240213_dalle_has_surprising_guardrails/</loc>
+		<lastmod>2024-02-13</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://example.com/blog/240227_ever_wondered_about_open_source_llm_sizes/</loc>
 		<lastmod>2024-02-27</lastmod>
 	</url>
@@ -132,6 +137,11 @@
 	</url>
 	
 	<url>
+		<loc>https://example.com/blog/240617_do_we_need_another_genai_solution_how_why/</loc>
+		<lastmod>2024-06-17</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://example.com/blog/240624_alternative_to_genai_creativity_watch_and_try/</loc>
 		<lastmod>2024-06-24</lastmod>
 	</url>
@@ -184,16 +194,6 @@
 	<url>
 		<loc>https://example.com/blog/240924_where_science_meets_innovation_my_personal/</loc>
 		<lastmod>2024-09-24</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240213_dalle_has_surprising_guardrails/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240617_do_we_need_another_genai_solution_how_why/</loc>
-		<lastmod>2024-09-30</lastmod>
 	</url>
 	
 	<url>
