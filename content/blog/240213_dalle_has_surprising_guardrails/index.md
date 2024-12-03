@@ -1,6 +1,6 @@
 ---
 title: DALLE has surprising guardrails. Your image is not filtered based on your prompt. "Dead cookies" may be generated ...sometimes 
-date: 2024-09-30
+date: 2024-02-13
 linkedInUrl: https://www.linkedin.com/posts/carsten-draschner_artificalintelligence-genai-aiethics-activity-7158865169689821184-J8Y_?utm_source=share&utm_medium=member_desktop
 tags: blog
 ---

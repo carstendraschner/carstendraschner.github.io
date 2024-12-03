@@ -1,6 +1,6 @@
 ---
 title: Do we need another GenAI solution? How & why we developed a full-stack GenAI LLM+RAG tool called Alan. A sneak peek at what I am currently working on.
-date: 2024-09-30
+date: 2024-06-17
 linkedInUrl: https://www.linkedin.com/posts/carsten-draschner_humboldt-travel-report-alan-llm-genai-activity-7208854388101005312-Xr_o?utm_source=share&utm_medium=member_desktop
 tags: blog
 ---
