@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Today&#39;s Research Proposal - How to achieve &quot;real&quot; thinking and reasoning in GenAI, rather than just relying on a silent Chain of Thought, as seen in ReflectionAI or possibly GPT-o1?</title>
+		<meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+	--footer-background-color: #333;
+	--footer-font-color: #fff;
+	--header-background-color: #333;
+	--header-font-color: #fff;
+	--footer-height: 4rem;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #4e5f93;
+	--text-color-link-visited: #245242;
+
+	--syntax-tab-size: 2;
+
+	--card-background-color: #f9f9f9;
+	--card-border-color: #ccc;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+
+		/* Dark mode card colors */
+		--card-background-color: #333;
+		--card-border-color: #555;
+	}
+}
+
+.card {
+	display: flex;
+	align-items: center;
+	border: 1px solid var(--card-border-color);
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	background-color: var(--card-background-color);
+}
+
+.card h3 {
+	margin: 0;
+  }
+  
+.card p {
+	margin: 0;
+}
+
+.card div {
+	padding-left: 10px;
+}
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+.color-gray-50{
+	color:var(--color-gray-50)
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* .h-excerpt{
+	font-size: 1em;
+} */
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main {
+	padding: 1rem;
+	flex: 1;
+	max-width: 40em;
+	margin: 0 auto;
+	margin-bottom: var(--footer-height);
+}
+main :first-child {
+	margin-top: 0;
+}
+
+
+
+footer {
+	height: var(--footer-height);
+    background: var(--footer-background-color);
+    color: var(--footer-font-color);
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+	p {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+	}
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	background: var(--header-background-color);
+	color: var(--header-font-color);
+	padding: 1rem 0;
+	text-align: center;
+	a[href] {
+		color: var(--header-font-color);
+	}
+	a[href]:visited {
+		color: var(--header-font-color);
+	}
+}
+.site-title {
+	font-size: 2em;
+	padding-bottom: 0.4em;
+}
+
+.container {
+	display: flex; /* Hinzugefügt */
+	flex-direction: column; /* Hinzugefügt */
+	min-height: 100vh; /* Hinzugefügt */
+  }
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+.card {
+	display: flex;
+	align-items: center;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	background-color: var(--background-color);
+}
+.card img {
+	border-radius: 8px;
+	height: auto;
+	width: 90px;
+}
+.card .card-title {
+	font-size: 1.17em;
+	font-weight: bold;
+}
+.card-navigation ul {
+	flex: 1;
+	list-style: none;
+	padding: 0;
+}
+
+
+@media (prefers-color-scheme: dark) {
+	.invert-for-dark-mode {
+		filter: invert(100%);
+	}
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	margin-top: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	border-bottom: 1px solid var(--color-gray-50);
+}
+.postlist-item:last-child{
+	border-bottom: 0;
+}
+
+.postlist-date {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Anchor links next to heading */
+.ha-placeholder {
+	opacity: 0 !important;
+}
+h2:has(.ha-placeholder):hover,
+h3:has(.ha-placeholder):hover,
+h4:has(.ha-placeholder):hover,
+h5:has(.ha-placeholder):hover,
+h6:has(.ha-placeholder):hover {
+	.ha-placeholder {
+		opacity: 0.3 !important;
+	}
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}</style>
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<div class="site-title">Carsten Felix Draschner, PhD</div>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/blog/">Blog</a></li>
+					<li class="nav-item"><a href="/research/">Research</a></li>
+					<li class="nav-item"><a href="/projects/">Projects</a></li>
+					<li class="nav-item"><a href="/about/">CV</a></li>
+					<li class="nav-item"><a href="/contact/">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+<h1 id="todays-research-proposal-how-to-achieve-real-thinking-and-reasoning-in-genai-rather-than-just-relying-on-a-silent-chain-of-thought-as-seen-in-reflectionai-or-possibly-gpt-o1">Today&#39;s Research Proposal - How to achieve &quot;real&quot; thinking and reasoning in GenAI, rather than just relying on a silent Chain of Thought, as seen in ReflectionAI or possibly GPT-o1?</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2024-09-17">17 September 2024</time></li>
+	<li><a href="/tags/blog/" class="post-tag">blog</a></li>
+</ul>
+
+
+<p>Exploring the potential for achieving true reasoning and thinking in Generative AI models beyond the current Chain of Thought methodologies.</p>
+<p><picture><source type="image/avif" srcset="/img/W1uRDiZMha-800.avif 800w"><source type="image/webp" srcset="/img/W1uRDiZMha-800.webp 800w"><img loading="lazy" decoding="async" src="/img/W1uRDiZMha-800.jpeg" alt="Image 1" width="800" height="696"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Current state of reasoning in models</li>
+<li>Possibilities for transformers to learn to think</li>
+<li>Customization ideas for achieving true reasoning</li>
+<li>Open questions and discussion points</li>
+</ul>
+<h2 id="currently-reasoning-more-through-silent-the-cot">Currently, reasoning more through silent the CoT 😥</h2>
+<ul>
+<li>There are currently models that claim to possess reasoning capabilities.</li>
+<li>However, this is more about the Chain of Thought and the use of special tokens.</li>
+<li>These enable the model to generate more text, thereby increasing the stability of its answers.</li>
+<li>This process of &quot;reasoning&quot; is not transparently/barely shown.</li>
+<li>I believe this is less about reasoning or thinking and more about statistical stability.</li>
+<li>Moreover, it is not possible to observe the reasoning process, and it is often difficult to identify when a model has gone astray.</li>
+</ul>
+<h2 id="how-could-transformers-learn-to-think">How could transformers learn to think? 🤯</h2>
+<ul>
+<li>Why can I still imagine that it is possible to learn to think or reason with the transformer architecture?</li>
+<li>Due to the transformer architecture, which includes tokenization, attention, and multi-layer perceptron elements, as well as the universal function approximation hypothesis, the following can be imagined:
+<ol>
+<li>In early layers, the network learns something akin to named entity recognition.</li>
+<li>Later layers and embedding dimensions create structures that learn propositional logic and structures similar to knowledge graphs or their embeddings.</li>
+<li>Finally, based on this, resonating and reflecting completeness of output logic components could be achieved.</li>
+</ol>
+</li>
+</ul>
+<h2 id="what-else-would-i-customize-imho">What else would I customize? 👨🏼‍💻 (IMHO)</h2>
+<p>I would find it interesting to combine this with thought-diffusion models, making hierarchical planning possible. I have several more ideas..., reach out to me if you like to start a discussion ❤️</p>
+<h2 id="questions">Questions:</h2>
+<p>Are you aware of any approaches or research projects that attempt this?
+What are your thoughts on that, how would you build &quot;AGI&quot; it?</p>
+<p>I had great idea exchanges on this with colleagues from Comma Soft AG, Lamarr-Institut &amp; Smart Data Analytics.</p>
+<p>Let's not waste money and time on believing in marketing claims and rebranding of the word &quot;reasoning&quot;, but let's start to think of how it could actually be achieved 🤗</p>
+<p>#AGI #GenAI #artificialintelligence #research</p>
+<p><a href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-sustainability-activity-7243978164564111361-12R6?utm_source=share&amp;utm_medium=member_desktop">LinkedIn Post</a></p>
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/240910_for_more_sustainability_transparency_in_genai_share/">For more sustainability transparency in GenAI! Share your knowledge and reduce energy waste!</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/240924_where_science_meets_innovation_my_personal/">Where Science Meets Innovation - My personal Highlights &amp; Insights into the PG 2024! Do you have answers to the open Questions?</a></li>
+</ul>
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
+		</footer>
+
+		<!-- This page `/blog/240917_todays_research_proposal_how_to_achieve_real/` was built on 2024-12-03T14:08:08.709Z -->
+		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
+	</body>
+</html>

@@ -57,183 +57,173 @@
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240702_llama2_13b_is_faster_than_llama2_7b/</loc>
+		<loc>https://example.com/blog/240202_llama2_13b_is_faster_than_llama2_7b/</loc>
+		<lastmod>2024-02-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240205_evil_llms_available_break_genai/</loc>
+		<lastmod>2024-02-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240227_ever_wondered_about_open_source_llm_sizes/</loc>
+		<lastmod>2024-02-27</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240307_not_prompting_in_english/</loc>
+		<lastmod>2024-03-07</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240313_the_major_players_in_genai_are_facing_challenges/</loc>
+		<lastmod>2024-03-13</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240327_be_careful_when_you_are_using_llama/</loc>
+		<lastmod>2024-03-27</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240408_too_many_llms_how_to_keep_track_with_all/</loc>
+		<lastmod>2024-04-08</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240415_nvidia_benchmark_might_be_wrong/</loc>
+		<lastmod>2024-04-15</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240422_what_is_your_preferred_llm_family/</loc>
+		<lastmod>2024-04-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240422_who_will_take_care_of_truly_low_resource_languages/</loc>
+		<lastmod>2024-04-29</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240506_thanks_to_the_open_source_community/</loc>
+		<lastmod>2024-05-06</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240513_be_careful_when_you_speak_of_open_source_genai/</loc>
+		<lastmod>2024-05-13</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240520_what_expectations_do_you_have_regarding_the_values_and_norms/</loc>
+		<lastmod>2024-05-20</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240603_do_you_differentiate_ai_ethics/</loc>
+		<lastmod>2024-06-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240610_will_we_reach_agi_and_if/</loc>
+		<lastmod>2024-06-10</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240624_alternative_to_genai_creativity_watch_and_try/</loc>
+		<lastmod>2024-06-24</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240701_adjust_genai_responses_towards_more_ethical_behavior_possible/</loc>
+		<lastmod>2024-07-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240708_genai_what_is_plagiarism_its_impact/</loc>
+		<lastmod>2024-07-08</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240715_llms_big_vs_small_bigger_is_better_or_lets_not_waste_energy/</loc>
+		<lastmod>2024-07-15</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240722_these_results_give_me_hope_for_sustainable_ai/</loc>
+		<lastmod>2024-07-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240729_what_is_the_perfect_approach_to_adjust_an_llm_to_your_genai_use_case/</loc>
+		<lastmod>2024-07-29</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240830_combining_the_hugging_face_model_platform_and_knowledge/</loc>
+		<lastmod>2024-08-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240903_sustainable_air_gapped_on_prem_llm_solution/</loc>
+		<lastmod>2024-09-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240910_for_more_sustainability_transparency_in_genai_share/</loc>
+		<lastmod>2024-09-10</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240917_todays_research_proposal_how_to_achieve_real/</loc>
+		<lastmod>2024-09-17</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240924_where_science_meets_innovation_my_personal/</loc>
+		<lastmod>2024-09-24</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240213_dalle_has_surprising_guardrails/</loc>
 		<lastmod>2024-09-30</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240703_evil_llms_available_break_genai/</loc>
+		<loc>https://example.com/blog/240617_do_we_need_another_genai_solution_how_why/</loc>
 		<lastmod>2024-09-30</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240704_dalle_has_surprising_guardrails/</loc>
-		<lastmod>2024-09-30</lastmod>
+		<loc>https://example.com/blog/241001_stop_adding_languages_to_llms_the_potential/</loc>
+		<lastmod>2024-10-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240705_ever_wondered_about_open_source_llm_sizes/</loc>
-		<lastmod>2024-09-30</lastmod>
+		<loc>https://example.com/blog/241008_choosing_the_right_llm_for_your_needs_key_considerations/</loc>
+		<lastmod>2024-10-08</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240707_not_prompting_in_english/</loc>
-		<lastmod>2024-09-30</lastmod>
+		<loc>https://example.com/blog/241016_we_cannot_waste_time_and_resources_through_regenerating_genai_creations_genai_control_is_key_for_productivity/</loc>
+		<lastmod>2024-10-16</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240708_the_major_players_in_genai_are_facing_challenges/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240709_be_careful_when_you_are_using_llama/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240709_too_many_llms_how_to_keep_track_with_all/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240710_nvidia_benchmark_might_be_wrong/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240711_what_is_your_preferred_llm_family/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240712_who_will_take_care_of_truly_low_resource_languages/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240801_thanks_to_the_open_source_community/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240802_be_careful_when_you_speak_of_open_source_genai/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240803_what_expectations_do_you_have_regarding_the_values_and_norms/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240804_do_you_differentiate_ai_ethics/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240805_will_we_reach_agi_and_if/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240806_do_we_need_another_genai_solution_how_why/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240807_alternative_to_genai_creativity_watch_and_try/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240808_adjust_genai_responses_towards_more_ethical_behavior_possible/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240809_genai_what_is_plagiarism_its_impact/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240901_llms_big_vs_small_bigger_is_better_or_lets_not_waste_energy/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240902_these_results_give_me_hope_for_sustainable_ai/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240903_what_is_the_perfect_approach_to_adjust_an_llm_to_your_genai_use_case/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240904_combining_the_hugging_face_model_platform_and_knowledge/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240905_%20sustainable_air_gapped_on_prem_llm_solution/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240906_for_more_sustainability_transparency_in_genai_share/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240907_todays_research_proposal_how_to_achieve_real/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240908_where_science_meets_innovation_my_personal/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240909_stop_adding_languages_to_llms_the_potential/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/240910_choosing_the_right_llm_for_your_needs_key_considerations/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/241104_a_genai_solution_tweak_to_rescue_ard_tagesschau_webpage/</loc>
-		<lastmod>2024-09-30</lastmod>
+		<loc>https://example.com/blog/241025_a_genai_solution_tweak_to_rescue_ard_tagesschau_webpage/</loc>
+		<lastmod>2024-10-25</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://example.com/blog/241105_the_uncanny_valley_phenomenon_in_genai_face_synthesis/</loc>
-		<lastmod>2024-09-30</lastmod>
+		<lastmod>2024-11-05</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/241106_new_official_osi_open_source_ai_definition_attacks_metas_llama_as_open_washing/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/241107_we_cannot_waste_time_and_resources_through_regenerating_genai_creations_genai_control_is_key_for_productivity/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/241108_were_dealing_with_the_butterfly_effect_in_llm_creation_pipelines/</loc>
-		<lastmod>2024-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/241110_Teuken_Review/</loc>
-		<lastmod>2024-09-30</lastmod>
+		<loc>https://example.com/blog/241113_new_official_osi_open_source_ai_definition_attacks_metas_llama_as_open_washing/</loc>
+		<lastmod>2024-11-13</lastmod>
 	</url>
 	
 	<url>
@@ -267,12 +257,22 @@
 	</url>
 	
 	<url>
+		<loc>https://example.com/blog/241120_were_dealing_with_the_butterfly_effect_in_llm_creation_pipelines/</loc>
+		<lastmod>2024-11-20</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://example.com/contact/</loc>
 		<lastmod>2024-11-27</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://example.com/feed/feed.xml</loc>
-		<lastmod>2024-12-02</lastmod>
+		<lastmod>2024-12-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/241127_Teuken_Review/</loc>
+		<lastmod>2024-12-27</lastmod>
 	</url>
 </urlset>

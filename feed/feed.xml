@@ -5,16 +5,16 @@
   <subtitle>This is a longer description about your blog.</subtitle>
   <link href="https://example.com/feed/feed.xml" rel="self" />
   <link href="https://example.com/" />
-  <updated>2024-09-30T00:00:00Z</updated>
+  <updated>2024-12-27T00:00:00Z</updated>
   <id>https://example.com/</id>
   <author>
     <name>Your Name</name>
   </author>
   <entry>
     <title>New DE/EU Open Source LLM 🇪🇺 Teuken 7B, Now Truly Open Source?</title>
-    <link href="https://example.com/blog/241110_Teuken_Review/" />
-    <updated>2024-09-30T00:00:00Z</updated>
-    <id>https://example.com/blog/241110_Teuken_Review/</id>
+    <link href="https://example.com/blog/241127_Teuken_Review/" />
+    <updated>2024-12-27T00:00:00Z</updated>
+    <id>https://example.com/blog/241127_Teuken_Review/</id>
     <content type="html">&lt;p&gt;New Model out of Open-GPT-X developed within Germany from European Perspective&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/u966D37VBY-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/u966D37VBY-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/u966D37VBY-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;749&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
@@ -49,9 +49,9 @@
   </entry>
   <entry>
     <title>We&#39;re Dealing with the Butterfly Effect in LLM Creation Pipelines 🦋🤖</title>
-    <link href="https://example.com/blog/241108_were_dealing_with_the_butterfly_effect_in_llm_creation_pipelines/" />
-    <updated>2024-09-30T00:00:00Z</updated>
-    <id>https://example.com/blog/241108_were_dealing_with_the_butterfly_effect_in_llm_creation_pipelines/</id>
+    <link href="https://example.com/blog/241120_were_dealing_with_the_butterfly_effect_in_llm_creation_pipelines/" />
+    <updated>2024-11-20T00:00:00Z</updated>
+    <id>https://example.com/blog/241120_were_dealing_with_the_butterfly_effect_in_llm_creation_pipelines/</id>
     <content type="html">&lt;p&gt;When we develop novel LLMs, AI-Agents and GenAI Pipelines for Alan.de or within our various other GenAI projects, we&#39;re continuously learning about the Butterfly Effect in GenAI creation pipelines and how to mitigate this problem. 👨🏼‍💻
 🤯 Every change can have a huge impact on the entire pipeline that creates and executes models&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/ODUjemRpOm-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/ODUjemRpOm-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/ODUjemRpOm-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
@@ -87,31 +87,10 @@
 </content>
   </entry>
   <entry>
-    <title>We Cannot Waste Time and Resources through Regenerating GenAI Creations! GenAI Control is Key for Productivity!</title>
-    <link href="https://example.com/blog/241107_we_cannot_waste_time_and_resources_through_regenerating_genai_creations_genai_control_is_key_for_productivity/" />
-    <updated>2024-09-30T00:00:00Z</updated>
-    <id>https://example.com/blog/241107_we_cannot_waste_time_and_resources_through_regenerating_genai_creations_genai_control_is_key_for_productivity/</id>
-    <content type="html">&lt;p&gt;We will see more and more precise adjustment options in GenAI Tooling&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/DGwfP2s1_T-664.avif 664w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/DGwfP2s1_T-664.webp 664w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/DGwfP2s1_T-664.png&quot; alt=&quot;Image 1&quot; width=&quot;664&quot; height=&quot;488&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;GenAI often lacks precise Adjuments&lt;/li&gt;
-&lt;li&gt;Tools and Models start CLosing the Gap&lt;/li&gt;
-&lt;li&gt;Major Waste of Time and Resources through inefficient Regenerates&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;control-and-hallucinations-in-generated-videos&quot;&gt;Control and hallucinations in generated videos:&lt;/h2&gt;
-&lt;p&gt;Generative AI that looks nice, I’m wondering if the camera turns multiple laps around the guy in the forest, if the color of the jacket on the back would stay the same without having it explicitly described. What do you think, what would happen? 📹🧥&lt;/p&gt;
-&lt;h2 id=&quot;importance-of-genai-control&quot;&gt;Importance of GenAI control:&lt;/h2&gt;
-&lt;p&gt;I think overall the opportunity to control generations by precise prompts or other interfaces to further specify intermediate results will be insanely important if these technologies should be adapted in a high efficient outcome-oriented business. We cannot waste time for prompts and regenerates! Cause of time and energy 🌱⏰&lt;/p&gt;
-&lt;p&gt;#artificialintelligence #genai&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_ai-runway-3d-activity-7259125095783182336-3bZr?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
     <title>New Official OSI &quot;Open Source AI definition&quot; attacks Meta&#39;s LLAMA as &quot;Open Washing&quot;</title>
-    <link href="https://example.com/blog/241106_new_official_osi_open_source_ai_definition_attacks_metas_llama_as_open_washing/" />
-    <updated>2024-09-30T00:00:00Z</updated>
-    <id>https://example.com/blog/241106_new_official_osi_open_source_ai_definition_attacks_metas_llama_as_open_washing/</id>
+    <link href="https://example.com/blog/241113_new_official_osi_open_source_ai_definition_attacks_metas_llama_as_open_washing/" />
+    <updated>2024-11-13T00:00:00Z</updated>
+    <id>https://example.com/blog/241113_new_official_osi_open_source_ai_definition_attacks_metas_llama_as_open_washing/</id>
     <content type="html">&lt;p&gt;We getting closer what should be considered being open source in GenAI and not only open weight.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/MZY7DxFWA2-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/MZY7DxFWA2-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/MZY7DxFWA2-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR 📝&lt;/strong&gt;&lt;/p&gt;
@@ -148,7 +127,7 @@
   <entry>
     <title>The Uncanny Valley Phenomenon in GenAI Face Synthesis</title>
     <link href="https://example.com/blog/241105_the_uncanny_valley_phenomenon_in_genai_face_synthesis/" />
-    <updated>2024-09-30T00:00:00Z</updated>
+    <updated>2024-11-05T00:00:00Z</updated>
     <id>https://example.com/blog/241105_the_uncanny_valley_phenomenon_in_genai_face_synthesis/</id>
     <content type="html">&lt;p&gt;GenAI hits Uncanny Valley Problems as we have seen in Animation and Computer Games&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/MFdV8_8zRS-946.avif 946w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/MFdV8_8zRS-946.webp 946w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/MFdV8_8zRS-946.png&quot; alt=&quot;Image 1&quot; width=&quot;946&quot; height=&quot;870&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
@@ -185,9 +164,9 @@
   </entry>
   <entry>
     <title>A GenAI Solution/Tweak to Rescue ARD tagesschau webpage?!</title>
-    <link href="https://example.com/blog/241104_a_genai_solution_tweak_to_rescue_ard_tagesschau_webpage/" />
-    <updated>2024-09-30T00:00:00Z</updated>
-    <id>https://example.com/blog/241104_a_genai_solution_tweak_to_rescue_ard_tagesschau_webpage/</id>
+    <link href="https://example.com/blog/241025_a_genai_solution_tweak_to_rescue_ard_tagesschau_webpage/" />
+    <updated>2024-10-25T00:00:00Z</updated>
+    <id>https://example.com/blog/241025_a_genai_solution_tweak_to_rescue_ard_tagesschau_webpage/</id>
     <content type="html">&lt;p&gt;Brainstorming how old regulations meet new GenAI opportunities.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/O_cWA3fM8t-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/O_cWA3fM8t-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/O_cWA3fM8t-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR 📝&lt;/strong&gt;&lt;/p&gt;
@@ -229,10 +208,31 @@
 </content>
   </entry>
   <entry>
+    <title>We Cannot Waste Time and Resources through Regenerating GenAI Creations! GenAI Control is Key for Productivity!</title>
+    <link href="https://example.com/blog/241016_we_cannot_waste_time_and_resources_through_regenerating_genai_creations_genai_control_is_key_for_productivity/" />
+    <updated>2024-10-16T00:00:00Z</updated>
+    <id>https://example.com/blog/241016_we_cannot_waste_time_and_resources_through_regenerating_genai_creations_genai_control_is_key_for_productivity/</id>
+    <content type="html">&lt;p&gt;We will see more and more precise adjustment options in GenAI Tooling&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/DGwfP2s1_T-664.avif 664w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/DGwfP2s1_T-664.webp 664w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/DGwfP2s1_T-664.png&quot; alt=&quot;Image 1&quot; width=&quot;664&quot; height=&quot;488&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GenAI often lacks precise Adjuments&lt;/li&gt;
+&lt;li&gt;Tools and Models start CLosing the Gap&lt;/li&gt;
+&lt;li&gt;Major Waste of Time and Resources through inefficient Regenerates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;control-and-hallucinations-in-generated-videos&quot;&gt;Control and hallucinations in generated videos:&lt;/h2&gt;
+&lt;p&gt;Generative AI that looks nice, I’m wondering if the camera turns multiple laps around the guy in the forest, if the color of the jacket on the back would stay the same without having it explicitly described. What do you think, what would happen? 📹🧥&lt;/p&gt;
+&lt;h2 id=&quot;importance-of-genai-control&quot;&gt;Importance of GenAI control:&lt;/h2&gt;
+&lt;p&gt;I think overall the opportunity to control generations by precise prompts or other interfaces to further specify intermediate results will be insanely important if these technologies should be adapted in a high efficient outcome-oriented business. We cannot waste time for prompts and regenerates! Cause of time and energy 🌱⏰&lt;/p&gt;
+&lt;p&gt;#artificialintelligence #genai&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_ai-runway-3d-activity-7259125095783182336-3bZr?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
     <title>Choosing the Right LLM for Your Needs - Key Considerations</title>
-    <link href="https://example.com/blog/240910_choosing_the_right_llm_for_your_needs_key_considerations/" />
-    <updated>2024-09-30T00:00:00Z</updated>
-    <id>https://example.com/blog/240910_choosing_the_right_llm_for_your_needs_key_considerations/</id>
+    <link href="https://example.com/blog/241008_choosing_the_right_llm_for_your_needs_key_considerations/" />
+    <updated>2024-10-08T00:00:00Z</updated>
+    <id>https://example.com/blog/241008_choosing_the_right_llm_for_your_needs_key_considerations/</id>
     <content type="html">&lt;p&gt;Consider the key factors when selecting a Large Language Model (LLM) for your project.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/TSnOnDgQhc-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/TSnOnDgQhc-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/TSnOnDgQhc-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
@@ -266,9 +266,9 @@
   </entry>
   <entry>
     <title>Stop adding Languages to LLMs! The Potential Drawbacks of Training Multilingual Large Language Models (LLMs) for Performance and Sustainability!</title>
-    <link href="https://example.com/blog/240909_stop_adding_languages_to_llms_the_potential/" />
-    <updated>2024-09-30T00:00:00Z</updated>
-    <id>https://example.com/blog/240909_stop_adding_languages_to_llms_the_potential/</id>
+    <link href="https://example.com/blog/241001_stop_adding_languages_to_llms_the_potential/" />
+    <updated>2024-10-01T00:00:00Z</updated>
+    <id>https://example.com/blog/241001_stop_adding_languages_to_llms_the_potential/</id>
     <content type="html">&lt;p&gt;Exploring the downsides of creating multilingual LLMs and their impact on performance and resource utilization.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/JA9fsEHeRy-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/JA9fsEHeRy-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/JA9fsEHeRy-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
@@ -308,79 +308,102 @@
 </content>
   </entry>
   <entry>
-    <title>Where Science Meets Innovation - My personal Highlights &amp; Insights into the PG 2024! Do you have answers to the open Questions?</title>
-    <link href="https://example.com/blog/240908_where_science_meets_innovation_my_personal/" />
+    <title>Do we need another GenAI solution? How &amp; why we developed a full-stack GenAI LLM+RAG tool called Alan. A sneak peek at what I am currently working on.</title>
+    <link href="https://example.com/blog/240617_do_we_need_another_genai_solution_how_why/" />
     <updated>2024-09-30T00:00:00Z</updated>
-    <id>https://example.com/blog/240908_where_science_meets_innovation_my_personal/</id>
-    <content type="html">&lt;p&gt;Highlights and open questions from the Petersberger Gespräche (PG) 2024, covering AI, energy transition, chip technologies, and more.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/vuj-G2c0U--2198.avif 2198w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/vuj-G2c0U--2198.webp 2198w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/vuj-G2c0U--2198.png&quot; alt=&quot;PG 2024 Highlights&quot; width=&quot;2198&quot; height=&quot;952&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+    <id>https://example.com/blog/240617_do_we_need_another_genai_solution_how_why/</id>
+    <content type="html">&lt;p&gt;An overview of the motivations and technical aspects behind developing our own GenAI solution, Alan, at Comma Soft AG.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/UXAYbK_4C8-986.avif 986w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/UXAYbK_4C8-986.webp 986w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/UXAYbK_4C8-986.png&quot; alt=&quot;Alan PDF&quot; width=&quot;986&quot; height=&quot;668&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;AI and consciousness discussions&lt;/li&gt;
-&lt;li&gt;Energy transition and regulatory challenges&lt;/li&gt;
-&lt;li&gt;Distributed chip technologies in Europe&lt;/li&gt;
-&lt;li&gt;Generative AI in media&lt;/li&gt;
-&lt;li&gt;Metaverse applications beyond gaming&lt;/li&gt;
+&lt;li&gt;Diverse GenAI solutions exist&lt;/li&gt;
+&lt;li&gt;Unique motivations for developing our own tool&lt;/li&gt;
+&lt;li&gt;Technical advantages of our solution&lt;/li&gt;
+&lt;li&gt;Questions on custom development vs. wrappers&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;ai-and-consciousness&quot;&gt;🧠 AI and Consciousness 🧠&lt;/h2&gt;
-&lt;p&gt;Joscha Bach from Liquid AI presented on how advancements in AI could potentially redefine our understanding of consciousness. My open question for him is: How does he intend to reliably measure the achievement of AI consciousness in his efforts?&lt;/p&gt;
-&lt;h2 id=&quot;scientific-chemical-hands-on-how-to-fix-energy-transition&quot;&gt;👩🏻‍🔬 Scientific Chemical Hands on how to fix energy transition 👩🏻‍🔬&lt;/h2&gt;
-&lt;p&gt;As chairman of Alexander von Humboldt Foundation, Robert Schlögl delivered an impressively passionate presentation on energy tech for the climate transition and the phasing out of fossil fuels. Besides scientific derivations, he also highlighted significant regulatory issues that hinder successful implementation. I wonder: How these regulations came about, why they are justified if they are (potentially) not scientifically tenable, and how they can now be resolved?&lt;/p&gt;
-&lt;h2 id=&quot;efficient-distributed-chip-technologies-from-the-heart-of-europe&quot;&gt;🇪🇺 Efficient Distributed Chip Technologies from the heart of Europe 🇪🇺&lt;/h2&gt;
-&lt;p&gt;Christian Mayr from Technische Universität Dresden discussed the potential and developments possible in Dresden. He mentioned the use of clustered chip technologies to operate LLMs. One of my open questions is: How can LLMs be distributed across tens of thousands of chips while still achieving acceptable inferential latencies?&lt;/p&gt;
-&lt;h2 id=&quot;genai-in-media-opportunities-and-risks&quot;&gt;📰 GenAI in Media, Opportunities and Risks 📰&lt;/h2&gt;
-&lt;p&gt;In further discussions with Sibylle Anderl from ZEIT Verlagsgruppe, we explored the potentials and risks of Generative AI in text, image, and video generation, and how reducing anonymity could potentially restore credibility. My open question: Whether there is a reliable way to recognize these outputs, given that word frequency alone might not be a proof?&lt;/p&gt;
-&lt;h2 id=&quot;metaverse-not-only-a-playground&quot;&gt;🕹️ Metaverse, not only a Playground? 🕹️&lt;/h2&gt;
-&lt;p&gt;Nico Michels from Siemens presented the potentials of the Metaverse and digital twins. Q: I&#39;d love to see how such models can help even small municipalities with climate adaptation models, regional impact assessments, and improvement options?&lt;/p&gt;
-&lt;p&gt;The open questions highlight the stimulating topics the diverse guests who aim to drive positive change with a progressive mindset. I would like to thank Comma Soft AG and everyone involved for organizing this fantastic event, especially Stephan Huthmacher, whose heartfelt dedication makes this recurring, inspiring event possible. ❤️&lt;/p&gt;
-&lt;p&gt;Share your thoughts and impressions, I&#39;ll share the streams 🤗&lt;/p&gt;
-&lt;p&gt;#artificialintelligence #genai #sustainability #petersbergergespräche&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-sustainability-activity-7243978164564111361-12R6?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;current-landscape&quot;&gt;Current Landscape: 🏞️&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;There are a variety of GenAI solutions out there&lt;/li&gt;
+&lt;li&gt;Many models from big tech companies work increasingly well for certain use cases.&lt;/li&gt;
+&lt;li&gt;And we have launched our own solution. Why?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;our-technical-perspective&quot;&gt;Our technical perspective: 🤓&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Data-Flow-Control: We want to know what happens to our data.&lt;/li&gt;
+&lt;li&gt;Hosting: We host all our models and data on German servers.&lt;/li&gt;
+&lt;li&gt;On-Premise: We can run our entire tech stack on-premise without any internet connection&lt;/li&gt;
+&lt;li&gt;Our-own-Alan-Model: We optimize our models for dedicated use cases through further training (e.g., better language skills in GER)&lt;/li&gt;
+&lt;li&gt;Knowledge-Enrichment: We decide for ourselves whether we want to make new knowledge available through our novel training approach or through our optimized RAG approach (as you might know there are plenty of options).&lt;/li&gt;
+&lt;li&gt;Alignment: We have control over the alignment, i.e., to what extent the values and behaviors of the model match our expectations.&lt;/li&gt;
+&lt;li&gt;SOTA: We always remain state of the art in a fusion of existing open source base models and in-house developments.&lt;/li&gt;
+&lt;li&gt;Benchmarking: We use benchmarks and measures we trust.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With a great team at Comma Soft AG, it&#39;s enjoyable to develop such a helpful tool ❤️ In the appended PDF we show an extract of the full text story of our ALAN development journey 📖&lt;/p&gt;
+&lt;h2 id=&quot;questions&quot;&gt;Questions: 🤔&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;How did you decide if you want to develop something yourself or use more kind of wrappers?&lt;/li&gt;
+&lt;li&gt;How important is the management of sensitive data for you and where are your servers located?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;literature&quot;&gt;Literature: 📚&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Here is the full Humboldt Travel Report with more background stories: &lt;a href=&quot;https://lnkd.in/emwvpQsW&quot;&gt;https://lnkd.in/emwvpQsW&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Adjusting Model Alignment &lt;a href=&quot;https://lnkd.in/eWS-VZCD&quot;&gt;https://lnkd.in/eWS-VZCD&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Model Selection &lt;a href=&quot;https://lnkd.in/duGzWugD&quot;&gt;https://lnkd.in/duGzWugD&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Model Benchmarking &lt;a href=&quot;https://lnkd.in/dmBeQZ_j&quot;&gt;https://lnkd.in/dmBeQZ_j&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more GenAI LLM content and R&amp;amp;D discussions, follow me on LinkedIn. If you want to try out Alan, reach out to me: &lt;a href=&quot;http://alan.de&quot;&gt;http://alan.de&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;#artificialintelligence #llm #machinelearning #handson #genai&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_humboldt-travel-report-alan-llm-genai-activity-7208854388101005312-Xr_o?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   <entry>
-    <title>Today&#39;s Research Proposal - How to achieve &quot;real&quot; thinking and reasoning in GenAI, rather than just relying on a silent Chain of Thought, as seen in ReflectionAI or possibly GPT-o1?</title>
-    <link href="https://example.com/blog/240907_todays_research_proposal_how_to_achieve_real/" />
+    <title>DALLE has surprising guardrails. Your image is not filtered based on your prompt. &quot;Dead cookies&quot; may be generated ...sometimes</title>
+    <link href="https://example.com/blog/240213_dalle_has_surprising_guardrails/" />
     <updated>2024-09-30T00:00:00Z</updated>
-    <id>https://example.com/blog/240907_todays_research_proposal_how_to_achieve_real/</id>
-    <content type="html">&lt;p&gt;Exploring the potential for achieving true reasoning and thinking in Generative AI models beyond the current Chain of Thought methodologies.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/W1uRDiZMha-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/W1uRDiZMha-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/W1uRDiZMha-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;696&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+    <id>https://example.com/blog/240213_dalle_has_surprising_guardrails/</id>
+    <content type="html">&lt;p&gt;Interesting findings on DALLE&#39;s content filtering mechanisms.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/o3BtZuF2Rz-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/o3BtZuF2Rz-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/o3BtZuF2Rz-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Current state of reasoning in models&lt;/li&gt;
-&lt;li&gt;Possibilities for transformers to learn to think&lt;/li&gt;
-&lt;li&gt;Customization ideas for achieving true reasoning&lt;/li&gt;
-&lt;li&gt;Open questions and discussion points&lt;/li&gt;
+&lt;li&gt;DALLE-3 filters your content AFTER image creation&lt;/li&gt;
+&lt;li&gt;With prompt “dead cookies” you can reproduce inconsistent filtering over OpenAI API&lt;/li&gt;
+&lt;li&gt;40% of cases with same “dead cookies” prompt stop through content filter and 60% reach us over API&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;currently-reasoning-more-through-silent-the-cot&quot;&gt;Currently, reasoning more through silent the CoT 😥&lt;/h2&gt;
+&lt;h2 id=&quot;what-is-dalle-3&quot;&gt;What is DALLE-3 🖼️&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;There are currently models that claim to possess reasoning capabilities.&lt;/li&gt;
-&lt;li&gt;However, this is more about the Chain of Thought and the use of special tokens.&lt;/li&gt;
-&lt;li&gt;These enable the model to generate more text, thereby increasing the stability of its answers.&lt;/li&gt;
-&lt;li&gt;This process of &amp;quot;reasoning&amp;quot; is not transparently/barely shown.&lt;/li&gt;
-&lt;li&gt;I believe this is less about reasoning or thinking and more about statistical stability.&lt;/li&gt;
-&lt;li&gt;Moreover, it is not possible to observe the reasoning process, and it is often difficult to identify when a model has gone astray.&lt;/li&gt;
+&lt;li&gt;DALLE 3 is a generative text-to-image model by OpenAI also available as API&lt;/li&gt;
+&lt;li&gt;You pay per image&lt;/li&gt;
+&lt;li&gt;Images are created based on your prompt like “dead cookies”.&lt;/li&gt;
+&lt;li&gt;You can also add details like: “Dead Cookies in cute Pixar style” or “Dead cookies with dramatic situation in cute Pixar style”&lt;/li&gt;
+&lt;li&gt;Open-Source image GenAI models alternatives are available e.g., Stable Diffusion&lt;/li&gt;
+&lt;li&gt;Image GenAI are under discussion because of misuse like deepfakes or reproducing intellectual property.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;how-could-transformers-learn-to-think&quot;&gt;How could transformers learn to think? 🤯&lt;/h2&gt;
+&lt;h2 id=&quot;finding-observation&quot;&gt;Finding/Observation: 👩🏽‍🔬&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Why can I still imagine that it is possible to learn to think or reason with the transformer architecture?&lt;/li&gt;
-&lt;li&gt;Due to the transformer architecture, which includes tokenization, attention, and multi-layer perceptron elements, as well as the universal function approximation hypothesis, the following can be imagined:
-&lt;ol&gt;
-&lt;li&gt;In early layers, the network learns something akin to named entity recognition.&lt;/li&gt;
-&lt;li&gt;Later layers and embedding dimensions create structures that learn propositional logic and structures similar to knowledge graphs or their embeddings.&lt;/li&gt;
-&lt;li&gt;Finally, based on this, resonating and reflecting completeness of output logic components could be achieved.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
+&lt;li&gt;DALLE-3 has a content filter to reduce misuse&lt;/li&gt;
+&lt;li&gt;If you hit the content filter you do not get a resulting image for your prompt.&lt;/li&gt;
+&lt;li&gt;The content filter is not applied based on the prompt, it is applied AFTER DALLE-3 generated the image, and the API decides in an extra step if the image should be sent to you. Likely some Image classifier.&lt;/li&gt;
+&lt;li&gt;Same prompt sometimes results in an image and sometimes in a content-filter response. For the prompt “dead cookies” you get in 60% of requests an image and in 40% a content filter issue&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;what-else-would-i-customize-imho&quot;&gt;What else would I customize? 👨🏼‍💻 (IMHO)&lt;/h2&gt;
-&lt;p&gt;I would find it interesting to combine this with thought-diffusion models, making hierarchical planning possible. I have several more ideas..., reach out to me if you like to start a discussion ❤️&lt;/p&gt;
-&lt;h2 id=&quot;questions&quot;&gt;Questions:&lt;/h2&gt;
-&lt;p&gt;Are you aware of any approaches or research projects that attempt this?
-What are your thoughts on that, how would you build &amp;quot;AGI&amp;quot; it?&lt;/p&gt;
-&lt;p&gt;I had great idea exchanges on this with colleagues from Comma Soft AG, Lamarr-Institut &amp;amp; Smart Data Analytics.&lt;/p&gt;
-&lt;p&gt;Let&#39;s not waste money and time on believing in marketing claims and rebranding of the word &amp;quot;reasoning&amp;quot;, but let&#39;s start to think of how it could actually be achieved 🤗&lt;/p&gt;
-&lt;p&gt;#AGI #GenAI #artificialintelligence #research&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-sustainability-activity-7243978164564111361-12R6?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;how-we-found-out&quot;&gt;How we found out 🍪&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;We @Comma Soft AG develop tools and pipelines with OS GenAI but also with API requests.&lt;/li&gt;
+&lt;li&gt;For good API-response handling, we also had to consider content filter scenarios. So we combined trigger words like &amp;quot;dead&amp;quot; with something like &amp;quot;cookies&amp;quot;&lt;/li&gt;
+&lt;li&gt;We had inconsistent content filter and still the finding that in case of content filter the response time was roughly as long as in the case of created image.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;my-questions-to-you&quot;&gt;My Questions to you 🤷🏼‍♂️&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Who should pay for “dead cookies” if the resulting image was created but not sent due to content filter?&lt;/li&gt;
+&lt;li&gt;Have you known that the content filter for DALLE-3 is applied after image generation?&lt;/li&gt;
+&lt;li&gt;Do you also encounter content filter although your prompts were in principle ok?&lt;/li&gt;
+&lt;li&gt;Do you think content filters are a reasonable image GenAI misuse countermeasure?&lt;/li&gt;
+&lt;li&gt;How would you reduce Image GenAI misuse?&lt;/li&gt;
+&lt;li&gt;And most interesting (and we might never know OpenAI/DALL-E Open Ai), how do “Dead Cookies” images look like which are filtered out? 😅&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The image was created by the prompt &amp;quot;Dead cookies in cute pixar style&amp;quot;
+If you like more of such content, reach out to me 😊&lt;/p&gt;
+&lt;p&gt;#artificalintelligence #genai #aiethics #dalle #openai #texttoimage #deepfakes&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_artificalintelligence-genai-aiethics-activity-7158865169689821184-J8Y_?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>

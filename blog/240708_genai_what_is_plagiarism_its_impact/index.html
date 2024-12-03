@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>GenAI, what is plagiarism? Its Impact on Science. How should it be handled? What is your perspective?</title>
+		<meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+	--footer-background-color: #333;
+	--footer-font-color: #fff;
+	--header-background-color: #333;
+	--header-font-color: #fff;
+	--footer-height: 4rem;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #4e5f93;
+	--text-color-link-visited: #245242;
+
+	--syntax-tab-size: 2;
+
+	--card-background-color: #f9f9f9;
+	--card-border-color: #ccc;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+
+		/* Dark mode card colors */
+		--card-background-color: #333;
+		--card-border-color: #555;
+	}
+}
+
+.card {
+	display: flex;
+	align-items: center;
+	border: 1px solid var(--card-border-color);
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	background-color: var(--card-background-color);
+}
+
+.card h3 {
+	margin: 0;
+  }
+  
+.card p {
+	margin: 0;
+}
+
+.card div {
+	padding-left: 10px;
+}
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+.color-gray-50{
+	color:var(--color-gray-50)
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* .h-excerpt{
+	font-size: 1em;
+} */
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main {
+	padding: 1rem;
+	flex: 1;
+	max-width: 40em;
+	margin: 0 auto;
+	margin-bottom: var(--footer-height);
+}
+main :first-child {
+	margin-top: 0;
+}
+
+
+
+footer {
+	height: var(--footer-height);
+    background: var(--footer-background-color);
+    color: var(--footer-font-color);
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+	p {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+	}
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	background: var(--header-background-color);
+	color: var(--header-font-color);
+	padding: 1rem 0;
+	text-align: center;
+	a[href] {
+		color: var(--header-font-color);
+	}
+	a[href]:visited {
+		color: var(--header-font-color);
+	}
+}
+.site-title {
+	font-size: 2em;
+	padding-bottom: 0.4em;
+}
+
+.container {
+	display: flex; /* Hinzugefügt */
+	flex-direction: column; /* Hinzugefügt */
+	min-height: 100vh; /* Hinzugefügt */
+  }
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+.card {
+	display: flex;
+	align-items: center;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	background-color: var(--background-color);
+}
+.card img {
+	border-radius: 8px;
+	height: auto;
+	width: 90px;
+}
+.card .card-title {
+	font-size: 1.17em;
+	font-weight: bold;
+}
+.card-navigation ul {
+	flex: 1;
+	list-style: none;
+	padding: 0;
+}
+
+
+@media (prefers-color-scheme: dark) {
+	.invert-for-dark-mode {
+		filter: invert(100%);
+	}
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	margin-top: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	border-bottom: 1px solid var(--color-gray-50);
+}
+.postlist-item:last-child{
+	border-bottom: 0;
+}
+
+.postlist-date {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Anchor links next to heading */
+.ha-placeholder {
+	opacity: 0 !important;
+}
+h2:has(.ha-placeholder):hover,
+h3:has(.ha-placeholder):hover,
+h4:has(.ha-placeholder):hover,
+h5:has(.ha-placeholder):hover,
+h6:has(.ha-placeholder):hover {
+	.ha-placeholder {
+		opacity: 0.3 !important;
+	}
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}</style>
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<div class="site-title">Carsten Felix Draschner, PhD</div>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/blog/">Blog</a></li>
+					<li class="nav-item"><a href="/research/">Research</a></li>
+					<li class="nav-item"><a href="/projects/">Projects</a></li>
+					<li class="nav-item"><a href="/about/">CV</a></li>
+					<li class="nav-item"><a href="/contact/">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+<h1 id="genai-what-is-plagiarism-its-impact-on-science-how-should-it-be-handled-what-is-your-perspective">GenAI, what is plagiarism? Its Impact on Science. How should it be handled? What is your perspective?</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2024-07-08">08 July 2024</time></li>
+	<li><a href="/tags/blog/" class="post-tag">blog</a></li>
+</ul>
+
+
+<p>Discussing the implications of GenAI on scientific work and the thin line between acceptable use and plagiarism.</p>
+<p><picture><source type="image/avif" srcset="/img/PLpWNuwzop-800.avif 800w"><source type="image/webp" srcset="/img/PLpWNuwzop-800.webp 800w"><img loading="lazy" decoding="async" src="/img/PLpWNuwzop-800.jpeg" alt="Image 1" width="800" height="800"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Use of GenAI in scientific work</li>
+<li>Acceptable vs. debatable vs. critical usage</li>
+<li>Questions and concerns about plagiarism</li>
+<li>The pressure on researchers and students</li>
+<li>Opportunities for better research</li>
+</ul>
+<h2 id="current-situation">Current Situation 🏫</h2>
+<p>However, I see ChatGPT being used in many researchers' work to assist in the creation of (scientific) texts. Often it is also controlled or prohibited by the controlling institutions (schools, universities, paper-venues) to use such tools.</p>
+<h2 id="sample-genai-llm-usage-i-think-is-ok-imho">Sample GenAI-LLM usage I think is ok (IMHO) 🤗</h2>
+<p>I wonder how the following behavior in ChatGPT should be dealt with:</p>
+<ul>
+<li>You ask Chat GPT if it would correct commas and or capitalization in an existing text as Office Suites do</li>
+<li>You ask for rewording from passive to active or better and more varied synonyms such as in Grammarly which is also &quot;GenAI&quot;</li>
+<li>You can have texts translated to make quotes more easily accessible in the desired language like DeepL or Google Translate.</li>
+</ul>
+<p>These are all uses of Chat-GPT that I can imagine in the context of scientific work that was previously possible without &quot;ChatGPT&quot; and, in my opinion, doable with other tools without having to speak of plagiarism.</p>
+<h2 id="debatable-usage">Debatable usage 🤷🏼‍♂️</h2>
+<ul>
+<li>You are generating the abstract for your finished paper while correcting and polishing it manually yourself afterwards.</li>
+</ul>
+<h2 id="more-critical-usage">More critical usage 🧐</h2>
+<ul>
+<li>Write an entire text, paper/exercise/... simply based on a very refined prompt with LLM+RAG+Response-Verification and hand it in as your own work.</li>
+</ul>
+<h2 id="my-questions">My Questions 👨🏼‍🎓</h2>
+<p>I just ask myself how I would have worked if the tools were there or how I would want to deal with these kinds of situations as a lecturer.</p>
+<ul>
+<li>What should be allowed?</li>
+<li>What goes too far and falls under plagiarism?</li>
+<li>Which use of (GenAI) tools needs to be regulated and documented and how finely tuned?</li>
+<li>How do you think scientific work, reviews, and publications will change for better or for worse?</li>
+<li>Does your institution at least clearly regulate how (GenAI-)Tool usage is possible</li>
+</ul>
+<h2 id="current-problem">Current Problem 🫣</h2>
+<p>I see lots of pressure on students and research scientists to hand in their work or to publish papers. So they are tempted to use available tools. Not every GenAI will imply plagiarism but regulations are not clear as far as I have seen.</p>
+<h2 id="the-chance-to-research">The Chance to Research 👨🏼‍🔬</h2>
+<p>We have the chance to use GenAI for better research: acquire good information over RAG and Vector Search, Translate texts into our mother tongue, and Rewrite in shorter or clearer language or even more accessible language.... Chat interact with papers you have questions to....</p>
+<p>We at Comma Soft AG develop GenAI solutions and also actively using such tools to create great solutions while being aware and careful about possible plagiarism issues.</p>
+<p>#genai #plagiarism #research #artificialintelligence</p>
+<p><a href="https://www.linkedin.com/posts/carsten-draschner_genai-plagiarism-research-activity-7216090153457463298-37OX?utm_source=share&amp;utm_medium=member_desktop">LinkedIn Post</a></p>
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/240701_adjust_genai_responses_towards_more_ethical_behavior_possible/">Adjust GenAI responses towards more ethical behavior possible through system prompts!? Do you trust in such LLM-chat prepended pamphlets?</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/240715_llms_big_vs_small_bigger_is_better_or_lets_not_waste_energy/">LLMs - Big vs Small. Bigger is Better!? OR Let&#39;s not waste energy!?</a></li>
+</ul>
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
+		</footer>
+
+		<!-- This page `/blog/240708_genai_what_is_plagiarism_its_impact/` was built on 2024-12-03T14:08:08.708Z -->
+		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
+	</body>
+</html>
