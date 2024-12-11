@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>The Uncanny Valley Phenomenon in GenAI Face Synthesis</title>
+		<title>Fast New ELO Over MixEval. But Looking into Code, I Got Doubts!</title>
 		<meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
 		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
 		
@@ -566,47 +566,47 @@ h6:has(.ha-placeholder):hover {
 		<main id="skip">
 			<heading-anchors>
 				
-<h1 id="the-uncanny-valley-phenomenon-in-genai-face-synthesis">The Uncanny Valley Phenomenon in GenAI Face Synthesis</h1>
+<h1 id="fast-new-elo-over-mixeval-but-looking-into-code-i-got-doubts">Fast New ELO Over MixEval. But Looking into Code, I Got Doubts!</h1>
 
 <ul class="post-metadata">
-	<li><time datetime="2024-11-05">05 November 2024</time></li>
+	<li><time datetime="2024-06-20">20 June 2024</time></li>
 	<li><a href="/tags/blog/" class="post-tag">blog</a></li>
 </ul>
 
 
-<p>GenAI hits Uncanny Valley Problems as we have seen in Animation and Computer Games</p>
-<p><picture><source type="image/avif" srcset="/img/MFdV8_8zRS-946.avif 946w"><source type="image/webp" srcset="/img/MFdV8_8zRS-946.webp 946w"><img loading="lazy" decoding="async" src="/img/MFdV8_8zRS-946.png" alt="Image 1" width="946" height="870"></picture></p>
-<p><strong>TL;DR 📝</strong></p>
+<p>Have you seen that MixEval Hard has two interesting but little critical aspects</p>
+<p><picture><source type="image/avif" srcset="/img/Qs-Bzleob6-800.avif 800w"><source type="image/webp" srcset="/img/Qs-Bzleob6-800.webp 800w"><img loading="lazy" decoding="async" src="/img/Qs-Bzleob6-800.jpeg" alt="Image 1" width="800" height="745"></picture></p>
+<p><strong>TLDR</strong></p>
 <ul>
-<li>Official OSI definition of Open Source AI available.</li>
-<li>Meta doesn't like it 🙅‍♂️.</li>
-<li>State-of-the-art (SOTA) models lack being truly Open Source 🤔.</li>
-<li>&quot;Open Washing&quot; Problem of Meta and others?!</li>
+<li>Examined MixEval, an open-source LLM benchmark</li>
+<li>Uses LLMs as judges to predict continuous values</li>
+<li>Evaluation data contains duplicates</li>
+<li>Uncertain about trusting these methods</li>
 </ul>
-<h2 id="what-is-the-uncanny-valley">What Is The Uncanny Valley?</h2>
+<h2 id="issues-with-mixeval">Issues with MixEval</h2>
+<ol>
+<li>For freeform answering, it lets e.g. GPT35T as judge predict values like &quot;[[0.9]]&quot; and try to fetch this as reliable number for correctness score.</li>
+<li>The MixEval eval data contains several duplicates due to their sampling approach.</li>
+</ol>
+<h2 id="my-take">My Take</h2>
+<p>I like the concept of MixEval to have an open-source LLM benchmark which has a good overlap to Arena Elo, but I am unsure if I trust LLMs as judge which try to reason continuous numbers for freeform LLM answers and relies on duplicates in samples.</p>
+<h2 id="extract-of-my-hands-on-criteria">Extract of My Hands-On Criteria</h2>
 <ul>
-<li>The uncanny valley is a phenomenon where human-like objects or characters that are almost, but not quite, indistinguishable from real humans can evoke a sense of eeriness or discomfort. 🤖</li>
-<li>This concept is particularly relevant in the context of generative AI video synthesis of emotional human faces. 📹</li>
+<li>What do you think?</li>
+<li>Do you see an issue in duplicates within eval sets?</li>
+<li>Would you trust LLMs as judge predicting continuous values for later usage?</li>
 </ul>
-<h2 id="the-challenge-of-recreating-lifelike-faces">The Challenge of Recreating Lifelike Faces</h2>
+<h2 id="credit">Credit</h2>
+<p>Thanks Philipp Schmid for your post(s)</p>
+<h2 id="my-questions">My Questions?</h2>
 <ul>
-<li>Creating AI-generated faces that are both realistic and emotionally expressive is a significant challenge. 🤔</li>
-<li>Small imperfections in facial expressions, movements, or emotional nuances can make the synthesized faces appear strange or creepy to viewers. 👻</li>
+<li>What are your thoughts on MixEval?</li>
+<li>Do you trust LLMs as judges in evaluating continuous values?</li>
+<li>How do you handle duplicates in evaluation sets?</li>
 </ul>
-<h2 id="the-impact-on-emotional-intelligence">The Impact on Emotional Intelligence</h2>
-<ul>
-<li>The uncanny valley phenomenon can have a significant impact on the emotional intelligence of AI systems. 🤖</li>
-<li>If AI-generated faces are not convincingly realistic, they may not be able to evoke the desired emotional response from humans. 🤔</li>
-</ul>
-<h2 id="what-do-you-think">What Do You Think?</h2>
-<ul>
-<li>Can you think of any potential solutions to overcome the uncanny valley phenomenon in generative AI (face synthesis)? 💡</li>
-<li>Do you believe that the uncanny valley is a significant challenge that needs to be addressed in the development of emotionally intelligent AI systems? 🤔</li>
-<li>Share your thoughts and ideas in the comments! 💬</li>
-</ul>
-<p>#genai #deeptech #artificialintelligence #uncannyvalley</p>
+<p>#generativeai #artificialintelligence #llm #machinelearning #benchmark</p>
 
-<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/241025_a_genai_solution_tweak_to_rescue_ard_tagesschau_webpage/">A GenAI Solution/Tweak to Rescue ARD tagesschau webpage?!</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/241113_new_official_osi_open_source_ai_definition_attacks_metas_llama_as_open_washing/">New Official OSI &quot;Open Source AI definition&quot; attacks Meta&#39;s LLAMA as &quot;Open Washing&quot;</a></li>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/240617_do_we_need_another_genai_solution_how_why/">Do we need another GenAI solution? How &amp; why we developed a full-stack GenAI LLM+RAG tool called Alan. A sneak peek at what I am currently working on.</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/240624_alternative_to_genai_creativity_watch_and_try/">Alternative to GenAI creativity? Watch and try out these fun Evolutionary Algorithms. Problem-solving without GenAI and SGD-based approaches explained!</a></li>
 </ul>
 
 			</heading-anchors>
@@ -616,7 +616,7 @@ h6:has(.ha-placeholder):hover {
 			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
 		</footer>
 
-		<!-- This page `/blog/241105_the_uncanny_valley_phenomenon_in_genai_face_synthesis/` was built on 2024-12-11T10:47:24.174Z -->
+		<!-- This page `/blog/240620_MixEval_doubts/` was built on 2024-12-11T10:47:24.173Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

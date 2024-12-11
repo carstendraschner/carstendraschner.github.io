@@ -72,6 +72,11 @@
 	</url>
 	
 	<url>
+		<loc>https://example.com/blog/240220_beaten_gpt4/</loc>
+		<lastmod>2024-02-20</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://example.com/blog/240227_ever_wondered_about_open_source_llm_sizes/</loc>
 		<lastmod>2024-02-27</lastmod>
 	</url>
@@ -139,6 +144,11 @@
 	<url>
 		<loc>https://example.com/blog/240617_do_we_need_another_genai_solution_how_why/</loc>
 		<lastmod>2024-06-17</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/240620_MixEval_doubts/</loc>
+		<lastmod>2024-06-20</lastmod>
 	</url>
 	
 	<url>

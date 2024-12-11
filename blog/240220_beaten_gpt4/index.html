@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>The Uncanny Valley Phenomenon in GenAI Face Synthesis</title>
+		<title>We&#39;ve beaten GPT4! ... is a sentence which starts to annoy me.</title>
 		<meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
 		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
 		
@@ -566,47 +566,67 @@ h6:has(.ha-placeholder):hover {
 		<main id="skip">
 			<heading-anchors>
 				
-<h1 id="the-uncanny-valley-phenomenon-in-genai-face-synthesis">The Uncanny Valley Phenomenon in GenAI Face Synthesis</h1>
+<h1 id="we-ve-beaten-gpt4-is-a-sentence-which-starts-to-annoy-me">We&#39;ve beaten GPT4! ... is a sentence which starts to annoy me.</h1>
 
 <ul class="post-metadata">
-	<li><time datetime="2024-11-05">05 November 2024</time></li>
+	<li><time datetime="2024-02-20">20 February 2024</time></li>
 	<li><a href="/tags/blog/" class="post-tag">blog</a></li>
 </ul>
 
 
-<p>GenAI hits Uncanny Valley Problems as we have seen in Animation and Computer Games</p>
-<p><picture><source type="image/avif" srcset="/img/MFdV8_8zRS-946.avif 946w"><source type="image/webp" srcset="/img/MFdV8_8zRS-946.webp 946w"><img loading="lazy" decoding="async" src="/img/MFdV8_8zRS-946.png" alt="Image 1" width="946" height="870"></picture></p>
-<p><strong>TL;DR 📝</strong></p>
+<p>About Mistrust in LLM Evaluation. Benchmark contamination in LLMs? How to Evaluate GenAI?!</p>
+<p><picture><source type="image/avif" srcset="/img/MpNnbxOBA7-800.avif 800w"><source type="image/webp" srcset="/img/MpNnbxOBA7-800.webp 800w"><img loading="lazy" decoding="async" src="/img/MpNnbxOBA7-800.jpeg" alt="Image 1" width="800" height="800"></picture></p>
+<p><strong>𝗧𝗟;𝗗𝗥 ⏱️</strong></p>
 <ul>
-<li>Official OSI definition of Open Source AI available.</li>
-<li>Meta doesn't like it 🙅‍♂️.</li>
-<li>State-of-the-art (SOTA) models lack being truly Open Source 🤔.</li>
-<li>&quot;Open Washing&quot; Problem of Meta and others?!</li>
+<li>News is flooded with LLMs being “better” than GPT4</li>
+<li>LLM Evaluation is Difficult</li>
+<li>Benchmark Contamination is a serious issue</li>
+<li>Build your own use case specific benchmarks</li>
 </ul>
-<h2 id="what-is-the-uncanny-valley">What Is The Uncanny Valley?</h2>
+<h2 id="why-do-we-need-llm-benchmarks">Why do we need LLM benchmarks? 📊</h2>
 <ul>
-<li>The uncanny valley is a phenomenon where human-like objects or characters that are almost, but not quite, indistinguishable from real humans can evoke a sense of eeriness or discomfort. 🤖</li>
-<li>This concept is particularly relevant in the context of generative AI video synthesis of emotional human faces. 📹</li>
+<li>Many use cases can be solved by GenAI more specifically by LLMs</li>
+<li>Many LLMs are available as AIaaS or as an open-source model</li>
+<li>At some point, you need to select a specific model for your dedicated use case</li>
+<li>News is flooded by a multitude of models that are better than some reference LLM like OpenAIs GPT4</li>
 </ul>
-<h2 id="the-challenge-of-recreating-lifelike-faces">The Challenge of Recreating Lifelike Faces</h2>
+<h2 id="why-is-llm-evaluation">Why is LLM Evaluation? 👩🏽‍🔬</h2>
 <ul>
-<li>Creating AI-generated faces that are both realistic and emotionally expressive is a significant challenge. 🤔</li>
-<li>Small imperfections in facial expressions, movements, or emotional nuances can make the synthesized faces appear strange or creepy to viewers. 👻</li>
+<li>When we speak about leaderboards and benchmarks, we look into specific types of tasks.</li>
+<li>Those tasks need to be “easily measurable” as LLM might generate arbitrary texts.</li>
+<li>e.g. MMLU is simply a multiple choice and looks if first generated character is A-E.</li>
+<li>Other Benchmarks use e.g. another LLM as judge (which is expensive) and also fuzzy.</li>
+<li><strong>It is almost impossible to measure if an LLM learned the benchmark data by heart in its pretraining/fine-tuning stage to get on top of the leaderboard.</strong></li>
 </ul>
-<h2 id="the-impact-on-emotional-intelligence">The Impact on Emotional Intelligence</h2>
+<h2 id="my-tasks">My Tasks 🔍</h2>
 <ul>
-<li>The uncanny valley phenomenon can have a significant impact on the emotional intelligence of AI systems. 🤖</li>
-<li>If AI-generated faces are not convincingly realistic, they may not be able to evoke the desired emotional response from humans. 🤔</li>
+<li>Leaderboards are only a starting point for model selection.</li>
+<li>GenAI approach selection is a multidimensional problem.</li>
+<li>Develop a use-case-specific evaluation framework e.g. does the generated code run/match unit tests, is secure and fast</li>
+<li>For most of my use cases I barely care if the model can solve English multiple choice questions by simply evaluating if the first character is an A, B, C, D, or E like in MMLU.</li>
+<li>Already simple throughput benchmarks seem to have their issues. see: https://rb.gy/5l8qqp</li>
 </ul>
-<h2 id="what-do-you-think">What Do You Think?</h2>
+<h2 id="extract-of-my-hands-on-criteria">Extract of my hands-on criteria👨🏼‍💻</h2>
 <ul>
-<li>Can you think of any potential solutions to overcome the uncanny valley phenomenon in generative AI (face synthesis)? 💡</li>
-<li>Do you believe that the uncanny valley is a significant challenge that needs to be addressed in the development of emotionally intelligent AI systems? 🤔</li>
-<li>Share your thoughts and ideas in the comments! 💬</li>
+<li>Under which license is the model available and does the license allow my intended usage?</li>
+<li>What do we know about retuning especially regarding: multi-language support, instruction tuning, alignment, and context length?</li>
+<li>What hardware requirements/costs do we face, and which throughput can we provide? e.g. 13B vs 8x7B vs 70B ...</li>
 </ul>
-<p>#genai #deeptech #artificialintelligence #uncannyvalley</p>
+<h2 id="credit">Credit ❤️</h2>
+<ul>
+<li>To Hugging Face and other platforms for providing LLM Leaderboards and easily accessible models</li>
+<li>To OpenAI with its GPT-4 as reference established to be beaten</li>
+<li>To all benchmark creators and researchers supporting transparent and reliable GenAI evaluation</li>
+</ul>
+<h2 id="my-questions">My Questions?</h2>
+<ul>
+<li>What are the criteria you look at?</li>
+<li>What are the best benchmarks for you &amp; why do you trust those?</li>
+<li>Do you create your own benchmarks as we do Comma Soft AG</li>
+</ul>
+<p>#generativeai #artificialintelligence #llm #machinelearning #benchmark</p>
 
-<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/241025_a_genai_solution_tweak_to_rescue_ard_tagesschau_webpage/">A GenAI Solution/Tweak to Rescue ARD tagesschau webpage?!</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/241113_new_official_osi_open_source_ai_definition_attacks_metas_llama_as_open_washing/">New Official OSI &quot;Open Source AI definition&quot; attacks Meta&#39;s LLAMA as &quot;Open Washing&quot;</a></li>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/240213_dalle_has_surprising_guardrails/">DALLE has surprising guardrails. Your image is not filtered based on your prompt. &quot;Dead cookies&quot; may be generated ...sometimes</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/240227_ever_wondered_about_open_source_llm_sizes/">Ever wondered about open source LLLM sizes - 7B, 13B, 70B?</a></li>
 </ul>
 
 			</heading-anchors>
@@ -616,7 +636,7 @@ h6:has(.ha-placeholder):hover {
 			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
 		</footer>
 
-		<!-- This page `/blog/241105_the_uncanny_valley_phenomenon_in_genai_face_synthesis/` was built on 2024-12-11T10:47:24.174Z -->
+		<!-- This page `/blog/240220_beaten_gpt4/` was built on 2024-12-11T10:47:24.172Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

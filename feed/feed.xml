@@ -769,52 +769,41 @@ We provide models of various sizes to align with your unique requirements for ca
 </content>
   </entry>
   <entry>
-    <title>Do we need another GenAI solution? How &amp; why we developed a full-stack GenAI LLM+RAG tool called Alan. A sneak peek at what I am currently working on.</title>
-    <link href="https://carstendraschner.github.io/blog/240617_do_we_need_another_genai_solution_how_why/" />
-    <updated>2024-06-17T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/240617_do_we_need_another_genai_solution_how_why/</id>
-    <content type="html">&lt;p&gt;An overview of the motivations and technical aspects behind developing our own GenAI solution, Alan, at Comma Soft AG.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/UXAYbK_4C8-986.avif 986w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/UXAYbK_4C8-986.webp 986w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/UXAYbK_4C8-986.png&quot; alt=&quot;Alan PDF&quot; width=&quot;986&quot; height=&quot;668&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+    <title>Fast New ELO Over MixEval. But Looking into Code, I Got Doubts!</title>
+    <link href="https://carstendraschner.github.io/blog/240620_MixEval_doubts/" />
+    <updated>2024-06-20T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/240620_MixEval_doubts/</id>
+    <content type="html">&lt;p&gt;Have you seen that MixEval Hard has two interesting but little critical aspects&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/Qs-Bzleob6-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/Qs-Bzleob6-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/Qs-Bzleob6-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;745&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TLDR&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Diverse GenAI solutions exist&lt;/li&gt;
-&lt;li&gt;Unique motivations for developing our own tool&lt;/li&gt;
-&lt;li&gt;Technical advantages of our solution&lt;/li&gt;
-&lt;li&gt;Questions on custom development vs. wrappers&lt;/li&gt;
+&lt;li&gt;Examined MixEval, an open-source LLM benchmark&lt;/li&gt;
+&lt;li&gt;Uses LLMs as judges to predict continuous values&lt;/li&gt;
+&lt;li&gt;Evaluation data contains duplicates&lt;/li&gt;
+&lt;li&gt;Uncertain about trusting these methods&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;current-landscape&quot;&gt;Current Landscape: 🏞️&lt;/h2&gt;
+&lt;h2 id=&quot;issues-with-mixeval&quot;&gt;Issues with MixEval&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;For freeform answering, it lets e.g. GPT35T as judge predict values like &amp;quot;[[0.9]]&amp;quot; and try to fetch this as reliable number for correctness score.&lt;/li&gt;
+&lt;li&gt;The MixEval eval data contains several duplicates due to their sampling approach.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;my-take&quot;&gt;My Take&lt;/h2&gt;
+&lt;p&gt;I like the concept of MixEval to have an open-source LLM benchmark which has a good overlap to Arena Elo, but I am unsure if I trust LLMs as judge which try to reason continuous numbers for freeform LLM answers and relies on duplicates in samples.&lt;/p&gt;
+&lt;h2 id=&quot;extract-of-my-hands-on-criteria&quot;&gt;Extract of My Hands-On Criteria&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;There are a variety of GenAI solutions out there&lt;/li&gt;
-&lt;li&gt;Many models from big tech companies work increasingly well for certain use cases.&lt;/li&gt;
-&lt;li&gt;And we have launched our own solution. Why?&lt;/li&gt;
+&lt;li&gt;What do you think?&lt;/li&gt;
+&lt;li&gt;Do you see an issue in duplicates within eval sets?&lt;/li&gt;
+&lt;li&gt;Would you trust LLMs as judge predicting continuous values for later usage?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;our-technical-perspective&quot;&gt;Our technical perspective: 🤓&lt;/h2&gt;
+&lt;h2 id=&quot;credit&quot;&gt;Credit&lt;/h2&gt;
+&lt;p&gt;Thanks Philipp Schmid for your post(s)&lt;/p&gt;
+&lt;h2 id=&quot;my-questions&quot;&gt;My Questions?&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Data-Flow-Control: We want to know what happens to our data.&lt;/li&gt;
-&lt;li&gt;Hosting: We host all our models and data on German servers.&lt;/li&gt;
-&lt;li&gt;On-Premise: We can run our entire tech stack on-premise without any internet connection&lt;/li&gt;
-&lt;li&gt;Our-own-Alan-Model: We optimize our models for dedicated use cases through further training (e.g., better language skills in GER)&lt;/li&gt;
-&lt;li&gt;Knowledge-Enrichment: We decide for ourselves whether we want to make new knowledge available through our novel training approach or through our optimized RAG approach (as you might know there are plenty of options).&lt;/li&gt;
-&lt;li&gt;Alignment: We have control over the alignment, i.e., to what extent the values and behaviors of the model match our expectations.&lt;/li&gt;
-&lt;li&gt;SOTA: We always remain state of the art in a fusion of existing open source base models and in-house developments.&lt;/li&gt;
-&lt;li&gt;Benchmarking: We use benchmarks and measures we trust.&lt;/li&gt;
+&lt;li&gt;What are your thoughts on MixEval?&lt;/li&gt;
+&lt;li&gt;Do you trust LLMs as judges in evaluating continuous values?&lt;/li&gt;
+&lt;li&gt;How do you handle duplicates in evaluation sets?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;With a great team at Comma Soft AG, it&#39;s enjoyable to develop such a helpful tool ❤️ In the appended PDF we show an extract of the full text story of our ALAN development journey 📖&lt;/p&gt;
-&lt;h2 id=&quot;questions&quot;&gt;Questions: 🤔&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;How did you decide if you want to develop something yourself or use more kind of wrappers?&lt;/li&gt;
-&lt;li&gt;How important is the management of sensitive data for you and where are your servers located?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;literature&quot;&gt;Literature: 📚&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Here is the full Humboldt Travel Report with more background stories: &lt;a href=&quot;https://lnkd.in/emwvpQsW&quot;&gt;https://lnkd.in/emwvpQsW&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Adjusting Model Alignment &lt;a href=&quot;https://lnkd.in/eWS-VZCD&quot;&gt;https://lnkd.in/eWS-VZCD&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Model Selection &lt;a href=&quot;https://lnkd.in/duGzWugD&quot;&gt;https://lnkd.in/duGzWugD&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Model Benchmarking &lt;a href=&quot;https://lnkd.in/dmBeQZ_j&quot;&gt;https://lnkd.in/dmBeQZ_j&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For more GenAI LLM content and R&amp;amp;D discussions, follow me on LinkedIn. If you want to try out Alan, reach out to me: &lt;a href=&quot;http://alan.de&quot;&gt;http://alan.de&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;#artificialintelligence #llm #machinelearning #handson #genai&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_humboldt-travel-report-alan-llm-genai-activity-7208854388101005312-Xr_o?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;#generativeai #artificialintelligence #llm #machinelearning #benchmark&lt;/p&gt;
 </content>
   </entry>
 </feed>
