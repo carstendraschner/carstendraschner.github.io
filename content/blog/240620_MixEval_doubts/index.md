@@ -4,6 +4,7 @@ date: 2024-06-20
 linkedInUrl: https://www.linkedin.com/posts/carsten-draschner_claude-35-sonnet-ranks-1-on-mixeval-hard-activity-7209826705740361728-Fn3x?utm_source=share&utm_medium=member_desktop
 tags: blog
 ---
+Have you seen that MixEval Hard has two interesting but little critical aspects
 
 ![Image 1](/img/blog_images/1718914809405.jpeg)
 
@@ -14,10 +15,6 @@ tags: blog
 - Uncertain about trusting these methods
 
 <!-- excerpt -->
-
-## Interesting Findings in MixEval
-
-Have you seen that MixEval Hard has two interesting but little critical aspects:
 
 ## Issues with MixEval
 
