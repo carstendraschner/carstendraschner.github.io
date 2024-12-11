@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="pretty-atom-feed.xsl" type="text/xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-  <title>Blog Title</title>
-  <subtitle>This is a longer description about your blog.</subtitle>
-  <link href="https://example.com/feed/feed.xml" rel="self" />
-  <link href="https://example.com/" />
+  <title>Carsten Felix Draschner - AI R&amp;D</title>
+  <subtitle>Various updates and insides into cutting edge AI Research and Development including AI Ethics and perspective from European Union.</subtitle>
+  <link href="https://carstendraschner.github.io/feed/feed.xml" rel="self" />
+  <link href="https://carstendraschner.github.io/blog/" />
   <updated>2024-12-27T00:00:00Z</updated>
-  <id>https://example.com/</id>
+  <id>https://carstendraschner.github.io/blog/</id>
   <author>
-    <name>Your Name</name>
+    <name>Carsten Felix Draschner</name>
   </author>
   <entry>
     <title>New DE/EU Open Source LLM 🇪🇺 Teuken 7B, Now Truly Open Source?</title>
-    <link href="https://example.com/blog/241127_Teuken_Review/" />
+    <link href="https://carstendraschner.github.io/blog/241127_Teuken_Review/" />
     <updated>2024-12-27T00:00:00Z</updated>
-    <id>https://example.com/blog/241127_Teuken_Review/</id>
+    <id>https://carstendraschner.github.io/blog/241127_Teuken_Review/</id>
     <content type="html">&lt;p&gt;New Model out of Open-GPT-X developed within Germany from European Perspective&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/u966D37VBY-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/u966D37VBY-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/u966D37VBY-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;749&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/u966D37VBY-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/u966D37VBY-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/u966D37VBY-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;749&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;New German OS LLM&lt;/li&gt;
@@ -49,12 +49,12 @@
   </entry>
   <entry>
     <title>We&#39;re Dealing with the Butterfly Effect in LLM Creation Pipelines 🦋🤖</title>
-    <link href="https://example.com/blog/241120_were_dealing_with_the_butterfly_effect_in_llm_creation_pipelines/" />
+    <link href="https://carstendraschner.github.io/blog/241120_were_dealing_with_the_butterfly_effect_in_llm_creation_pipelines/" />
     <updated>2024-11-20T00:00:00Z</updated>
-    <id>https://example.com/blog/241120_were_dealing_with_the_butterfly_effect_in_llm_creation_pipelines/</id>
+    <id>https://carstendraschner.github.io/blog/241120_were_dealing_with_the_butterfly_effect_in_llm_creation_pipelines/</id>
     <content type="html">&lt;p&gt;When we develop novel LLMs, AI-Agents and GenAI Pipelines for Alan.de or within our various other GenAI projects, we&#39;re continuously learning about the Butterfly Effect in GenAI creation pipelines and how to mitigate this problem. 👨🏼‍💻
 🤯 Every change can have a huge impact on the entire pipeline that creates and executes models&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/ODUjemRpOm-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/ODUjemRpOm-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/ODUjemRpOm-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/ODUjemRpOm-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/ODUjemRpOm-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/ODUjemRpOm-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The Butterfly Effect can significantly impact LLM creation pipelines.&lt;/li&gt;
@@ -88,11 +88,11 @@
   </entry>
   <entry>
     <title>New Official OSI &quot;Open Source AI definition&quot; attacks Meta&#39;s LLAMA as &quot;Open Washing&quot;</title>
-    <link href="https://example.com/blog/241113_new_official_osi_open_source_ai_definition_attacks_metas_llama_as_open_washing/" />
+    <link href="https://carstendraschner.github.io/blog/241113_new_official_osi_open_source_ai_definition_attacks_metas_llama_as_open_washing/" />
     <updated>2024-11-13T00:00:00Z</updated>
-    <id>https://example.com/blog/241113_new_official_osi_open_source_ai_definition_attacks_metas_llama_as_open_washing/</id>
+    <id>https://carstendraschner.github.io/blog/241113_new_official_osi_open_source_ai_definition_attacks_metas_llama_as_open_washing/</id>
     <content type="html">&lt;p&gt;We getting closer what should be considered being open source in GenAI and not only open weight.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/MZY7DxFWA2-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/MZY7DxFWA2-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/MZY7DxFWA2-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/MZY7DxFWA2-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/MZY7DxFWA2-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/MZY7DxFWA2-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR 📝&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Official OSI definition of Open Source AI available.&lt;/li&gt;
@@ -126,11 +126,11 @@
   </entry>
   <entry>
     <title>The Uncanny Valley Phenomenon in GenAI Face Synthesis</title>
-    <link href="https://example.com/blog/241105_the_uncanny_valley_phenomenon_in_genai_face_synthesis/" />
+    <link href="https://carstendraschner.github.io/blog/241105_the_uncanny_valley_phenomenon_in_genai_face_synthesis/" />
     <updated>2024-11-05T00:00:00Z</updated>
-    <id>https://example.com/blog/241105_the_uncanny_valley_phenomenon_in_genai_face_synthesis/</id>
+    <id>https://carstendraschner.github.io/blog/241105_the_uncanny_valley_phenomenon_in_genai_face_synthesis/</id>
     <content type="html">&lt;p&gt;GenAI hits Uncanny Valley Problems as we have seen in Animation and Computer Games&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/MFdV8_8zRS-946.avif 946w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/MFdV8_8zRS-946.webp 946w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/MFdV8_8zRS-946.png&quot; alt=&quot;Image 1&quot; width=&quot;946&quot; height=&quot;870&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/MFdV8_8zRS-946.avif 946w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/MFdV8_8zRS-946.webp 946w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/MFdV8_8zRS-946.png&quot; alt=&quot;Image 1&quot; width=&quot;946&quot; height=&quot;870&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR 📝&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Official OSI definition of Open Source AI available.&lt;/li&gt;
@@ -164,11 +164,11 @@
   </entry>
   <entry>
     <title>A GenAI Solution/Tweak to Rescue ARD tagesschau webpage?!</title>
-    <link href="https://example.com/blog/241025_a_genai_solution_tweak_to_rescue_ard_tagesschau_webpage/" />
+    <link href="https://carstendraschner.github.io/blog/241025_a_genai_solution_tweak_to_rescue_ard_tagesschau_webpage/" />
     <updated>2024-10-25T00:00:00Z</updated>
-    <id>https://example.com/blog/241025_a_genai_solution_tweak_to_rescue_ard_tagesschau_webpage/</id>
+    <id>https://carstendraschner.github.io/blog/241025_a_genai_solution_tweak_to_rescue_ard_tagesschau_webpage/</id>
     <content type="html">&lt;p&gt;Brainstorming how old regulations meet new GenAI opportunities.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/O_cWA3fM8t-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/O_cWA3fM8t-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/O_cWA3fM8t-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/O_cWA3fM8t-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/O_cWA3fM8t-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/O_cWA3fM8t-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR 📝&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Debate over new regulations restricting text content of public broadcasters online.&lt;/li&gt;
@@ -209,11 +209,11 @@
   </entry>
   <entry>
     <title>We Cannot Waste Time and Resources through Regenerating GenAI Creations! GenAI Control is Key for Productivity!</title>
-    <link href="https://example.com/blog/241016_we_cannot_waste_time_and_resources_through_regenerating_genai_creations_genai_control_is_key_for_productivity/" />
+    <link href="https://carstendraschner.github.io/blog/241016_we_cannot_waste_time_and_resources_through_regenerating_genai_creations_genai_control_is_key_for_productivity/" />
     <updated>2024-10-16T00:00:00Z</updated>
-    <id>https://example.com/blog/241016_we_cannot_waste_time_and_resources_through_regenerating_genai_creations_genai_control_is_key_for_productivity/</id>
+    <id>https://carstendraschner.github.io/blog/241016_we_cannot_waste_time_and_resources_through_regenerating_genai_creations_genai_control_is_key_for_productivity/</id>
     <content type="html">&lt;p&gt;We will see more and more precise adjustment options in GenAI Tooling&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/DGwfP2s1_T-664.avif 664w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/DGwfP2s1_T-664.webp 664w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/DGwfP2s1_T-664.png&quot; alt=&quot;Image 1&quot; width=&quot;664&quot; height=&quot;488&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/DGwfP2s1_T-664.avif 664w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/DGwfP2s1_T-664.webp 664w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/DGwfP2s1_T-664.png&quot; alt=&quot;Image 1&quot; width=&quot;664&quot; height=&quot;488&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;GenAI often lacks precise Adjuments&lt;/li&gt;
@@ -230,11 +230,11 @@
   </entry>
   <entry>
     <title>Choosing the Right LLM for Your Needs - Key Considerations</title>
-    <link href="https://example.com/blog/241008_choosing_the_right_llm_for_your_needs_key_considerations/" />
+    <link href="https://carstendraschner.github.io/blog/241008_choosing_the_right_llm_for_your_needs_key_considerations/" />
     <updated>2024-10-08T00:00:00Z</updated>
-    <id>https://example.com/blog/241008_choosing_the_right_llm_for_your_needs_key_considerations/</id>
+    <id>https://carstendraschner.github.io/blog/241008_choosing_the_right_llm_for_your_needs_key_considerations/</id>
     <content type="html">&lt;p&gt;Consider the key factors when selecting a Large Language Model (LLM) for your project.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/TSnOnDgQhc-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/TSnOnDgQhc-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/TSnOnDgQhc-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/TSnOnDgQhc-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/TSnOnDgQhc-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/TSnOnDgQhc-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Benchmark Performance&lt;/li&gt;
@@ -266,11 +266,11 @@
   </entry>
   <entry>
     <title>Stop adding Languages to LLMs! The Potential Drawbacks of Training Multilingual Large Language Models (LLMs) for Performance and Sustainability!</title>
-    <link href="https://example.com/blog/241001_stop_adding_languages_to_llms_the_potential/" />
+    <link href="https://carstendraschner.github.io/blog/241001_stop_adding_languages_to_llms_the_potential/" />
     <updated>2024-10-01T00:00:00Z</updated>
-    <id>https://example.com/blog/241001_stop_adding_languages_to_llms_the_potential/</id>
+    <id>https://carstendraschner.github.io/blog/241001_stop_adding_languages_to_llms_the_potential/</id>
     <content type="html">&lt;p&gt;Exploring the downsides of creating multilingual LLMs and their impact on performance and resource utilization.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/JA9fsEHeRy-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/JA9fsEHeRy-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/JA9fsEHeRy-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/JA9fsEHeRy-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/JA9fsEHeRy-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/JA9fsEHeRy-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Challenges of building multilingual LLMs&lt;/li&gt;
@@ -309,11 +309,11 @@
   </entry>
   <entry>
     <title>Where Science Meets Innovation - My personal Highlights &amp; Insights into the PG 2024! Do you have answers to the open Questions?</title>
-    <link href="https://example.com/blog/240924_where_science_meets_innovation_my_personal/" />
+    <link href="https://carstendraschner.github.io/blog/240924_where_science_meets_innovation_my_personal/" />
     <updated>2024-09-24T00:00:00Z</updated>
-    <id>https://example.com/blog/240924_where_science_meets_innovation_my_personal/</id>
+    <id>https://carstendraschner.github.io/blog/240924_where_science_meets_innovation_my_personal/</id>
     <content type="html">&lt;p&gt;Highlights and open questions from the Petersberger Gespräche (PG) 2024, covering AI, energy transition, chip technologies, and more.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/vuj-G2c0U--2198.avif 2198w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/vuj-G2c0U--2198.webp 2198w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/vuj-G2c0U--2198.png&quot; alt=&quot;PG 2024 Highlights&quot; width=&quot;2198&quot; height=&quot;952&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/vuj-G2c0U--2198.avif 2198w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/vuj-G2c0U--2198.webp 2198w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/vuj-G2c0U--2198.png&quot; alt=&quot;PG 2024 Highlights&quot; width=&quot;2198&quot; height=&quot;952&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;AI and consciousness discussions&lt;/li&gt;
@@ -340,11 +340,11 @@
   </entry>
   <entry>
     <title>Today&#39;s Research Proposal - How to achieve &quot;real&quot; thinking and reasoning in GenAI, rather than just relying on a silent Chain of Thought, as seen in ReflectionAI or possibly GPT-o1?</title>
-    <link href="https://example.com/blog/240917_todays_research_proposal_how_to_achieve_real/" />
+    <link href="https://carstendraschner.github.io/blog/240917_todays_research_proposal_how_to_achieve_real/" />
     <updated>2024-09-17T00:00:00Z</updated>
-    <id>https://example.com/blog/240917_todays_research_proposal_how_to_achieve_real/</id>
+    <id>https://carstendraschner.github.io/blog/240917_todays_research_proposal_how_to_achieve_real/</id>
     <content type="html">&lt;p&gt;Exploring the potential for achieving true reasoning and thinking in Generative AI models beyond the current Chain of Thought methodologies.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/W1uRDiZMha-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/W1uRDiZMha-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/W1uRDiZMha-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;696&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/W1uRDiZMha-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/W1uRDiZMha-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/W1uRDiZMha-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;696&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Current state of reasoning in models&lt;/li&gt;
@@ -381,6 +381,440 @@ What are your thoughts on that, how would you build &amp;quot;AGI&amp;quot; it?&
 &lt;p&gt;Let&#39;s not waste money and time on believing in marketing claims and rebranding of the word &amp;quot;reasoning&amp;quot;, but let&#39;s start to think of how it could actually be achieved 🤗&lt;/p&gt;
 &lt;p&gt;#AGI #GenAI #artificialintelligence #research&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-sustainability-activity-7243978164564111361-12R6?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>For more sustainability transparency in GenAI! Share your knowledge and reduce energy waste!</title>
+    <link href="https://carstendraschner.github.io/blog/240910_for_more_sustainability_transparency_in_genai_share/" />
+    <updated>2024-09-10T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/240910_for_more_sustainability_transparency_in_genai_share/</id>
+    <content type="html">&lt;p&gt;Emphasizing the importance of transparency and shared knowledge to enhance sustainability in GenAI.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/6P9nHx-165-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/6P9nHx-165-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/6P9nHx-165-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;538&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GenAI involves very large models and significant training efforts&lt;/li&gt;
+&lt;li&gt;Transparency can help share emissions and reduce energy waste&lt;/li&gt;
+&lt;li&gt;Open source models can optimize future development&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;genai-and-sustainability&quot;&gt;GenAI and Sustainability 🌱&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GenAI is implemented through very large models.&lt;/li&gt;
+&lt;li&gt;The training can be substantial, such as the 15T tokens of LLAMA 3.1.&lt;/li&gt;
+&lt;li&gt;However, these trainings represent only the final training and not all the attempts that led to the final model.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;how-transparency-helps&quot;&gt;How Transparency helps 📚&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;If the models are open or, in the best case, open source, many users and use cases can share the resulting emissions.&lt;/li&gt;
+&lt;li&gt;It would also be interesting to see how often models are used for inference to compare the relative share of emissions.&lt;/li&gt;
+&lt;li&gt;Open source would be important to share learnings for the next generation of models and thus reduce emissions by reusing hyperparameter optimizations.
+Please share your findings and let&#39;s use our resources and energy wisely.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;our-paper&quot;&gt;Our Paper 📄&lt;/h2&gt;
+&lt;p&gt;In our paper “Ethical and Sustainability Considerations for Knowledge Graph based Machine Learning,” we highlight which sustainability and ethical optimizations are possible when working with hardware-intensive Artificial Intelligence approaches. Link: &lt;a href=&quot;https://lnkd.in/eJjATkTQ&quot;&gt;https://lnkd.in/eJjATkTQ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;What are you doing to bring AI, ethics, and sustainability together? ❤️&lt;/p&gt;
+&lt;p&gt;#artificialintelligence #genai #llm #sustainability #aiethics&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_environmental-impact-of-ai-some-model-activity-7236647589096361986-9rSm?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Sustainable Air-Gapped On-Prem LLM Solution! How can we make GenAI available on almost any hardware, and how is it also available as a portable demo on our Alan Notebook</title>
+    <link href="https://carstendraschner.github.io/blog/240903_sustainable_air_gapped_on_prem_llm_solution/" />
+    <updated>2024-09-03T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/240903_sustainable_air_gapped_on_prem_llm_solution/</id>
+    <content type="html">&lt;p&gt;Exploring the development of a full-stack GenAI LLM solution that can run on a variety of hardware configurations, including a portable demo setup.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/rVdiXLZ0_K-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/rVdiXLZ0_K-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/rVdiXLZ0_K-800.jpeg&quot; alt=&quot;Alan Notebook&quot; width=&quot;800&quot; height=&quot;879&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Developing Alan, a full-stack GenAI LLM solution&lt;/li&gt;
+&lt;li&gt;Hosted on German hyperscaler infrastructure&lt;/li&gt;
+&lt;li&gt;Offers a smaller version, Alan-S-LLM&lt;/li&gt;
+&lt;li&gt;Portable demo available on Alan Notebook&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;what-we-re-working-on-when-we-talk-about-alan-r-and-d&quot;&gt;What We&#39;re Working on When We Talk About Alan R&amp;amp;D 👨🏼‍💻&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;In a recent post, I introduced how we&#39;re developing Alan, a full-stack GenAI LLM solution.&lt;/li&gt;
+&lt;li&gt;We host our solution within German hyperscaler infrastructure to deal with the requirements of multiple customer tenants and our large language models, including retrieval augmented generation pipelines.&lt;/li&gt;
+&lt;li&gt;The requirements of our strongest Alan LLM require current top-notch Nvidia GPUs (Ampere+, 80GB VRAM), but we also offer a smaller Alan-S-LLM, which still has tremendous capabilities with fewer hardware requirements.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;how-to-shrink-llms&quot;&gt;How to Shrink LLMs 🤖&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Models are smaller in dimensions like the number of transformer layers, heads, hidden dimensions, and other hyperparameters.&lt;/li&gt;
+&lt;li&gt;Current smaller GenAI LLMs can be designed by model distillation and model pruning, which try to keep model quality high while reducing the number of parameters.&lt;/li&gt;
+&lt;li&gt;The reduced number of parameters reduces VRAM requirements. Fewer parameters, especially fewer transformer layers, increase the throughput and inference performance as well.&lt;/li&gt;
+&lt;li&gt;The reduction of bits used to represent each parameter of the LLM reduces the required total GPU VRAM.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;our-alan-demo-notebook&quot;&gt;Our Alan Demo Notebook 💻&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;To demonstrate that our entire tech stack is capable of running entirely air-gapped and to showcase that we&#39;re truly capable of showing this on even a portable system, we developed the Alan-Notebook.&lt;/li&gt;
+&lt;li&gt;This notebook uses the entire tech stack, which includes all the components that offer Multi-GPU Cluster setups, handling of users, RAG pipelines, and, of course, LLM text inference.&lt;/li&gt;
+&lt;li&gt;The model behind is our fastest and most efficient Alan-S-Model. The notebook has limited hardware capabilities, especially within the GPU (16GB, Nvidia), but can still run the entire tech stack.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;further-reading&quot;&gt;Further Reading:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;LLM Model Sizes: &lt;a href=&quot;https://shorturl.at/6ZxMq&quot;&gt;https://shorturl.at/6ZxMq&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Alan - Our Developer Journey: &lt;a href=&quot;https://shorturl.at/PqLdE&quot;&gt;https://shorturl.at/PqLdE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Full details of how infrastructure is scaled down by Dr. Laura Maaßen see &lt;a href=&quot;https://lmy.de/eicOw&quot;&gt;https://lmy.de/eicOw&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you&#39;re interested in how we develop an entire scalable GenAI solution and you want to see some details into our R&amp;amp;D, follow me on LinkedIn and reach out to us. Thanks to my wonderful teammates Dr. Laura Maaßen and Lars Flöer, who made this Alan Notebook possible, and to the entire Alan Development Team Comma Soft AG for supporting this great project and product.&lt;/p&gt;
+&lt;p&gt;#genai #onprem #llm #alan&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_genai-onprem-llm-activity-7233851548349444097-lF4N?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Combining the Hugging Face Model Platform and Knowledge Graph trend analysis over time could improve GenAI research and reduce waste of energy!</title>
+    <link href="https://carstendraschner.github.io/blog/240830_combining_the_hugging_face_model_platform_and_knowledge/" />
+    <updated>2024-08-30T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/240830_combining_the_hugging_face_model_platform_and_knowledge/</id>
+    <content type="html">&lt;p&gt;Exploring the potential of leveraging knowledge graphs to analyze trends in evolving models for better GenAI research and efficiency.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/Z0Z_6VvJDf-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/Z0Z_6VvJDf-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/Z0Z_6VvJDf-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;545&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Leveraging knowledge graphs for GenAI trends&lt;/li&gt;
+&lt;li&gt;Identifying high-performing models and best practices&lt;/li&gt;
+&lt;li&gt;Potential for a crowd-sourced GenAI cookbook&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Traversing the possible huge knowledge graph of evolving models... It would be interesting to see trends within this graph, such as which families and architectures are trending 📈. I&#39;d love to explore over time what approaches for fine-tuning, datasets, or even the number of transformer layers/heads, etc. create high-performing and efficient models 🌱. So we could create a crowd-sourced best practice GenAI cookbook ❤️👩🏽‍🍳. Please let me know if you are already working on it Thomas Wolf 🤗&lt;/p&gt;
+&lt;p&gt;#LostInGenai #artificialintelligence #huggingface #knowledgegraphs #genairesearch&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_have-you-noticed-the-new-model-tree-section-activity-7229418184590737409-UoNB?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>What is the perfect approach to adjust an LLM to your GenAI use case?</title>
+    <link href="https://carstendraschner.github.io/blog/240729_what_is_the_perfect_approach_to_adjust_an_llm_to_your_genai_use_case/" />
+    <updated>2024-07-29T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/240729_what_is_the_perfect_approach_to_adjust_an_llm_to_your_genai_use_case/</id>
+    <content type="html">&lt;p&gt;Exploring various methods to customize LLMs for specific GenAI use cases, ranging from simple to complex approaches.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/P0lj_EZjfb-906.avif 906w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/P0lj_EZjfb-906.webp 906w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/P0lj_EZjfb-906.png&quot; alt=&quot;Model Training&quot; width=&quot;906&quot; height=&quot;335&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Various ways to customize LLMs for specific use cases&lt;/li&gt;
+&lt;li&gt;Approaches vary in difficulty and complexity&lt;/li&gt;
+&lt;li&gt;Pros and cons of different methods&lt;/li&gt;
+&lt;li&gt;More dimensions to improve GenAI use cases&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;key-considerations&quot;&gt;Key Considerations:&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Prompt Engineering &amp;amp; In-Context Learning:&lt;/strong&gt; Manually enriching the prompt with information to guide the model’s prediction into desired behavior.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Retrieval-Augmented Generation:&lt;/strong&gt; Automatically retrieving context that is appended to the prompt on the fly after being retrieved through vector database similarity search and reranking.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Parameter-Efficient Finetuning:&lt;/strong&gt; Training only a subset of the model&#39;s parameters while keeping others unchanged.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Parameter Finetuning:&lt;/strong&gt; Training all parameters.&lt;/p&gt;
+&lt;p&gt;These approaches have pros and cons in terms of (and not limited to):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Catastrophic Forgetting&lt;/li&gt;
+&lt;li&gt;Memory Load&lt;/li&gt;
+&lt;li&gt;Maximum Context-Size limits&lt;/li&gt;
+&lt;li&gt;Hallucinations&lt;/li&gt;
+&lt;li&gt;Response Time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are also more approaches and dimensions to improve GenAI Use Cases like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Guardrails&lt;/li&gt;
+&lt;li&gt;Structured output
+and many more.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What are you working on, and which field are you interested in to see how we are working on it?&lt;/p&gt;
+&lt;p&gt;We at Comma Soft AG implement these and more approaches into our own Product Alan.de and support also other GenAI Use Cases through these approaches.&lt;/p&gt;
+&lt;p&gt;Reach out to me 🤗 and follow me for more content ❤️&lt;/p&gt;
+&lt;p&gt;#artificialintelligence #genai #llm&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-llm-activity-7228755735776546817-cUi0?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>These results give me hope for sustainable AI 🌱</title>
+    <link href="https://carstendraschner.github.io/blog/240722_these_results_give_me_hope_for_sustainable_ai/" />
+    <updated>2024-07-22T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/240722_these_results_give_me_hope_for_sustainable_ai/</id>
+    <content type="html">&lt;p&gt;I&#39;m impressed by some of the recent advances in the field of &amp;quot;small&amp;quot; open-weight Language Models (LLMs).&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/huHTF98SzS-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/huHTF98SzS-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/huHTF98SzS-800.jpeg&quot; alt=&quot;Sustainable AI&quot; width=&quot;800&quot; height=&quot;450&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Increased documentation supports reproducibility&lt;/li&gt;
+&lt;li&gt;Data quality improves model performance&lt;/li&gt;
+&lt;li&gt;Model distillation reduces hardware needs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;more-documentation&quot;&gt;More Documentation 📚&lt;/h2&gt;
+&lt;p&gt;They&#39;re accompanied by increased documentation, as seen with efforts from Apple and Meta, which support reproducibility and reduce wasted effort and energy on less promising pre-training and fine-tuning iterations.&lt;/p&gt;
+&lt;h2 id=&quot;data-quality-as-chance&quot;&gt;Data Quality as Chance 🔎&lt;/h2&gt;
+&lt;p&gt;They demonstrate that a focus on data quality can improve model performance, as evidenced by Phi-3. However, it&#39;s also clear that the total number of tokens contributes to improvements, as seen with LLAMA3(.1).&lt;/p&gt;
+&lt;h2 id=&quot;model-distillation&quot;&gt;Model Distillation 👩🏽‍🔬&lt;/h2&gt;
+&lt;p&gt;Model Distillation has been effective in reducing total hardware requirements and inference time, which saves energy and resources. It will be interesting to see how quickly distilled models like Gemma2 can outperform 6-month-old state-of-the-art models like LLAMA2.&lt;/p&gt;
+&lt;p&gt;I appreciate the efforts to decrease hardware and energy demands while still providing helpful model responses.&lt;/p&gt;
+&lt;p&gt;#artificialintelligence #genai #sustainableai #llm&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_ai-google-tech-activity-7224785383237001216-HDyZ?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>LLMs - Big vs Small. Bigger is Better!? OR Let&#39;s not waste energy!?</title>
+    <link href="https://carstendraschner.github.io/blog/240715_llms_big_vs_small_bigger_is_better_or_lets_not_waste_energy/" />
+    <updated>2024-07-15T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/240715_llms_big_vs_small_bigger_is_better_or_lets_not_waste_energy/</id>
+    <content type="html">&lt;p&gt;The AI community is abuzz with debates over the efficacy of large versus small language models. Both have their own merits and limitations.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/nMmqfr9sVq-907.avif 907w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/nMmqfr9sVq-907.webp 907w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/nMmqfr9sVq-907.png&quot; alt=&quot;Model Size&quot; width=&quot;907&quot; height=&quot;337&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AI community debates model sizes&lt;/li&gt;
+&lt;li&gt;Massive models vs. smaller, efficient models&lt;/li&gt;
+&lt;li&gt;Insights and future predictions&lt;/li&gt;
+&lt;li&gt;Links to further reading&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;the-ai-community-is-buzzing-with-discussions-about-model-sizes&quot;&gt;✨ The AI community is buzzing with discussions about model sizes:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Massive models like Mistral (8x22B), LLAMA3 (400B), and Grok (314B) are turning heads.&lt;/li&gt;
+&lt;li&gt;Smaller yet mighty models like Phi 3, LLAMA3 (8B), and Nemo (12B) are proving their worth.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;key-insights&quot;&gt;🔍 Key insights:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Smaller models can compete by focusing on smarter training and pre-tuning methods.&lt;/li&gt;
+&lt;li&gt;Benchmarks are helpful but not flawless in measuring a model&#39;s value.&lt;/li&gt;
+&lt;li&gt;The mystery remains: why might a model with 61 transformer layers outperform one with 60?&lt;/li&gt;
+&lt;li&gt;Balancing model architecture is crucial due to the increasing complexity as models scale up.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;future-predictions&quot;&gt;🔮 Future predictions:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Will we see a standard model size emerge, or will there be a variety for different model size clusters for different platforms (mobile, single GPU, multi-GPU clusters)?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;links&quot;&gt;Links 🔗&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reason LLAMA Model Sizes: &lt;a href=&quot;https://lnkd.in/dHRSJXgm&quot;&gt;https://lnkd.in/dHRSJXgm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ALAN - GER-hosted GenAI tool developer story: &lt;a href=&quot;https://lnkd.in/ey8aZTjB&quot;&gt;https://lnkd.in/ey8aZTjB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Problems with benchmarks: &lt;a href=&quot;https://lnkd.in/dmBeQZ_j&quot;&gt;https://lnkd.in/dmBeQZ_j&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;what-is-your-experience&quot;&gt;🌐 What is your experience?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Which model size do you find most practical for real-world problems?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;i-m-keen-to-learn-from-you&quot;&gt;📊 I&#39;m keen to learn from you:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;What size models are you working with?&lt;/li&gt;
+&lt;li&gt;Share your preferences in this survey and let&#39;s discuss the optimal balance in model scaling.&lt;/li&gt;
+&lt;li&gt;What do you think how big is the gpt4o turbo?&lt;/li&gt;
+&lt;li&gt;Join the conversation and let&#39;s navigate the evolving landscape of machine learning together ❤️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At Alan (by Comma Soft AG), we recognize the need for variety:
+We provide models of various sizes to align with your unique requirements for capability and speed.&lt;/p&gt;
+&lt;p&gt;#MachineLearning #AI #ModelSize #Innovation #GenAI #SustainableAI&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_machinelearning-ai-modelsize-activity-7221169255419969536-IQnL?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>GenAI, what is plagiarism? Its Impact on Science. How should it be handled? What is your perspective?</title>
+    <link href="https://carstendraschner.github.io/blog/240708_genai_what_is_plagiarism_its_impact/" />
+    <updated>2024-07-08T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/240708_genai_what_is_plagiarism_its_impact/</id>
+    <content type="html">&lt;p&gt;Discussing the implications of GenAI on scientific work and the thin line between acceptable use and plagiarism.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/PLpWNuwzop-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/PLpWNuwzop-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/PLpWNuwzop-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use of GenAI in scientific work&lt;/li&gt;
+&lt;li&gt;Acceptable vs. debatable vs. critical usage&lt;/li&gt;
+&lt;li&gt;Questions and concerns about plagiarism&lt;/li&gt;
+&lt;li&gt;The pressure on researchers and students&lt;/li&gt;
+&lt;li&gt;Opportunities for better research&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;current-situation&quot;&gt;Current Situation 🏫&lt;/h2&gt;
+&lt;p&gt;However, I see ChatGPT being used in many researchers&#39; work to assist in the creation of (scientific) texts. Often it is also controlled or prohibited by the controlling institutions (schools, universities, paper-venues) to use such tools.&lt;/p&gt;
+&lt;h2 id=&quot;sample-genai-llm-usage-i-think-is-ok-imho&quot;&gt;Sample GenAI-LLM usage I think is ok (IMHO) 🤗&lt;/h2&gt;
+&lt;p&gt;I wonder how the following behavior in ChatGPT should be dealt with:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You ask Chat GPT if it would correct commas and or capitalization in an existing text as Office Suites do&lt;/li&gt;
+&lt;li&gt;You ask for rewording from passive to active or better and more varied synonyms such as in Grammarly which is also &amp;quot;GenAI&amp;quot;&lt;/li&gt;
+&lt;li&gt;You can have texts translated to make quotes more easily accessible in the desired language like DeepL or Google Translate.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are all uses of Chat-GPT that I can imagine in the context of scientific work that was previously possible without &amp;quot;ChatGPT&amp;quot; and, in my opinion, doable with other tools without having to speak of plagiarism.&lt;/p&gt;
+&lt;h2 id=&quot;debatable-usage&quot;&gt;Debatable usage 🤷🏼‍♂️&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;You are generating the abstract for your finished paper while correcting and polishing it manually yourself afterwards.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;more-critical-usage&quot;&gt;More critical usage 🧐&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Write an entire text, paper/exercise/... simply based on a very refined prompt with LLM+RAG+Response-Verification and hand it in as your own work.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;my-questions&quot;&gt;My Questions 👨🏼‍🎓&lt;/h2&gt;
+&lt;p&gt;I just ask myself how I would have worked if the tools were there or how I would want to deal with these kinds of situations as a lecturer.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What should be allowed?&lt;/li&gt;
+&lt;li&gt;What goes too far and falls under plagiarism?&lt;/li&gt;
+&lt;li&gt;Which use of (GenAI) tools needs to be regulated and documented and how finely tuned?&lt;/li&gt;
+&lt;li&gt;How do you think scientific work, reviews, and publications will change for better or for worse?&lt;/li&gt;
+&lt;li&gt;Does your institution at least clearly regulate how (GenAI-)Tool usage is possible&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;current-problem&quot;&gt;Current Problem 🫣&lt;/h2&gt;
+&lt;p&gt;I see lots of pressure on students and research scientists to hand in their work or to publish papers. So they are tempted to use available tools. Not every GenAI will imply plagiarism but regulations are not clear as far as I have seen.&lt;/p&gt;
+&lt;h2 id=&quot;the-chance-to-research&quot;&gt;The Chance to Research 👨🏼‍🔬&lt;/h2&gt;
+&lt;p&gt;We have the chance to use GenAI for better research: acquire good information over RAG and Vector Search, Translate texts into our mother tongue, and Rewrite in shorter or clearer language or even more accessible language.... Chat interact with papers you have questions to....&lt;/p&gt;
+&lt;p&gt;We at Comma Soft AG develop GenAI solutions and also actively using such tools to create great solutions while being aware and careful about possible plagiarism issues.&lt;/p&gt;
+&lt;p&gt;#genai #plagiarism #research #artificialintelligence&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_genai-plagiarism-research-activity-7216090153457463298-37OX?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Adjust GenAI responses towards more ethical behavior possible through system prompts!? Do you trust in such LLM-chat prepended pamphlets?</title>
+    <link href="https://carstendraschner.github.io/blog/240701_adjust_genai_responses_towards_more_ethical_behavior_possible/" />
+    <updated>2024-07-01T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/240701_adjust_genai_responses_towards_more_ethical_behavior_possible/</id>
+    <content type="html">&lt;p&gt;Exploring the potential and challenges of using system prompts to guide LLM behavior towards ethical outputs.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/x7ZX3a4wEx-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/x7ZX3a4wEx-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/x7ZX3a4wEx-800.jpeg&quot; alt=&quot;Ethical AI&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GenAI chat interactions often include system prompts&lt;/li&gt;
+&lt;li&gt;System prompts aim to guide ethical LLM behavior&lt;/li&gt;
+&lt;li&gt;Challenges exist in ensuring compliance and formulation&lt;/li&gt;
+&lt;li&gt;Questions on designing and revealing system prompts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background 🤓&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GenAI is often used via chat&lt;/li&gt;
+&lt;li&gt;We enter prompts in the Chat UI&lt;/li&gt;
+&lt;li&gt;Under the hood, the Chat programs usually add a system prompt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;system-prompt&quot;&gt;System-Prompt 💬&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;This system prompt should control the behavior of the LLM output&lt;/li&gt;
+&lt;li&gt;The system prompt complements other behavioral optimizations such as alignment and other guardrails to improve ethical GenAI response&lt;/li&gt;
+&lt;li&gt;The system prompt can describe behavior such as identity or desired behavior&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;problem&quot;&gt;Problem 🥴&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;There is no guarantee to what extent the system prompt will be followed&lt;/li&gt;
+&lt;li&gt;It is unclear what details should be included in the system prompt&lt;/li&gt;
+&lt;li&gt;It is not possible to prevent the model from revealing the system prompt&lt;/li&gt;
+&lt;li&gt;It is unclear how best to formulate the system prompt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;questions&quot;&gt;Questions 🤔&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;How do you design system prompts, and what are yours?&lt;/li&gt;
+&lt;li&gt;Do you think system prompts help to ensure the model&#39;s behavior?&lt;/li&gt;
+&lt;li&gt;Do you think chat UIs should not reveal the system prompt and how would you achieve this?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;further-reading&quot;&gt;Further Reading 📖&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Change Alignment of LLMs: &lt;a href=&quot;https://lnkd.in/eWS-VZCD&quot;&gt;https://lnkd.in/eWS-VZCD&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;LLM Behavior: &lt;a href=&quot;https://lnkd.in/ed52RBNe&quot;&gt;https://lnkd.in/ed52RBNe&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;My current LLM Developments: &lt;a href=&quot;https://lnkd.in/ey8aZTjB&quot;&gt;https://lnkd.in/ey8aZTjB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We at Comma Soft AG develop GenAI solutions including optimizations of LLM responses through various components where also the design of system prompts plays a role.&lt;/p&gt;
+&lt;p&gt;#artificialintelligence #responsibleai #llm #alan #aiethics&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-responsibleai-llm-activity-7214141563738750976-ywik?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Alternative to GenAI creativity? Watch and try out these fun Evolutionary Algorithms. Problem-solving without GenAI and SGD-based approaches explained!</title>
+    <link href="https://carstendraschner.github.io/blog/240624_alternative_to_genai_creativity_watch_and_try/" />
+    <updated>2024-06-24T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/240624_alternative_to_genai_creativity_watch_and_try/</id>
+    <content type="html">&lt;p&gt;Exploring Evolutionary Algorithms as an alternative to GenAI for problem-solving, using a fun 2D vehicle race example.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/D6xLKFbtVN-986.avif 986w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/D6xLKFbtVN-986.webp 986w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/D6xLKFbtVN-986.png&quot; alt=&quot;Evo Cars&quot; width=&quot;986&quot; height=&quot;498&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There is hype around GenAI and LLMs&lt;/li&gt;
+&lt;li&gt;Evolutionary Algorithms (EAs) offer an alternative&lt;/li&gt;
+&lt;li&gt;A fun example of EAs using a 2D vehicle race&lt;/li&gt;
+&lt;li&gt;Steps involved in EAs explained&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background ☺️&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Within the field of AI is a GenAI and LLM Hype&lt;/li&gt;
+&lt;li&gt;These are not always the best approach to solve a problem!&lt;/li&gt;
+&lt;li&gt;There are interesting algorithms optimizing their behavior entirely differently: e.g., Evolutionary Algorithms (EA).&lt;/li&gt;
+&lt;li&gt;Today I want to show you a fun EA introduction based on a 2D vehicle race &amp;quot;problem&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;evolutionary-algorithms-eas-explained&quot;&gt;Evolutionary algorithms (EAs) explained 👨🏼‍🏫&lt;/h2&gt;
+&lt;h3 id=&quot;problem&quot;&gt;Problem 🏁:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;What is the best vehicle configuration to drive over a 2D surface?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;vehicle-configuration-genome&quot;&gt;Vehicle Configuration = Genome 🧬:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Shape&lt;/li&gt;
+&lt;li&gt;Wheel size&lt;/li&gt;
+&lt;li&gt;Wheel position&lt;/li&gt;
+&lt;li&gt;Wheel weight&lt;/li&gt;
+&lt;li&gt;Chassis weight&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;key-ea-steps-on-the-vehicle-race-example-1234&quot;&gt;Key EA Steps on the vehicle race example 🔢 :&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Initialization&lt;/strong&gt;: Generate a set of vehicles with random characteristics (genome) called population&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fitness Evaluation&lt;/strong&gt;: Check how far they have got on the randomly generated surface.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Selection&lt;/strong&gt;: Select a subset of the best vehicles from the population to reproduce and form the next generation, e.g., by tournament selection or rank selection.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Crossover (Recombination)&lt;/strong&gt;: Combine the genetic information of two or more selected vehicles to create new offspring. E.g., average two good car genomes or randomly select the information of each...&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mutation&lt;/strong&gt;: Randomly modify the genetic information of some individuals in the population to introduce new variations and prevent convergence to a local optimum.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Replacement&lt;/strong&gt;: Replace the least performing vehicles with new offspring generated through crossover and mutation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Termination&lt;/strong&gt;: Repeat until a stopping criterion is met: the needed distance, number of iterations, or convergence threshold.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Output&lt;/strong&gt;: best vehicle, representing the near-optimal solution&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;my-perspective&quot;&gt;My Perspective 🤗:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Be aware that there are a multitude of possible algorithms to use&lt;/li&gt;
+&lt;li&gt;We at Comma Soft AG do not trust any hype and select the appropriate algorithms for the respective problem&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;credit&quot;&gt;Credit ❤️&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;To the development team of the interactive EA vehicle race&lt;/li&gt;
+&lt;li&gt;I&#39;d also like to thank Hajira Jabeen and Jens Lehmann for their great support in my MT project where I worked on EA and KG for the creation of novel recipes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;links&quot;&gt;Links 📖&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;EA vehicle race, try it out yourself: &lt;a href=&quot;https://lnkd.in/e2Ew3e7D&quot;&gt;https://lnkd.in/e2Ew3e7D&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Extract from my MT in a short paper: &lt;a href=&quot;https://lnkd.in/e8VRVe_k&quot;&gt;https://lnkd.in/e8VRVe_k&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;My current GenAI work: &lt;a href=&quot;https://lnkd.in/edNx8uKh&quot;&gt;https://lnkd.in/edNx8uKh&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;questions&quot;&gt;Questions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;How would you solve this &amp;quot;race&amp;quot; problem? EA, GenAI, RL, ...?&lt;/li&gt;
+&lt;li&gt;Do you want to see more non-GenAI content?&lt;/li&gt;
+&lt;li&gt;Have you ever used EA to solve a problem?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Stay tuned by following me here on Linked ❤️&lt;/p&gt;
+&lt;p&gt;#LostInGenai #artificialintelligence #evolutionaryalgorithms&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-evolutionaryalgorithms-activity-7211741750673973248-V4Ej?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Do we need another GenAI solution? How &amp; why we developed a full-stack GenAI LLM+RAG tool called Alan. A sneak peek at what I am currently working on.</title>
+    <link href="https://carstendraschner.github.io/blog/240617_do_we_need_another_genai_solution_how_why/" />
+    <updated>2024-06-17T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/240617_do_we_need_another_genai_solution_how_why/</id>
+    <content type="html">&lt;p&gt;An overview of the motivations and technical aspects behind developing our own GenAI solution, Alan, at Comma Soft AG.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/UXAYbK_4C8-986.avif 986w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/UXAYbK_4C8-986.webp 986w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/UXAYbK_4C8-986.png&quot; alt=&quot;Alan PDF&quot; width=&quot;986&quot; height=&quot;668&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Diverse GenAI solutions exist&lt;/li&gt;
+&lt;li&gt;Unique motivations for developing our own tool&lt;/li&gt;
+&lt;li&gt;Technical advantages of our solution&lt;/li&gt;
+&lt;li&gt;Questions on custom development vs. wrappers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;current-landscape&quot;&gt;Current Landscape: 🏞️&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;There are a variety of GenAI solutions out there&lt;/li&gt;
+&lt;li&gt;Many models from big tech companies work increasingly well for certain use cases.&lt;/li&gt;
+&lt;li&gt;And we have launched our own solution. Why?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;our-technical-perspective&quot;&gt;Our technical perspective: 🤓&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Data-Flow-Control: We want to know what happens to our data.&lt;/li&gt;
+&lt;li&gt;Hosting: We host all our models and data on German servers.&lt;/li&gt;
+&lt;li&gt;On-Premise: We can run our entire tech stack on-premise without any internet connection&lt;/li&gt;
+&lt;li&gt;Our-own-Alan-Model: We optimize our models for dedicated use cases through further training (e.g., better language skills in GER)&lt;/li&gt;
+&lt;li&gt;Knowledge-Enrichment: We decide for ourselves whether we want to make new knowledge available through our novel training approach or through our optimized RAG approach (as you might know there are plenty of options).&lt;/li&gt;
+&lt;li&gt;Alignment: We have control over the alignment, i.e., to what extent the values and behaviors of the model match our expectations.&lt;/li&gt;
+&lt;li&gt;SOTA: We always remain state of the art in a fusion of existing open source base models and in-house developments.&lt;/li&gt;
+&lt;li&gt;Benchmarking: We use benchmarks and measures we trust.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With a great team at Comma Soft AG, it&#39;s enjoyable to develop such a helpful tool ❤️ In the appended PDF we show an extract of the full text story of our ALAN development journey 📖&lt;/p&gt;
+&lt;h2 id=&quot;questions&quot;&gt;Questions: 🤔&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;How did you decide if you want to develop something yourself or use more kind of wrappers?&lt;/li&gt;
+&lt;li&gt;How important is the management of sensitive data for you and where are your servers located?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;literature&quot;&gt;Literature: 📚&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Here is the full Humboldt Travel Report with more background stories: &lt;a href=&quot;https://lnkd.in/emwvpQsW&quot;&gt;https://lnkd.in/emwvpQsW&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Adjusting Model Alignment &lt;a href=&quot;https://lnkd.in/eWS-VZCD&quot;&gt;https://lnkd.in/eWS-VZCD&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Model Selection &lt;a href=&quot;https://lnkd.in/duGzWugD&quot;&gt;https://lnkd.in/duGzWugD&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Model Benchmarking &lt;a href=&quot;https://lnkd.in/dmBeQZ_j&quot;&gt;https://lnkd.in/dmBeQZ_j&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more GenAI LLM content and R&amp;amp;D discussions, follow me on LinkedIn. If you want to try out Alan, reach out to me: &lt;a href=&quot;http://alan.de&quot;&gt;http://alan.de&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;#artificialintelligence #llm #machinelearning #handson #genai&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_humboldt-travel-report-alan-llm-genai-activity-7208854388101005312-Xr_o?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>
