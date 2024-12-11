@@ -1,7 +1,7 @@
 ---
 title: We've beaten GPT4! ... is a sentence which starts to annoy me.
 date: 2024-02-20
-linkedInUrl: https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-evolutionaryalgorithms-activity-7211741750673973248-V4Ej?utm_source=share&utm_medium=member_desktop
+linkedInUrl: https://www.linkedin.com/posts/carsten-draschner_generativeai-artificialintelligence-llm-activity-7160295294906101761-koWS?utm_source=share&utm_medium=member_desktop
 tags: blog
 ---
 About Mistrust in LLM Evaluation. Benchmark contamination in LLMs? How to Evaluate GenAI?!
