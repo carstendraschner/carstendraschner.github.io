@@ -53,15 +53,15 @@ export default async function(eleventyConfig) {
 		stylesheet: "pretty-atom-feed.xsl",
 		collection: {
 			name: "posts",
-			limit: 10,
+			limit: 20,
 		},
 		metadata: {
 			language: "en",
-			title: "Blog Title",
-			subtitle: "This is a longer description about your blog.",
-			base: "https://example.com/",
+			title: "Carsten Felix Draschner - AI R&D",
+			subtitle: "Various updates and insides into cutting edge AI Research and Development including AI Ethics and perspective from European Union.",
+			base: "https://carstendraschner.github.io/blog/",
 			author: {
-				name: "Your Name"
+				name: "Carsten Felix Draschner"
 			}
 		}
 	});
