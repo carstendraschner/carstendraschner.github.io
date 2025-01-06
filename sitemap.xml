@@ -237,52 +237,52 @@
 	</url>
 	
 	<url>
-		<loc>https://example.com/about/</loc>
-		<lastmod>2024-11-13</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/</loc>
-		<lastmod>2024-11-13</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/projects/</loc>
-		<lastmod>2024-11-13</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/research/</loc>
-		<lastmod>2024-11-13</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/tags/</loc>
-		<lastmod>2024-11-13</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/</loc>
-		<lastmod>2024-11-13</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://example.com/blog/241120_were_dealing_with_the_butterfly_effect_in_llm_creation_pipelines/</loc>
 		<lastmod>2024-11-20</lastmod>
 	</url>
 	
 	<url>
+		<loc>https://example.com/blog/241127_Teuken_Review/</loc>
+		<lastmod>2024-12-27</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/about/</loc>
+		<lastmod>2025-01-06</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/</loc>
+		<lastmod>2025-01-06</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://example.com/contact/</loc>
-		<lastmod>2024-11-27</lastmod>
+		<lastmod>2025-01-06</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/</loc>
+		<lastmod>2025-01-06</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/projects/</loc>
+		<lastmod>2025-01-06</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/research/</loc>
+		<lastmod>2025-01-06</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/tags/</loc>
+		<lastmod>2025-01-06</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://example.com/feed/feed.xml</loc>
-		<lastmod>2024-12-11</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/241127_Teuken_Review/</loc>
-		<lastmod>2024-12-27</lastmod>
+		<lastmod>2025-01-06</lastmod>
 	</url>
 </urlset>
