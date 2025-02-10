@@ -7,7 +7,7 @@ tags: blog
 
 DeepSeek Alignment and Censorship Concerns
 
-![Image 1](/img/blog_images/deepseek_censor.png)
+![Image 1](/img/blog_images/deepseekvllm.png)
 
 **TL;DR ⏱️**
 - DeepSeek R1 alignment issues
