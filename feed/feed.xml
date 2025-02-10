@@ -5,15 +5,46 @@
   <subtitle>Various updates and insides into cutting edge AI Research and Development including AI Ethics and perspective from European Union.</subtitle>
   <link href="https://carstendraschner.github.io/feed/feed.xml" rel="self" />
   <link href="https://carstendraschner.github.io/blog/" />
-  <updated>2025-12-27T00:00:00Z</updated>
+  <updated>2025-02-03T00:00:00Z</updated>
   <id>https://carstendraschner.github.io/blog/</id>
   <author>
     <name>Carsten Felix Draschner</name>
   </author>
   <entry>
+    <title>DeepSeek has huge issues. Code on last Slide. Be careful!</title>
+    <link href="https://carstendraschner.github.io/blog/250203_deepseek_censorship/" />
+    <updated>2025-02-03T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250203_deepseek_censorship/</id>
+    <content type="html">&lt;p&gt;DeepSeek Alignment and Censorship Concerns&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/Rj7n_l2sFQ-1806.avif 1806w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/Rj7n_l2sFQ-1806.webp 1806w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/Rj7n_l2sFQ-1806.png&quot; alt=&quot;Image 1&quot; width=&quot;1806&quot; height=&quot;1434&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DeepSeek R1 alignment issues&lt;/li&gt;
+&lt;li&gt;Censorship on topics related to China&lt;/li&gt;
+&lt;li&gt;Use with caution&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;🤖 I was curious to have a hands-on session with the hyped DeepSeek Models.&lt;br&gt;
+🇨🇳 Smart engineers from China developed a model that competes at the top of the SOTA leaderboards.&lt;br&gt;
+🧐 I was wondering how the models behave in the alignment dimension, as this might be a distinctive factor when choosing open-weight models.&lt;br&gt;
+👨🏼‍💻 I chose not the 600B+ parameter model but a distilled 70B AWQ model, which runs easily for a try-out on one A100.&lt;/p&gt;
+&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
+&lt;p&gt;❓ I prompted the model with questions about several countries, democracy, politics, ethics, and more.&lt;br&gt;
+🤗 You can recreate those results using the code on the last slide.&lt;/p&gt;
+&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
+&lt;p&gt;🚫 The DeepSeek model has an alignment that stops it from saying anything critical about China itself, compared to other very similar prompts.&lt;br&gt;
+😳 I would be careful deploying that model without knowing what else might be an issue, especially when you use such models for function calling.&lt;br&gt;
+Be aware of which model you trust and why.&lt;br&gt;
+🧮 A Chinese quant company seems to have put a lot of effort into such adjustments, which have nothing to do with model performance or being good at answering questions correctly and safely.&lt;br&gt;
+🇪🇺 We develop Alan.de, a GenAI solution that runs fully on German servers and is developed and built from a European perspective by European engineers for European users.&lt;br&gt;
+❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
+&lt;p&gt;#artificialintelligence #deepseek #alan #aiethics&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
     <title>What a Wonderful Start, More to Come!</title>
     <link href="https://carstendraschner.github.io/blog/250120_senior/" />
-    <updated>2025-12-27T00:00:00Z</updated>
+    <updated>2025-01-20T00:00:00Z</updated>
     <id>https://carstendraschner.github.io/blog/250120_senior/</id>
     <content type="html">&lt;p&gt;My journey at Comma Soft AG and my recent promotion to Senior Level 🥳🥰&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/ciW79fkk7b-1146.avif 1146w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/ciW79fkk7b-1146.webp 1146w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/ciW79fkk7b-1146.png&quot; alt=&quot;Image 1&quot; width=&quot;1146&quot; height=&quot;536&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
@@ -114,37 +145,6 @@
 &lt;p&gt;Take a look and let me know what features you&#39;d like to see next or where I should publish those content as well. Might take time as I do this in my spare free time 😅&lt;/p&gt;
 &lt;p&gt;Thanks to all my readers for your kind feedback and support in the DMs❤️! It is really valuable for me to see who is actually reading what and how it benefits you 🥰&lt;/p&gt;
 &lt;p&gt;#genai #blog #artificialintelligence #llm #machinelearning&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>DeepSeek has huge issues. Code on last Slide. Be careful!</title>
-    <link href="https://carstendraschner.github.io/blog/250203_deepseek_censorship/" />
-    <updated>2024-12-27T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/250203_deepseek_censorship/</id>
-    <content type="html">&lt;p&gt;DeepSeek Alignment and Censorship Concerns&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/Rj7n_l2sFQ-1806.avif 1806w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/Rj7n_l2sFQ-1806.webp 1806w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/Rj7n_l2sFQ-1806.png&quot; alt=&quot;Image 1&quot; width=&quot;1806&quot; height=&quot;1434&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;DeepSeek R1 alignment issues&lt;/li&gt;
-&lt;li&gt;Censorship on topics related to China&lt;/li&gt;
-&lt;li&gt;Use with caution&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
-&lt;p&gt;🤖 I was curious to have a hands-on session with the hyped DeepSeek Models.&lt;br&gt;
-🇨🇳 Smart engineers from China developed a model that competes at the top of the SOTA leaderboards.&lt;br&gt;
-🧐 I was wondering how the models behave in the alignment dimension, as this might be a distinctive factor when choosing open-weight models.&lt;br&gt;
-👨🏼‍💻 I chose not the 600B+ parameter model but a distilled 70B AWQ model, which runs easily for a try-out on one A100.&lt;/p&gt;
-&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
-&lt;p&gt;❓ I prompted the model with questions about several countries, democracy, politics, ethics, and more.&lt;br&gt;
-🤗 You can recreate those results using the code on the last slide.&lt;/p&gt;
-&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
-&lt;p&gt;🚫 The DeepSeek model has an alignment that stops it from saying anything critical about China itself, compared to other very similar prompts.&lt;br&gt;
-😳 I would be careful deploying that model without knowing what else might be an issue, especially when you use such models for function calling.&lt;br&gt;
-Be aware of which model you trust and why.&lt;br&gt;
-🧮 A Chinese quant company seems to have put a lot of effort into such adjustments, which have nothing to do with model performance or being good at answering questions correctly and safely.&lt;br&gt;
-🇪🇺 We develop Alan.de, a GenAI solution that runs fully on German servers and is developed and built from a European perspective by European engineers for European users.&lt;br&gt;
-❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
-&lt;p&gt;#artificialintelligence #deepseek #alan #aiethics&lt;/p&gt;
 </content>
   </entry>
   <entry>
