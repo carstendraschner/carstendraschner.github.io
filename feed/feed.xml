@@ -5,11 +5,119 @@
   <subtitle>Various updates and insides into cutting edge AI Research and Development including AI Ethics and perspective from European Union.</subtitle>
   <link href="https://carstendraschner.github.io/feed/feed.xml" rel="self" />
   <link href="https://carstendraschner.github.io/blog/" />
-  <updated>2024-12-27T00:00:00Z</updated>
+  <updated>2025-01-05T00:00:00Z</updated>
   <id>https://carstendraschner.github.io/blog/</id>
   <author>
     <name>Carsten Felix Draschner</name>
   </author>
+  <entry>
+    <title>Expanding my GenAI content beyond LinkedIn!</title>
+    <link href="https://carstendraschner.github.io/blog/250105_blog/" />
+    <updated>2025-01-05T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250105_blog/</id>
+    <content type="html">&lt;p&gt;I&#39;m excited to share that my work-in-progress blog is now live at &lt;a href=&quot;https://carstendraschner.github.io&quot;&gt;carstendraschner.github.io&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/ZpPydbbbRH-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/ZpPydbbbRH-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/ZpPydbbbRH-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;913&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;New blog live at carstendraschner.github.io&lt;/li&gt;
+&lt;li&gt;Reach broader audience beyond LinkedIn&lt;/li&gt;
+&lt;li&gt;Experiment with Alan.de and GitHub Pages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;why-did-i-create-this-website-blog&quot;&gt;Why did I create this website/blog?&lt;/h2&gt;
+&lt;p&gt;📖 Reach a broader audience who may not be on LinkedIn or is annoyed by it&lt;br&gt;
+🙅🏼‍♀️ Overcome the limitations of LinkedIn&#39;s algorithm and advertising noise/trackers&lt;br&gt;
+🤖 Experiment and showcase how Alan.de by Comma Soft AG can support me a non web developer to migrate my Blog content in a coding domain I am not used to&lt;/p&gt;
+&lt;h2 id=&quot;how-did-i-build-it&quot;&gt;How did I build it?&lt;/h2&gt;
+&lt;p&gt;🤑 Using GitHub Pages as a completely free hosting solution including acceptable domain&lt;br&gt;
+👨🏼‍💻 Leveraging Eleventy for responsive design/dark mode... with the help of my great friend (and astonishing developer) Konstantin Tieber ❤️ Thank you 🙏🏽&lt;/p&gt;
+&lt;h2 id=&quot;what-can-you-find-on-my-blog&quot;&gt;What can you find on my blog?&lt;/h2&gt;
+&lt;p&gt;📚 More detailed versions of my Blog posts you have seen here&lt;br&gt;
+🛠️ Past projects and experiments and research papers&lt;br&gt;
+📰 A work-in-progress collection of my GenAI content&lt;/p&gt;
+&lt;h2 id=&quot;where-do-you-prefer-to-consume-and-share-content&quot;&gt;Where do you prefer to consume and share content?&lt;/h2&gt;
+&lt;p&gt;What are your preferred platforms to store and consume blogposts and AI knowledge? e.g. Bluesky Social, Medium, Towards Data Science, Reddit, Inc., X, Hugging Face Blog, Mastodon, arXiv, ResearchGate, RSS...&lt;/p&gt;
+&lt;p&gt;Take a look and let me know what features you&#39;d like to see next or where I should publish those content as well. Might take time as I do this in my spare free time 😅&lt;/p&gt;
+&lt;p&gt;Thanks to all my readers for your kind feedback and support in the DMs❤️! It is really valuable for me to see who is actually reading what and how it benefits you 🥰&lt;/p&gt;
+&lt;p&gt;#genai #blog #artificialintelligence #llm #machinelearning&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>DeepSeek has huge issues. Code on last Slide. Be careful!</title>
+    <link href="https://carstendraschner.github.io/blog/250203_deepseek_censorship/" />
+    <updated>2024-12-27T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250203_deepseek_censorship/</id>
+    <content type="html">&lt;p&gt;DeepSeek Alignment and Censorship Concerns&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/1ZqMYIx9bu-978.avif 978w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/1ZqMYIx9bu-978.webp 978w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/1ZqMYIx9bu-978.png&quot; alt=&quot;Image 1&quot; width=&quot;978&quot; height=&quot;580&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DeepSeek R1 alignment issues&lt;/li&gt;
+&lt;li&gt;Censorship on topics related to China&lt;/li&gt;
+&lt;li&gt;Use with caution&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;🤖 I was curious to have a hands-on session with the hyped DeepSeek Models.&lt;br&gt;
+🇨🇳 Smart engineers from China developed a model that competes at the top of the SOTA leaderboards.&lt;br&gt;
+🧐 I was wondering how the models behave in the alignment dimension, as this might be a distinctive factor when choosing open-weight models.&lt;br&gt;
+👨🏼‍💻 I chose not the 600B+ parameter model but a distilled 70B AWQ model, which runs easily for a try-out on one A100.&lt;/p&gt;
+&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
+&lt;p&gt;❓ I prompted the model with questions about several countries, democracy, politics, ethics, and more.&lt;br&gt;
+🤗 You can recreate those results using the code on the last slide.&lt;/p&gt;
+&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
+&lt;p&gt;🚫 The DeepSeek model has an alignment that stops it from saying anything critical about China itself, compared to other very similar prompts.&lt;br&gt;
+😳 I would be careful deploying that model without knowing what else might be an issue, especially when you use such models for function calling.&lt;br&gt;
+Be aware of which model you trust and why.&lt;br&gt;
+🧮 A Chinese quant company seems to have put a lot of effort into such adjustments, which have nothing to do with model performance or being good at answering questions correctly and safely.&lt;br&gt;
+🇪🇺 We develop Alan.de, a GenAI solution that runs fully on German servers and is developed and built from a European perspective by European engineers for European users.&lt;br&gt;
+❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
+&lt;p&gt;Hashtag#artificialintelligence Hashtag#deepseek Hashtag#alan Hashtag#aiethics&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>What a Wonderful Start, More to Come!</title>
+    <link href="https://carstendraschner.github.io/blog/250120_senior/" />
+    <updated>2024-12-27T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250120_senior/</id>
+    <content type="html">&lt;p&gt;My journey at Comma Soft AG and my recent promotion to Senior Level 🥳🥰&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/ciW79fkk7b-1146.avif 1146w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/ciW79fkk7b-1146.webp 1146w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/ciW79fkk7b-1146.png&quot; alt=&quot;Image 1&quot; width=&quot;1146&quot; height=&quot;536&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Promotion to Senior Level&lt;/li&gt;
+&lt;li&gt;Leading AI R&amp;amp;D and Product Development&lt;/li&gt;
+&lt;li&gt;Building Alan.de for the European market&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;what-a-wonderful-start-more-to-come&quot;&gt;What a Wonderful Start, More to Come!&lt;/h2&gt;
+&lt;p&gt;Today, I’d love to say thank you to my wonderful team at Comma Soft AG, which made great experiences and learnings possible and resulted in a recent promotion to Senior Level 🥳🥰 What happened so far?&lt;/p&gt;
+&lt;h3 id=&quot;applied-ai-r-and-d&quot;&gt;Applied AI R&amp;amp;D&lt;/h3&gt;
+&lt;p&gt;🔬 Developing cutting edge technology to improve GenAI models, including data synthesis, benchmark construction, model training, and deployment in production environments + additional Advanced RAG for optimizing GenAI-based knowledge systems.&lt;/p&gt;
+&lt;h3 id=&quot;in-house-product-development&quot;&gt;In-house Product Development&lt;/h3&gt;
+&lt;p&gt;🏗️ Building Alan.de, which provides a trustworthy full-stack GenAI solution for the European market.&lt;/p&gt;
+&lt;h3 id=&quot;building-up-genai-team&quot;&gt;Building Up GenAI Team&lt;/h3&gt;
+&lt;p&gt;👥 Building-up, educating and managing GenAI team at customer sites.&lt;/p&gt;
+&lt;h3 id=&quot;support-open-source-development&quot;&gt;Support Open Source Development&lt;/h3&gt;
+&lt;p&gt;💻 Supporting existing AI open source community projects and repos with accepted and merged PRs.&lt;/p&gt;
+&lt;h3 id=&quot;solving-customers-real-world-use-cases&quot;&gt;Solving Customers Real-world Use Cases&lt;/h3&gt;
+&lt;p&gt;👨🏼‍💻 Implementing and supporting real-world use cases through AI &amp;amp; Data-driven solutions.&lt;/p&gt;
+&lt;h3 id=&quot;presentations&quot;&gt;Presentations&lt;/h3&gt;
+&lt;p&gt;🎤 Giving AI-Talks and &amp;quot;Ask Me Anything&amp;quot; sessions on GenAI, AI, and ML topics at customer sites.&lt;/p&gt;
+&lt;h3 id=&quot;in-house-recruiting-support&quot;&gt;In-house Recruiting Support&lt;/h3&gt;
+&lt;p&gt;🤝 Further developing the Comma team through recruiting support from my network and appearances at trade fairs.&lt;/p&gt;
+&lt;h3 id=&quot;strengthening-our-ai-tech-team&quot;&gt;Strengthening our AI-Tech-Team&lt;/h3&gt;
+&lt;p&gt;🌟 In a role as a buddy/mentor for several wonderful new colleagues.&lt;/p&gt;
+&lt;h3 id=&quot;education&quot;&gt;Education&lt;/h3&gt;
+&lt;p&gt;📚 Holding Data Science Stand-Ups and Presentations about Hands-On AI R&amp;amp;D Learnings and SOTA paper readings.&lt;/p&gt;
+&lt;h3 id=&quot;events&quot;&gt;Events&lt;/h3&gt;
+&lt;p&gt;🎪 Representing our AI R&amp;amp;D at conferences and events such as PyCon DE &amp;amp; PyData, Lamarr-Institut-Conference, WIFU-Stiftung-FUK, and Petersberger-Gespräche.&lt;/p&gt;
+&lt;h3 id=&quot;increase-follower-reach&quot;&gt;Increase Follower Reach&lt;/h3&gt;
+&lt;p&gt;📈 Growing my follower base from 800 to over 6000 tech followers within a year, alongside my new AI blog.&lt;/p&gt;
+&lt;h3 id=&quot;teambuilding&quot;&gt;Teambuilding&lt;/h3&gt;
+&lt;p&gt;❤️ Organizing &amp;amp; Enjoying amazing team events, sports and workations with colleagues who have become friends.&lt;/p&gt;
+&lt;h3 id=&quot;tough-ai-world-out-there&quot;&gt;Tough AI world out there&lt;/h3&gt;
+&lt;p&gt;😳 Especially in today&#39;s times after recent elections, for me a work environment where one doesn&#39;t have to be morally or politically flexible is insanely important. Great to have colleagues and a company with moral compass.&lt;/p&gt;
+&lt;p&gt;🥰 If you would love to join our team or cooperate, reach out to me. For more content of my work follow me on LinkedIn or check out my blog.&lt;/p&gt;
+&lt;p&gt;🚀 Looking forward to the challenges and opportunities ahead, and continuing to achieve great things together!&lt;/p&gt;
+&lt;p&gt;Hashtag#cometocomma Hashtag#artificialintelligence Hashtag#aiineurope Hashtag#alan Hashtag#promotion&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>New DE/EU Open Source LLM 🇪🇺 Teuken 7B, Now Truly Open Source?</title>
     <link href="https://carstendraschner.github.io/blog/241127_Teuken_Review/" />
@@ -45,6 +153,37 @@
 &lt;li&gt;Will we see truly big LLMs in size of 50-400B Parameter that can compete with current top notch LLMs from your side?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;We at Comma Soft AG provide with Alan.de a European and German Solution to use GenAI in a highly performant, safe and trusted environment. If you like to see more of our recent R&amp;amp;D, check my recent posts and reach out to me for more idea exchange 😊&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>LLAMA 3.3 70B is there! Here are the facts!</title>
+    <link href="https://carstendraschner.github.io/blog/241206_LLAMA33/" />
+    <updated>2024-12-06T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/241206_LLAMA33/</id>
+    <content type="html">&lt;p&gt;New Release of LLAMA 3.3 70B with Significant Improvements&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/IlEA0tegu1-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/IlEA0tegu1-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/IlEA0tegu1-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;430&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Performance Improvements over 3.2 &amp;amp; 3.1&lt;/li&gt;
+&lt;li&gt;Similar License of Meta&lt;/li&gt;
+&lt;li&gt;On par with other API Models from OpenAI &amp;amp; Anthropic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;short-facts&quot;&gt;Short Facts&lt;/h2&gt;
+&lt;p&gt;📈 Performance Improvements over 3.2 &amp;amp; 3.1 ...
+⚖️ Almost similar License of Meta
+🧐 Let&#39;s see how arena Elo Score will look like
+📊 Benchmark says it is on par with other API Models from OpenAI &amp;amp; Anthropic
+↔️ Cause of many similarities with other LLAMA 3 could be an easy replacement&lt;/p&gt;
+&lt;p&gt;We within our Alan Team at Comma Soft AG will also have a look and check if this is promising for some AI agents or within Alan Tooling :)&lt;/p&gt;
+&lt;h2 id=&quot;further-reading&quot;&gt;Further Reading 📖&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;LLAMA license difficulties: &lt;a href=&quot;https://lnkd.in/eqUyV3ia&quot;&gt;https://lnkd.in/eqUyV3ia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;LLAMA sizes: &lt;a href=&quot;https://lnkd.in/eZmFVYMm&quot;&gt;https://lnkd.in/eZmFVYMm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Reasonable Benchmarks: &lt;a href=&quot;https://lnkd.in/e8rgPrBM&quot;&gt;https://lnkd.in/e8rgPrBM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;How to Select an LLM: &lt;a href=&quot;https://lnkd.in/eZB4uRBq&quot;&gt;https://lnkd.in/eZB4uRBq&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Alan the Comma GenAI: &lt;a href=&quot;https://lnkd.in/edNx8uKh&quot;&gt;https://lnkd.in/edNx8uKh&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;#llama #artificialintelligence #anotherllmrelease&lt;/p&gt;
 </content>
   </entry>
   <entry>
@@ -593,217 +732,6 @@ and many more.&lt;/li&gt;
 We provide models of various sizes to align with your unique requirements for capability and speed.&lt;/p&gt;
 &lt;p&gt;#MachineLearning #AI #ModelSize #Innovation #GenAI #SustainableAI&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_machinelearning-ai-modelsize-activity-7221169255419969536-IQnL?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>GenAI, what is plagiarism? Its Impact on Science. How should it be handled? What is your perspective?</title>
-    <link href="https://carstendraschner.github.io/blog/240708_genai_what_is_plagiarism_its_impact/" />
-    <updated>2024-07-08T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/240708_genai_what_is_plagiarism_its_impact/</id>
-    <content type="html">&lt;p&gt;Discussing the implications of GenAI on scientific work and the thin line between acceptable use and plagiarism.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/PLpWNuwzop-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/PLpWNuwzop-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/PLpWNuwzop-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Use of GenAI in scientific work&lt;/li&gt;
-&lt;li&gt;Acceptable vs. debatable vs. critical usage&lt;/li&gt;
-&lt;li&gt;Questions and concerns about plagiarism&lt;/li&gt;
-&lt;li&gt;The pressure on researchers and students&lt;/li&gt;
-&lt;li&gt;Opportunities for better research&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;current-situation&quot;&gt;Current Situation 🏫&lt;/h2&gt;
-&lt;p&gt;However, I see ChatGPT being used in many researchers&#39; work to assist in the creation of (scientific) texts. Often it is also controlled or prohibited by the controlling institutions (schools, universities, paper-venues) to use such tools.&lt;/p&gt;
-&lt;h2 id=&quot;sample-genai-llm-usage-i-think-is-ok-imho&quot;&gt;Sample GenAI-LLM usage I think is ok (IMHO) 🤗&lt;/h2&gt;
-&lt;p&gt;I wonder how the following behavior in ChatGPT should be dealt with:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You ask Chat GPT if it would correct commas and or capitalization in an existing text as Office Suites do&lt;/li&gt;
-&lt;li&gt;You ask for rewording from passive to active or better and more varied synonyms such as in Grammarly which is also &amp;quot;GenAI&amp;quot;&lt;/li&gt;
-&lt;li&gt;You can have texts translated to make quotes more easily accessible in the desired language like DeepL or Google Translate.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;These are all uses of Chat-GPT that I can imagine in the context of scientific work that was previously possible without &amp;quot;ChatGPT&amp;quot; and, in my opinion, doable with other tools without having to speak of plagiarism.&lt;/p&gt;
-&lt;h2 id=&quot;debatable-usage&quot;&gt;Debatable usage 🤷🏼‍♂️&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;You are generating the abstract for your finished paper while correcting and polishing it manually yourself afterwards.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;more-critical-usage&quot;&gt;More critical usage 🧐&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Write an entire text, paper/exercise/... simply based on a very refined prompt with LLM+RAG+Response-Verification and hand it in as your own work.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;my-questions&quot;&gt;My Questions 👨🏼‍🎓&lt;/h2&gt;
-&lt;p&gt;I just ask myself how I would have worked if the tools were there or how I would want to deal with these kinds of situations as a lecturer.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;What should be allowed?&lt;/li&gt;
-&lt;li&gt;What goes too far and falls under plagiarism?&lt;/li&gt;
-&lt;li&gt;Which use of (GenAI) tools needs to be regulated and documented and how finely tuned?&lt;/li&gt;
-&lt;li&gt;How do you think scientific work, reviews, and publications will change for better or for worse?&lt;/li&gt;
-&lt;li&gt;Does your institution at least clearly regulate how (GenAI-)Tool usage is possible&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;current-problem&quot;&gt;Current Problem 🫣&lt;/h2&gt;
-&lt;p&gt;I see lots of pressure on students and research scientists to hand in their work or to publish papers. So they are tempted to use available tools. Not every GenAI will imply plagiarism but regulations are not clear as far as I have seen.&lt;/p&gt;
-&lt;h2 id=&quot;the-chance-to-research&quot;&gt;The Chance to Research 👨🏼‍🔬&lt;/h2&gt;
-&lt;p&gt;We have the chance to use GenAI for better research: acquire good information over RAG and Vector Search, Translate texts into our mother tongue, and Rewrite in shorter or clearer language or even more accessible language.... Chat interact with papers you have questions to....&lt;/p&gt;
-&lt;p&gt;We at Comma Soft AG develop GenAI solutions and also actively using such tools to create great solutions while being aware and careful about possible plagiarism issues.&lt;/p&gt;
-&lt;p&gt;#genai #plagiarism #research #artificialintelligence&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_genai-plagiarism-research-activity-7216090153457463298-37OX?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Adjust GenAI responses towards more ethical behavior possible through system prompts!? Do you trust in such LLM-chat prepended pamphlets?</title>
-    <link href="https://carstendraschner.github.io/blog/240701_adjust_genai_responses_towards_more_ethical_behavior_possible/" />
-    <updated>2024-07-01T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/240701_adjust_genai_responses_towards_more_ethical_behavior_possible/</id>
-    <content type="html">&lt;p&gt;Exploring the potential and challenges of using system prompts to guide LLM behavior towards ethical outputs.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/x7ZX3a4wEx-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/x7ZX3a4wEx-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/x7ZX3a4wEx-800.jpeg&quot; alt=&quot;Ethical AI&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;GenAI chat interactions often include system prompts&lt;/li&gt;
-&lt;li&gt;System prompts aim to guide ethical LLM behavior&lt;/li&gt;
-&lt;li&gt;Challenges exist in ensuring compliance and formulation&lt;/li&gt;
-&lt;li&gt;Questions on designing and revealing system prompts&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;background&quot;&gt;Background 🤓&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;GenAI is often used via chat&lt;/li&gt;
-&lt;li&gt;We enter prompts in the Chat UI&lt;/li&gt;
-&lt;li&gt;Under the hood, the Chat programs usually add a system prompt&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;system-prompt&quot;&gt;System-Prompt 💬&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;This system prompt should control the behavior of the LLM output&lt;/li&gt;
-&lt;li&gt;The system prompt complements other behavioral optimizations such as alignment and other guardrails to improve ethical GenAI response&lt;/li&gt;
-&lt;li&gt;The system prompt can describe behavior such as identity or desired behavior&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;problem&quot;&gt;Problem 🥴&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;There is no guarantee to what extent the system prompt will be followed&lt;/li&gt;
-&lt;li&gt;It is unclear what details should be included in the system prompt&lt;/li&gt;
-&lt;li&gt;It is not possible to prevent the model from revealing the system prompt&lt;/li&gt;
-&lt;li&gt;It is unclear how best to formulate the system prompt&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;questions&quot;&gt;Questions 🤔&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;How do you design system prompts, and what are yours?&lt;/li&gt;
-&lt;li&gt;Do you think system prompts help to ensure the model&#39;s behavior?&lt;/li&gt;
-&lt;li&gt;Do you think chat UIs should not reveal the system prompt and how would you achieve this?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;further-reading&quot;&gt;Further Reading 📖&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Change Alignment of LLMs: &lt;a href=&quot;https://lnkd.in/eWS-VZCD&quot;&gt;https://lnkd.in/eWS-VZCD&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;LLM Behavior: &lt;a href=&quot;https://lnkd.in/ed52RBNe&quot;&gt;https://lnkd.in/ed52RBNe&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;My current LLM Developments: &lt;a href=&quot;https://lnkd.in/ey8aZTjB&quot;&gt;https://lnkd.in/ey8aZTjB&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We at Comma Soft AG develop GenAI solutions including optimizations of LLM responses through various components where also the design of system prompts plays a role.&lt;/p&gt;
-&lt;p&gt;#artificialintelligence #responsibleai #llm #alan #aiethics&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-responsibleai-llm-activity-7214141563738750976-ywik?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Alternative to GenAI creativity? Watch and try out these fun Evolutionary Algorithms. Problem-solving without GenAI and SGD-based approaches explained!</title>
-    <link href="https://carstendraschner.github.io/blog/240624_alternative_to_genai_creativity_watch_and_try/" />
-    <updated>2024-06-24T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/240624_alternative_to_genai_creativity_watch_and_try/</id>
-    <content type="html">&lt;p&gt;Exploring Evolutionary Algorithms as an alternative to GenAI for problem-solving, using a fun 2D vehicle race example.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/D6xLKFbtVN-986.avif 986w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/D6xLKFbtVN-986.webp 986w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/D6xLKFbtVN-986.png&quot; alt=&quot;Evo Cars&quot; width=&quot;986&quot; height=&quot;498&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;There is hype around GenAI and LLMs&lt;/li&gt;
-&lt;li&gt;Evolutionary Algorithms (EAs) offer an alternative&lt;/li&gt;
-&lt;li&gt;A fun example of EAs using a 2D vehicle race&lt;/li&gt;
-&lt;li&gt;Steps involved in EAs explained&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;background&quot;&gt;Background ☺️&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Within the field of AI is a GenAI and LLM Hype&lt;/li&gt;
-&lt;li&gt;These are not always the best approach to solve a problem!&lt;/li&gt;
-&lt;li&gt;There are interesting algorithms optimizing their behavior entirely differently: e.g., Evolutionary Algorithms (EA).&lt;/li&gt;
-&lt;li&gt;Today I want to show you a fun EA introduction based on a 2D vehicle race &amp;quot;problem&amp;quot;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;evolutionary-algorithms-eas-explained&quot;&gt;Evolutionary algorithms (EAs) explained 👨🏼‍🏫&lt;/h2&gt;
-&lt;h3 id=&quot;problem&quot;&gt;Problem 🏁:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;What is the best vehicle configuration to drive over a 2D surface?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;vehicle-configuration-genome&quot;&gt;Vehicle Configuration = Genome 🧬:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Shape&lt;/li&gt;
-&lt;li&gt;Wheel size&lt;/li&gt;
-&lt;li&gt;Wheel position&lt;/li&gt;
-&lt;li&gt;Wheel weight&lt;/li&gt;
-&lt;li&gt;Chassis weight&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;key-ea-steps-on-the-vehicle-race-example-1234&quot;&gt;Key EA Steps on the vehicle race example 🔢 :&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Initialization&lt;/strong&gt;: Generate a set of vehicles with random characteristics (genome) called population&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fitness Evaluation&lt;/strong&gt;: Check how far they have got on the randomly generated surface.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Selection&lt;/strong&gt;: Select a subset of the best vehicles from the population to reproduce and form the next generation, e.g., by tournament selection or rank selection.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Crossover (Recombination)&lt;/strong&gt;: Combine the genetic information of two or more selected vehicles to create new offspring. E.g., average two good car genomes or randomly select the information of each...&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mutation&lt;/strong&gt;: Randomly modify the genetic information of some individuals in the population to introduce new variations and prevent convergence to a local optimum.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Replacement&lt;/strong&gt;: Replace the least performing vehicles with new offspring generated through crossover and mutation.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Termination&lt;/strong&gt;: Repeat until a stopping criterion is met: the needed distance, number of iterations, or convergence threshold.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Output&lt;/strong&gt;: best vehicle, representing the near-optimal solution&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;my-perspective&quot;&gt;My Perspective 🤗:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Be aware that there are a multitude of possible algorithms to use&lt;/li&gt;
-&lt;li&gt;We at Comma Soft AG do not trust any hype and select the appropriate algorithms for the respective problem&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;credit&quot;&gt;Credit ❤️&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;To the development team of the interactive EA vehicle race&lt;/li&gt;
-&lt;li&gt;I&#39;d also like to thank Hajira Jabeen and Jens Lehmann for their great support in my MT project where I worked on EA and KG for the creation of novel recipes&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;links&quot;&gt;Links 📖&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;EA vehicle race, try it out yourself: &lt;a href=&quot;https://lnkd.in/e2Ew3e7D&quot;&gt;https://lnkd.in/e2Ew3e7D&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Extract from my MT in a short paper: &lt;a href=&quot;https://lnkd.in/e8VRVe_k&quot;&gt;https://lnkd.in/e8VRVe_k&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;My current GenAI work: &lt;a href=&quot;https://lnkd.in/edNx8uKh&quot;&gt;https://lnkd.in/edNx8uKh&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;questions&quot;&gt;Questions&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;How would you solve this &amp;quot;race&amp;quot; problem? EA, GenAI, RL, ...?&lt;/li&gt;
-&lt;li&gt;Do you want to see more non-GenAI content?&lt;/li&gt;
-&lt;li&gt;Have you ever used EA to solve a problem?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Stay tuned by following me here on Linked ❤️&lt;/p&gt;
-&lt;p&gt;#LostInGenai #artificialintelligence #evolutionaryalgorithms&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-evolutionaryalgorithms-activity-7211741750673973248-V4Ej?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Fast New ELO Over MixEval. But Looking into Code, I Got Doubts!</title>
-    <link href="https://carstendraschner.github.io/blog/240620_MixEval_doubts/" />
-    <updated>2024-06-20T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/240620_MixEval_doubts/</id>
-    <content type="html">&lt;p&gt;Have you seen that MixEval Hard has two interesting but little critical aspects&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/Qs-Bzleob6-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/Qs-Bzleob6-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/Qs-Bzleob6-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;745&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TLDR&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Examined MixEval, an open-source LLM benchmark&lt;/li&gt;
-&lt;li&gt;Uses LLMs as judges to predict continuous values&lt;/li&gt;
-&lt;li&gt;Evaluation data contains duplicates&lt;/li&gt;
-&lt;li&gt;Uncertain about trusting these methods&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;issues-with-mixeval&quot;&gt;Issues with MixEval&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;For freeform answering, it lets e.g. GPT35T as judge predict values like &amp;quot;[[0.9]]&amp;quot; and try to fetch this as reliable number for correctness score.&lt;/li&gt;
-&lt;li&gt;The MixEval eval data contains several duplicates due to their sampling approach.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;my-take&quot;&gt;My Take&lt;/h2&gt;
-&lt;p&gt;I like the concept of MixEval to have an open-source LLM benchmark which has a good overlap to Arena Elo, but I am unsure if I trust LLMs as judge which try to reason continuous numbers for freeform LLM answers and relies on duplicates in samples.&lt;/p&gt;
-&lt;h2 id=&quot;extract-of-my-hands-on-criteria&quot;&gt;Extract of My Hands-On Criteria&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;What do you think?&lt;/li&gt;
-&lt;li&gt;Do you see an issue in duplicates within eval sets?&lt;/li&gt;
-&lt;li&gt;Would you trust LLMs as judge predicting continuous values for later usage?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;credit&quot;&gt;Credit&lt;/h2&gt;
-&lt;p&gt;Thanks Philipp Schmid for your post(s)&lt;/p&gt;
-&lt;h2 id=&quot;my-questions&quot;&gt;My Questions?&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;What are your thoughts on MixEval?&lt;/li&gt;
-&lt;li&gt;Do you trust LLMs as judges in evaluating continuous values?&lt;/li&gt;
-&lt;li&gt;How do you handle duplicates in evaluation sets?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;#generativeai #artificialintelligence #llm #machinelearning #benchmark&lt;/p&gt;
 </content>
   </entry>
 </feed>
