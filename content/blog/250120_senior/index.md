@@ -1,6 +1,6 @@
 ---
 title: What a Wonderful Start, More to Come!
-date: 2025-12-27
+date: 2025-01-20
 linkedInUrl: https://www.linkedin.com/posts/carsten-draschner_cometocomma-artificialintelligence-aiineurope-activity-7287871674144718851-FU6h?utm_source=share&utm_medium=member_desktop
 tags: blog
 ---

@@ -1,6 +1,6 @@
 ---
 title: DeepSeek has huge issues. Code on last Slide. Be careful!
-date: 2024-12-27
+date: 2025-02-03
 linkedInUrl: https://www.linkedin.com/posts/carsten-draschner_deep-seek-model-issues-code-on-last-slide-activity-7289957083297325056-Wtfo?utm_source=share&utm_medium=member_desktop
 tags: blog
 ---
