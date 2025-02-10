@@ -5,77 +5,15 @@
   <subtitle>Various updates and insides into cutting edge AI Research and Development including AI Ethics and perspective from European Union.</subtitle>
   <link href="https://carstendraschner.github.io/feed/feed.xml" rel="self" />
   <link href="https://carstendraschner.github.io/blog/" />
-  <updated>2025-01-05T00:00:00Z</updated>
+  <updated>2025-12-27T00:00:00Z</updated>
   <id>https://carstendraschner.github.io/blog/</id>
   <author>
     <name>Carsten Felix Draschner</name>
   </author>
   <entry>
-    <title>Expanding my GenAI content beyond LinkedIn!</title>
-    <link href="https://carstendraschner.github.io/blog/250105_blog/" />
-    <updated>2025-01-05T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/250105_blog/</id>
-    <content type="html">&lt;p&gt;I&#39;m excited to share that my work-in-progress blog is now live at &lt;a href=&quot;https://carstendraschner.github.io&quot;&gt;carstendraschner.github.io&lt;/a&gt;!&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/ZpPydbbbRH-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/ZpPydbbbRH-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/ZpPydbbbRH-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;913&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;New blog live at carstendraschner.github.io&lt;/li&gt;
-&lt;li&gt;Reach broader audience beyond LinkedIn&lt;/li&gt;
-&lt;li&gt;Experiment with Alan.de and GitHub Pages&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;why-did-i-create-this-website-blog&quot;&gt;Why did I create this website/blog?&lt;/h2&gt;
-&lt;p&gt;📖 Reach a broader audience who may not be on LinkedIn or is annoyed by it&lt;br&gt;
-🙅🏼‍♀️ Overcome the limitations of LinkedIn&#39;s algorithm and advertising noise/trackers&lt;br&gt;
-🤖 Experiment and showcase how Alan.de by Comma Soft AG can support me a non web developer to migrate my Blog content in a coding domain I am not used to&lt;/p&gt;
-&lt;h2 id=&quot;how-did-i-build-it&quot;&gt;How did I build it?&lt;/h2&gt;
-&lt;p&gt;🤑 Using GitHub Pages as a completely free hosting solution including acceptable domain&lt;br&gt;
-👨🏼‍💻 Leveraging Eleventy for responsive design/dark mode... with the help of my great friend (and astonishing developer) Konstantin Tieber ❤️ Thank you 🙏🏽&lt;/p&gt;
-&lt;h2 id=&quot;what-can-you-find-on-my-blog&quot;&gt;What can you find on my blog?&lt;/h2&gt;
-&lt;p&gt;📚 More detailed versions of my Blog posts you have seen here&lt;br&gt;
-🛠️ Past projects and experiments and research papers&lt;br&gt;
-📰 A work-in-progress collection of my GenAI content&lt;/p&gt;
-&lt;h2 id=&quot;where-do-you-prefer-to-consume-and-share-content&quot;&gt;Where do you prefer to consume and share content?&lt;/h2&gt;
-&lt;p&gt;What are your preferred platforms to store and consume blogposts and AI knowledge? e.g. Bluesky Social, Medium, Towards Data Science, Reddit, Inc., X, Hugging Face Blog, Mastodon, arXiv, ResearchGate, RSS...&lt;/p&gt;
-&lt;p&gt;Take a look and let me know what features you&#39;d like to see next or where I should publish those content as well. Might take time as I do this in my spare free time 😅&lt;/p&gt;
-&lt;p&gt;Thanks to all my readers for your kind feedback and support in the DMs❤️! It is really valuable for me to see who is actually reading what and how it benefits you 🥰&lt;/p&gt;
-&lt;p&gt;#genai #blog #artificialintelligence #llm #machinelearning&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>DeepSeek has huge issues. Code on last Slide. Be careful!</title>
-    <link href="https://carstendraschner.github.io/blog/250203_deepseek_censorship/" />
-    <updated>2024-12-27T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/250203_deepseek_censorship/</id>
-    <content type="html">&lt;p&gt;DeepSeek Alignment and Censorship Concerns&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/1ZqMYIx9bu-978.avif 978w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/1ZqMYIx9bu-978.webp 978w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/1ZqMYIx9bu-978.png&quot; alt=&quot;Image 1&quot; width=&quot;978&quot; height=&quot;580&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;DeepSeek R1 alignment issues&lt;/li&gt;
-&lt;li&gt;Censorship on topics related to China&lt;/li&gt;
-&lt;li&gt;Use with caution&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
-&lt;p&gt;🤖 I was curious to have a hands-on session with the hyped DeepSeek Models.&lt;br&gt;
-🇨🇳 Smart engineers from China developed a model that competes at the top of the SOTA leaderboards.&lt;br&gt;
-🧐 I was wondering how the models behave in the alignment dimension, as this might be a distinctive factor when choosing open-weight models.&lt;br&gt;
-👨🏼‍💻 I chose not the 600B+ parameter model but a distilled 70B AWQ model, which runs easily for a try-out on one A100.&lt;/p&gt;
-&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
-&lt;p&gt;❓ I prompted the model with questions about several countries, democracy, politics, ethics, and more.&lt;br&gt;
-🤗 You can recreate those results using the code on the last slide.&lt;/p&gt;
-&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
-&lt;p&gt;🚫 The DeepSeek model has an alignment that stops it from saying anything critical about China itself, compared to other very similar prompts.&lt;br&gt;
-😳 I would be careful deploying that model without knowing what else might be an issue, especially when you use such models for function calling.&lt;br&gt;
-Be aware of which model you trust and why.&lt;br&gt;
-🧮 A Chinese quant company seems to have put a lot of effort into such adjustments, which have nothing to do with model performance or being good at answering questions correctly and safely.&lt;br&gt;
-🇪🇺 We develop Alan.de, a GenAI solution that runs fully on German servers and is developed and built from a European perspective by European engineers for European users.&lt;br&gt;
-❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
-&lt;p&gt;Hashtag#artificialintelligence Hashtag#deepseek Hashtag#alan Hashtag#aiethics&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
     <title>What a Wonderful Start, More to Come!</title>
     <link href="https://carstendraschner.github.io/blog/250120_senior/" />
-    <updated>2024-12-27T00:00:00Z</updated>
+    <updated>2025-12-27T00:00:00Z</updated>
     <id>https://carstendraschner.github.io/blog/250120_senior/</id>
     <content type="html">&lt;p&gt;My journey at Comma Soft AG and my recent promotion to Senior Level 🥳🥰&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/ciW79fkk7b-1146.avif 1146w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/ciW79fkk7b-1146.webp 1146w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/ciW79fkk7b-1146.png&quot; alt=&quot;Image 1&quot; width=&quot;1146&quot; height=&quot;536&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
@@ -115,44 +53,98 @@ Be aware of which model you trust and why.&lt;br&gt;
 &lt;p&gt;😳 Especially in today&#39;s times after recent elections, for me a work environment where one doesn&#39;t have to be morally or politically flexible is insanely important. Great to have colleagues and a company with moral compass.&lt;/p&gt;
 &lt;p&gt;🥰 If you would love to join our team or cooperate, reach out to me. For more content of my work follow me on LinkedIn or check out my blog.&lt;/p&gt;
 &lt;p&gt;🚀 Looking forward to the challenges and opportunities ahead, and continuing to achieve great things together!&lt;/p&gt;
-&lt;p&gt;Hashtag#cometocomma Hashtag#artificialintelligence Hashtag#aiineurope Hashtag#alan Hashtag#promotion&lt;/p&gt;
+&lt;p&gt;#cometocomma #artificialintelligence #aiineurope #alan #promotion&lt;/p&gt;
 </content>
   </entry>
   <entry>
-    <title>New DE/EU Open Source LLM 🇪🇺 Teuken 7B, Now Truly Open Source?</title>
-    <link href="https://carstendraschner.github.io/blog/241127_Teuken_Review/" />
-    <updated>2024-12-27T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/241127_Teuken_Review/</id>
-    <content type="html">&lt;p&gt;New Model out of Open-GPT-X developed within Germany from European Perspective&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/u966D37VBY-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/u966D37VBY-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/u966D37VBY-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;749&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+    <title>What happens in a learning (AI) brain? Problems of AI Model Knowledge Editing and LLM Cut Off dates lead to more errors in question answering and worse climate footprint</title>
+    <link href="https://carstendraschner.github.io/blog/250110_bluewhale/" />
+    <updated>2025-01-10T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250110_bluewhale/</id>
+    <content type="html">&lt;p&gt;Discussing the challenges of AI Model Knowledge Editing and the impact on question answering systems and climate footprint.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/PJ3gpNIEfx-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/PJ3gpNIEfx-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/PJ3gpNIEfx-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;New German OS LLM&lt;/li&gt;
-&lt;li&gt;7B, Transperant Docs&lt;/li&gt;
-&lt;li&gt;Problems in Alignment?&lt;/li&gt;
+&lt;li&gt;Knowledge editing in AI models is complex and can lead to errors.&lt;/li&gt;
+&lt;li&gt;Re-training models from scratch has a significant climate impact.&lt;/li&gt;
+&lt;li&gt;Alternative solutions like RAG and Knowledge Graphs have their own challenges.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;short-facts&quot;&gt;Short Facts&lt;/h2&gt;
-&lt;p&gt;🇪🇺 European language focus
-🤖 7B parameters
-🔗 Very open Apache 2.0 license
-🛠️ Instruction Fine-tuned
-📊 Not outperforming in Benchmarks but also within normal distribution (for 🇬🇧)
-👶🏼 4k max context
-💣 (EDIT) Alignment Discussion see here: &lt;a href=&quot;https://lnkd.in/eseXDMMS&quot;&gt;https://lnkd.in/eseXDMMS&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;My former colleagues Mehdi Ali (roommate within our time in Smart Data Analytics at Rheinische Friedrich-Wilhelms-Universität Bonn of Jens Lehmann) and Stefan Wrobel (one of my Ph.D. supervisors Rheinische Friedrich-Wilhelms-Universität Bonn) and their teams have released an LLM developed in Europe within OpenGPT-X &amp;amp; Fraunhofer IAIS. This has been developed with a focus on European languages. I&#39;m excited to try it out right away and see the actual performance! They announced their own Leaderboard and the Model in somewhere in between other models of same size: &lt;a href=&quot;https://lnkd.in/eTgv8bjV&quot;&gt;https://lnkd.in/eTgv8bjV&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;my-take&quot;&gt;My Take 🤗&lt;/h2&gt;
+&lt;h2 id=&quot;how-do-you-learn&quot;&gt;How do you learn? 🙇🏽‍♀️👩🏻‍🎓&lt;/h2&gt;
+&lt;p&gt;Imagine showing a friend a picture of a massive blue whale and telling them that it&#39;s the largest measured one, stretching nearly 34 meters long (German Wikipedia). They previously thought blue whales only grew up to (then well known) 30 meters (English Wikipedia). If you ask them now or in a year, they&#39;ll maybe recall the adjusted length, … or not. But were they capable to only update that fact in their brain or do they had to forget one unrelated fact e.g. one friend&#39;s name from kindergarten times. And how to find out what you lost in your mind for new knowledge?&lt;/p&gt;
+&lt;h2 id=&quot;same-issue-in-llm-based-qa-systems&quot;&gt;Same issue in LLM based QA Systems: 🤖💭&lt;/h2&gt;
+&lt;p&gt;This thought experiment illustrates the challenges we face when trying to update the knowledge of state-of-the-art (SOTA) language models (LLMs) with new information. These models gain their knowledge during corpus pretraining, a process that&#39;s largely opaque. But what if we want to add new capabilities to these models especially after they&#39;ve already been fine-tuned and aligned?&lt;/p&gt;
+&lt;h2 id=&quot;climate-issue-without-knowledge-model-editing&quot;&gt;Climate Issue without Knowledge Model Editing! 🏭🌱&lt;/h2&gt;
+&lt;p&gt;It seems that currently we have to start from scratch to have stable new knowledge which requests huge amounts of NVIDIA GPU power. It also wastes spent effort for learning and training unchanged facts. I am still missing truly best practices if and how this is doable especially at scale beyond thousands of facts changing on daily bases.&lt;/p&gt;
+&lt;h2 id=&quot;rag-or-knowledge-graphs-as-a-solution&quot;&gt;RAG or Knowledge Graphs as a solution? 🛠️📚&lt;/h2&gt;
+&lt;p&gt;Coming from a PhD in Knowledge Graph based ML @Smart Data Analytics which seems more appropriate for Questions answering on changing facts, I still think the Hype around LLMs need to reflect this issue. LLM-RAG is not always a solution due to Retrieval Recall issues, Hardware costs of flooded context length and many more.&lt;/p&gt;
+&lt;h2 id=&quot;reach-out&quot;&gt;Reach out! 💬❤️&lt;/h2&gt;
+&lt;p&gt;We at Comma Soft AG develop novel approaches for Alan.de and our customers to tackle these issues always to get the best responses when you interact with GenAI based Question Answering Systems.&lt;/p&gt;
+&lt;p&gt;If you like to join our efforts, reach out to me for collaboration, or consider joining us #cometocomma for a team of lovely, highly productive and smart people 🥰&lt;/p&gt;
+&lt;h2 id=&quot;share-me-your-thoughts&quot;&gt;Share me your Thoughts!&lt;/h2&gt;
+&lt;p&gt;I highly appreciate if leave me your thoughts about AI Knowledge Editing in the comments! Feel free to follow me for more details from our R&amp;amp;D 🙏🏽&lt;/p&gt;
+&lt;p&gt;#artificialintelligence #rag #llm #knowledgeediting #machinelearning&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Expanding my GenAI content beyond LinkedIn!</title>
+    <link href="https://carstendraschner.github.io/blog/250105_blog/" />
+    <updated>2025-01-05T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250105_blog/</id>
+    <content type="html">&lt;p&gt;I&#39;m excited to share that my work-in-progress blog is now live at &lt;a href=&quot;https://carstendraschner.github.io&quot;&gt;carstendraschner.github.io&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/ZpPydbbbRH-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/ZpPydbbbRH-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/ZpPydbbbRH-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;913&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;I have high hopes for a better documentation of the development process and I am curious if this model can be called truly open source and not just open weight.&lt;/li&gt;
-&lt;li&gt;I look forward to further European and German initiatives that also pursue (Gen)AI development here in 🇪🇺❤️&lt;/li&gt;
+&lt;li&gt;New blog live at carstendraschner.github.io&lt;/li&gt;
+&lt;li&gt;Reach broader audience beyond LinkedIn&lt;/li&gt;
+&lt;li&gt;Experiment with Alan.de and GitHub Pages&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;my-questions-at-mehdi-ali-michael-fromm-max-luebbering-phd-and-all-your-contributors&quot;&gt;My Questions (at Mehdi Ali, Michael Fromm, Max Lübbering, PhD and all your contributors):&lt;/h2&gt;
+&lt;h2 id=&quot;why-did-i-create-this-website-blog&quot;&gt;Why did I create this website/blog?&lt;/h2&gt;
+&lt;p&gt;📖 Reach a broader audience who may not be on LinkedIn or is annoyed by it&lt;br&gt;
+🙅🏼‍♀️ Overcome the limitations of LinkedIn&#39;s algorithm and advertising noise/trackers&lt;br&gt;
+🤖 Experiment and showcase how Alan.de by Comma Soft AG can support me a non web developer to migrate my Blog content in a coding domain I am not used to&lt;/p&gt;
+&lt;h2 id=&quot;how-did-i-build-it&quot;&gt;How did I build it?&lt;/h2&gt;
+&lt;p&gt;🤑 Using GitHub Pages as a completely free hosting solution including acceptable domain&lt;br&gt;
+👨🏼‍💻 Leveraging Eleventy for responsive design/dark mode... with the help of my great friend (and astonishing developer) Konstantin Tieber ❤️ Thank you 🙏🏽&lt;/p&gt;
+&lt;h2 id=&quot;what-can-you-find-on-my-blog&quot;&gt;What can you find on my blog?&lt;/h2&gt;
+&lt;p&gt;📚 More detailed versions of my Blog posts you have seen here&lt;br&gt;
+🛠️ Past projects and experiments and research papers&lt;br&gt;
+📰 A work-in-progress collection of my GenAI content&lt;/p&gt;
+&lt;h2 id=&quot;where-do-you-prefer-to-consume-and-share-content&quot;&gt;Where do you prefer to consume and share content?&lt;/h2&gt;
+&lt;p&gt;What are your preferred platforms to store and consume blogposts and AI knowledge? e.g. Bluesky Social, Medium, Towards Data Science, Reddit, Inc., X, Hugging Face Blog, Mastodon, arXiv, ResearchGate, RSS...&lt;/p&gt;
+&lt;p&gt;Take a look and let me know what features you&#39;d like to see next or where I should publish those content as well. Might take time as I do this in my spare free time 😅&lt;/p&gt;
+&lt;p&gt;Thanks to all my readers for your kind feedback and support in the DMs❤️! It is really valuable for me to see who is actually reading what and how it benefits you 🥰&lt;/p&gt;
+&lt;p&gt;#genai #blog #artificialintelligence #llm #machinelearning&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>DeepSeek has huge issues. Code on last Slide. Be careful!</title>
+    <link href="https://carstendraschner.github.io/blog/250203_deepseek_censorship/" />
+    <updated>2024-12-27T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250203_deepseek_censorship/</id>
+    <content type="html">&lt;p&gt;DeepSeek Alignment and Censorship Concerns&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/Rj7n_l2sFQ-1806.avif 1806w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/Rj7n_l2sFQ-1806.webp 1806w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/Rj7n_l2sFQ-1806.png&quot; alt=&quot;Image 1&quot; width=&quot;1806&quot; height=&quot;1434&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Is anyone capable to entirely reproduce the model from the documentation?&lt;/li&gt;
-&lt;li&gt;What do you expect from Arena Elo Scores?&lt;/li&gt;
-&lt;li&gt;In which tasks would you recommend usage of your model over other models from Mistral AI, Meta, Google, Microsoft, Alibaba Cloud like Mistral7B, LLama3.18B, Gemma, Phi, Qwen...&lt;/li&gt;
-&lt;li&gt;Will we see truly big LLMs in size of 50-400B Parameter that can compete with current top notch LLMs from your side?&lt;/li&gt;
+&lt;li&gt;DeepSeek R1 alignment issues&lt;/li&gt;
+&lt;li&gt;Censorship on topics related to China&lt;/li&gt;
+&lt;li&gt;Use with caution&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;We at Comma Soft AG provide with Alan.de a European and German Solution to use GenAI in a highly performant, safe and trusted environment. If you like to see more of our recent R&amp;amp;D, check my recent posts and reach out to me for more idea exchange 😊&lt;/p&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;🤖 I was curious to have a hands-on session with the hyped DeepSeek Models.&lt;br&gt;
+🇨🇳 Smart engineers from China developed a model that competes at the top of the SOTA leaderboards.&lt;br&gt;
+🧐 I was wondering how the models behave in the alignment dimension, as this might be a distinctive factor when choosing open-weight models.&lt;br&gt;
+👨🏼‍💻 I chose not the 600B+ parameter model but a distilled 70B AWQ model, which runs easily for a try-out on one A100.&lt;/p&gt;
+&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
+&lt;p&gt;❓ I prompted the model with questions about several countries, democracy, politics, ethics, and more.&lt;br&gt;
+🤗 You can recreate those results using the code on the last slide.&lt;/p&gt;
+&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
+&lt;p&gt;🚫 The DeepSeek model has an alignment that stops it from saying anything critical about China itself, compared to other very similar prompts.&lt;br&gt;
+😳 I would be careful deploying that model without knowing what else might be an issue, especially when you use such models for function calling.&lt;br&gt;
+Be aware of which model you trust and why.&lt;br&gt;
+🧮 A Chinese quant company seems to have put a lot of effort into such adjustments, which have nothing to do with model performance or being good at answering questions correctly and safely.&lt;br&gt;
+🇪🇺 We develop Alan.de, a GenAI solution that runs fully on German servers and is developed and built from a European perspective by European engineers for European users.&lt;br&gt;
+❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
+&lt;p&gt;#artificialintelligence #deepseek #alan #aiethics&lt;/p&gt;
 </content>
   </entry>
   <entry>
@@ -184,6 +176,43 @@ Be aware of which model you trust and why.&lt;br&gt;
 &lt;li&gt;Alan the Comma GenAI: &lt;a href=&quot;https://lnkd.in/edNx8uKh&quot;&gt;https://lnkd.in/edNx8uKh&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;#llama #artificialintelligence #anotherllmrelease&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>New DE/EU Open Source LLM 🇪🇺 Teuken 7B, Now Truly Open Source?</title>
+    <link href="https://carstendraschner.github.io/blog/241127_Teuken_Review/" />
+    <updated>2024-11-27T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/241127_Teuken_Review/</id>
+    <content type="html">&lt;p&gt;New Model out of Open-GPT-X developed within Germany from European Perspective&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/u966D37VBY-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/u966D37VBY-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/u966D37VBY-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;749&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;New German OS LLM&lt;/li&gt;
+&lt;li&gt;7B, Transperant Docs&lt;/li&gt;
+&lt;li&gt;Problems in Alignment?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;short-facts&quot;&gt;Short Facts&lt;/h2&gt;
+&lt;p&gt;🇪🇺 European language focus
+🤖 7B parameters
+🔗 Very open Apache 2.0 license
+🛠️ Instruction Fine-tuned
+📊 Not outperforming in Benchmarks but also within normal distribution (for 🇬🇧)
+👶🏼 4k max context
+💣 (EDIT) Alignment Discussion see here: &lt;a href=&quot;https://lnkd.in/eseXDMMS&quot;&gt;https://lnkd.in/eseXDMMS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;My former colleagues Mehdi Ali (roommate within our time in Smart Data Analytics at Rheinische Friedrich-Wilhelms-Universität Bonn of Jens Lehmann) and Stefan Wrobel (one of my Ph.D. supervisors Rheinische Friedrich-Wilhelms-Universität Bonn) and their teams have released an LLM developed in Europe within OpenGPT-X &amp;amp; Fraunhofer IAIS. This has been developed with a focus on European languages. I&#39;m excited to try it out right away and see the actual performance! They announced their own Leaderboard and the Model in somewhere in between other models of same size: &lt;a href=&quot;https://lnkd.in/eTgv8bjV&quot;&gt;https://lnkd.in/eTgv8bjV&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;my-take&quot;&gt;My Take 🤗&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I have high hopes for a better documentation of the development process and I am curious if this model can be called truly open source and not just open weight.&lt;/li&gt;
+&lt;li&gt;I look forward to further European and German initiatives that also pursue (Gen)AI development here in 🇪🇺❤️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;my-questions-at-mehdi-ali-michael-fromm-max-luebbering-phd-and-all-your-contributors&quot;&gt;My Questions (at Mehdi Ali, Michael Fromm, Max Lübbering, PhD and all your contributors):&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Is anyone capable to entirely reproduce the model from the documentation?&lt;/li&gt;
+&lt;li&gt;What do you expect from Arena Elo Scores?&lt;/li&gt;
+&lt;li&gt;In which tasks would you recommend usage of your model over other models from Mistral AI, Meta, Google, Microsoft, Alibaba Cloud like Mistral7B, LLama3.18B, Gemma, Phi, Qwen...&lt;/li&gt;
+&lt;li&gt;Will we see truly big LLMs in size of 50-400B Parameter that can compete with current top notch LLMs from your side?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We at Comma Soft AG provide with Alan.de a European and German Solution to use GenAI in a highly performant, safe and trusted environment. If you like to see more of our recent R&amp;amp;D, check my recent posts and reach out to me for more idea exchange 😊&lt;/p&gt;
 </content>
   </entry>
   <entry>
@@ -679,59 +708,6 @@ and many more.&lt;/li&gt;
 &lt;p&gt;I appreciate the efforts to decrease hardware and energy demands while still providing helpful model responses.&lt;/p&gt;
 &lt;p&gt;#artificialintelligence #genai #sustainableai #llm&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_ai-google-tech-activity-7224785383237001216-HDyZ?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>LLMs - Big vs Small. Bigger is Better!? OR Let&#39;s not waste energy!?</title>
-    <link href="https://carstendraschner.github.io/blog/240715_llms_big_vs_small_bigger_is_better_or_lets_not_waste_energy/" />
-    <updated>2024-07-15T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/240715_llms_big_vs_small_bigger_is_better_or_lets_not_waste_energy/</id>
-    <content type="html">&lt;p&gt;The AI community is abuzz with debates over the efficacy of large versus small language models. Both have their own merits and limitations.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/nMmqfr9sVq-907.avif 907w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/nMmqfr9sVq-907.webp 907w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/nMmqfr9sVq-907.png&quot; alt=&quot;Model Size&quot; width=&quot;907&quot; height=&quot;337&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;AI community debates model sizes&lt;/li&gt;
-&lt;li&gt;Massive models vs. smaller, efficient models&lt;/li&gt;
-&lt;li&gt;Insights and future predictions&lt;/li&gt;
-&lt;li&gt;Links to further reading&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;the-ai-community-is-buzzing-with-discussions-about-model-sizes&quot;&gt;✨ The AI community is buzzing with discussions about model sizes:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Massive models like Mistral (8x22B), LLAMA3 (400B), and Grok (314B) are turning heads.&lt;/li&gt;
-&lt;li&gt;Smaller yet mighty models like Phi 3, LLAMA3 (8B), and Nemo (12B) are proving their worth.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;key-insights&quot;&gt;🔍 Key insights:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Smaller models can compete by focusing on smarter training and pre-tuning methods.&lt;/li&gt;
-&lt;li&gt;Benchmarks are helpful but not flawless in measuring a model&#39;s value.&lt;/li&gt;
-&lt;li&gt;The mystery remains: why might a model with 61 transformer layers outperform one with 60?&lt;/li&gt;
-&lt;li&gt;Balancing model architecture is crucial due to the increasing complexity as models scale up.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;future-predictions&quot;&gt;🔮 Future predictions:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Will we see a standard model size emerge, or will there be a variety for different model size clusters for different platforms (mobile, single GPU, multi-GPU clusters)?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;links&quot;&gt;Links 🔗&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Reason LLAMA Model Sizes: &lt;a href=&quot;https://lnkd.in/dHRSJXgm&quot;&gt;https://lnkd.in/dHRSJXgm&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;ALAN - GER-hosted GenAI tool developer story: &lt;a href=&quot;https://lnkd.in/ey8aZTjB&quot;&gt;https://lnkd.in/ey8aZTjB&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Problems with benchmarks: &lt;a href=&quot;https://lnkd.in/dmBeQZ_j&quot;&gt;https://lnkd.in/dmBeQZ_j&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;what-is-your-experience&quot;&gt;🌐 What is your experience?&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Which model size do you find most practical for real-world problems?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;i-m-keen-to-learn-from-you&quot;&gt;📊 I&#39;m keen to learn from you:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;What size models are you working with?&lt;/li&gt;
-&lt;li&gt;Share your preferences in this survey and let&#39;s discuss the optimal balance in model scaling.&lt;/li&gt;
-&lt;li&gt;What do you think how big is the gpt4o turbo?&lt;/li&gt;
-&lt;li&gt;Join the conversation and let&#39;s navigate the evolving landscape of machine learning together ❤️&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;At Alan (by Comma Soft AG), we recognize the need for variety:
-We provide models of various sizes to align with your unique requirements for capability and speed.&lt;/p&gt;
-&lt;p&gt;#MachineLearning #AI #ModelSize #Innovation #GenAI #SustainableAI&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_machinelearning-ai-modelsize-activity-7221169255419969536-IQnL?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>
