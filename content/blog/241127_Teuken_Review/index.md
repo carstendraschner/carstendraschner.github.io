@@ -1,6 +1,6 @@
 ---
 title: New DE/EU Open Source LLM 🇪🇺 Teuken 7B, Now Truly Open Source?
-date: 2024-12-27
+date: 2024-11-27
 linkedInUrl: https://www.linkedin.com/in/carsten-draschner/recent-activity/all/
 tags: blog
 ---

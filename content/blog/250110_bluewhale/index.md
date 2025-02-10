@@ -1,6 +1,6 @@
 ---
 title: What happens in a learning (AI) brain? Problems of AI Model Knowledge Editing and LLM Cut Off dates lead to more errors in question answering and worse climate footprint
-date: 2024-01-10
+date: 2025-01-10
 linkedInUrl: https://www.linkedin.com/posts/carsten-draschner_cometocomma-artificialintelligence-rag-activity-7282754175623475201-hpG5?utm_source=share&utm_medium=member_desktop
 tags: blog
 ---
