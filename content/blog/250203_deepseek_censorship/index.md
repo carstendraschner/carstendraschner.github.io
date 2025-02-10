@@ -37,4 +37,4 @@ Be aware of which model you trust and why.
 🇪🇺 We develop Alan.de, a GenAI solution that runs fully on German servers and is developed and built from a European perspective by European engineers for European users.  
 ❤️ Feel free to reach out and like if you want to see more of such content.
 
-Hashtag#artificialintelligence Hashtag#deepseek Hashtag#alan Hashtag#aiethics
+#artificialintelligence #deepseek #alan #aiethics

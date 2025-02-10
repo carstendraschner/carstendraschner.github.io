@@ -63,4 +63,4 @@ Today, I’d love to say thank you to my wonderful team at Comma Soft AG, which 
 
 🚀 Looking forward to the challenges and opportunities ahead, and continuing to achieve great things together!
 
-Hashtag#cometocomma Hashtag#artificialintelligence Hashtag#aiineurope Hashtag#alan Hashtag#promotion
+#cometocomma #artificialintelligence #aiineurope #alan #promotion
