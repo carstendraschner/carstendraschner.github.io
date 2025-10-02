@@ -5,11 +5,580 @@
   <subtitle>Various updates and insides into cutting edge AI Research and Development including AI Ethics and perspective from European Union.</subtitle>
   <link href="https://carstendraschner.github.io/feed/feed.xml" rel="self" />
   <link href="https://carstendraschner.github.io/blog/" />
-  <updated>2025-02-03T00:00:00Z</updated>
+  <updated>2025-10-01T00:00:00Z</updated>
   <id>https://carstendraschner.github.io/blog/</id>
   <author>
     <name>Carsten Felix Draschner</name>
   </author>
+  <entry>
+    <title>Insights from the Largest Study on ChatGPT Usage</title>
+    <link href="https://carstendraschner.github.io/blog/251001_chatgpt_usage/" />
+    <updated>2025-10-01T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/251001_chatgpt_usage/</id>
+    <content type="html">&lt;p&gt;OpenAI &amp;amp; Harvard on Consumer ChatGPT Usage&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/_sk3twZK1p-2048.avif 2048w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/_sk3twZK1p-2048.webp 2048w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/_sk3twZK1p-2048.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;2048&quot; height=&quot;987&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1.5M conversations analyzed, set against 700M weekly active users&lt;/li&gt;
+&lt;li&gt;Usage is now globally balanced, with strong growth in low- and middle-income countries&lt;/li&gt;
+&lt;li&gt;ChatGPT is used for asking, doing, and expressing — across work and private life&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;OpenAI and Harvard released the largest study ever on ChatGPT usage, analyzing 1.5 million conversations and comparing them with the context of 700 million weekly active users.&lt;br&gt;
+This provides an unprecedented view into how people around the world actually use foundation models in daily life.&lt;/p&gt;
+&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
+&lt;p&gt;I summarized the key findings from the study to highlight adoption patterns, usage purposes, and the balance between private and work-related use.&lt;br&gt;
+Additionally, I reflected on how these insights compare to enterprise-focused projects like Alan.de, which we are developing at Comma Soft AG.&lt;/p&gt;
+&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
+&lt;p&gt;🌍 The adoption curve shows how ChatGPT has become globally accessible, closing gender gaps and spreading rapidly in lower-income regions.&lt;br&gt;
+💡 The three patterns — asking, doing, and expressing — confirm its role as a versatile assistant.&lt;br&gt;
+📈 The split between private and work use shows a strong dual role: productivity tool and life assistant.&lt;/p&gt;
+&lt;p&gt;From an enterprise perspective, we see overlaps but also different priorities, especially in structured business environments.&lt;br&gt;
+Such large-scale studies help benchmark real-world value and guide future improvements in model development and deployment.&lt;/p&gt;
+&lt;p&gt;❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
+&lt;p&gt;#llm #foundationmodels #artificialintelligence&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>One of the biggest missing pieces between Open-Source and Open-Weight models ... and a Weird Finding about Pre-training Data!</title>
+    <link href="https://carstendraschner.github.io/blog/250901_pretraining_data/" />
+    <updated>2025-09-01T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250901_pretraining_data/</id>
+    <content type="html">&lt;p&gt;Open-Source ≠ Open-Weight — Pre-training Data Mystery&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/r5iRTbO7bI-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/r5iRTbO7bI-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/r5iRTbO7bI-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;568&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pre-training data shapes everything downstream (RAG, RLHF, prompting).&lt;/li&gt;
+&lt;li&gt;FineWeb uses per-snapshot deduplication only, not global.&lt;/li&gt;
+&lt;li&gt;Raises open questions about contamination vs. genuine generalization.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;Before an LLM ever sees a user prompt, it spends ≈ 50-90 % of its compute budget ingesting a huge, unlabelled corpus during pre-training.&lt;br&gt;
+Everything that follows—instruction tuning, RAG, RLHF, even quirky prompt-engineering tricks—works on top of this pretrained model.&lt;/p&gt;
+&lt;p&gt;When the corpus is skewed or noisy, the downstream model inherits those quirks forever.&lt;br&gt;
+Most companies never disclose exactly which data they used; some cases even ask whether that data was legal to scrape.&lt;/p&gt;
+&lt;p&gt;FineWeb’s team has now released 15 T tokens and their full curation pipeline. A rare opportunity to peek behind the curtain!&lt;/p&gt;
+&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
+&lt;p&gt;I looked into how FineWeb builds its datasets, step by step:&lt;/p&gt;
+&lt;p&gt;1️⃣ Crawl selection (Common Crawl snapshots).&lt;br&gt;
+2️⃣ Extraction of text from HTML.&lt;br&gt;
+3️⃣ Filtering for language &amp;amp; safety.&lt;br&gt;
+4️⃣ Quality heuristics (line length, repetition, etc.).&lt;br&gt;
+5️⃣ Deduplication.&lt;br&gt;
+6️⃣ PII scrubbing &amp;amp; labelling.&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;surprise&lt;/em&gt;: FineWeb only deduplicates &lt;strong&gt;within each snapshot&lt;/strong&gt;, not globally.&lt;br&gt;
+That means the same article may appear up to 96 times—once per crawl.&lt;/p&gt;
+&lt;p&gt;Global dedup experiments erased up to 90 % of tokens in older crawls, but still under-performed RefinedWeb.&lt;br&gt;
+Other lighter schemes (URL, line, 3-line) also hurt accuracy.&lt;/p&gt;
+&lt;p&gt;So FineWeb chose the trade-off: drop huge template clusters, but keep duplicates across snapshots.&lt;/p&gt;
+&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
+&lt;p&gt;I understand the compute savings and empirical win.&lt;br&gt;
+But I’m still left wondering about &lt;strong&gt;benchmark contamination&lt;/strong&gt;:&lt;br&gt;
+if duplicate passages exist across crawls, evaluation answers might leak into training sets more often.&lt;/p&gt;
+&lt;p&gt;Better scores, yes—but due to true generalisation or memorisation?&lt;/p&gt;
+&lt;p&gt;Regardless, I’m deeply grateful to the FineWeb team. Open datasets like this help the entire community push forward.&lt;/p&gt;
+&lt;p&gt;At Comma Soft AG we focus on domain-specific models and pay close attention to contamination issues.&lt;br&gt;
+This release helps us (and others) experiment more openly.&lt;/p&gt;
+&lt;p&gt;❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
+&lt;p&gt;#AI #LLM #Pretraining&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Unmasking AI’s Footprint - The Real Cost of Large Language Models</title>
+    <link href="https://carstendraschner.github.io/blog/250803_mistral_co2/" />
+    <updated>2025-08-03T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250803_mistral_co2/</id>
+    <content type="html">&lt;p&gt;The Hidden Environmental Cost of AI&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/L2hWwfjsba-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/L2hWwfjsba-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/L2hWwfjsba-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;721&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mistral AI published the first full life-cycle analysis (LCA) of an LLM&lt;/li&gt;
+&lt;li&gt;Training has huge up-front CO₂, water, and resource costs&lt;/li&gt;
+&lt;li&gt;Smart choices (renewables, smaller models, optimisation) reduce the footprint&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;🌍 Mistral AI just released the first &lt;em&gt;full life-cycle analysis (LCA)&lt;/em&gt; of an LLM (Mistral Large 2).&lt;br&gt;
+The numbers are eye-opening:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;20.4 kt CO₂e, 281 000 m³ water &amp;amp; 660 kg Sb-eq&lt;/strong&gt; to train over 18 months&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;1.14 g CO₂e, 45 mL water &amp;amp; 0.16 mg Sb-eq&lt;/strong&gt; for a single 400-token response&lt;/li&gt;
+&lt;li&gt;Footprint scales roughly &lt;em&gt;linearly&lt;/em&gt; with model size (10× parameters ≈ 10× impact)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This raises questions about sustainability, usage patterns, and model selection.&lt;/p&gt;
+&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
+&lt;p&gt;I reviewed the Mistral post and analysed where the environmental impact of LLMs comes from:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Training once, paying for years&lt;/strong&gt; – the up-front carbon loan dominates unless utilisation is high.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hardware &amp;amp; supply chain&lt;/strong&gt; – producing GPUs and cooling systems can rival the energy cost.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inference at scale&lt;/strong&gt; – small grams per query add up massively with millions of requests.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Utilisation ratio&lt;/strong&gt; – measuring &amp;quot;total inference ÷ total lifecycle&amp;quot; helps evaluate if training is “earned back.”&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
+&lt;p&gt;🔬 Key takeaways for sustainable AI:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cool-climate, renewable-powered datacentres cut both carbon and water draw.&lt;/li&gt;
+&lt;li&gt;Always choose the &lt;em&gt;smallest&lt;/em&gt; model that solves the task – big isn’t always better.&lt;/li&gt;
+&lt;li&gt;Use distillation, quantisation, batching, and caching to reduce impact.&lt;/li&gt;
+&lt;li&gt;Skip LLMs altogether if simpler methods (regex, heuristics, traditional ML) do the job.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;AI has the potential to optimise logistics, drug discovery, and code generation — but its own footprint is real and must be addressed.&lt;br&gt;
+At Comma Soft AG, we always validate the most reasonable approach to solve a problem and optimise resource spend, especially as we host LLMs ourselves within &lt;strong&gt;Alan.de&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
+&lt;p&gt;#artificalintelligence #llm #oneearth&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Is your Data on European Servers of US-Hyperscalers?</title>
+    <link href="https://carstendraschner.github.io/blog/250802_cloudact_eu/" />
+    <updated>2025-08-02T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250802_cloudact_eu/</id>
+    <content type="html">&lt;p&gt;Microsoft admits: &amp;quot;No, We Can’t Guarantee It&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/OQyWU6TxJ3-3238.avif 3238w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/OQyWU6TxJ3-3238.webp 3238w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/OQyWU6TxJ3-3238.png&quot; alt=&quot;Image 1&quot; width=&quot;3238&quot; height=&quot;1906&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Microsoft France admitted under oath: EU data on U.S. hyperscalers isn’t fully protected&lt;/li&gt;
+&lt;li&gt;U.S. CLOUD Act enables access without informing you&lt;/li&gt;
+&lt;li&gt;Enterprises need exit plans &amp;amp; sovereign AI options&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;👩🏼‍⚖️ On 10 June 2025, before a French Senate inquiry on public procurement and digital sovereignty, Microsoft France’s General Counsel Anton Carniaux admitted under oath that the company cannot guarantee U.S. authorities will never obtain French/EU customer data.&lt;br&gt;
+🇺🇸 The U.S. CLOUD Act obliges providers under U.S. jurisdiction to hand over data they control, wherever it sits.&lt;br&gt;
+🤯 Even worse: you might not even be told it happened! Courts can issue nondisclosure orders blocking providers from notifying you for months or longer.&lt;/p&gt;
+&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
+&lt;p&gt;I analyzed the implications for enterprises relying on U.S. hyperscalers to store sensitive data. Key questions every business should ask:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Which workloads or datasets (PII, trade secrets, “crown jewels”) would be mission-critical if disclosed or accessed?&lt;/li&gt;
+&lt;li&gt;Do our contracts include enforceable anti-extraterritoriality and notification clauses, and can the vendor honor them under U.S. law?&lt;/li&gt;
+&lt;li&gt;Are we relying on “EU-only” subsidiaries or marketing claims without independent audits?&lt;/li&gt;
+&lt;li&gt;What is our exit or migration plan if a provider is compelled to shut off, transfer, or mirror data?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
+&lt;p&gt;🤖 This is why we at Comma Soft AG built &lt;strong&gt;Alan.de&lt;/strong&gt;, a self-hosted Large Language Model General Framework. It lets enterprises process and enrich their own data without routing it through hyperscalers bound by U.S. statutes.&lt;br&gt;
+🇪🇺 Running on infrastructure hosted in Germany with non–Big Tech providers maximizes legal, operational, and ethical comfort. For teams that can’t afford “maybe,” sovereignty is not optional.&lt;/p&gt;
+&lt;p&gt;❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
+&lt;p&gt;#artificialintelligence #euai #alan #microsoft #cloudact&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Understanding the Levels of LLM Evaluation</title>
+    <link href="https://carstendraschner.github.io/blog/250801_llm_evaluation/" />
+    <updated>2025-08-01T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250801_llm_evaluation/</id>
+    <content type="html">&lt;p&gt;A Crash-Course in Evaluating Large Language Models 🚀&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/VeJmWu_4bM-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/VeJmWu_4bM-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/VeJmWu_4bM-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;1200&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Complex tasks → open-ended outputs&lt;/li&gt;
+&lt;li&gt;Wide range of benchmark approaches&lt;/li&gt;
+&lt;li&gt;Big differences in scale &amp;amp; complexity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;🤖 Evaluating LLMs isn’t straightforward — it requires a layered approach.&lt;br&gt;
+🧪 From simple loss metrics to human evaluations, the methods differ drastically in cost, complexity, and insight.&lt;br&gt;
+⚖️ Knowing which evaluation type to apply is key to building trustworthy and performant models.&lt;/p&gt;
+&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
+&lt;p&gt;I’ve outlined six major evaluation strategies that are widely used in practice:&lt;/p&gt;
+&lt;p&gt;1️⃣ &lt;strong&gt;Loss &amp;amp; Perplexity&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cross-Entropy Loss and Perplexity → basic, easy to compute, lower is better.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2️⃣ &lt;strong&gt;String-Based Comparisons&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;BLEU, ROUGE, n-gram overlap → simple but struggles with synonyms.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;3️⃣ &lt;strong&gt;Multiple-Choice &amp;amp; Cloze Tests&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Benchmarks like MMLU or TruthfulQA.&lt;/li&gt;
+&lt;li&gt;Measures how well a model predicts the most plausible continuation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;4️⃣ &lt;strong&gt;Reinforcement-Style Eval&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Code/math tasks with objective correctness.&lt;/li&gt;
+&lt;li&gt;Checks compile/run success, but ignores reasoning trace.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;5️⃣ &lt;strong&gt;LLM-as-a-Judge&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Another model evaluates outputs → flexible, handles synonyms.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;6️⃣ &lt;strong&gt;Human Evaluation&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Gold standard for nuanced judgment.&lt;/li&gt;
+&lt;li&gt;Blind A/B comparisons → Elo scoring as used in leaderboards.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Additionally, &lt;strong&gt;Safety &amp;amp; Alignment&lt;/strong&gt; checks are crucial: toxicity, bias, factual accuracy, jailbreak resistance.&lt;/p&gt;
+&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
+&lt;p&gt;No single evaluation method is enough. In practice, you need a mix: lightweight metrics for fast iterations, and heavyweight evaluations (human + safety) for trustworthy deployments.&lt;/p&gt;
+&lt;p&gt;At Comma Soft AG, during the development of our &lt;strong&gt;Alan.de&lt;/strong&gt; model, we blend these methods early and late in the pipeline to track how new domain knowledge gets embedded — even before adding RAG or other context enrichment.&lt;/p&gt;
+&lt;p&gt;❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
+&lt;p&gt;#artificialintelligence #LLM #Alan #aievaluation&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Risk of LLMs Getting Stuck in Local Optima – Are We Training Optimally?</title>
+    <link href="https://carstendraschner.github.io/blog/250704_local_optima_risk/" />
+    <updated>2025-07-04T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250704_local_optima_risk/</id>
+    <content type="html">&lt;p&gt;Local Optima Risk in Large Language Model Training&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/P4BWXMSAMi-2942.avif 2942w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/P4BWXMSAMi-2942.webp 2942w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/P4BWXMSAMi-2942.png&quot; alt=&quot;Image 1&quot; width=&quot;2942&quot; height=&quot;1906&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;LLMs risk getting stuck in local optima during training&lt;/li&gt;
+&lt;li&gt;Extreme dimensionality reduces “bad minima” but makes intuition hard&lt;/li&gt;
+&lt;li&gt;Research shows many optima are connected, reducing real-world risk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;🤖 Gradient descent is the workhorse behind training large language models (LLMs).&lt;br&gt;
+💸 But with costs of millions per run, the risk of ending up in a suboptimal local optimum would be catastrophic.&lt;br&gt;
+📉 The loss landscapes of models with billions of parameters are unimaginably complex, making direct visualisation and intuition almost impossible.&lt;/p&gt;
+&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
+&lt;p&gt;I dove into the literature and shared insights about the interplay between dimensionality and optimisation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In very high-dimensional spaces, most local minima are not truly bad — they are saddles with escape routes.&lt;/li&gt;
+&lt;li&gt;Mode connectivity research shows that what looks like separate optima are often connected by low-loss curves.&lt;/li&gt;
+&lt;li&gt;This means training is less about getting “stuck” and more about finding paths through a giant valley of solutions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
+&lt;p&gt;🌄 While the math is reassuring, the risks remain when scaling models: data quality, weight initialisation, and hyperparameter choices can still make or break outcomes.&lt;br&gt;
+📈 Large parameter counts and huge datasets increase the odds of reaching a near-global optimum — but not automatically.&lt;br&gt;
+🥵 If this feels too abstract, I highly recommend Stephen Welch’s Welsh Labs visualisation of high-dimensional loss surfaces (link in comments).&lt;/p&gt;
+&lt;p&gt;❤️ Huge respect to the open AI community: papers, repos, blogs, and videos make it possible to reason about these hard problems together. At Comma Soft AG, we actively explore these challenges while developing domain-specific LLMs for &lt;a href=&quot;https://alan.de&quot;&gt;Alan.de&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
+&lt;p&gt;#freeeducation #llm #artificialintelligence #machinelearning&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>LLM Context Engineering and Vision Language Models – What do they have in common?</title>
+    <link href="https://carstendraschner.github.io/blog/250702_context_engineering_vlm/" />
+    <updated>2025-07-02T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250702_context_engineering_vlm/</id>
+    <content type="html">&lt;p&gt;Context Matters – In Language and Vision&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/Qe3_ze1-UM-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/Qe3_ze1-UM-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/Qe3_ze1-UM-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;859&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Context engineering goes beyond prompt engineering&lt;/li&gt;
+&lt;li&gt;More context = better predictions (for humans and models)&lt;/li&gt;
+&lt;li&gt;Vision Transformers outperform CNNs by leveraging global context early&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;The conversation around LLMs is shifting: instead of just &amp;quot;prompt engineering,&amp;quot; we increasingly talk about &amp;quot;context engineering.&amp;quot; That’s because an LLM’s outputs are influenced not only by the prompt itself but also by system messages, retrieved RAG chunks, few-shot examples, chat templates, and even multimodal inputs like images.&lt;/p&gt;
+&lt;p&gt;The same principle applies in vision: predictions depend strongly on the amount and quality of context provided.&lt;/p&gt;
+&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
+&lt;p&gt;I compared the way context shapes predictions in both text LLMs and vision models. For example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A cropped photo can make us label a striped shadow as a tiger 🐅, but when zoomed out, we realize it’s just a dog 🦮 with fence shadows.&lt;/li&gt;
+&lt;li&gt;Similarly, in LLMs, more surrounding context changes the quality and accuracy of outputs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This analogy extends to model architectures: Vision Transformers can integrate global cues early on via self-attention, unlike CNNs that rely on stacking layers before distant pixel interactions emerge.&lt;/p&gt;
+&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
+&lt;p&gt;Context engineering is key. Whether you’re designing prompts for LLMs or inputs for ViTs, it’s about making sure the right context is available at the right time.&lt;/p&gt;
+&lt;p&gt;At Comma Soft AG, we integrate models designed to leverage context effectively and make the most out of available data.&lt;/p&gt;
+&lt;p&gt;❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
+&lt;p&gt;#artificialintelligence #LLMs #ComputerVision #ContextEngineering&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Real AI Business Process Risks – LLM &amp; RAG Attacks</title>
+    <link href="https://carstendraschner.github.io/blog/250701_context_risk/" />
+    <updated>2025-07-01T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250701_context_risk/</id>
+    <content type="html">&lt;p&gt;Invisible Context Editing: How Hidden Attacks Undermine AI &amp;amp; RAG Pipelines&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/sm36njQiR3-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/sm36njQiR3-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/sm36njQiR3-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;976&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Malicious actors hide invisible instructions in PDFs&lt;/li&gt;
+&lt;li&gt;LLMs &amp;amp; RAG pipelines can be silently manipulated&lt;/li&gt;
+&lt;li&gt;Guard-rail models comparing PDF text vs OCR output can detect anomalies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;😦 Recent reports reveal a new class of attacks where invisible text is embedded into PDF layers.&lt;br&gt;
+These “invisible context edits” steer LLMs toward specific outputs.&lt;br&gt;
+The problem especially affects automated AI/RAG pipelines or manual reviews that don’t inspect the raw text layer.&lt;/p&gt;
+&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
+&lt;p&gt;🤖 I looked into reports on PDF prompt injection attacks.&lt;br&gt;
+🔍 The key technique: compare the extracted PDF text layer against OCR output of the rendered file.&lt;br&gt;
+📊 Large deviations may point to malicious invisible instructions embedded in the document.&lt;/p&gt;
+&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
+&lt;p&gt;🤯 This is a &lt;strong&gt;real business risk&lt;/strong&gt;—not just an academic one.&lt;br&gt;
+· Credit or health insurance customers could exploit doctored PDFs for better terms.&lt;br&gt;
+· Even worse: malicious instructions could trigger unintended tool calls with real-world consequences.&lt;/p&gt;
+&lt;p&gt;Companies should &lt;strong&gt;add guard-rails&lt;/strong&gt; and continuously monitor AI pipelines for hidden manipulation.&lt;br&gt;
+At Comma Soft AG, we keep an eye on such evolving threats. Message me if you want to brainstorm potential solutions. 🧠&lt;/p&gt;
+&lt;p&gt;❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
+&lt;p&gt;#ArtificialIntelligence #LLM #RAGAttacks&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>What color is the Coke can in this picture? On Context and Neural Structures</title>
+    <link href="https://carstendraschner.github.io/blog/250601_coke_context/" />
+    <updated>2025-06-01T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250601_coke_context/</id>
+    <content type="html">&lt;p&gt;Context and Neural Structures in LLMs&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/3nwgGai46n-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/3nwgGai46n-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/3nwgGai46n-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;1075&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;LLMs only predict based on the context we provide&lt;/li&gt;
+&lt;li&gt;Humans also rely on assumptions instead of raw data&lt;/li&gt;
+&lt;li&gt;Understanding neural structures improves AI deployment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;🤬 We often blame AI systems for silly or incorrect predictions. Yet these models can only work with the context we supply, using parameters learned from vast internet corpora to map that context: system prompts, user prompts, or RAG chunks…to a “plausible” response.&lt;/p&gt;
+&lt;p&gt;🙈 Many people assume the Coke can is red, but it isn’t: there isn’t a single red pixel in the image! ➡️ Zoom in and see for yourself. 🚨&lt;/p&gt;
+&lt;p&gt;This raises an important parallel: humans and LLMs both work heavily on context and assumptions.&lt;/p&gt;
+&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
+&lt;p&gt;👩🏽‍💻 At Comma Soft AG, while deploying GenAI solutions such as Alan.de for our customers, we found it helps to explain how the underlying neural networks operate.&lt;/p&gt;
+&lt;p&gt;When people understand this better, they supply higher-quality data into their RAG pipelines and get much more useful text layers to query against.&lt;/p&gt;
+&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
+&lt;p&gt;🧠 Users often expect “magic” from AI, but both humans and LLMs rely on the quality of the given context.&lt;br&gt;
+✅ Better context = better predictions.&lt;br&gt;
+❓To what extent should we dive deeper into ML approaches to help users achieve more reliable results?&lt;/p&gt;
+&lt;p&gt;❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
+&lt;p&gt;#llm #artificialintelligence #explainableai #machinelearning&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Battle for Talent and Resources in AI</title>
+    <link href="https://carstendraschner.github.io/blog/250503_aicrown/" />
+    <updated>2025-05-03T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250503_aicrown/</id>
+    <content type="html">&lt;p&gt;Who Will Stay on Top of the AI Race?&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/2i6wHTQZnS-762.avif 762w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/2i6wHTQZnS-762.webp 762w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/2i6wHTQZnS-762.png&quot; alt=&quot;Image 1&quot; width=&quot;762&quot; height=&quot;556&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Global battle for AI talent and compute resources&lt;/li&gt;
+&lt;li&gt;U.S., China, and Europe positioning themselves with different strategies&lt;/li&gt;
+&lt;li&gt;Open-weight tooling becoming an important backbone&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;We currently see a global battle for talent and resources in the AI field. The question is: who will succeed and remain on top?&lt;br&gt;
+This competition is not only about technological supremacy but also about attracting the brightest minds and controlling critical compute resources.&lt;/p&gt;
+&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
+&lt;p&gt;I’ve created a short overview of promising players across different regions and categories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;🤖 &lt;strong&gt;Frontier-model labs (pure-play R&amp;amp;D):&lt;/strong&gt; OpenAI, Anthropic Claude, xAI Grok&lt;/li&gt;
+&lt;li&gt;🇺🇸 &lt;strong&gt;U.S. cloud titans:&lt;/strong&gt; Google DeepMind Gemini, Microsoft Phi, Meta Llama, Amazon Nova, Apple Intelligence&lt;/li&gt;
+&lt;li&gt;🇨🇳 &lt;strong&gt;Chinese big tech platforms:&lt;/strong&gt; Alibaba/Qwen, Baidu, Tencent, Huawei, DeepSeek AI&lt;/li&gt;
+&lt;li&gt;🇪🇺 &lt;strong&gt;European challengers:&lt;/strong&gt; Mistral AI, Aleph Alpha, Stability AI&lt;/li&gt;
+&lt;li&gt;🌱 &lt;strong&gt;Open-weight backbone &amp;amp; tooling:&lt;/strong&gt; Hugging Face and ecosystem&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At Comma Soft AG we are closely monitoring these developments to select the best models and tech stacks for each use case.&lt;/p&gt;
+&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
+&lt;p&gt;This race is far from decided. While U.S. and Chinese players dominate with scale and resources, European challengers and open-weight ecosystems provide diversity and resilience.&lt;br&gt;
+In the end, winners will be those who combine top research talent, reliable compute infrastructure, and open collaboration.&lt;/p&gt;
+&lt;p&gt;❤️ Feel free to reach out and like if you want to see more of such content.&lt;br&gt;
+And: if you want to work in (Gen)AI — we are hiring!&lt;/p&gt;
+&lt;p&gt;#AI #GenAI #Talent #Resources #Innovation #CommaSoft #Hiring&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Bigger AI Risk due to Sleeper Agents, MCP &amp; Reasoning Attacks</title>
+    <link href="https://carstendraschner.github.io/blog/250502_sleeperagents_mcp/" />
+    <updated>2025-05-02T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250502_sleeperagents_mcp/</id>
+    <content type="html">&lt;p&gt;Now bigger AI Risk due to Sleeper Agents, MCP &amp;amp; Reasoning Attacks&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/4to3Pjy0Cg-2492.avif 2492w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/4to3Pjy0Cg-2492.webp 2492w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/4to3Pjy0Cg-2492.png&quot; alt=&quot;Image 1&quot; width=&quot;2492&quot; height=&quot;2050&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Increased risks from LLM backdoors or data poisoning via tool calling&lt;/li&gt;
+&lt;li&gt;“Sleeper Agents” hidden in open-weight models&lt;/li&gt;
+&lt;li&gt;Closed-source models vulnerable through pre-tuning data injection&lt;/li&gt;
+&lt;li&gt;Possible new attack surface when using MCP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;🤖 Large Language Models (LLMs) are becoming true &lt;strong&gt;agents&lt;/strong&gt;, as they increasingly gain the ability to call external tools.&lt;br&gt;
+📡 Anthropic&#39;s &lt;strong&gt;Model Control Protocol (MCP)&lt;/strong&gt; is emerging as a standard to structure and execute those tool calls.&lt;br&gt;
+📚 Models are still pre-trained on massive internet corpora, often including marginal content due to imperfect filtering.&lt;br&gt;
+🧠 Even after fine-tuning for tool-calling, &lt;strong&gt;residual knowledge&lt;/strong&gt; embedded in pre-training can resurface in harmful ways.&lt;/p&gt;
+&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
+&lt;p&gt;I explored current &lt;strong&gt;threat vectors&lt;/strong&gt; around tool-calling agents and model safety:&lt;br&gt;
+🅰️ &lt;strong&gt;Poisoned pre-training data&lt;/strong&gt;: attackers can publish malicious tool snippets under open licenses, ensuring they end up in training sets.&lt;br&gt;
+🅱️ &lt;strong&gt;Back-doored model releases&lt;/strong&gt;: rogue actors may upload altered models (e.g., quantized versions on Hugging Face) secretly fine-tuned to trigger harmful behavior.&lt;/p&gt;
+&lt;p&gt;➡️ Both lead to what Evan Hubinger et al. call &lt;strong&gt;“Sleeper Agents”&lt;/strong&gt; — models that look safe during evaluation but turn malicious under certain conditions.&lt;br&gt;
+😱 With tool calling, these models can now &lt;strong&gt;“act” in the real world&lt;/strong&gt;: sending data, accessing systems, or performing harmful actions.&lt;/p&gt;
+&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
+&lt;p&gt;🚨 Detection is getting much harder:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Long reasoning traces&lt;/strong&gt;: multi-step tool calls make attribution difficult.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Context-specific triggers&lt;/strong&gt;: sleeper behavior may remain hidden in standard tests.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Closed vs. open weights&lt;/strong&gt;: closed-source hides risks, open-weight models allow silent malicious re-uploads.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;❓We need to ask:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Are sleeper agents a bigger risk than conventional security threats?&lt;/li&gt;
+&lt;li&gt;What real defences exist — dataset provenance proofs, cryptographic attestation, sandboxing?&lt;/li&gt;
+&lt;li&gt;How do we &lt;strong&gt;audit reasoning at scale&lt;/strong&gt; once autonomous LLM agents proliferate?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At Comma Soft AG, we adopt new technologies only when they create real value.&lt;br&gt;
+✅ Safeguarding our customers’ data and IP remains paramount.&lt;br&gt;
+🇩🇪 That’s why we host &lt;strong&gt;Alan.de&lt;/strong&gt;, our enterprise-grade LLM platform, fully in Germany.&lt;/p&gt;
+&lt;p&gt;❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
+&lt;p&gt;#AI #SleeperAgents #MCP #ReasoningAttacks #LLMSecurity #DataPoisoning #ModelSafety&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Comma Talk 25 – Keynote &amp; GenAI Roundtable Highlights</title>
+    <link href="https://carstendraschner.github.io/blog/250501_commatalk_keynote/" />
+    <updated>2025-05-01T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250501_commatalk_keynote/</id>
+    <content type="html">&lt;p&gt;AI is happening in the heart of EU industry! 🤖🇪🇺&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/0E5zzs-vp7-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/0E5zzs-vp7-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/0E5zzs-vp7-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;831&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Keynote talk on (Gen)AI trends and hype demystification&lt;/li&gt;
+&lt;li&gt;GenAI Roundtable with open, unfiltered discussions&lt;/li&gt;
+&lt;li&gt;Industry-wide AI applications across Europe&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;That was fun to speak at &lt;strong&gt;Comma Talk 25&lt;/strong&gt;! ❤️&lt;br&gt;
+AI is happening in the heart of the EU industry, and events like this show how diverse and impactful the applications are across Europe and Germany.&lt;/p&gt;
+&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
+&lt;p&gt;I had the pleasure of delivering a keynote with Andrej Fischer where we demystified the hype around (Gen)AI and highlighted valuable trends.&lt;br&gt;
+Later, I co-hosted a &lt;strong&gt;GenAI-Roundtable&lt;/strong&gt; with Florian Götz, where we had exciting and unfiltered discussions about real-world use cases.&lt;/p&gt;
+&lt;p&gt;It was inspiring to see so many great talks from industries such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;💻 Industry SWE (Siemens Healthineers: Agnes Loehner)&lt;/li&gt;
+&lt;li&gt;🏗️ Production (Kautex Textron: Bernhardt Lüddecke)&lt;/li&gt;
+&lt;li&gt;🚗 Automotive (Daimler Truck AG: John Dalton)&lt;/li&gt;
+&lt;li&gt;🛡️ Insurance (VHV Gruppe, Generali, SDK)&lt;/li&gt;
+&lt;li&gt;🏦 Banking (Nassauische Sparkasse)&lt;br&gt;
+...and more, including a fantastic session on demystifying the &lt;strong&gt;EU AI Act&lt;/strong&gt; by Paula Cipierre. 📜🤖&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
+&lt;p&gt;Events like Comma Talk are crucial for pushing European and German AI forward. They bring together experts, industry leaders, and researchers to exchange valuable ideas and highlight impactful real-world AI/ML use cases.&lt;/p&gt;
+&lt;p&gt;Huge thanks to &lt;strong&gt;Comma Soft AG&lt;/strong&gt; and the co-hosts for organizing this inspiring event.&lt;br&gt;
+And yes – the Jazzfest evening was the perfect way to wrap it up. 🎷🎶&lt;/p&gt;
+&lt;p&gt;👉 If you&#39;re interested in joining next year’s &lt;strong&gt;Comma Talk 26&lt;/strong&gt;, ping me! We’d love to see you there. ❤️&lt;/p&gt;
+&lt;p&gt;❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
+&lt;p&gt;#artificialintelligence #machinelearning #euaiact #alan&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Meta’s LLaMA 4 Fraud Has Been Exposed!</title>
+    <link href="https://carstendraschner.github.io/blog/250402_llama4_fraud/" />
+    <updated>2025-04-02T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250402_llama4_fraud/</id>
+    <content type="html">&lt;p&gt;AI Benchmarks and the Meta LLaMA 4 Controversy&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/Gzr2XfyIXO-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/Gzr2XfyIXO-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/Gzr2XfyIXO-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;539&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Meta’s Arena Elo #2 model is not the same as the Hugging Face version&lt;/li&gt;
+&lt;li&gt;Performance discrepancies raise trust issues in AI benchmarks&lt;/li&gt;
+&lt;li&gt;Benchmark gaming and contamination are growing concerns&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;📢 Recent concerns arose when Meta’s LLaMA 4 model ranked #2 on Arena Elo.&lt;br&gt;
+🤔 It turned out the model available on Hugging Face wasn’t the same one as used in the benchmark.&lt;br&gt;
+This triggered questions around the reliability of AI benchmarks and the fairness of model comparisons.&lt;/p&gt;
+&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
+&lt;p&gt;🔍 Confirmed that the experimental Arena Elo model differs from the Hugging Face release.&lt;br&gt;
+📉 Tested the HF version and found that its performance didn’t match expectations.&lt;br&gt;
+🌍 Noted that its usability in the EU is already limited — now with lower impact.&lt;br&gt;
+⚠️ Collected examples of benchmark contamination and models fine-tuned specifically to game scores.&lt;/p&gt;
+&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
+&lt;p&gt;❤️‍🩹 I feel sorry for the Meta AI researchers who worked hard on this — it’s hard to imagine they supported any attempt at deception.&lt;br&gt;
+🔄 That’s why at Comma Soft AG, we continue to evaluate models continuously, beyond leaderboard hype.&lt;br&gt;
+📈 The key is to analyze how models perform in real-world agent pipelines (like Alan.de), not just on SOTA benchmarks.&lt;/p&gt;
+&lt;p&gt;❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
+&lt;p&gt;#AIBenchmarks #Meta #Huggingface #LLaMA4 #AIModels&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Meta’s Llama 4 Release – Issues with Elo Scores?</title>
+    <link href="https://carstendraschner.github.io/blog/250401_llama4_release_issues/" />
+    <updated>2025-04-01T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250401_llama4_release_issues/</id>
+    <content type="html">&lt;p&gt;LLaMA 4 is here – but questions remain about Elo Scores and benchmarks.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/PZHAT_EecA-1659.avif 1659w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/PZHAT_EecA-1659.webp 1659w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/PZHAT_EecA-1659.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;1659&quot; height=&quot;1536&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wait for verified SOTA benchmark results and reliable Elo scores&lt;/li&gt;
+&lt;li&gt;Elo Score #2 based on &amp;quot;Experimental&amp;quot; Maverick raises questions&lt;/li&gt;
+&lt;li&gt;Meta switched to Mixture of Experts (MoE) architecture, similar to DeepSeek and Mistral&lt;/li&gt;
+&lt;li&gt;Released multiple model sizes, scaling up to 2 trillion parameters&lt;/li&gt;
+&lt;li&gt;Proposing multi-million token context windows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;Meta has officially released its LLaMA 4 models. While this is a major milestone, questions around transparency and evaluation metrics remain. Benchmark credibility and honest Elo scores are key to understanding the true capabilities of these models.&lt;/p&gt;
+&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
+&lt;p&gt;I took a closer look at the LLaMA 4 release details, especially their claims around Elo scores, context length, and the new Mixture of Experts approach. I also compared Meta’s direction with what we’ve recently seen from DeepSeek AI and Mistral AI.&lt;/p&gt;
+&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
+&lt;p&gt;🔍 Excited to see benchmarks on multi-million tokens and whether the &amp;quot;lost in the middle&amp;quot; effect persists.&lt;br&gt;
+🤔 Curious to see who will actually deploy the largest model in production.&lt;br&gt;
+🔄 The MoE trend improves throughput by reducing active parameters, but it still demands massive VRAM.&lt;br&gt;
+😤 Questionable whether the &amp;quot;Experimental&amp;quot; Maverick model matches the performance of the officially published models.&lt;/p&gt;
+&lt;p&gt;❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
+&lt;p&gt;#llama #artificialintelligence #llm&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>VIBE Coding – SWE &amp; AI Engineering Jobs, Code Models &amp; Reinforcement Learning</title>
+    <link href="https://carstendraschner.github.io/blog/250302_vibe_coding_experience/" />
+    <updated>2025-03-02T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250302_vibe_coding_experience/</id>
+    <content type="html">&lt;p&gt;VIBE Coding – Code Models &amp;amp; Huge Opportunity in Reinforcement Learning&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/TZ82B5NfUc-752.avif 752w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/TZ82B5NfUc-752.webp 752w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/TZ82B5NfUc-752.png&quot; alt=&quot;Image 1&quot; width=&quot;752&quot; height=&quot;478&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;VIBE Coding: no longer coding yourself, just prompting desired functions&lt;/li&gt;
+&lt;li&gt;Code models + RL = measurable GenAI performance &amp;amp; big opportunities&lt;/li&gt;
+&lt;li&gt;Still controversial: productivity vs. technical debt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;Coding with AI is shifting rapidly. “VIBE Coding” describes a workflow where engineers don’t write code directly but instead specify desired functionality through prompts, relying on LLM-based coding tools and integrations with IDEs or repositories. This post explores the opportunities and challenges this introduces.&lt;/p&gt;
+&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
+&lt;p&gt;I’ve been following the evolution of code generation models closely, particularly how reinforcement learning makes them more powerful. Models can be evaluated by clear metrics (success of code execution, processing time, memory usage), which is ideal for RL optimization. At Comma Soft AG we’re debating the implications of this and experimenting with its integration in our own tool Alan.de.&lt;/p&gt;
+&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
+&lt;p&gt;From an R&amp;amp;D perspective, code generation is a fascinating area because it allows clear measurement of GenAI performance and enables reinforcement learning for continuous improvement. However, the debate about AI-generated code’s long-term impact—productivity versus technical debt—is ongoing. This might become a key space for reasoning and planning in self-improving “AGI.”&lt;/p&gt;
+&lt;p&gt;❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
+&lt;p&gt;#VibeCoding #CodeGeneration #ReinforcementLearning #GenAI #AGI #AlanDe&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>There is also technical foundation for thinking capability in Reasoning LLMs</title>
+    <link href="https://carstendraschner.github.io/blog/250301_llm_thinking_capabilities/" />
+    <updated>2025-03-01T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250301_llm_thinking_capabilities/</id>
+    <content type="html">&lt;p&gt;Do LLMs Think – Or Is It Just Next Token Prediction? 🤔&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/-Sdkq63vdW-2510.avif 2510w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/-Sdkq63vdW-2510.webp 2510w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/-Sdkq63vdW-2510.png&quot; alt=&quot;Image 1&quot; width=&quot;2510&quot; height=&quot;1476&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Short explanation of reasoning models&lt;/li&gt;
+&lt;li&gt;Technical description: where is the potential for &amp;quot;thoughts&amp;quot; in transformers&lt;/li&gt;
+&lt;li&gt;My hypothesis on LLMs and thinking capabilities&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;Reasoning LLMs (like DeepSeek R1, Alibaba QwQ, or OpenAI oX) are currently at the center of the AI debate. They introduce a new dimension of scaling — inference-time compute — and rely on structured reasoning techniques such as Chain of Thought (CoT). This sparked my curiosity: can we go beyond &amp;quot;just next token prediction&amp;quot; and interpret their internal behavior as a form of technical thinking?&lt;/p&gt;
+&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
+&lt;p&gt;I looked at reasoning models and how they operate:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;They generate additional intermediate tokens to &amp;quot;rethink&amp;quot; steps before finalizing an answer.&lt;/li&gt;
+&lt;li&gt;Models are prompted to self-question (e.g., “wait, rethink…”).&lt;/li&gt;
+&lt;li&gt;Some UIs hide these intermediate steps, showing only the final result.&lt;/li&gt;
+&lt;li&gt;Inference costs are higher since more tokens are generated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then I explored how transformers might technically exhibit thinking-like behavior:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Assume all possible correct token sequences for a task.&lt;/li&gt;
+&lt;li&gt;Gather hidden representations before the LM head.&lt;/li&gt;
+&lt;li&gt;Treat these as high-dimensional pseudo-continuous sequences.&lt;/li&gt;
+&lt;li&gt;Normalize their lengths to define a solution subspace.&lt;/li&gt;
+&lt;li&gt;Transformers are trained to sample in this subspace.&lt;/li&gt;
+&lt;li&gt;Autoregressive generation traverses the space differently, but consistently within it.&lt;/li&gt;
+&lt;li&gt;With reasoning model training (RL + stable CoT), this target space becomes more robust.&lt;/li&gt;
+&lt;li&gt;IMHO: This is akin to &amp;quot;thinking&amp;quot; — the architecture of a solution exists before token generation; autoregression merely unfolds it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
+&lt;p&gt;I believe reasoning models are not &lt;em&gt;just&lt;/em&gt; predicting the next token. Instead, they explore and stabilize a solution subspace. This rough “solution architecture” resembles thinking, where the model already has a structural outline before writing down the answer.&lt;/p&gt;
+&lt;p&gt;Questions I leave open:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Do LLMs already map themselves to &amp;quot;thoughts&amp;quot; in this sense?&lt;/li&gt;
+&lt;li&gt;Could diffusion-like sampling make responses even more coherent?&lt;/li&gt;
+&lt;li&gt;How much of the solution space is predetermined by the first token?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I’d love to hear your thoughts! We have controversial but highly productive debates at Comma Soft AG Alan.de ML team ❤️ Big shoutout to 3Blue1Brown for inspiring visual explanations!&lt;/p&gt;
+&lt;p&gt;❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
+&lt;p&gt;#artificialintelligence #reasoning #genai #machinelearning&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>DeepSeek has huge issues. Code on last Slide. Be careful!</title>
     <link href="https://carstendraschner.github.io/blog/250203_deepseek_censorship/" />
@@ -145,569 +714,6 @@ Be aware of which model you trust and why.&lt;br&gt;
 &lt;p&gt;Take a look and let me know what features you&#39;d like to see next or where I should publish those content as well. Might take time as I do this in my spare free time 😅&lt;/p&gt;
 &lt;p&gt;Thanks to all my readers for your kind feedback and support in the DMs❤️! It is really valuable for me to see who is actually reading what and how it benefits you 🥰&lt;/p&gt;
 &lt;p&gt;#genai #blog #artificialintelligence #llm #machinelearning&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>LLAMA 3.3 70B is there! Here are the facts!</title>
-    <link href="https://carstendraschner.github.io/blog/241206_LLAMA33/" />
-    <updated>2024-12-06T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/241206_LLAMA33/</id>
-    <content type="html">&lt;p&gt;New Release of LLAMA 3.3 70B with Significant Improvements&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/IlEA0tegu1-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/IlEA0tegu1-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/IlEA0tegu1-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;430&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Performance Improvements over 3.2 &amp;amp; 3.1&lt;/li&gt;
-&lt;li&gt;Similar License of Meta&lt;/li&gt;
-&lt;li&gt;On par with other API Models from OpenAI &amp;amp; Anthropic&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;short-facts&quot;&gt;Short Facts&lt;/h2&gt;
-&lt;p&gt;📈 Performance Improvements over 3.2 &amp;amp; 3.1 ...
-⚖️ Almost similar License of Meta
-🧐 Let&#39;s see how arena Elo Score will look like
-📊 Benchmark says it is on par with other API Models from OpenAI &amp;amp; Anthropic
-↔️ Cause of many similarities with other LLAMA 3 could be an easy replacement&lt;/p&gt;
-&lt;p&gt;We within our Alan Team at Comma Soft AG will also have a look and check if this is promising for some AI agents or within Alan Tooling :)&lt;/p&gt;
-&lt;h2 id=&quot;further-reading&quot;&gt;Further Reading 📖&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;LLAMA license difficulties: &lt;a href=&quot;https://lnkd.in/eqUyV3ia&quot;&gt;https://lnkd.in/eqUyV3ia&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;LLAMA sizes: &lt;a href=&quot;https://lnkd.in/eZmFVYMm&quot;&gt;https://lnkd.in/eZmFVYMm&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Reasonable Benchmarks: &lt;a href=&quot;https://lnkd.in/e8rgPrBM&quot;&gt;https://lnkd.in/e8rgPrBM&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;How to Select an LLM: &lt;a href=&quot;https://lnkd.in/eZB4uRBq&quot;&gt;https://lnkd.in/eZB4uRBq&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Alan the Comma GenAI: &lt;a href=&quot;https://lnkd.in/edNx8uKh&quot;&gt;https://lnkd.in/edNx8uKh&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;#llama #artificialintelligence #anotherllmrelease&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>New DE/EU Open Source LLM 🇪🇺 Teuken 7B, Now Truly Open Source?</title>
-    <link href="https://carstendraschner.github.io/blog/241127_Teuken_Review/" />
-    <updated>2024-11-27T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/241127_Teuken_Review/</id>
-    <content type="html">&lt;p&gt;New Model out of Open-GPT-X developed within Germany from European Perspective&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/u966D37VBY-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/u966D37VBY-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/u966D37VBY-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;749&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;New German OS LLM&lt;/li&gt;
-&lt;li&gt;7B, Transperant Docs&lt;/li&gt;
-&lt;li&gt;Problems in Alignment?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;short-facts&quot;&gt;Short Facts&lt;/h2&gt;
-&lt;p&gt;🇪🇺 European language focus
-🤖 7B parameters
-🔗 Very open Apache 2.0 license
-🛠️ Instruction Fine-tuned
-📊 Not outperforming in Benchmarks but also within normal distribution (for 🇬🇧)
-👶🏼 4k max context
-💣 (EDIT) Alignment Discussion see here: &lt;a href=&quot;https://lnkd.in/eseXDMMS&quot;&gt;https://lnkd.in/eseXDMMS&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;My former colleagues Mehdi Ali (roommate within our time in Smart Data Analytics at Rheinische Friedrich-Wilhelms-Universität Bonn of Jens Lehmann) and Stefan Wrobel (one of my Ph.D. supervisors Rheinische Friedrich-Wilhelms-Universität Bonn) and their teams have released an LLM developed in Europe within OpenGPT-X &amp;amp; Fraunhofer IAIS. This has been developed with a focus on European languages. I&#39;m excited to try it out right away and see the actual performance! They announced their own Leaderboard and the Model in somewhere in between other models of same size: &lt;a href=&quot;https://lnkd.in/eTgv8bjV&quot;&gt;https://lnkd.in/eTgv8bjV&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;my-take&quot;&gt;My Take 🤗&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;I have high hopes for a better documentation of the development process and I am curious if this model can be called truly open source and not just open weight.&lt;/li&gt;
-&lt;li&gt;I look forward to further European and German initiatives that also pursue (Gen)AI development here in 🇪🇺❤️&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;my-questions-at-mehdi-ali-michael-fromm-max-luebbering-phd-and-all-your-contributors&quot;&gt;My Questions (at Mehdi Ali, Michael Fromm, Max Lübbering, PhD and all your contributors):&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Is anyone capable to entirely reproduce the model from the documentation?&lt;/li&gt;
-&lt;li&gt;What do you expect from Arena Elo Scores?&lt;/li&gt;
-&lt;li&gt;In which tasks would you recommend usage of your model over other models from Mistral AI, Meta, Google, Microsoft, Alibaba Cloud like Mistral7B, LLama3.18B, Gemma, Phi, Qwen...&lt;/li&gt;
-&lt;li&gt;Will we see truly big LLMs in size of 50-400B Parameter that can compete with current top notch LLMs from your side?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We at Comma Soft AG provide with Alan.de a European and German Solution to use GenAI in a highly performant, safe and trusted environment. If you like to see more of our recent R&amp;amp;D, check my recent posts and reach out to me for more idea exchange 😊&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>We&#39;re Dealing with the Butterfly Effect in LLM Creation Pipelines 🦋🤖</title>
-    <link href="https://carstendraschner.github.io/blog/241120_were_dealing_with_the_butterfly_effect_in_llm_creation_pipelines/" />
-    <updated>2024-11-20T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/241120_were_dealing_with_the_butterfly_effect_in_llm_creation_pipelines/</id>
-    <content type="html">&lt;p&gt;When we develop novel LLMs, AI-Agents and GenAI Pipelines for Alan.de or within our various other GenAI projects, we&#39;re continuously learning about the Butterfly Effect in GenAI creation pipelines and how to mitigate this problem. 👨🏼‍💻
-🤯 Every change can have a huge impact on the entire pipeline that creates and executes models&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/ODUjemRpOm-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/ODUjemRpOm-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/ODUjemRpOm-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The Butterfly Effect can significantly impact LLM creation pipelines.&lt;/li&gt;
-&lt;li&gt;Small changes in preprocessing or generation configs can have large ripple effects.&lt;/li&gt;
-&lt;li&gt;Constantly evaluating trade-offs and staying up-to-date with new models is crucial.&lt;/li&gt;
-&lt;li&gt;Strategies to mitigate the Butterfly Effect are essential for optimal performance.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;the-butterfly-effect-in-action&quot;&gt;The Butterfly Effect in action:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;📃 &lt;strong&gt;Example 1:&lt;/strong&gt; Preprocessing differences in raw-document data extraction can result in different extracted text, facts, training and benchmarking data, and ultimately, different model performance and benchmark results.&lt;/li&gt;
-&lt;li&gt;📊 &lt;strong&gt;Example 2:&lt;/strong&gt; Even a slight change in the generation config (e.g. top_p) of a Benchmarking-Data generating AI Agent can have a ripple effect on the entire pipeline to the finally selected best LLM.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;the-challenge&quot;&gt;The Challenge:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;👩🏻‍🔬 With new models and agents (e.g. LLM-as-Judge) becoming available every day, we need to be prepared to exchange components frequently to stay up-to-date and ensure optimal performance and reliability of our pipeline&lt;/li&gt;
-&lt;li&gt;⚖️ This means constantly evaluating the trade-offs between performance, reliability, and interpretability, and making informed decisions about when to update or replace components.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;my-takes&quot;&gt;My Takes:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;🧐 Be aware of the Butterfly Effect in your LLM creation pipelines and take steps to mitigate its impact.&lt;/li&gt;
-&lt;li&gt;👨🏼‍🎓 Stay up-to-date with the latest developments (insane task) in the field and be prepared to adapt and evolve your solutions accordingly.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;my-questions&quot;&gt;My Questions:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;🦋 How do you handle the Butterfly Effect in your LLM creation pipelines?&lt;/li&gt;
-&lt;li&gt;🗞️ What strategies do you use to stay up-to-date with the latest developments in the field and ensure optimal performance?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In recent and especially upcoming posts I will address how we Comma Soft AG handle this challenge. If you like to see more of the details please leave me a comment what you think and which questions and ideas you have 💬❤️&lt;/p&gt;
-&lt;p&gt;#generativeai #artificialintelligence #llm #machinelearning #alan&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>New Official OSI &quot;Open Source AI definition&quot; attacks Meta&#39;s LLAMA as &quot;Open Washing&quot;</title>
-    <link href="https://carstendraschner.github.io/blog/241113_new_official_osi_open_source_ai_definition_attacks_metas_llama_as_open_washing/" />
-    <updated>2024-11-13T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/241113_new_official_osi_open_source_ai_definition_attacks_metas_llama_as_open_washing/</id>
-    <content type="html">&lt;p&gt;We getting closer what should be considered being open source in GenAI and not only open weight.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/MZY7DxFWA2-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/MZY7DxFWA2-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/MZY7DxFWA2-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR 📝&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Official OSI definition of Open Source AI available.&lt;/li&gt;
-&lt;li&gt;Meta doesn&#39;t like it 🙅‍♂️.&lt;/li&gt;
-&lt;li&gt;State-of-the-art (SOTA) models lack being truly Open Source 🤔.&lt;/li&gt;
-&lt;li&gt;&amp;quot;Open Washing&amp;quot; Problem of Meta and others?!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;osi-definition&quot;&gt;OSI Definition 📜&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Publicly accessible training data 📊.&lt;/li&gt;
-&lt;li&gt;Publicly accessible code for creation 💻.&lt;/li&gt;
-&lt;li&gt;Transparent model weights ⚖️.&lt;/li&gt;
-&lt;li&gt;Permissive licensing for usage and modification 📝.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;my-take&quot;&gt;My Take 🤔&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;I mostly agree with the definition of Open Source Initiative (OSI) Open Source AI 👍.&lt;/li&gt;
-&lt;li&gt;I hope more SOTA models like LLAMA of Meta would follow this definition when claiming they are Open Source 🤞.&lt;/li&gt;
-&lt;li&gt;There is Open Washing out there, either in title (like OpenAI) or in claiming models are open source but not reproducible (training data and sampling and creation pipeline) 🚫.&lt;/li&gt;
-&lt;li&gt;I still appreciate that more and more non-fully open source models are available and are at least Open Weight SOTA GenAI models.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;further-reading&quot;&gt;Further Reading 📚&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Problems with Llama &amp;quot;Open Source&amp;quot; License: &lt;a href=&quot;https://lnkd.in/dtStQSdn&quot;&gt;https://lnkd.in/dtStQSdn&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;What &amp;quot;Open&amp;quot; Should Truly Mean: &lt;a href=&quot;https://lnkd.in/e7vxhzKi&quot;&gt;https://lnkd.in/e7vxhzKi&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;OSI Definition: &lt;a href=&quot;https://lnkd.in/ePtGNnvh&quot;&gt;https://lnkd.in/ePtGNnvh&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you ❤️ this content, leave me a thumb up 👍, and please share your thoughts in the comments 💬&lt;/p&gt;
-&lt;p&gt;#artificialintelligence #genai #opensource #meta #llama&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>The Uncanny Valley Phenomenon in GenAI Face Synthesis</title>
-    <link href="https://carstendraschner.github.io/blog/241105_the_uncanny_valley_phenomenon_in_genai_face_synthesis/" />
-    <updated>2024-11-05T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/241105_the_uncanny_valley_phenomenon_in_genai_face_synthesis/</id>
-    <content type="html">&lt;p&gt;GenAI hits Uncanny Valley Problems as we have seen in Animation and Computer Games&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/MFdV8_8zRS-946.avif 946w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/MFdV8_8zRS-946.webp 946w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/MFdV8_8zRS-946.png&quot; alt=&quot;Image 1&quot; width=&quot;946&quot; height=&quot;870&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR 📝&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Official OSI definition of Open Source AI available.&lt;/li&gt;
-&lt;li&gt;Meta doesn&#39;t like it 🙅‍♂️.&lt;/li&gt;
-&lt;li&gt;State-of-the-art (SOTA) models lack being truly Open Source 🤔.&lt;/li&gt;
-&lt;li&gt;&amp;quot;Open Washing&amp;quot; Problem of Meta and others?!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;what-is-the-uncanny-valley&quot;&gt;What Is The Uncanny Valley?&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;The uncanny valley is a phenomenon where human-like objects or characters that are almost, but not quite, indistinguishable from real humans can evoke a sense of eeriness or discomfort. 🤖&lt;/li&gt;
-&lt;li&gt;This concept is particularly relevant in the context of generative AI video synthesis of emotional human faces. 📹&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;the-challenge-of-recreating-lifelike-faces&quot;&gt;The Challenge of Recreating Lifelike Faces&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Creating AI-generated faces that are both realistic and emotionally expressive is a significant challenge. 🤔&lt;/li&gt;
-&lt;li&gt;Small imperfections in facial expressions, movements, or emotional nuances can make the synthesized faces appear strange or creepy to viewers. 👻&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;the-impact-on-emotional-intelligence&quot;&gt;The Impact on Emotional Intelligence&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;The uncanny valley phenomenon can have a significant impact on the emotional intelligence of AI systems. 🤖&lt;/li&gt;
-&lt;li&gt;If AI-generated faces are not convincingly realistic, they may not be able to evoke the desired emotional response from humans. 🤔&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;what-do-you-think&quot;&gt;What Do You Think?&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Can you think of any potential solutions to overcome the uncanny valley phenomenon in generative AI (face synthesis)? 💡&lt;/li&gt;
-&lt;li&gt;Do you believe that the uncanny valley is a significant challenge that needs to be addressed in the development of emotionally intelligent AI systems? 🤔&lt;/li&gt;
-&lt;li&gt;Share your thoughts and ideas in the comments! 💬&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;#genai #deeptech #artificialintelligence #uncannyvalley&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>A GenAI Solution/Tweak to Rescue ARD tagesschau webpage?!</title>
-    <link href="https://carstendraschner.github.io/blog/241025_a_genai_solution_tweak_to_rescue_ard_tagesschau_webpage/" />
-    <updated>2024-10-25T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/241025_a_genai_solution_tweak_to_rescue_ard_tagesschau_webpage/</id>
-    <content type="html">&lt;p&gt;Brainstorming how old regulations meet new GenAI opportunities.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/O_cWA3fM8t-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/O_cWA3fM8t-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/O_cWA3fM8t-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR 📝&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Debate over new regulations restricting text content of public broadcasters online.&lt;/li&gt;
-&lt;li&gt;Reform could impact news portals like tagesschau.de by limiting text content to only that which accompanies broadcasts.&lt;/li&gt;
-&lt;li&gt;GenAI could potentially auto-generate videos from text content to comply with regulations.&lt;/li&gt;
-&lt;li&gt;Questions about the impact and regulation of GenAI in public broadcasting contexts.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;I am wondering if my proposed solution would contradict the possible upcoming regulations (see below) 🤔.&lt;/li&gt;
-&lt;li&gt;I might be biased as tagesschau.de is for me one good source of news with a mix of text and video while being free of ads 📰(IMHO).&lt;/li&gt;
-&lt;li&gt;I am writing this as only one example where old regulations might clash with or ignore recent GenAI developments.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Current Debate:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;More or less every household needs to pay ~18€ monthly for public broadcast 💶.&lt;/li&gt;
-&lt;li&gt;State premiers are discussing a reform that would significantly restrict the text content of public broadcasters like ARD and ZDF online 📄.&lt;/li&gt;
-&lt;li&gt;The draft reform mandates that only texts accompanying broadcasts are permitted, meaning text content can only be published if it has been previously covered in a TV broadcast 📺.&lt;/li&gt;
-&lt;li&gt;This change would greatly impact the speed and diversity of reporting, particularly for news portals like tagesschau.de, they say 🚫.&lt;/li&gt;
-&lt;li&gt;Private publishers, viewing this as a competitive advantage, support the reform, while public broadcaster representatives warn of negative effects on media diversity and information provision 🏢.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;My GenAI Perspective:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;What would happen if these platforms autogenerate videos on some digital video stream platform based on the text content they propose? 🤖.&lt;/li&gt;
-&lt;li&gt;We have seen such approaches of text-to-video generation or speech synthesis 📝.&lt;/li&gt;
-&lt;li&gt;Maybe with a digital clone of some professional or artificial speaker (who needs to allow this for sure and should get paid for giving away the digital twin) 🗣️.&lt;/li&gt;
-&lt;li&gt;Currently we face several conflicts of old media and GenAI but this is more between public broadcast and private publishers ⚖️.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Questions:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;How do you see it? 🤷.&lt;/li&gt;
-&lt;li&gt;Do you think GenAI content would solve their issue? 🤔.&lt;/li&gt;
-&lt;li&gt;How is it regulated within your country if public broadcast can write articles? 🌍.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Link to 🇩🇪 Tagesschau article: &lt;a href=&quot;https://lnkd.in/dkx_RZun&quot;&gt;https://lnkd.in/dkx_RZun&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;#Rundfunkbeitrag #genai #gez #presse #artificialintelligence&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>We Cannot Waste Time and Resources through Regenerating GenAI Creations! GenAI Control is Key for Productivity!</title>
-    <link href="https://carstendraschner.github.io/blog/241016_we_cannot_waste_time_and_resources_through_regenerating_genai_creations_genai_control_is_key_for_productivity/" />
-    <updated>2024-10-16T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/241016_we_cannot_waste_time_and_resources_through_regenerating_genai_creations_genai_control_is_key_for_productivity/</id>
-    <content type="html">&lt;p&gt;We will see more and more precise adjustment options in GenAI Tooling&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/DGwfP2s1_T-664.avif 664w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/DGwfP2s1_T-664.webp 664w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/DGwfP2s1_T-664.png&quot; alt=&quot;Image 1&quot; width=&quot;664&quot; height=&quot;488&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;GenAI often lacks precise Adjuments&lt;/li&gt;
-&lt;li&gt;Tools and Models start CLosing the Gap&lt;/li&gt;
-&lt;li&gt;Major Waste of Time and Resources through inefficient Regenerates&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;control-and-hallucinations-in-generated-videos&quot;&gt;Control and hallucinations in generated videos:&lt;/h2&gt;
-&lt;p&gt;Generative AI that looks nice, I’m wondering if the camera turns multiple laps around the guy in the forest, if the color of the jacket on the back would stay the same without having it explicitly described. What do you think, what would happen? 📹🧥&lt;/p&gt;
-&lt;h2 id=&quot;importance-of-genai-control&quot;&gt;Importance of GenAI control:&lt;/h2&gt;
-&lt;p&gt;I think overall the opportunity to control generations by precise prompts or other interfaces to further specify intermediate results will be insanely important if these technologies should be adapted in a high efficient outcome-oriented business. We cannot waste time for prompts and regenerates! Cause of time and energy 🌱⏰&lt;/p&gt;
-&lt;p&gt;#artificialintelligence #genai&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_ai-runway-3d-activity-7259125095783182336-3bZr?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Choosing the Right LLM for Your Needs - Key Considerations</title>
-    <link href="https://carstendraschner.github.io/blog/241008_choosing_the_right_llm_for_your_needs_key_considerations/" />
-    <updated>2024-10-08T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/241008_choosing_the_right_llm_for_your_needs_key_considerations/</id>
-    <content type="html">&lt;p&gt;Consider the key factors when selecting a Large Language Model (LLM) for your project.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/TSnOnDgQhc-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/TSnOnDgQhc-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/TSnOnDgQhc-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Benchmark Performance&lt;/li&gt;
-&lt;li&gt;License&lt;/li&gt;
-&lt;li&gt;Model Size&lt;/li&gt;
-&lt;li&gt;Alignment&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;key-considerations&quot;&gt;Key Considerations:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;📊 &lt;strong&gt;Benchmark Performance:&lt;/strong&gt; Consider the model&#39;s performance on relevant benchmarks known from Open LLM Leaderboard and especially Arena Elo. &lt;a href=&quot;https://lnkd.in/eSkeAUV7&quot;&gt;https://lnkd.in/eSkeAUV7&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;📜 &lt;strong&gt;License:&lt;/strong&gt; Ensure the license aligns with your project&#39;s requirements and complies with any regulatory restrictions. &lt;a href=&quot;https://lnkd.in/e8V-eMCh&quot;&gt;https://lnkd.in/e8V-eMCh&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;📊 &lt;strong&gt;Model Size:&lt;/strong&gt; Consider the trade-off between model size and performance for your specific use case. &lt;a href=&quot;https://lnkd.in/egZt7BmJ&quot;&gt;https://lnkd.in/egZt7BmJ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;🔄 &lt;strong&gt;Alignment:&lt;/strong&gt; Evaluate the alignment process and whether it&#39;s transparent, as this can impact the model&#39;s performance and reliability. &lt;a href=&quot;https://lnkd.in/eViiEyqp&quot;&gt;https://lnkd.in/eViiEyqp&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;🔍 &lt;strong&gt;Transparency of Training:&lt;/strong&gt; Look for models with transparent training data and methods to ensure you understand how the model was trained.&lt;/li&gt;
-&lt;li&gt;💸 &lt;strong&gt;Inference Costs:&lt;/strong&gt; Assess the model&#39;s inference costs and consider the trade-off between performance and cost. &lt;a href=&quot;https://lnkd.in/etSajZZc&quot;&gt;https://lnkd.in/etSajZZc&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;📚 &lt;strong&gt;Context Size:&lt;/strong&gt; Consider the model&#39;s context size and whether it&#39;s suitable for your specific use case.&lt;/li&gt;
-&lt;li&gt;🤝 &lt;strong&gt;Compatibility:&lt;/strong&gt; Evaluate whether the model is compatible with SOTA libraries like transformers and whether it&#39;s easily integrable into your workflow.&lt;/li&gt;
-&lt;li&gt;📈 &lt;strong&gt;Scaling Efficiency:&lt;/strong&gt; Assess the model&#39;s scaling efficiency or e.g. it has full quadratic complexity with more input tokens.&lt;/li&gt;
-&lt;li&gt;🌎 &lt;strong&gt;Multilingualism:&lt;/strong&gt; Evaluate the model&#39;s multilingual capabilities it&#39;s effect for your specific use case. &lt;a href=&quot;https://lnkd.in/eeVsG99M&quot;&gt;https://lnkd.in/eeVsG99M&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;what-do-you-think&quot;&gt;What Do You Think?&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;What is your importance-order of LLM features you look at? Which criteria do you miss in this list or which should be ranked higher?&lt;/li&gt;
-&lt;li&gt;Within our Projects Comma Soft AG these are some of the major criteria we look at when we are selecting GenAI models like LLMs.&lt;/li&gt;
-&lt;li&gt;If you like to see more of best practice content, follow me, share your thoughts, and leave me a like ❤️&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;#LostInGenai #artificialintelligence #selectllm&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Stop adding Languages to LLMs! The Potential Drawbacks of Training Multilingual Large Language Models (LLMs) for Performance and Sustainability!</title>
-    <link href="https://carstendraschner.github.io/blog/241001_stop_adding_languages_to_llms_the_potential/" />
-    <updated>2024-10-01T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/241001_stop_adding_languages_to_llms_the_potential/</id>
-    <content type="html">&lt;p&gt;Exploring the downsides of creating multilingual LLMs and their impact on performance and resource utilization.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/JA9fsEHeRy-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/JA9fsEHeRy-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/JA9fsEHeRy-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Challenges of building multilingual LLMs&lt;/li&gt;
-&lt;li&gt;Inefficiencies in token usage and context length&lt;/li&gt;
-&lt;li&gt;Increased hardware costs and reduced token training&lt;/li&gt;
-&lt;li&gt;Weighing multilingual models against language-specific models&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;building-a-multi-lang-llm&quot;&gt;Building a Multi-Lang-LLM 🛠️🐣&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;When pretraining LLMs, one of the key decisions is which data to include.&lt;/li&gt;
-&lt;li&gt;This choice also influences the selection of the tokenizer, which optimizes the number of tokens for the texts used.&lt;/li&gt;
-&lt;li&gt;As a result, different characters and character sequences are mapped in the tokenizers for each language.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;when-you-finally-use-such-a-llm-in-only-a-subset-of-available-languages-you-face-following-problems&quot;&gt;When you finally use such a LLM in only a subset of available languages you face following problems 🇪🇺🤖&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Inefficient token usage: If the model is only used for one or two languages, many tokens may be rarely or never needed, leading to shorter token sequences in the required language.&lt;/li&gt;
-&lt;li&gt;Limited context length: LLMs have a limited context length, measured in tokens, which can result in more expensive inference as the model scales linearly to quadratically with prompt length.&lt;/li&gt;
-&lt;li&gt;Increased hardware costs: This can lead to higher hardware costs and omissions.&lt;/li&gt;
-&lt;li&gt;Reduced relevant token training: With a multilingual model, fewer relevant tokens and token sequences may have been seen and trained in the required languages.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;the-trade-off-multilingual-models-vs-language-specific-models&quot;&gt;The Trade-Off: Multilingual Models vs. Language-Specific Models 💰📊&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;We need to weigh the benefits of multilingual models against the potential drawbacks and decide whether to prioritize language coverage or risk wasting resources.&lt;/li&gt;
-&lt;li&gt;This is particularly important when dealing with languages that are not closely related, such as those with different character sets.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;your-opinion&quot;&gt;Your Opinion 🤗&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;What do you think?&lt;/li&gt;
-&lt;li&gt;Have you ever chosen a model especially with reduced number of languages outside English?&lt;/li&gt;
-&lt;li&gt;Some more details about Multi-Lang-GenAI can be found here: &lt;a href=&quot;https://lnkd.in/edgPsdKz&quot;&gt;https://lnkd.in/edgPsdKz&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For more content, follow me or reach out to me over DM ❤️&lt;/p&gt;
-&lt;p&gt;#artificialintelligence #genai #llm #languages&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-llm-activity-7246524467034689537-nZ-f?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Where Science Meets Innovation - My personal Highlights &amp; Insights into the PG 2024! Do you have answers to the open Questions?</title>
-    <link href="https://carstendraschner.github.io/blog/240924_where_science_meets_innovation_my_personal/" />
-    <updated>2024-09-24T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/240924_where_science_meets_innovation_my_personal/</id>
-    <content type="html">&lt;p&gt;Highlights and open questions from the Petersberger Gespräche (PG) 2024, covering AI, energy transition, chip technologies, and more.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/vuj-G2c0U--2198.avif 2198w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/vuj-G2c0U--2198.webp 2198w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/vuj-G2c0U--2198.png&quot; alt=&quot;PG 2024 Highlights&quot; width=&quot;2198&quot; height=&quot;952&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;AI and consciousness discussions&lt;/li&gt;
-&lt;li&gt;Energy transition and regulatory challenges&lt;/li&gt;
-&lt;li&gt;Distributed chip technologies in Europe&lt;/li&gt;
-&lt;li&gt;Generative AI in media&lt;/li&gt;
-&lt;li&gt;Metaverse applications beyond gaming&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;ai-and-consciousness&quot;&gt;🧠 AI and Consciousness 🧠&lt;/h2&gt;
-&lt;p&gt;Joscha Bach from Liquid AI presented on how advancements in AI could potentially redefine our understanding of consciousness. My open question for him is: How does he intend to reliably measure the achievement of AI consciousness in his efforts?&lt;/p&gt;
-&lt;h2 id=&quot;scientific-chemical-hands-on-how-to-fix-energy-transition&quot;&gt;👩🏻‍🔬 Scientific Chemical Hands on how to fix energy transition 👩🏻‍🔬&lt;/h2&gt;
-&lt;p&gt;As chairman of Alexander von Humboldt Foundation, Robert Schlögl delivered an impressively passionate presentation on energy tech for the climate transition and the phasing out of fossil fuels. Besides scientific derivations, he also highlighted significant regulatory issues that hinder successful implementation. I wonder: How these regulations came about, why they are justified if they are (potentially) not scientifically tenable, and how they can now be resolved?&lt;/p&gt;
-&lt;h2 id=&quot;efficient-distributed-chip-technologies-from-the-heart-of-europe&quot;&gt;🇪🇺 Efficient Distributed Chip Technologies from the heart of Europe 🇪🇺&lt;/h2&gt;
-&lt;p&gt;Christian Mayr from Technische Universität Dresden discussed the potential and developments possible in Dresden. He mentioned the use of clustered chip technologies to operate LLMs. One of my open questions is: How can LLMs be distributed across tens of thousands of chips while still achieving acceptable inferential latencies?&lt;/p&gt;
-&lt;h2 id=&quot;genai-in-media-opportunities-and-risks&quot;&gt;📰 GenAI in Media, Opportunities and Risks 📰&lt;/h2&gt;
-&lt;p&gt;In further discussions with Sibylle Anderl from ZEIT Verlagsgruppe, we explored the potentials and risks of Generative AI in text, image, and video generation, and how reducing anonymity could potentially restore credibility. My open question: Whether there is a reliable way to recognize these outputs, given that word frequency alone might not be a proof?&lt;/p&gt;
-&lt;h2 id=&quot;metaverse-not-only-a-playground&quot;&gt;🕹️ Metaverse, not only a Playground? 🕹️&lt;/h2&gt;
-&lt;p&gt;Nico Michels from Siemens presented the potentials of the Metaverse and digital twins. Q: I&#39;d love to see how such models can help even small municipalities with climate adaptation models, regional impact assessments, and improvement options?&lt;/p&gt;
-&lt;p&gt;The open questions highlight the stimulating topics the diverse guests who aim to drive positive change with a progressive mindset. I would like to thank Comma Soft AG and everyone involved for organizing this fantastic event, especially Stephan Huthmacher, whose heartfelt dedication makes this recurring, inspiring event possible. ❤️&lt;/p&gt;
-&lt;p&gt;Share your thoughts and impressions, I&#39;ll share the streams 🤗&lt;/p&gt;
-&lt;p&gt;#artificialintelligence #genai #sustainability #petersbergergespräche&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-sustainability-activity-7243978164564111361-12R6?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Today&#39;s Research Proposal - How to achieve &quot;real&quot; thinking and reasoning in GenAI, rather than just relying on a silent Chain of Thought, as seen in ReflectionAI or possibly GPT-o1?</title>
-    <link href="https://carstendraschner.github.io/blog/240917_todays_research_proposal_how_to_achieve_real/" />
-    <updated>2024-09-17T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/240917_todays_research_proposal_how_to_achieve_real/</id>
-    <content type="html">&lt;p&gt;Exploring the potential for achieving true reasoning and thinking in Generative AI models beyond the current Chain of Thought methodologies.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/W1uRDiZMha-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/W1uRDiZMha-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/W1uRDiZMha-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;696&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Current state of reasoning in models&lt;/li&gt;
-&lt;li&gt;Possibilities for transformers to learn to think&lt;/li&gt;
-&lt;li&gt;Customization ideas for achieving true reasoning&lt;/li&gt;
-&lt;li&gt;Open questions and discussion points&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;currently-reasoning-more-through-silent-the-cot&quot;&gt;Currently, reasoning more through silent the CoT 😥&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;There are currently models that claim to possess reasoning capabilities.&lt;/li&gt;
-&lt;li&gt;However, this is more about the Chain of Thought and the use of special tokens.&lt;/li&gt;
-&lt;li&gt;These enable the model to generate more text, thereby increasing the stability of its answers.&lt;/li&gt;
-&lt;li&gt;This process of &amp;quot;reasoning&amp;quot; is not transparently/barely shown.&lt;/li&gt;
-&lt;li&gt;I believe this is less about reasoning or thinking and more about statistical stability.&lt;/li&gt;
-&lt;li&gt;Moreover, it is not possible to observe the reasoning process, and it is often difficult to identify when a model has gone astray.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;how-could-transformers-learn-to-think&quot;&gt;How could transformers learn to think? 🤯&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Why can I still imagine that it is possible to learn to think or reason with the transformer architecture?&lt;/li&gt;
-&lt;li&gt;Due to the transformer architecture, which includes tokenization, attention, and multi-layer perceptron elements, as well as the universal function approximation hypothesis, the following can be imagined:
-&lt;ol&gt;
-&lt;li&gt;In early layers, the network learns something akin to named entity recognition.&lt;/li&gt;
-&lt;li&gt;Later layers and embedding dimensions create structures that learn propositional logic and structures similar to knowledge graphs or their embeddings.&lt;/li&gt;
-&lt;li&gt;Finally, based on this, resonating and reflecting completeness of output logic components could be achieved.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;what-else-would-i-customize-imho&quot;&gt;What else would I customize? 👨🏼‍💻 (IMHO)&lt;/h2&gt;
-&lt;p&gt;I would find it interesting to combine this with thought-diffusion models, making hierarchical planning possible. I have several more ideas..., reach out to me if you like to start a discussion ❤️&lt;/p&gt;
-&lt;h2 id=&quot;questions&quot;&gt;Questions:&lt;/h2&gt;
-&lt;p&gt;Are you aware of any approaches or research projects that attempt this?
-What are your thoughts on that, how would you build &amp;quot;AGI&amp;quot; it?&lt;/p&gt;
-&lt;p&gt;I had great idea exchanges on this with colleagues from Comma Soft AG, Lamarr-Institut &amp;amp; Smart Data Analytics.&lt;/p&gt;
-&lt;p&gt;Let&#39;s not waste money and time on believing in marketing claims and rebranding of the word &amp;quot;reasoning&amp;quot;, but let&#39;s start to think of how it could actually be achieved 🤗&lt;/p&gt;
-&lt;p&gt;#AGI #GenAI #artificialintelligence #research&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-sustainability-activity-7243978164564111361-12R6?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>For more sustainability transparency in GenAI! Share your knowledge and reduce energy waste!</title>
-    <link href="https://carstendraschner.github.io/blog/240910_for_more_sustainability_transparency_in_genai_share/" />
-    <updated>2024-09-10T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/240910_for_more_sustainability_transparency_in_genai_share/</id>
-    <content type="html">&lt;p&gt;Emphasizing the importance of transparency and shared knowledge to enhance sustainability in GenAI.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/6P9nHx-165-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/6P9nHx-165-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/6P9nHx-165-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;538&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;GenAI involves very large models and significant training efforts&lt;/li&gt;
-&lt;li&gt;Transparency can help share emissions and reduce energy waste&lt;/li&gt;
-&lt;li&gt;Open source models can optimize future development&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;genai-and-sustainability&quot;&gt;GenAI and Sustainability 🌱&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;GenAI is implemented through very large models.&lt;/li&gt;
-&lt;li&gt;The training can be substantial, such as the 15T tokens of LLAMA 3.1.&lt;/li&gt;
-&lt;li&gt;However, these trainings represent only the final training and not all the attempts that led to the final model.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;how-transparency-helps&quot;&gt;How Transparency helps 📚&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;If the models are open or, in the best case, open source, many users and use cases can share the resulting emissions.&lt;/li&gt;
-&lt;li&gt;It would also be interesting to see how often models are used for inference to compare the relative share of emissions.&lt;/li&gt;
-&lt;li&gt;Open source would be important to share learnings for the next generation of models and thus reduce emissions by reusing hyperparameter optimizations.
-Please share your findings and let&#39;s use our resources and energy wisely.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;our-paper&quot;&gt;Our Paper 📄&lt;/h2&gt;
-&lt;p&gt;In our paper “Ethical and Sustainability Considerations for Knowledge Graph based Machine Learning,” we highlight which sustainability and ethical optimizations are possible when working with hardware-intensive Artificial Intelligence approaches. Link: &lt;a href=&quot;https://lnkd.in/eJjATkTQ&quot;&gt;https://lnkd.in/eJjATkTQ&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;What are you doing to bring AI, ethics, and sustainability together? ❤️&lt;/p&gt;
-&lt;p&gt;#artificialintelligence #genai #llm #sustainability #aiethics&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_environmental-impact-of-ai-some-model-activity-7236647589096361986-9rSm?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Sustainable Air-Gapped On-Prem LLM Solution! How can we make GenAI available on almost any hardware, and how is it also available as a portable demo on our Alan Notebook</title>
-    <link href="https://carstendraschner.github.io/blog/240903_sustainable_air_gapped_on_prem_llm_solution/" />
-    <updated>2024-09-03T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/240903_sustainable_air_gapped_on_prem_llm_solution/</id>
-    <content type="html">&lt;p&gt;Exploring the development of a full-stack GenAI LLM solution that can run on a variety of hardware configurations, including a portable demo setup.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/rVdiXLZ0_K-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/rVdiXLZ0_K-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/rVdiXLZ0_K-800.jpeg&quot; alt=&quot;Alan Notebook&quot; width=&quot;800&quot; height=&quot;879&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Developing Alan, a full-stack GenAI LLM solution&lt;/li&gt;
-&lt;li&gt;Hosted on German hyperscaler infrastructure&lt;/li&gt;
-&lt;li&gt;Offers a smaller version, Alan-S-LLM&lt;/li&gt;
-&lt;li&gt;Portable demo available on Alan Notebook&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;what-we-re-working-on-when-we-talk-about-alan-r-and-d&quot;&gt;What We&#39;re Working on When We Talk About Alan R&amp;amp;D 👨🏼‍💻&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;In a recent post, I introduced how we&#39;re developing Alan, a full-stack GenAI LLM solution.&lt;/li&gt;
-&lt;li&gt;We host our solution within German hyperscaler infrastructure to deal with the requirements of multiple customer tenants and our large language models, including retrieval augmented generation pipelines.&lt;/li&gt;
-&lt;li&gt;The requirements of our strongest Alan LLM require current top-notch Nvidia GPUs (Ampere+, 80GB VRAM), but we also offer a smaller Alan-S-LLM, which still has tremendous capabilities with fewer hardware requirements.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;how-to-shrink-llms&quot;&gt;How to Shrink LLMs 🤖&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Models are smaller in dimensions like the number of transformer layers, heads, hidden dimensions, and other hyperparameters.&lt;/li&gt;
-&lt;li&gt;Current smaller GenAI LLMs can be designed by model distillation and model pruning, which try to keep model quality high while reducing the number of parameters.&lt;/li&gt;
-&lt;li&gt;The reduced number of parameters reduces VRAM requirements. Fewer parameters, especially fewer transformer layers, increase the throughput and inference performance as well.&lt;/li&gt;
-&lt;li&gt;The reduction of bits used to represent each parameter of the LLM reduces the required total GPU VRAM.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;our-alan-demo-notebook&quot;&gt;Our Alan Demo Notebook 💻&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;To demonstrate that our entire tech stack is capable of running entirely air-gapped and to showcase that we&#39;re truly capable of showing this on even a portable system, we developed the Alan-Notebook.&lt;/li&gt;
-&lt;li&gt;This notebook uses the entire tech stack, which includes all the components that offer Multi-GPU Cluster setups, handling of users, RAG pipelines, and, of course, LLM text inference.&lt;/li&gt;
-&lt;li&gt;The model behind is our fastest and most efficient Alan-S-Model. The notebook has limited hardware capabilities, especially within the GPU (16GB, Nvidia), but can still run the entire tech stack.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;further-reading&quot;&gt;Further Reading:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;LLM Model Sizes: &lt;a href=&quot;https://shorturl.at/6ZxMq&quot;&gt;https://shorturl.at/6ZxMq&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Alan - Our Developer Journey: &lt;a href=&quot;https://shorturl.at/PqLdE&quot;&gt;https://shorturl.at/PqLdE&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Full details of how infrastructure is scaled down by Dr. Laura Maaßen see &lt;a href=&quot;https://lmy.de/eicOw&quot;&gt;https://lmy.de/eicOw&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you&#39;re interested in how we develop an entire scalable GenAI solution and you want to see some details into our R&amp;amp;D, follow me on LinkedIn and reach out to us. Thanks to my wonderful teammates Dr. Laura Maaßen and Lars Flöer, who made this Alan Notebook possible, and to the entire Alan Development Team Comma Soft AG for supporting this great project and product.&lt;/p&gt;
-&lt;p&gt;#genai #onprem #llm #alan&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_genai-onprem-llm-activity-7233851548349444097-lF4N?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Combining the Hugging Face Model Platform and Knowledge Graph trend analysis over time could improve GenAI research and reduce waste of energy!</title>
-    <link href="https://carstendraschner.github.io/blog/240830_combining_the_hugging_face_model_platform_and_knowledge/" />
-    <updated>2024-08-30T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/240830_combining_the_hugging_face_model_platform_and_knowledge/</id>
-    <content type="html">&lt;p&gt;Exploring the potential of leveraging knowledge graphs to analyze trends in evolving models for better GenAI research and efficiency.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/Z0Z_6VvJDf-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/Z0Z_6VvJDf-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/Z0Z_6VvJDf-800.jpeg&quot; alt=&quot;Image 1&quot; width=&quot;800&quot; height=&quot;545&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Leveraging knowledge graphs for GenAI trends&lt;/li&gt;
-&lt;li&gt;Identifying high-performing models and best practices&lt;/li&gt;
-&lt;li&gt;Potential for a crowd-sourced GenAI cookbook&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Traversing the possible huge knowledge graph of evolving models... It would be interesting to see trends within this graph, such as which families and architectures are trending 📈. I&#39;d love to explore over time what approaches for fine-tuning, datasets, or even the number of transformer layers/heads, etc. create high-performing and efficient models 🌱. So we could create a crowd-sourced best practice GenAI cookbook ❤️👩🏽‍🍳. Please let me know if you are already working on it Thomas Wolf 🤗&lt;/p&gt;
-&lt;p&gt;#LostInGenai #artificialintelligence #huggingface #knowledgegraphs #genairesearch&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_have-you-noticed-the-new-model-tree-section-activity-7229418184590737409-UoNB?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>What is the perfect approach to adjust an LLM to your GenAI use case?</title>
-    <link href="https://carstendraschner.github.io/blog/240729_what_is_the_perfect_approach_to_adjust_an_llm_to_your_genai_use_case/" />
-    <updated>2024-07-29T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/240729_what_is_the_perfect_approach_to_adjust_an_llm_to_your_genai_use_case/</id>
-    <content type="html">&lt;p&gt;Exploring various methods to customize LLMs for specific GenAI use cases, ranging from simple to complex approaches.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/P0lj_EZjfb-906.avif 906w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/P0lj_EZjfb-906.webp 906w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/P0lj_EZjfb-906.png&quot; alt=&quot;Model Training&quot; width=&quot;906&quot; height=&quot;335&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Various ways to customize LLMs for specific use cases&lt;/li&gt;
-&lt;li&gt;Approaches vary in difficulty and complexity&lt;/li&gt;
-&lt;li&gt;Pros and cons of different methods&lt;/li&gt;
-&lt;li&gt;More dimensions to improve GenAI use cases&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;key-considerations&quot;&gt;Key Considerations:&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Prompt Engineering &amp;amp; In-Context Learning:&lt;/strong&gt; Manually enriching the prompt with information to guide the model’s prediction into desired behavior.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Retrieval-Augmented Generation:&lt;/strong&gt; Automatically retrieving context that is appended to the prompt on the fly after being retrieved through vector database similarity search and reranking.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Parameter-Efficient Finetuning:&lt;/strong&gt; Training only a subset of the model&#39;s parameters while keeping others unchanged.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Full Parameter Finetuning:&lt;/strong&gt; Training all parameters.&lt;/p&gt;
-&lt;p&gt;These approaches have pros and cons in terms of (and not limited to):&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Catastrophic Forgetting&lt;/li&gt;
-&lt;li&gt;Memory Load&lt;/li&gt;
-&lt;li&gt;Maximum Context-Size limits&lt;/li&gt;
-&lt;li&gt;Hallucinations&lt;/li&gt;
-&lt;li&gt;Response Time&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There are also more approaches and dimensions to improve GenAI Use Cases like:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Guardrails&lt;/li&gt;
-&lt;li&gt;Structured output
-and many more.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;What are you working on, and which field are you interested in to see how we are working on it?&lt;/p&gt;
-&lt;p&gt;We at Comma Soft AG implement these and more approaches into our own Product Alan.de and support also other GenAI Use Cases through these approaches.&lt;/p&gt;
-&lt;p&gt;Reach out to me 🤗 and follow me for more content ❤️&lt;/p&gt;
-&lt;p&gt;#artificialintelligence #genai #llm&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-llm-activity-7228755735776546817-cUi0?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>These results give me hope for sustainable AI 🌱</title>
-    <link href="https://carstendraschner.github.io/blog/240722_these_results_give_me_hope_for_sustainable_ai/" />
-    <updated>2024-07-22T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/240722_these_results_give_me_hope_for_sustainable_ai/</id>
-    <content type="html">&lt;p&gt;I&#39;m impressed by some of the recent advances in the field of &amp;quot;small&amp;quot; open-weight Language Models (LLMs).&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/huHTF98SzS-800.avif 800w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/huHTF98SzS-800.webp 800w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/huHTF98SzS-800.jpeg&quot; alt=&quot;Sustainable AI&quot; width=&quot;800&quot; height=&quot;450&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Increased documentation supports reproducibility&lt;/li&gt;
-&lt;li&gt;Data quality improves model performance&lt;/li&gt;
-&lt;li&gt;Model distillation reduces hardware needs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;more-documentation&quot;&gt;More Documentation 📚&lt;/h2&gt;
-&lt;p&gt;They&#39;re accompanied by increased documentation, as seen with efforts from Apple and Meta, which support reproducibility and reduce wasted effort and energy on less promising pre-training and fine-tuning iterations.&lt;/p&gt;
-&lt;h2 id=&quot;data-quality-as-chance&quot;&gt;Data Quality as Chance 🔎&lt;/h2&gt;
-&lt;p&gt;They demonstrate that a focus on data quality can improve model performance, as evidenced by Phi-3. However, it&#39;s also clear that the total number of tokens contributes to improvements, as seen with LLAMA3(.1).&lt;/p&gt;
-&lt;h2 id=&quot;model-distillation&quot;&gt;Model Distillation 👩🏽‍🔬&lt;/h2&gt;
-&lt;p&gt;Model Distillation has been effective in reducing total hardware requirements and inference time, which saves energy and resources. It will be interesting to see how quickly distilled models like Gemma2 can outperform 6-month-old state-of-the-art models like LLAMA2.&lt;/p&gt;
-&lt;p&gt;I appreciate the efforts to decrease hardware and energy demands while still providing helpful model responses.&lt;/p&gt;
-&lt;p&gt;#artificialintelligence #genai #sustainableai #llm&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_ai-google-tech-activity-7224785383237001216-HDyZ?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn Post&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>

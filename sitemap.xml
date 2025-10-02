@@ -257,41 +257,6 @@
 	</url>
 	
 	<url>
-		<loc>https://example.com/about/</loc>
-		<lastmod>2025-01-06</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/blog/</loc>
-		<lastmod>2025-01-06</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/contact/</loc>
-		<lastmod>2025-01-06</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/</loc>
-		<lastmod>2025-01-06</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/projects/</loc>
-		<lastmod>2025-01-06</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/research/</loc>
-		<lastmod>2025-01-06</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/tags/</loc>
-		<lastmod>2025-01-06</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://example.com/blog/250110_bluewhale/</loc>
 		<lastmod>2025-01-10</lastmod>
 	</url>
@@ -307,7 +272,122 @@
 	</url>
 	
 	<url>
+		<loc>https://example.com/blog/250301_llm_thinking_capabilities/</loc>
+		<lastmod>2025-03-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/250302_vibe_coding_experience/</loc>
+		<lastmod>2025-03-02</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/250401_llama4_release_issues/</loc>
+		<lastmod>2025-04-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/250402_llama4_fraud/</loc>
+		<lastmod>2025-04-02</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/250501_commatalk_keynote/</loc>
+		<lastmod>2025-05-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/250502_sleeperagents_mcp/</loc>
+		<lastmod>2025-05-02</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/250503_aicrown/</loc>
+		<lastmod>2025-05-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/250601_coke_context/</loc>
+		<lastmod>2025-06-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/250701_context_risk/</loc>
+		<lastmod>2025-07-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/250702_context_engineering_vlm/</loc>
+		<lastmod>2025-07-02</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/250704_local_optima_risk/</loc>
+		<lastmod>2025-07-04</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/250801_llm_evaluation/</loc>
+		<lastmod>2025-08-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/250802_cloudact_eu/</loc>
+		<lastmod>2025-08-02</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/250803_mistral_co2/</loc>
+		<lastmod>2025-08-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/250901_pretraining_data/</loc>
+		<lastmod>2025-09-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/251001_chatgpt_usage/</loc>
+		<lastmod>2025-10-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/about/</loc>
+		<lastmod>2025-10-02</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/</loc>
+		<lastmod>2025-10-02</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/contact/</loc>
+		<lastmod>2025-10-02</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/</loc>
+		<lastmod>2025-10-02</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/projects/</loc>
+		<lastmod>2025-10-02</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/research/</loc>
+		<lastmod>2025-10-02</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/tags/</loc>
+		<lastmod>2025-10-02</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://example.com/feed/feed.xml</loc>
-		<lastmod>2025-02-10</lastmod>
+		<lastmod>2025-10-02</lastmod>
 	</url>
 </urlset>
