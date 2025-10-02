@@ -7,7 +7,7 @@ tags: blog
 
 Microsoft admits: "No, We Can’t Guarantee It"
 
-![Image 1](/img/blog_images/250802_cloudact_eu/Bildschirmfoto 2025-10-02 um 14.04.55.png)
+![Image 1](/blog/250802_cloudact_eu/250802_cloudact_eu.png)
 
 **TL;DR ⏱️**
 - Microsoft France admitted under oath: EU data on U.S. hyperscalers isn’t fully protected  

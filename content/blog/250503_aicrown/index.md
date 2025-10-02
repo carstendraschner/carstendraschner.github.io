@@ -7,7 +7,7 @@ tags: blog
 
 Who Will Stay on Top of the AI Race?
 
-![Image 1](/img/blog_images/250503_aicrown/Bildschirmfoto 2025-10-02 um 13.59.31.png)
+![Image 1](/blog/250503_aicrown/250503_aicrown.png)
 
 **TL;DR ⏱️**
 - Global battle for AI talent and compute resources

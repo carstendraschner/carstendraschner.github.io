@@ -7,7 +7,7 @@ tags: blog
 
 Invisible Context Editing: How Hidden Attacks Undermine AI & RAG Pipelines
 
-![Image 1](/img/blog_images/250701_context_risk/1751880231665.jpeg)
+![Image 1](/blog/250701_context_risk/1751880231665.jpeg)
 
 **TL;DR ⏱️**
 - Malicious actors hide invisible instructions in PDFs

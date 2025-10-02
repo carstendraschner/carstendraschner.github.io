@@ -7,7 +7,7 @@ tags: blog
 
 Now bigger AI Risk due to Sleeper Agents, MCP & Reasoning Attacks
 
-![Image 1](/img/blog_images/250502_sleeperagents_mcp/Bildschirmfoto 2025-10-02 um 13.58.52.png)
+![Image 1](/blog/250502_sleeperagents_mcp/250502_sleeperagents_mcp.png)
 
 **TL;DR ⏱️**
 - Increased risks from LLM backdoors or data poisoning via tool calling  

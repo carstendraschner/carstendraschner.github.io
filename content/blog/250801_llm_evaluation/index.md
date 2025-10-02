@@ -7,7 +7,7 @@ tags: blog
 
 A Crash-Course in Evaluating Large Language Models 🚀
 
-![Image 1](/img/blog_images/250801_llm_evaluation/1751960556345.jpeg)
+![Image 1](/blog/250801_llm_evaluation/1751960556345.jpeg)
 
 **TL;DR ⏱️**
 - Complex tasks → open-ended outputs

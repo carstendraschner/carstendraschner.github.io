@@ -7,7 +7,7 @@ tags: blog
 
 Open-Source ≠ Open-Weight — Pre-training Data Mystery
 
-![Image 1](/img/blog_images/250901_pretraining_data/1752740878982.jpeg)
+![Image 1](/blog/250901_pretraining_data/1752740878982.jpeg)
 
 **TL;DR ⏱️**
 - Pre-training data shapes everything downstream (RAG, RLHF, prompting).

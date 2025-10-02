@@ -7,7 +7,7 @@ tags: blog
 
 Do LLMs Think – Or Is It Just Next Token Prediction? 🤔
 
-![Image 1](/img/blog_images/250301_llm_thinking_capabilities/Bildschirmfoto%202025-10-02%20um%2013.54.10.png)
+![Image 1](/blog/250301_llm_thinking_capabilities/250301_llm_thinking_capabilities.png)
 
 **TL;DR ⏱️**
 - Short explanation of reasoning models

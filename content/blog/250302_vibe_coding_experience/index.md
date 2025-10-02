@@ -7,7 +7,7 @@ tags: blog
 
 VIBE Coding – Code Models & Huge Opportunity in Reinforcement Learning
 
-![Image 1](/img/blog_images/250302_vibe_coding_experience/Bildschirmfoto%202025-10-02%20um%2013.54.48.png)
+![Image 1](/blog/250302_vibe_coding_experience/250302_vibe_coding_experience.png)
 
 **TL;DR ⏱️**
 - VIBE Coding: no longer coding yourself, just prompting desired functions

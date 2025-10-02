@@ -1,5 +1,5 @@
 ---
-title: Unmasking AI’s Footprint: The Real Cost of Large Language Models
+title: Unmasking AI’s Footprint - The Real Cost of Large Language Models
 date: 2025-08-03
 linkedInUrl: https://www.linkedin.com/posts/carsten-draschner_artificalintelligence-llm-oneearth-activity-7355480381061570560-PxS2?utm_source=share&utm_medium=member_desktop&rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0
 tags: blog
@@ -7,7 +7,7 @@ tags: blog
 
 The Hidden Environmental Cost of AI
 
-![Image 1](/img/blog_images/250803_mistral_co2/1753538477138.jpeg)
+![Image 1](/blog/250803_mistral_co2/1753538477138.jpeg)
 
 **TL;DR ⏱️**
 - Mistral AI published the first full life-cycle analysis (LCA) of an LLM  

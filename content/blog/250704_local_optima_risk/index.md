@@ -7,7 +7,7 @@ tags: blog
 
 Local Optima Risk in Large Language Model Training
 
-![Image 1](/img/blog_images/250704_local_optima_risk.png)
+![Image 1](/blog/250704_local_optima_risk/250704_local_optima_risk.png)
 
 **TL;DR ⏱️**
 - LLMs risk getting stuck in local optima during training  

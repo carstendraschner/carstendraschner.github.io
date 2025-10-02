@@ -7,7 +7,7 @@ tags: blog
 
 Context Matters – In Language and Vision
 
-![Image 1](/img/blog_images/250702_context_engineering_vlm.png)
+![Image 1](/blog/250702_context_engineering_vlm/1751902472056.jpeg)
 
 **TL;DR ⏱️**
 - Context engineering goes beyond prompt engineering  

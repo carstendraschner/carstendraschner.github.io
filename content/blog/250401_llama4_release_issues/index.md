@@ -7,7 +7,7 @@ tags: blog
 
 LLaMA 4 is here – but questions remain about Elo Scores and benchmarks.
 
-![Image 1](/img/blog_images/250401_llama4_release_issues/1743879779245.jpeg)
+![Image 1](/blog/250401_llama4_release_issues/1743879779245.jpeg)
 
 **TL;DR ⏱️**
 - Wait for verified SOTA benchmark results and reliable Elo scores  

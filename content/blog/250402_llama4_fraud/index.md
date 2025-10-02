@@ -7,7 +7,7 @@ tags: blog
 
 AI Benchmarks and the Meta LLaMA 4 Controversy
 
-![Image 1](/img/blog_images/250402_llama4_fraud/1744633586709.jpeg)
+![Image 1](/blog/250402_llama4_fraud/1744633586709.jpeg)
 
 **TL;DR ⏱️**
 - Meta’s Arena Elo #2 model is not the same as the Hugging Face version  

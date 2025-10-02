@@ -7,7 +7,7 @@ tags: blog
 
 Context and Neural Structures in LLMs
 
-![Image 1](/img/blog_images/250601_coke_context/1751462851384.jpeg)
+![Image 1](/blog/250601_coke_context/1751462851384.jpeg)
 
 **TL;DR ⏱️**
 - LLMs only predict based on the context we provide  

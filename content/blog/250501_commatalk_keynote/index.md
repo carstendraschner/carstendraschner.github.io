@@ -7,7 +7,7 @@ tags: blog
 
 AI is happening in the heart of EU industry! 🤖🇪🇺
 
-![Image 1](/img/blog_images/250501_commatalk_keynote/1747728913786.jpeg)
+![Image 1](/blog/250501_commatalk_keynote/1747728913786.jpeg)
 
 **TL;DR ⏱️**
 - Keynote talk on (Gen)AI trends and hype demystification  
