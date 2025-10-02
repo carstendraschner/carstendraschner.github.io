@@ -45,6 +45,10 @@ npx @11ty/eleventy --serve
 
 Or you can run [debug mode](https://www.11ty.dev/docs/debugging/) to see all the internals.
 
+5. Deploy
+
+npm run deploy
+
 ## Features
 
 - Using [Eleventy v3](https://github.com/11ty/eleventy/releases/tag/v3.0.0) with zero-JavaScript output.
