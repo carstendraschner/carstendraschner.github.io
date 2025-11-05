@@ -6,7 +6,7 @@ tags: blog
 ---
 
 OpenAI & Harvard on Consumer ChatGPT Usage
-![Image 1](/img/blog_images/1758028846547.jpeg)
+![Image 1](/blog/251001_chatgpt_usage/251001_chatgpt_usage.png)
 
 **TL;DR ⏱️**
 - 1.5M conversations analyzed, set against 700M weekly active users  

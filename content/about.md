@@ -5,10 +5,14 @@ const eleventyNavigation = {
 };
 ---
 # About Me
-I am an AI Researcher with 8+ years of experience in AI, ML, DS. I am motivated by Science and AI for Social Good! I love to connect my passion for cutting-edge AI with my intrinsic motivation to bring myself into projects which make our life on earth more sustainable, our lives better, and our democracies more stable.
+I am an Applied Scientist at Amazon AGI for R%D on Foundation Models with 8+ years of experience in AI, ML, DS. I am motivated by Science and AI for Social Good! I love to connect my passion for cutting-edge AI with my intrinsic motivation to bring myself into projects which make our life on earth more sustainable, our lives better, and our democracies more stable.
 
 ## Experience
-### Generative AI Engineer / Machine Learning Consultant Alan by Comma Soft AG (Jul 2023 - now)
+
+### Applied Scientist at Amazon Artificial General Intelligence (AGI) - Nova (Nov 2025 - now)
+Pretraining • Data Curation • Benchmarks • SFT
+
+### Applied AI Scientist / Machine Learning Consultant Alan by Comma Soft AG (Jul 2023 - Okt 2025)
 
 Developing LLM Standalone AIaaS • Generative AI Research & Development • LLM Training & Finetuning • Autonomous Hybrid LLM Model Evaluation • GenAI scalability Optimization • LLM Model Selection • Image-GenAI • Retrieval Augmented Generation • LLM Response Verification
 
