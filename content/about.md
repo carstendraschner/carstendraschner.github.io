@@ -5,7 +5,7 @@ const eleventyNavigation = {
 };
 ---
 # About Me
-I am an Applied Scientist at Amazon AGI for R%D on Foundation Models with 8+ years of experience in AI, ML, DS. I am motivated by Science and AI for Social Good! I love to connect my passion for cutting-edge AI with my intrinsic motivation to bring myself into projects which make our life on earth more sustainable, our lives better, and our democracies more stable.
+I am an Applied Scientist at Amazon AGI - Nova focused on Foundation Models with 8+ years of experience in AI, ML, DS. I am motivated by Science and AI for Social Good! I love to connect my passion for cutting-edge AI with my intrinsic motivation to bring myself into projects which make our life on earth more sustainable, our lives better, and our democracies more stable.
 
 ## Experience
 

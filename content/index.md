@@ -5,7 +5,7 @@ const eleventyNavigation = {
 };
 ---
 # Home
-Welcome to my personal website where you can find information about my projects, blog posts, publications, and more. I'm Carsten Felix Draschner, an AI Researcher with 8+ years of experience in AI, ML, DS. I am motivated by Science and AI for Social Good! I love to connect my passion for cutting-edge AI with my intrinsic motivation to bring myself into projects which make our life on earth more sustainable, our lives better, and our democracies more stable.
+Welcome to my personal website where you can find information about my projects, blog posts, publications, and more. I'm Carsten Felix Draschner, an Applied Scientist at Amazon AGI - Nova focused on Foundation Models with 8+ years of experience in AI, ML, DS. I am motivated by Science and AI for Social Good! I love to connect my passion for cutting-edge AI with my intrinsic motivation to bring myself into projects which make our life on earth more sustainable, our lives better, and our democracies more stable.
 <div class="container">
   <nav class="card-navigation">
     <ul>
