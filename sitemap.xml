@@ -387,7 +387,17 @@
 	</url>
 	
 	<url>
+		<loc>https://example.com/blog/251020_bye_comma/</loc>
+		<lastmod>2025-10-20</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/251101_hello_amazon_agi_nova/</loc>
+		<lastmod>2025-11-01</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://example.com/feed/feed.xml</loc>
-		<lastmod>2025-11-05</lastmod>
+		<lastmod>2025-11-20</lastmod>
 	</url>
 </urlset>
