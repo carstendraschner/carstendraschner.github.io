@@ -5,7 +5,7 @@ linkedInUrl: https://www.linkedin.com/posts/carsten-draschner_comma-alan-gratitu
 tags: blog
 ---
 
-New Chapter, Same Curiosity ❤️
+Thank You!
 
 ![Image 1](/img/blog_images/1761669600282.jpeg)
 

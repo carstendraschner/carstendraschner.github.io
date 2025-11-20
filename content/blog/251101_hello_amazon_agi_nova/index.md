@@ -5,7 +5,7 @@ linkedInUrl: https://www.linkedin.com/posts/carsten-draschner_nova-agi-foundatio
 tags: blog
 ---
 
-Exciting new Chapter! Foundation Model Scientist at Amazon AGI ✨
+Lets do some large scale AI research!
 
 ![Image 1](/img/blog_images/1762722681560.jpeg)
 
