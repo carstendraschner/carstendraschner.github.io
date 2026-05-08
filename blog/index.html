@@ -1,11 +1,23 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Carsten Felix Draschner, PhD</title>
-		<meta name="description" content="Applied research findings &amp; ethical considerations in modern Artificial Intelligence.">
-		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			
+			
+			
+			<title>Writing on AI, Foundation Models, and GenAI | Carsten Felix Draschner, PhD</title>
+			<meta name="description" content="Selected writing by Carsten Felix Draschner on foundation models, GenAI systems, LLM evaluation, AI ethics, model selection, and applied AI research.">
+			<link rel="canonical" href="https://carstendraschner.github.io/blog/">
+			<meta property="og:site_name" content="Carsten Felix Draschner, PhD">
+			<meta property="og:title" content="Writing on AI, Foundation Models, and GenAI | Carsten Felix Draschner, PhD">
+			<meta property="og:description" content="Selected writing by Carsten Felix Draschner on foundation models, GenAI systems, LLM evaluation, AI ethics, model selection, and applied AI research.">
+			<meta property="og:type" content="website">
+			<meta property="og:url" content="https://carstendraschner.github.io/blog/">
+			<meta name="twitter:card" content="summary">
+			<meta name="twitter:title" content="Writing on AI, Foundation Models, and GenAI | Carsten Felix Draschner, PhD">
+			<meta name="twitter:description" content="Selected writing by Carsten Felix Draschner on foundation models, GenAI systems, LLM evaluation, AI ethics, model selection, and applied AI research.">
+			<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
 		
 		<style>/* This is an arbitrary CSS string added to the bundle */
 /* Defaults */
@@ -90,12 +102,17 @@
 
 html,
 body {
-	height: 100%;
+	min-height: 100%;
 	padding: 0;
 	margin: 0;
 	font-family: var(--font-family);
 	color: var(--text-color);
 	background-color: var(--background-color);
+}
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 html {
 	overflow-y: scroll;
@@ -150,9 +167,9 @@ a[href]:active {
 main {
 	padding: 1rem;
 	flex: 1;
-	max-width: 40em;
+	width: 100%;
+	max-width: 46em;
 	margin: 0 auto;
-	margin-bottom: var(--footer-height);
 }
 main :first-child {
 	margin-top: 0;
@@ -243,14 +260,15 @@ header {
 }
 
 .container {
-	display: flex; /* Hinzugefügt */
-	flex-direction: column; /* Hinzugefügt */
-	min-height: 100vh; /* Hinzugefügt */
+	display: flex;
+	flex-direction: column;
   }
 
 /* Nav */
 .nav {
 	display: flex;
+	flex-wrap: wrap;
+	gap: .5em 1em;
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -260,7 +278,7 @@ header {
 }
 .nav-item {
 	display: inline-block;
-	margin-right: 1em;
+	margin-right: 0;
 }
 .nav-item a[href]:not(:hover) {
 	text-decoration: none;
@@ -272,11 +290,11 @@ header {
 .card {
 	display: flex;
 	align-items: center;
-	border: 1px solid #ccc;
-	padding: 10px;
-	margin-bottom: 10px;
+	border: 1px solid var(--card-border-color);
+	padding: 12px;
+	margin-bottom: 12px;
 	border-radius: 8px;
-	background-color: var(--background-color);
+	background-color: var(--card-background-color);
 }
 .card img {
 	border-radius: 8px;
@@ -376,7 +394,34 @@ h6:has(.ha-placeholder):hover {
 .post-metadata time {
 	margin-right: 1em;
 }</style>
-	</head>
+			<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Person",
+				"name": "Carsten Felix Draschner",
+				"honorificSuffix": "PhD",
+				"url": "https://carstendraschner.github.io/",
+				"jobTitle": "Applied Scientist",
+				"worksFor": {
+					"@type": "Organization",
+					"name": "Amazon AGI - Nova"
+				},
+				"knowsAbout": [
+					"Foundation models",
+					"Generative AI",
+					"Large Language Models",
+					"Knowledge graphs",
+					"Scalable machine learning",
+					"Responsible AI"
+				],
+				"sameAs": [
+					"https://www.linkedin.com/in/carsten-draschner/",
+					"https://github.com/carstendraschner",
+					"https://www.researchgate.net/profile/Carsten-Draschner"
+				]
+			}
+			</script>
+		</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
@@ -398,11 +443,27 @@ h6:has(.ha-placeholder):hover {
 		<main id="skip">
 			<heading-anchors>
 				
-<h1 id="blog-posts">Blog Posts</h1>
+<h1 id="writing">Writing</h1>
+
+<p>Selected posts on foundation models, GenAI systems, LLM evaluation, AI ethics, model selection, and applied AI research. Many posts started as LinkedIn reflections and are mirrored or expanded here for a more durable web archive. The newest short-form posts remain available on <a href="https://www.linkedin.com/in/carsten-draschner/recent-activity/all/">LinkedIn</a>.</p>
 
 
 
 <ol reversed="" class="postlist">
+
+	<li class="postlist-item">
+		<span class="postlist-link">Nova 2.0 - Amazon AGI Foundation Model Release</span>
+		<time class="postlist-date" datetime="2025-12-03">December 2025</time>
+		<div><p>Amazon AGI Foundation Models released at AWS re:Invent</p>
+<p><picture><source type="image/avif" srcset="/img/ydnD-nUA2E-1688.avif 1688w"><source type="image/webp" srcset="/img/ydnD-nUA2E-1688.webp 1688w"><img loading="lazy" decoding="async" src="/img/ydnD-nUA2E-1688.png" alt="Amazon Nova" width="1688" height="942"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Amazon AGI released the next generation of Nova foundation models</li>
+<li>Nova 2.0 spans Lite, Pro, Sonic, Omni, Forge, and Act</li>
+<li>Nova Lite can be tried for free through OpenRouter, with more details in Amazon Science and AWS resources</li>
+</ul>
+</div>
+			(<a class="color-gray-50" href="/blog/251203_nova_20_amazon_agi/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_%F0%9D%90%8D%F0%9D%90%A8%F0%9D%90%AF%F0%9D%90%9A-20-%F0%9D%90%80%F0%9D%90%A6%F0%9D%90%9A%F0%9D%90%B3%F0%9D%90%A8%F0%9D%90%A7-%F0%9D%90%80%F0%9D%90%86%F0%9D%90%88-%F0%9D%90%85%F0%9D%90%A8%F0%9D%90%AE-activity-7401916006585122816-F08e?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Exciting New Chapter — Foundation Model Scientist at Amazon AGI ✨</span>
@@ -416,8 +477,7 @@ h6:has(.ha-placeholder):hover {
 <li>Grateful for the support — and excited to explore Berlin!</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/251101_hello_amazon_agi_nova/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_nova-agi-foundationmodels-activity-7393546717285175296-Xf6Q?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8f0">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/251101_hello_amazon_agi_nova/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_nova-agi-foundationmodels-activity-7393546717285175296-Xf6Q?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8f0">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">A Wonderful Chapter at Comma Soft AG ✨</span>
@@ -431,8 +491,7 @@ h6:has(.ha-placeholder):hover {
 <li>Excited to soon share details about the next foundation model adventure 🤖</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/251020_bye_comma/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_comma-alan-gratitude-activity-7388977855726039040-DuGP?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/251020_bye_comma/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_comma-alan-gratitude-activity-7388977855726039040-DuGP?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Insights from the Largest Study on ChatGPT Usage</span>
@@ -446,8 +505,7 @@ h6:has(.ha-placeholder):hover {
 <li>ChatGPT is used for asking, doing, and expressing — across work and private life</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/251001_chatgpt_usage/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_llm-foundationmodels-artificialintelligence-activity-7373707427541598208-YbTh?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/251001_chatgpt_usage/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_llm-foundationmodels-artificialintelligence-activity-7373707427541598208-YbTh?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">One of the biggest missing pieces between Open-Source and Open-Weight models ... and a Weird Finding about Pre-training Data!</span>
@@ -461,8 +519,7 @@ h6:has(.ha-placeholder):hover {
 <li>Raises open questions about contamination vs. genuine generalization.</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/250901_pretraining_data/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_ai-llm-pretraining-activity-7358019612711550976-Ac_e?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/250901_pretraining_data/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_ai-llm-pretraining-activity-7358019612711550976-Ac_e?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Unmasking AI’s Footprint - The Real Cost of Large Language Models</span>
@@ -476,8 +533,7 @@ h6:has(.ha-placeholder):hover {
 <li>Smart choices (renewables, smaller models, optimisation) reduce the footprint</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/250803_mistral_co2/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificalintelligence-llm-oneearth-activity-7355480381061570560-PxS2?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/250803_mistral_co2/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificalintelligence-llm-oneearth-activity-7355480381061570560-PxS2?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Is your Data on European Servers of US-Hyperscalers?</span>
@@ -491,8 +547,14 @@ h6:has(.ha-placeholder):hover {
 <li>Enterprises need exit plans &amp; sovereign AI options</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/250802_cloudact_eu/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-euai-alan-activity-7353678005124096001-RsMb?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/250802_cloudact_eu/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-euai-alan-activity-7353678005124096001-RsMb?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Source</a>)</li>
+
+	<li class="postlist-item">
+		<span class="postlist-link">OpenAI Open-Weight Models - Strong Signal, Still Not Open Source</span>
+		<time class="postlist-date" datetime="2025-08-01">August 2025</time>
+		<div><p>OpenAI open-weight models looked likely before the official announcement. The interesting part was not only the model sizes, but what such a release would mean for local inference, enterprise deployment, and the debate around &quot;open&quot; AI.</p>
+</div>
+			(<a class="color-gray-50" href="/blog/250801_openai_open_weight_models/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_openai-artificialintelligence-activity-7356973094856499200-PvwK">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Understanding the Levels of LLM Evaluation</span>
@@ -506,8 +568,7 @@ h6:has(.ha-placeholder):hover {
 <li>Big differences in scale &amp; complexity</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/250801_llm_evaluation/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-llm-alan-activity-7353057421314904065-BQWJ?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/250801_llm_evaluation/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-llm-alan-activity-7353057421314904065-BQWJ?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Risk of LLMs Getting Stuck in Local Optima – Are We Training Optimally?</span>
@@ -521,8 +582,7 @@ h6:has(.ha-placeholder):hover {
 <li>Research shows many optima are connected, reducing real-world risk</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/250704_local_optima_risk/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_freeeducation-llm-artificialintelligence-activity-7351556525762453507-vVa2?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/250704_local_optima_risk/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_freeeducation-llm-artificialintelligence-activity-7351556525762453507-vVa2?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">LLM Context Engineering and Vision Language Models – What do they have in common?</span>
@@ -536,8 +596,7 @@ h6:has(.ha-placeholder):hover {
 <li>Vision Transformers outperform CNNs by leveraging global context early</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/250702_context_engineering_vlm/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-llms-computervision-activity-7350406950959898625-x0g-?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/250702_context_engineering_vlm/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-llms-computervision-activity-7350406950959898625-x0g-?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Real AI Business Process Risks – LLM &amp; RAG Attacks</span>
@@ -551,8 +610,7 @@ h6:has(.ha-placeholder):hover {
 <li>Guard-rail models comparing PDF text vs OCR output can detect anomalies</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/250701_context_risk/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-llm-ragattacks-activity-7349011506061012995-M1qK?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/250701_context_risk/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-llm-ragattacks-activity-7349011506061012995-M1qK?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">What color is the Coke can in this picture? On Context and Neural Structures</span>
@@ -566,8 +624,7 @@ h6:has(.ha-placeholder):hover {
 <li>Understanding neural structures improves AI deployment</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/250601_coke_context/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_llm-articialintelligence-explainableai-activity-7347867719272214528-9WZc?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/250601_coke_context/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_llm-articialintelligence-explainableai-activity-7347867719272214528-9WZc?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Battle for Talent and Resources in AI</span>
@@ -581,8 +638,7 @@ h6:has(.ha-placeholder):hover {
 <li>Open-weight tooling becoming an important backbone</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/250503_aicrown/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_we-see-a-battle-for-talent-and-resources-activity-7346423201335304193-ztny?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/250503_aicrown/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_we-see-a-battle-for-talent-and-resources-activity-7346423201335304193-ztny?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Bigger AI Risk due to Sleeper Agents, MCP &amp; Reasoning Attacks</span>
@@ -597,8 +653,7 @@ h6:has(.ha-placeholder):hover {
 <li>Possible new attack surface when using MCP</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/250502_sleeperagents_mcp/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_%F0%9D%90%8D%F0%9D%90%A8%F0%9D%90%B0-%F0%9D%90%9B%F0%9D%90%A2%F0%9D%90%A0%F0%9D%90%A0%F0%9D%90%9E%F0%9D%90%AB-%F0%9D%90%80%F0%9D%90%88-%F0%9D%90%91%F0%9D%90%A2%F0%9D%90%AC%F0%9D%90%A4-%F0%9D%90%9D%F0%9D%90%AE%F0%9D%90%9E-activity-7346098458044342272-MN3o?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/250502_sleeperagents_mcp/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_%F0%9D%90%8D%F0%9D%90%A8%F0%9D%90%B0-%F0%9D%90%9B%F0%9D%90%A2%F0%9D%90%A0%F0%9D%90%A0%F0%9D%90%9E%F0%9D%90%AB-%F0%9D%90%80%F0%9D%90%88-%F0%9D%90%91%F0%9D%90%A2%F0%9D%90%AC%F0%9D%90%A4-%F0%9D%90%9D%F0%9D%90%AE%F0%9D%90%9E-activity-7346098458044342272-MN3o?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Comma Talk 25 – Keynote &amp; GenAI Roundtable Highlights</span>
@@ -612,8 +667,7 @@ h6:has(.ha-placeholder):hover {
 <li>Industry-wide AI applications across Europe</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/250501_commatalk_keynote/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-machinelearning-euaiact-activity-7330597924290056194-esCv?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/250501_commatalk_keynote/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-machinelearning-euaiact-activity-7330597924290056194-esCv?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Meta’s LLaMA 4 Fraud Has Been Exposed!</span>
@@ -627,8 +681,7 @@ h6:has(.ha-placeholder):hover {
 <li>Benchmark gaming and contamination are growing concerns</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/250402_llama4_fraud/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_aibenchmarks-meta-huggingface-activity-7317523635433275392-bE0O?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/250402_llama4_fraud/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_aibenchmarks-meta-huggingface-activity-7317523635433275392-bE0O?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Meta’s Llama 4 Release – Issues with Elo Scores?</span>
@@ -644,8 +697,7 @@ h6:has(.ha-placeholder):hover {
 <li>Proposing multi-million token context windows</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/250401_llama4_release_issues/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_introducing-our-first-set-of-llama-4-models-activity-7314630084781375488-SNGZ?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/250401_llama4_release_issues/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_introducing-our-first-set-of-llama-4-models-activity-7314630084781375488-SNGZ?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">VIBE Coding – SWE &amp; AI Engineering Jobs, Code Models &amp; Reinforcement Learning</span>
@@ -659,8 +711,7 @@ h6:has(.ha-placeholder):hover {
 <li>Still controversial: productivity vs. technical debt</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/250302_vibe_coding_experience/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_%F0%9D%90%95%F0%9D%90%88%F0%9D%90%81%F0%9D%90%84-%F0%9D%90%82%F0%9D%90%A8%F0%9D%90%9D%F0%9D%90%A2%F0%9D%90%A7%F0%9D%90%A0-%F0%9D%90%96%F0%9D%90%A1%F0%9D%90%9A%F0%9D%90%AD-%F0%9D%90%A1%F0%9D%90%9A%F0%9D%90%A9%F0%9D%90%A9-activity-7311075985204862977-Oa3P?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/250302_vibe_coding_experience/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_%F0%9D%90%95%F0%9D%90%88%F0%9D%90%81%F0%9D%90%84-%F0%9D%90%82%F0%9D%90%A8%F0%9D%90%9D%F0%9D%90%A2%F0%9D%90%A7%F0%9D%90%A0-%F0%9D%90%96%F0%9D%90%A1%F0%9D%90%9A%F0%9D%90%AD-%F0%9D%90%A1%F0%9D%90%9A%F0%9D%90%A9%F0%9D%90%A9-activity-7311075985204862977-Oa3P?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">There is also technical foundation for thinking capability in Reasoning LLMs</span>
@@ -674,8 +725,7 @@ h6:has(.ha-placeholder):hover {
 <li>My hypothesis on LLMs and thinking capabilities</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/250301_llm_thinking_capabilities/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-reasoning-genai-activity-7304878731158835200-klOv?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/250301_llm_thinking_capabilities/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-reasoning-genai-activity-7304878731158835200-klOv?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACHjjm8B3BZCMjF5D-kMGt5KR8dfUUXY4f0">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">DeepSeek has huge issues. Code on last Slide. Be careful!</span>
@@ -689,8 +739,7 @@ h6:has(.ha-placeholder):hover {
 <li>Use with caution</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/250203_deepseek_censorship/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_deep-seek-model-issues-code-on-last-slide-activity-7289957083297325056-Wtfo?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/250203_deepseek_censorship/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_deep-seek-model-issues-code-on-last-slide-activity-7289957083297325056-Wtfo?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">What a Wonderful Start, More to Come!</span>
@@ -704,8 +753,7 @@ h6:has(.ha-placeholder):hover {
 <li>Building Alan.de for the European market</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/250120_senior/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_cometocomma-artificialintelligence-aiineurope-activity-7287871674144718851-FU6h?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/250120_senior/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_cometocomma-artificialintelligence-aiineurope-activity-7287871674144718851-FU6h?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">What happens in a learning (AI) brain? Problems of AI Model Knowledge Editing and LLM Cut Off dates lead to more errors in question answering and worse climate footprint</span>
@@ -719,8 +767,7 @@ h6:has(.ha-placeholder):hover {
 <li>Alternative solutions like RAG and Knowledge Graphs have their own challenges.</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/250110_bluewhale/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_cometocomma-artificialintelligence-rag-activity-7282754175623475201-hpG5?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/250110_bluewhale/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_cometocomma-artificialintelligence-rag-activity-7282754175623475201-hpG5?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Expanding my GenAI content beyond LinkedIn!</span>
@@ -734,8 +781,7 @@ h6:has(.ha-placeholder):hover {
 <li>Experiment with Alan.de and GitHub Pages</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/250105_blog/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_genai-blog-artificialintelligence-activity-7272274617061281792-S1Fg?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/250105_blog/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_genai-blog-artificialintelligence-activity-7272274617061281792-S1Fg?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">LLAMA 3.3 70B is there! Here are the facts!</span>
@@ -749,8 +795,7 @@ h6:has(.ha-placeholder):hover {
 <li>On par with other API Models from OpenAI &amp; Anthropic</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/241206_LLAMA33/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_llama-artificialintelligence-anotherllmrelease-activity-7270888696671830016-O2Pd?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/241206_LLAMA33/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_llama-artificialintelligence-anotherllmrelease-activity-7270888696671830016-O2Pd?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">New DE/EU Open Source LLM 🇪🇺 Teuken 7B, Now Truly Open Source?</span>
@@ -764,8 +809,7 @@ h6:has(.ha-placeholder):hover {
 <li>Problems in Alignment?</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/241127_Teuken_Review/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/in/carsten-draschner/recent-activity/all/">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/241127_Teuken_Review/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/in/carsten-draschner/recent-activity/all/">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">We&#39;re Dealing with the Butterfly Effect in LLM Creation Pipelines 🦋🤖</span>
@@ -781,8 +825,7 @@ h6:has(.ha-placeholder):hover {
 <li>Strategies to mitigate the Butterfly Effect are essential for optimal performance.</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/241120_were_dealing_with_the_butterfly_effect_in_llm_creation_pipelines/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/feed/update/urn:li:activity:7262130122034442240/">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/241120_were_dealing_with_the_butterfly_effect_in_llm_creation_pipelines/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/feed/update/urn:li:activity:7262130122034442240/">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">New Official OSI &quot;Open Source AI definition&quot; attacks Meta&#39;s LLAMA as &quot;Open Washing&quot;</span>
@@ -797,8 +840,7 @@ h6:has(.ha-placeholder):hover {
 <li>&quot;Open Washing&quot; Problem of Meta and others?!</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/241113_new_official_osi_open_source_ai_definition_attacks_metas_llama_as_open_washing/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-opensource-activity-7257413946326892544-c-lj?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/241113_new_official_osi_open_source_ai_definition_attacks_metas_llama_as_open_washing/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-opensource-activity-7257413946326892544-c-lj?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">The Uncanny Valley Phenomenon in GenAI Face Synthesis</span>
@@ -813,8 +855,7 @@ h6:has(.ha-placeholder):hover {
 <li>&quot;Open Washing&quot; Problem of Meta and others?!</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/241105_the_uncanny_valley_phenomenon_in_genai_face_synthesis/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_ai-tech-innovation-activity-7255148987660267520-VImJ?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/241105_the_uncanny_valley_phenomenon_in_genai_face_synthesis/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_ai-tech-innovation-activity-7255148987660267520-VImJ?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">A GenAI Solution/Tweak to Rescue ARD tagesschau webpage?!</span>
@@ -829,8 +870,7 @@ h6:has(.ha-placeholder):hover {
 <li>Questions about the impact and regulation of GenAI in public broadcasting contexts.</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/241025_a_genai_solution_tweak_to_rescue_ard_tagesschau_webpage/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_rundfunkbeitrag-genai-gez-activity-7254856047503282177-bkvA?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/241025_a_genai_solution_tweak_to_rescue_ard_tagesschau_webpage/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_rundfunkbeitrag-genai-gez-activity-7254856047503282177-bkvA?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">We Cannot Waste Time and Resources through Regenerating GenAI Creations! GenAI Control is Key for Productivity!</span>
@@ -844,8 +884,7 @@ h6:has(.ha-placeholder):hover {
 <li>Major Waste of Time and Resources through inefficient Regenerates</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/241016_we_cannot_waste_time_and_resources_through_regenerating_genai_creations_genai_control_is_key_for_productivity/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_ai-runway-3d-activity-7259125095783182336-3bZr?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/241016_we_cannot_waste_time_and_resources_through_regenerating_genai_creations_genai_control_is_key_for_productivity/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_ai-runway-3d-activity-7259125095783182336-3bZr?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Choosing the Right LLM for Your Needs - Key Considerations</span>
@@ -860,8 +899,7 @@ h6:has(.ha-placeholder):hover {
 <li>Alignment</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/241008_choosing_the_right_llm_for_your_needs_key_considerations/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_lostingenai-artificialintelligence-selectllm-activity-7254502008827658241-5TRJ?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/241008_choosing_the_right_llm_for_your_needs_key_considerations/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_lostingenai-artificialintelligence-selectllm-activity-7254502008827658241-5TRJ?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Stop adding Languages to LLMs! The Potential Drawbacks of Training Multilingual Large Language Models (LLMs) for Performance and Sustainability!</span>
@@ -876,8 +914,7 @@ h6:has(.ha-placeholder):hover {
 <li>Weighing multilingual models against language-specific models</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/241001_stop_adding_languages_to_llms_the_potential/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-llm-activity-7246524467034689537-nZ-f?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/241001_stop_adding_languages_to_llms_the_potential/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-llm-activity-7246524467034689537-nZ-f?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Where Science Meets Innovation - My personal Highlights &amp; Insights into the PG 2024! Do you have answers to the open Questions?</span>
@@ -893,8 +930,7 @@ h6:has(.ha-placeholder):hover {
 <li>Metaverse applications beyond gaming</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240924_where_science_meets_innovation_my_personal/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-sustainability-activity-7243978164564111361-12R6?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240924_where_science_meets_innovation_my_personal/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-sustainability-activity-7243978164564111361-12R6?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Today&#39;s Research Proposal - How to achieve &quot;real&quot; thinking and reasoning in GenAI, rather than just relying on a silent Chain of Thought, as seen in ReflectionAI or possibly GPT-o1?</span>
@@ -909,8 +945,7 @@ h6:has(.ha-placeholder):hover {
 <li>Open questions and discussion points</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240917_todays_research_proposal_how_to_achieve_real/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-sustainability-activity-7243978164564111361-12R6?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240917_todays_research_proposal_how_to_achieve_real/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-sustainability-activity-7243978164564111361-12R6?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">For more sustainability transparency in GenAI! Share your knowledge and reduce energy waste!</span>
@@ -924,8 +959,7 @@ h6:has(.ha-placeholder):hover {
 <li>Open source models can optimize future development</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240910_for_more_sustainability_transparency_in_genai_share/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_environmental-impact-of-ai-some-model-activity-7236647589096361986-9rSm?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240910_for_more_sustainability_transparency_in_genai_share/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_environmental-impact-of-ai-some-model-activity-7236647589096361986-9rSm?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Sustainable Air-Gapped On-Prem LLM Solution! How can we make GenAI available on almost any hardware, and how is it also available as a portable demo on our Alan Notebook</span>
@@ -940,8 +974,7 @@ h6:has(.ha-placeholder):hover {
 <li>Portable demo available on Alan Notebook</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240903_sustainable_air_gapped_on_prem_llm_solution/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_genai-onprem-llm-activity-7233851548349444097-lF4N?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240903_sustainable_air_gapped_on_prem_llm_solution/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_genai-onprem-llm-activity-7233851548349444097-lF4N?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Combining the Hugging Face Model Platform and Knowledge Graph trend analysis over time could improve GenAI research and reduce waste of energy!</span>
@@ -955,8 +988,7 @@ h6:has(.ha-placeholder):hover {
 <li>Potential for a crowd-sourced GenAI cookbook</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240830_combining_the_hugging_face_model_platform_and_knowledge/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_have-you-noticed-the-new-model-tree-section-activity-7229418184590737409-UoNB?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240830_combining_the_hugging_face_model_platform_and_knowledge/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_have-you-noticed-the-new-model-tree-section-activity-7229418184590737409-UoNB?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">What is the perfect approach to adjust an LLM to your GenAI use case?</span>
@@ -971,8 +1003,7 @@ h6:has(.ha-placeholder):hover {
 <li>More dimensions to improve GenAI use cases</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240729_what_is_the_perfect_approach_to_adjust_an_llm_to_your_genai_use_case/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-llm-activity-7228755735776546817-cUi0?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240729_what_is_the_perfect_approach_to_adjust_an_llm_to_your_genai_use_case/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-llm-activity-7228755735776546817-cUi0?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">These results give me hope for sustainable AI 🌱</span>
@@ -986,8 +1017,7 @@ h6:has(.ha-placeholder):hover {
 <li>Model distillation reduces hardware needs</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240722_these_results_give_me_hope_for_sustainable_ai/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_ai-google-tech-activity-7224785383237001216-HDyZ?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240722_these_results_give_me_hope_for_sustainable_ai/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_ai-google-tech-activity-7224785383237001216-HDyZ?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">LLMs - Big vs Small. Bigger is Better!? OR Let&#39;s not waste energy!?</span>
@@ -1002,8 +1032,7 @@ h6:has(.ha-placeholder):hover {
 <li>Links to further reading</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240715_llms_big_vs_small_bigger_is_better_or_lets_not_waste_energy/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_machinelearning-ai-modelsize-activity-7221169255419969536-IQnL?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240715_llms_big_vs_small_bigger_is_better_or_lets_not_waste_energy/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_machinelearning-ai-modelsize-activity-7221169255419969536-IQnL?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">GenAI, what is plagiarism? Its Impact on Science. How should it be handled? What is your perspective?</span>
@@ -1019,8 +1048,7 @@ h6:has(.ha-placeholder):hover {
 <li>Opportunities for better research</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240708_genai_what_is_plagiarism_its_impact/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_genai-plagiarism-research-activity-7216090153457463298-37OX?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240708_genai_what_is_plagiarism_its_impact/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_genai-plagiarism-research-activity-7216090153457463298-37OX?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Adjust GenAI responses towards more ethical behavior possible through system prompts!? Do you trust in such LLM-chat prepended pamphlets?</span>
@@ -1035,8 +1063,7 @@ h6:has(.ha-placeholder):hover {
 <li>Questions on designing and revealing system prompts</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240701_adjust_genai_responses_towards_more_ethical_behavior_possible/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-responsibleai-llm-activity-7214141563738750976-ywik?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240701_adjust_genai_responses_towards_more_ethical_behavior_possible/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-responsibleai-llm-activity-7214141563738750976-ywik?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Alternative to GenAI creativity? Watch and try out these fun Evolutionary Algorithms. Problem-solving without GenAI and SGD-based approaches explained!</span>
@@ -1051,8 +1078,7 @@ h6:has(.ha-placeholder):hover {
 <li>Steps involved in EAs explained</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240624_alternative_to_genai_creativity_watch_and_try/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-evolutionaryalgorithms-activity-7211741750673973248-V4Ej?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240624_alternative_to_genai_creativity_watch_and_try/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-evolutionaryalgorithms-activity-7211741750673973248-V4Ej?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Fast New ELO Over MixEval. But Looking into Code, I Got Doubts!</span>
@@ -1067,8 +1093,7 @@ h6:has(.ha-placeholder):hover {
 <li>Uncertain about trusting these methods</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240620_MixEval_doubts/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_claude-35-sonnet-ranks-1-on-mixeval-hard-activity-7209826705740361728-Fn3x?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240620_MixEval_doubts/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_claude-35-sonnet-ranks-1-on-mixeval-hard-activity-7209826705740361728-Fn3x?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Do we need another GenAI solution? How &amp; why we developed a full-stack GenAI LLM+RAG tool called Alan. A sneak peek at what I am currently working on.</span>
@@ -1083,8 +1108,7 @@ h6:has(.ha-placeholder):hover {
 <li>Questions on custom development vs. wrappers</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240617_do_we_need_another_genai_solution_how_why/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_humboldt-travel-report-alan-llm-genai-activity-7208854388101005312-Xr_o?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240617_do_we_need_another_genai_solution_how_why/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_humboldt-travel-report-alan-llm-genai-activity-7208854388101005312-Xr_o?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Will we reach AGI, and if so, by transformers-based architectures? Share your perspective!</span>
@@ -1098,8 +1122,7 @@ h6:has(.ha-placeholder):hover {
 <li>Optimistic yet cautious approach at Comma Soft AG</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240610_will_we_reach_agi_and_if/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_%F0%9D%97%AA%F0%9D%97%B6%F0%9D%97%B9%F0%9D%97%B9-%F0%9D%98%84%F0%9D%97%B2-%F0%9D%97%BF%F0%9D%97%B2%F0%9D%97%AE%F0%9D%97%B0%F0%9D%97%B5-%F0%9D%97%94%F0%9D%97%9A%F0%9D%97%9C-%F0%9D%97%AE%F0%9D%97%BB%F0%9D%97%B1-%F0%9D%97%B6%F0%9D%97%B3-activity-7206295399521730561-YPNs?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240610_will_we_reach_agi_and_if/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_%F0%9D%97%AA%F0%9D%97%B6%F0%9D%97%B9%F0%9D%97%B9-%F0%9D%98%84%F0%9D%97%B2-%F0%9D%97%BF%F0%9D%97%B2%F0%9D%97%AE%F0%9D%97%B0%F0%9D%97%B5-%F0%9D%97%94%F0%9D%97%9A%F0%9D%97%9C-%F0%9D%97%AE%F0%9D%97%BB%F0%9D%97%B1-%F0%9D%97%B6%F0%9D%97%B3-activity-7206295399521730561-YPNs?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Do you differentiate AI Ethics principles between AI/ML fields like GenAI/LLMs or Knowledge Graph-based ML? How do we deal with so-called facts on the internet as training data?</span>
@@ -1114,8 +1137,7 @@ h6:has(.ha-placeholder):hover {
 <li>Questions to ponder on AI ethics practices</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240603_do_you_differentiate_ai_ethics/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_aiethics-artificialintelligence-llm-activity-7203778968548720643-SZNh?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240603_do_you_differentiate_ai_ethics/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_aiethics-artificialintelligence-llm-activity-7203778968548720643-SZNh?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">What expectations do you have regarding the values and norms of your GenAI chat assistants? Highly sensitive topic in the LLM space! My take...</span>
@@ -1130,8 +1152,7 @@ h6:has(.ha-placeholder):hover {
 <li>Need for a holistic view on model behavior</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240520_what_expectations_do_you_have_regarding_the_values_and_norms/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_%F0%9D%97%AA%F0%9D%97%B5%F0%9D%97%AE%F0%9D%98%81-%F0%9D%97%B2%F0%9D%98%85%F0%9D%97%BD%F0%9D%97%B2%F0%9D%97%B0%F0%9D%98%81%F0%9D%97%AE%F0%9D%98%81%F0%9D%97%B6%F0%9D%97%BC%F0%9D%97%BB%F0%9D%98%80-%F0%9D%97%B1%F0%9D%97%BC-%F0%9D%98%86-activity-7196804101395939328-7ck-?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240520_what_expectations_do_you_have_regarding_the_values_and_norms/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_%F0%9D%97%AA%F0%9D%97%B5%F0%9D%97%AE%F0%9D%98%81-%F0%9D%97%B2%F0%9D%98%85%F0%9D%97%BD%F0%9D%97%B2%F0%9D%97%B0%F0%9D%98%81%F0%9D%97%AE%F0%9D%98%81%F0%9D%97%B6%F0%9D%97%BC%F0%9D%97%BB%F0%9D%98%80-%F0%9D%97%B1%F0%9D%97%BC-%F0%9D%98%86-activity-7196804101395939328-7ck-?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Be careful when you speak of Open (Source) GenAI. Why OpenAI and Meta (shouldn&#39;t) use the word Open within their GenAI efforts?</span>
@@ -1144,8 +1165,7 @@ h6:has(.ha-placeholder):hover {
 <li>The word &quot;Open&quot; is used widely within the GenAI field: OpenAI, Open Source LLMs</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240513_be_careful_when_you_speak_of_open_source_genai/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-llm-opensource-activity-7193667647274668033-1akX?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240513_be_careful_when_you_speak_of_open_source_genai/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-llm-opensource-activity-7193667647274668033-1akX?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Thanks to the Open Source Community for all their efforts! Greetings from PyCon 2024</span>
@@ -1160,8 +1180,7 @@ h6:has(.ha-placeholder):hover {
 <li>Gratitude to all contributors and supporters</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240506_thanks_to_the_open_source_community/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_pycon-pycon-pycon-activity-7188549430604636162-2rHg?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240506_thanks_to_the_open_source_community/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_pycon-pycon-pycon-activity-7188549430604636162-2rHg?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Who will take care of truly low-resource languages? A good step towards more fair GenAI LLM pricing at OpenAI for Japanese-using people!</span>
@@ -1176,8 +1195,7 @@ h6:has(.ha-placeholder):hover {
 <li>Concerns about AI ethics and inequality</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240422_who_will_take_care_of_truly_low_resource_languages/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-llm-activity-7186662551923884032-mz7m?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240422_who_will_take_care_of_truly_low_resource_languages/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-llm-activity-7186662551923884032-mz7m?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">What is your preferred LLM family? And do you start with an already finetuned LLM? Why you have chosen this LLM? I love to hear your perspective!</span>
@@ -1193,8 +1211,7 @@ h6:has(.ha-placeholder):hover {
 <li>LLM-based GenAI pipelines at Comma Soft AG</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240422_what_is_your_preferred_llm_family/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_%F0%9D%97%AA%F0%9D%97%B5%F0%9D%97%AE%F0%9D%98%81-%F0%9D%97%B6%F0%9D%98%80-%F0%9D%98%86%F0%9D%97%BC%F0%9D%98%82%F0%9D%97%BF-%F0%9D%97%BD%F0%9D%97%BF%F0%9D%97%B2%F0%9D%97%B3%F0%9D%97%B2%F0%9D%97%BF%F0%9D%97%BF%F0%9D%97%B2%F0%9D%97%B1-activity-7178654584138067968-rehP?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240422_what_is_your_preferred_llm_family/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_%F0%9D%97%AA%F0%9D%97%B5%F0%9D%97%AE%F0%9D%98%81-%F0%9D%97%B6%F0%9D%98%80-%F0%9D%98%86%F0%9D%97%BC%F0%9D%98%82%F0%9D%97%BF-%F0%9D%97%BD%F0%9D%97%BF%F0%9D%97%B2%F0%9D%97%B3%F0%9D%97%B2%F0%9D%97%BF%F0%9D%97%BF%F0%9D%97%B2%F0%9D%97%B1-activity-7178654584138067968-rehP?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">NVIDIA Benchmark might be WRONG cause it states - You lose money AND LLM inference speed if you add more NVIDIA A100. This NVIDIA Benchmark is NOT reliable.</span>
@@ -1209,8 +1226,7 @@ h6:has(.ha-placeholder):hover {
 <li>Questions and further reading on the topic</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240415_nvidia_benchmark_might_be_wrong/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_%F0%9D%97%A1%F0%9D%97%A9%F0%9D%97%9C%F0%9D%97%97%F0%9D%97%9C%F0%9D%97%94-%F0%9D%97%95%F0%9D%97%B2%F0%9D%97%BB%F0%9D%97%B0%F0%9D%97%B5%F0%9D%97%BA%F0%9D%97%AE%F0%9D%97%BF%F0%9D%97%B8-%F0%9D%97%BA%F0%9D%97%B6%F0%9D%97%B4%F0%9D%97%B5%F0%9D%98%81-activity-7176105937240231936-KzN2?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240415_nvidia_benchmark_might_be_wrong/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_%F0%9D%97%A1%F0%9D%97%A9%F0%9D%97%9C%F0%9D%97%97%F0%9D%97%9C%F0%9D%97%94-%F0%9D%97%95%F0%9D%97%B2%F0%9D%97%BB%F0%9D%97%B0%F0%9D%97%B5%F0%9D%97%BA%F0%9D%97%AE%F0%9D%97%BF%F0%9D%97%B8-%F0%9D%97%BA%F0%9D%97%B6%F0%9D%97%B4%F0%9D%97%B5%F0%9D%98%81-activity-7176105937240231936-KzN2?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Too many LLMs?! How to keep track with all the Open Source Models? Identify the finetuned-masked LLMs and its position within the GenAI landscape!</span>
@@ -1225,8 +1241,7 @@ h6:has(.ha-placeholder):hover {
 <li>Recommendations for navigating this landscape</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240408_too_many_llms_how_to_keep_track_with_all/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_%F0%9D%97%A7%F0%9D%97%BC%F0%9D%97%BC-%F0%9D%97%BA%F0%9D%97%AE%F0%9D%97%BB%F0%9D%98%86-%F0%9D%97%9F%F0%9D%97%9F%F0%9D%97%A0%F0%9D%98%80-%F0%9D%97%9B%F0%9D%97%BC-%F0%9D%98%81%F0%9D%97%BC-%F0%9D%97%B8-activity-7173581553552318464-6w1Z?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240408_too_many_llms_how_to_keep_track_with_all/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_%F0%9D%97%A7%F0%9D%97%BC%F0%9D%97%BC-%F0%9D%97%BA%F0%9D%97%AE%F0%9D%97%BB%F0%9D%98%86-%F0%9D%97%9F%F0%9D%97%9F%F0%9D%97%A0%F0%9D%98%80-%F0%9D%97%9B%F0%9D%97%BC-%F0%9D%98%81%F0%9D%97%BC-%F0%9D%97%B8-activity-7173581553552318464-6w1Z?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Be careful when you are using LLAMA-2! Legal risks &amp; Sustainability Implications due to LLAMA-2 is (NOT) Open Source.</span>
@@ -1241,8 +1256,7 @@ h6:has(.ha-placeholder):hover {
 <li>Meta's restrictions and their broader impact</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240327_be_careful_when_you_are_using_llama/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-machinelearning-llm-activity-7170381681563021312-_A5j?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240327_be_careful_when_you_are_using_llama/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-machinelearning-llm-activity-7170381681563021312-_A5j?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">The major players in GenAI are facing challenges with their Generative AIs. GenAI capabilities and security issues related to LLMs Tools • 37C3 Presentation</span>
@@ -1257,8 +1271,7 @@ h6:has(.ha-placeholder):hover {
 <li>Categories of threats and challenges in GenAI</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240313_the_major_players_in_genai_are_facing_challenges/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_generativeai-llm-aisecurity-activity-7167923469148475392-plqf?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240313_the_major_players_in_genai_are_facing_challenges/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_generativeai-llm-aisecurity-activity-7167923469148475392-plqf?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Not prompting in English?... You have Problems!! LLM Language Barriers • Democratizing GenAI and fair pricing</span>
@@ -1273,8 +1286,7 @@ h6:has(.ha-placeholder):hover {
 <li>Recommendations for LLM pipelines</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240307_not_prompting_in_english/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_genrativeai-artificialintelligence-machinelearning-activity-7165320754878730242-CICO?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240307_not_prompting_in_english/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_genrativeai-artificialintelligence-machinelearning-activity-7165320754878730242-CICO?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Ever wondered about open source LLLM sizes - 7B, 13B, 70B?</span>
@@ -1291,8 +1303,7 @@ h6:has(.ha-placeholder):hover {
 <li>Questioning the parameter step sizes of models</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240227_ever_wondered_about_open_source_llm_sizes/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-maschinelearning-activity-7163192285034172416-AItW?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240227_ever_wondered_about_open_source_llm_sizes/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-maschinelearning-activity-7163192285034172416-AItW?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">We&#39;ve beaten GPT4! ... is a sentence which starts to annoy me.</span>
@@ -1307,8 +1318,7 @@ h6:has(.ha-placeholder):hover {
 <li>Build your own use case specific benchmarks</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240220_beaten_gpt4/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_generativeai-artificialintelligence-llm-activity-7160295294906101761-koWS?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240220_beaten_gpt4/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_generativeai-artificialintelligence-llm-activity-7160295294906101761-koWS?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">DALLE has surprising guardrails. Your image is not filtered based on your prompt. &quot;Dead cookies&quot; may be generated ...sometimes</span>
@@ -1322,8 +1332,7 @@ h6:has(.ha-placeholder):hover {
 <li>40% of cases with same “dead cookies” prompt stop through content filter and 60% reach us over API</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240213_dalle_has_surprising_guardrails/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificalintelligence-genai-aiethics-activity-7158865169689821184-J8Y_?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240213_dalle_has_surprising_guardrails/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_artificalintelligence-genai-aiethics-activity-7158865169689821184-J8Y_?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Evil LLMs available! Break GenAI Alignment through finetuning!</span>
@@ -1338,8 +1347,7 @@ h6:has(.ha-placeholder):hover {
 <li>Questions about alignment in LLMs</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240205_evil_llms_available_break_genai/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_what-happens-when-you-break-llm-alignment-activity-7157765084734214144-2yGt?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240205_evil_llms_available_break_genai/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_what-happens-when-you-break-llm-alignment-activity-7157765084734214144-2yGt?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">LLAMA2 13B is faster than LLAMA2 7B, according to NVIDIA benchmark!</span>
@@ -1354,8 +1362,7 @@ h6:has(.ha-placeholder):hover {
 <li>Seeking community insights</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/blog/240202_llama2_13b_is_faster_than_llama2_7b/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_genai-machinelearning-llama-activity-7156292445465419776-li69?utm_source=share&amp;utm_medium=member_desktop">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/blog/240202_llama2_13b_is_faster_than_llama2_7b/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_genai-machinelearning-llama-activity-7156292445465419776-li69?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 </ol>
 
@@ -1365,10 +1372,10 @@ h6:has(.ha-placeholder):hover {
 		</main>
 
 		<footer>
-			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
+			<p>&copy; 2026 Carsten Felix Draschner, PhD</p>
 		</footer>
 
-		<!-- This page `/blog/` was built on 2025-11-20T21:10:58.176Z -->
+		<!-- This page `/blog/` was built on 2026-05-08T08:16:48.192Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

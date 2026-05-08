@@ -1,11 +1,23 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Carsten Felix Draschner, PhD</title>
-		<meta name="description" content="Applied research findings &amp; ethical considerations in modern Artificial Intelligence.">
-		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			
+			
+			
+			<title>Selected Applied AI and Engineering Projects | Carsten Felix Draschner, PhD</title>
+			<meta name="description" content="Selected projects by Carsten Felix Draschner across enterprise GenAI, LLM platforms, scalable knowledge graph analytics, computer vision, and virtual reality visualization.">
+			<link rel="canonical" href="https://carstendraschner.github.io/projects/">
+			<meta property="og:site_name" content="Carsten Felix Draschner, PhD">
+			<meta property="og:title" content="Selected Applied AI and Engineering Projects | Carsten Felix Draschner, PhD">
+			<meta property="og:description" content="Selected projects by Carsten Felix Draschner across enterprise GenAI, LLM platforms, scalable knowledge graph analytics, computer vision, and virtual reality visualization.">
+			<meta property="og:type" content="website">
+			<meta property="og:url" content="https://carstendraschner.github.io/projects/">
+			<meta name="twitter:card" content="summary">
+			<meta name="twitter:title" content="Selected Applied AI and Engineering Projects | Carsten Felix Draschner, PhD">
+			<meta name="twitter:description" content="Selected projects by Carsten Felix Draschner across enterprise GenAI, LLM platforms, scalable knowledge graph analytics, computer vision, and virtual reality visualization.">
+			<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
 		
 		<style>/* This is an arbitrary CSS string added to the bundle */
 /* Defaults */
@@ -90,12 +102,17 @@
 
 html,
 body {
-	height: 100%;
+	min-height: 100%;
 	padding: 0;
 	margin: 0;
 	font-family: var(--font-family);
 	color: var(--text-color);
 	background-color: var(--background-color);
+}
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 html {
 	overflow-y: scroll;
@@ -150,9 +167,9 @@ a[href]:active {
 main {
 	padding: 1rem;
 	flex: 1;
-	max-width: 40em;
+	width: 100%;
+	max-width: 46em;
 	margin: 0 auto;
-	margin-bottom: var(--footer-height);
 }
 main :first-child {
 	margin-top: 0;
@@ -243,14 +260,15 @@ header {
 }
 
 .container {
-	display: flex; /* Hinzugefügt */
-	flex-direction: column; /* Hinzugefügt */
-	min-height: 100vh; /* Hinzugefügt */
+	display: flex;
+	flex-direction: column;
   }
 
 /* Nav */
 .nav {
 	display: flex;
+	flex-wrap: wrap;
+	gap: .5em 1em;
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -260,7 +278,7 @@ header {
 }
 .nav-item {
 	display: inline-block;
-	margin-right: 1em;
+	margin-right: 0;
 }
 .nav-item a[href]:not(:hover) {
 	text-decoration: none;
@@ -272,11 +290,11 @@ header {
 .card {
 	display: flex;
 	align-items: center;
-	border: 1px solid #ccc;
-	padding: 10px;
-	margin-bottom: 10px;
+	border: 1px solid var(--card-border-color);
+	padding: 12px;
+	margin-bottom: 12px;
 	border-radius: 8px;
-	background-color: var(--background-color);
+	background-color: var(--card-background-color);
 }
 .card img {
 	border-radius: 8px;
@@ -376,7 +394,34 @@ h6:has(.ha-placeholder):hover {
 .post-metadata time {
 	margin-right: 1em;
 }</style>
-	</head>
+			<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Person",
+				"name": "Carsten Felix Draschner",
+				"honorificSuffix": "PhD",
+				"url": "https://carstendraschner.github.io/",
+				"jobTitle": "Applied Scientist",
+				"worksFor": {
+					"@type": "Organization",
+					"name": "Amazon AGI - Nova"
+				},
+				"knowsAbout": [
+					"Foundation models",
+					"Generative AI",
+					"Large Language Models",
+					"Knowledge graphs",
+					"Scalable machine learning",
+					"Responsible AI"
+				],
+				"sameAs": [
+					"https://www.linkedin.com/in/carsten-draschner/",
+					"https://github.com/carstendraschner",
+					"https://www.researchgate.net/profile/Carsten-Draschner"
+				]
+			}
+			</script>
+		</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
@@ -400,9 +445,26 @@ h6:has(.ha-placeholder):hover {
 				
 <h1 id="projects">Projects</h1>
 
+<p>Selected applied AI and engineering projects from industry, research, and product work. The emphasis is on practical systems: enterprise GenAI, LLM platforms, scalable analytics, computer vision, and visualization.</p>
+
 
 
 <ol reversed="" class="postlist">
+
+	<li class="postlist-item">
+		<span class="postlist-link">Alan - Full-Stack Enterprise GenAI and LLM Platform</span>
+		<time class="postlist-date" datetime="2025-10-01">October 2025</time>
+		<div><p>Alan is a sovereign enterprise GenAI platform by Comma Soft AG, built around secure LLM usage, company knowledge, retrieval augmented generation, evaluation, and deployment options for European organizations.</p>
+<p><picture><source type="image/avif" srcset="/img/UXAYbK_4C8-986.avif 986w"><source type="image/webp" srcset="/img/UXAYbK_4C8-986.webp 986w"><img loading="lazy" decoding="async" src="/img/UXAYbK_4C8-986.png" alt="Alan project overview" width="986" height="668"></picture></p>
+<p><strong>TL;DR ⏱️</strong></p>
+<ul>
+<li>Full-stack GenAI platform for secure enterprise LLM usage</li>
+<li>Focus on German and European requirements, data control, and GDPR-aware deployment</li>
+<li>Technical work around RAG, model selection, fine-tuning, evaluation, alignment, and scalable inference</li>
+<li>Built as a product and learning journey, not just a wrapper around existing chat models</li>
+</ul>
+</div>
+			(<a class="color-gray-50" href="/projects/2025_Alan/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.linkedin.com/posts/carsten-draschner_humboldt-travel-report-alan-llm-genai-activity-7208854388101005312-Xr_o?utm_source=share&amp;utm_medium=member_desktop">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">SANSA - ML and Analytics on Knowledge Graph Data distributed and scaled over CPU Clusters</span>
@@ -410,8 +472,7 @@ h6:has(.ha-placeholder):hover {
 		<div><p>Big Data RDF Processing and Analytics Stack built on Apache Spark and Apache Jena</p>
 <p><picture><source type="image/avif" srcset="/img/p5AJh1aYco-2120.avif 2120w"><source type="image/webp" srcset="/img/p5AJh1aYco-2120.webp 2120w"><img loading="lazy" decoding="async" src="/img/p5AJh1aYco-2120.png" alt="KGML" width="2120" height="1082"></picture></p>
 </div>
-		(<a class="color-gray-50" href="/projects/2022_SANSA/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://github.com/SANSA-Stack/SANSA-Stack/blob/develop/sansa-ml/README.md">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/projects/2022_SANSA/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://github.com/SANSA-Stack/SANSA-Stack/blob/develop/sansa-ml/README.md">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">How to find the Best Local Restaurant for you Right Now</span>
@@ -419,8 +480,7 @@ h6:has(.ha-placeholder):hover {
 		<div><p>We tackled the challenge of inadequate restaurant filter options by implementing two interconnected projects: Menu Card Extraction and Restaurant Business Analytics. Using a combination of machine learning models and human-in-the-loop QA, we processed semantic structured data from menu photos, overcoming issues like image quality and design variations, and ultimately creating a comprehensive XML structure for enhanced business analytics and accurate restaurant classifications.</p>
 <p><picture><source type="image/avif" srcset="/img/cvNOR1sQ6I-1744.avif 1744w"><source type="image/webp" srcset="/img/cvNOR1sQ6I-1744.webp 1744w"><img loading="lazy" decoding="async" src="/img/cvNOR1sQ6I-1744.png" alt="MenuCV" width="1744" height="512"></picture></p>
 </div>
-		(<a class="color-gray-50" href="/projects/2019_Menu_CV/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://web.archive.org/web/20200628234151/https://www.fedger.io/">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/projects/2019_Menu_CV/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://web.archive.org/web/20200628234151/https://www.fedger.io/">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Modern Chip Design Explorable within Virtual Reality</span>
@@ -428,8 +488,7 @@ h6:has(.ha-placeholder):hover {
 		<div><p>In 2016, We initiated a project with my colleague Jonas Weinz at the Discrete Mathematics Institute in Bonn to develop a virtual reality (VR) application that visualized complex chip designs, resulting in a bachelor thesis. This innovative project allowed us to showcase the intricate details of chip architectures in a unique and interactive way, and we were proud to be part of the Arithmeum's chip design exhibition.</p>
 <p><picture><source type="image/avif" srcset="/img/loLev2Xppi-1874.avif 1874w"><source type="image/webp" srcset="/img/loLev2Xppi-1874.webp 1874w"><img loading="lazy" decoding="async" src="/img/loLev2Xppi-1874.png" alt="VR0" width="1874" height="1172"></picture></p>
 </div>
-		(<a class="color-gray-50" href="/projects/2016_Chip_VR/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://lnkd.in/eSkeAUV7">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/projects/2016_Chip_VR/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://lnkd.in/eSkeAUV7">Source</a>)</li>
 
 </ol>
 
@@ -439,10 +498,10 @@ h6:has(.ha-placeholder):hover {
 		</main>
 
 		<footer>
-			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
+			<p>&copy; 2026 Carsten Felix Draschner, PhD</p>
 		</footer>
 
-		<!-- This page `/projects/` was built on 2025-11-20T21:10:58.176Z -->
+		<!-- This page `/projects/` was built on 2026-05-08T08:16:48.192Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

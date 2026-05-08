@@ -1,11 +1,23 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Carsten Felix Draschner, PhD</title>
-		<meta name="description" content="Applied research findings &amp; ethical considerations in modern Artificial Intelligence.">
-		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			
+			
+			
+			<title>Applied AI Research, Foundation Models, and GenAI Systems | Carsten Felix Draschner, PhD</title>
+			<meta name="description" content="Personal website of Carsten Felix Draschner, PhD: applied AI research, foundation models, GenAI systems, knowledge graphs, publications, projects, writing, and CV.">
+			<link rel="canonical" href="https://carstendraschner.github.io/">
+			<meta property="og:site_name" content="Carsten Felix Draschner, PhD">
+			<meta property="og:title" content="Applied AI Research, Foundation Models, and GenAI Systems | Carsten Felix Draschner, PhD">
+			<meta property="og:description" content="Personal website of Carsten Felix Draschner, PhD: applied AI research, foundation models, GenAI systems, knowledge graphs, publications, projects, writing, and CV.">
+			<meta property="og:type" content="website">
+			<meta property="og:url" content="https://carstendraschner.github.io/">
+			<meta name="twitter:card" content="summary">
+			<meta name="twitter:title" content="Applied AI Research, Foundation Models, and GenAI Systems | Carsten Felix Draschner, PhD">
+			<meta name="twitter:description" content="Personal website of Carsten Felix Draschner, PhD: applied AI research, foundation models, GenAI systems, knowledge graphs, publications, projects, writing, and CV.">
+			<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
 		
 		<style>/* This is an arbitrary CSS string added to the bundle */
 /* Defaults */
@@ -90,12 +102,17 @@
 
 html,
 body {
-	height: 100%;
+	min-height: 100%;
 	padding: 0;
 	margin: 0;
 	font-family: var(--font-family);
 	color: var(--text-color);
 	background-color: var(--background-color);
+}
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 html {
 	overflow-y: scroll;
@@ -150,9 +167,9 @@ a[href]:active {
 main {
 	padding: 1rem;
 	flex: 1;
-	max-width: 40em;
+	width: 100%;
+	max-width: 46em;
 	margin: 0 auto;
-	margin-bottom: var(--footer-height);
 }
 main :first-child {
 	margin-top: 0;
@@ -243,14 +260,15 @@ header {
 }
 
 .container {
-	display: flex; /* Hinzugefügt */
-	flex-direction: column; /* Hinzugefügt */
-	min-height: 100vh; /* Hinzugefügt */
+	display: flex;
+	flex-direction: column;
   }
 
 /* Nav */
 .nav {
 	display: flex;
+	flex-wrap: wrap;
+	gap: .5em 1em;
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -260,7 +278,7 @@ header {
 }
 .nav-item {
 	display: inline-block;
-	margin-right: 1em;
+	margin-right: 0;
 }
 .nav-item a[href]:not(:hover) {
 	text-decoration: none;
@@ -272,11 +290,11 @@ header {
 .card {
 	display: flex;
 	align-items: center;
-	border: 1px solid #ccc;
-	padding: 10px;
-	margin-bottom: 10px;
+	border: 1px solid var(--card-border-color);
+	padding: 12px;
+	margin-bottom: 12px;
 	border-radius: 8px;
-	background-color: var(--background-color);
+	background-color: var(--card-background-color);
 }
 .card img {
 	border-radius: 8px;
@@ -376,7 +394,34 @@ h6:has(.ha-placeholder):hover {
 .post-metadata time {
 	margin-right: 1em;
 }</style>
-	</head>
+			<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Person",
+				"name": "Carsten Felix Draschner",
+				"honorificSuffix": "PhD",
+				"url": "https://carstendraschner.github.io/",
+				"jobTitle": "Applied Scientist",
+				"worksFor": {
+					"@type": "Organization",
+					"name": "Amazon AGI - Nova"
+				},
+				"knowsAbout": [
+					"Foundation models",
+					"Generative AI",
+					"Large Language Models",
+					"Knowledge graphs",
+					"Scalable machine learning",
+					"Responsible AI"
+				],
+				"sameAs": [
+					"https://www.linkedin.com/in/carsten-draschner/",
+					"https://github.com/carstendraschner",
+					"https://www.researchgate.net/profile/Carsten-Draschner"
+				]
+			}
+			</script>
+		</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
@@ -398,8 +443,9 @@ h6:has(.ha-placeholder):hover {
 		<main id="skip">
 			<heading-anchors>
 				
-<h1 id="home">Home</h1>
-<p>Welcome to my personal website where you can find information about my projects, blog posts, publications, and more. I'm Carsten Felix Draschner, an Applied Scientist at Amazon AGI - Nova focused on Foundation Models with 8+ years of experience in AI, ML, DS. I am motivated by Science and AI for Social Good! I love to connect my passion for cutting-edge AI with my intrinsic motivation to bring myself into projects which make our life on earth more sustainable, our lives better, and our democracies more stable.</p>
+<h1 id="applied-ai-research-foundation-models-and-genai-systems">Applied AI Research, Foundation Models, and GenAI Systems</h1>
+<p>I am Carsten Felix Draschner, PhD, an Applied Scientist at Amazon AGI - Nova in Berlin. My work focuses on foundation models, enterprise GenAI systems, scalable machine learning, knowledge graphs, and responsible AI.</p>
+<p>This site collects selected writing, research, projects, and CV information for people who want to understand my technical work, research background, and perspective on AI systems in practice.</p>
 <div class="container">
   <nav class="card-navigation">
     <ul>
@@ -409,7 +455,7 @@ h6:has(.ha-placeholder):hover {
             <picture><source type="image/avif" srcset="/R1J0zRYmUz-800.avif 800w"><source type="image/webp" srcset="/R1J0zRYmUz-800.webp 800w"><img loading="lazy" decoding="async" src="/R1J0zRYmUz-800.svg" alt="BlogIcon" class="invert-for-dark-mode" width="800" height="650"></picture>
             <div>
               <span class="card-title">Blog</span>
-              <p>Recent AI innovations, ethical implications, and my perspective</p>
+              <p>Selected writing on foundation models, GenAI, evaluation, AI ethics, and applied AI trends.</p>
             </div>
           </div>
         </a>
@@ -420,7 +466,7 @@ h6:has(.ha-placeholder):hover {
             <picture><source type="image/avif" srcset="/UtdUB_YuJF-496.avif 496w"><source type="image/webp" srcset="/UtdUB_YuJF-496.webp 496w"><img loading="lazy" decoding="async" src="/UtdUB_YuJF-496.svg" alt="ResearchIcon" class="invert-for-dark-mode" width="496" height="496"></picture>
             <div>
               <span class="card-title">Research</span>
-              <p>Journal and Conference Publications and Thesises.</p>
+              <p>Publications and theses on scalable ML, knowledge graphs, explainable AI, and sustainable AI.</p>
             </div>
           </div>
         </a>
@@ -431,7 +477,7 @@ h6:has(.ha-placeholder):hover {
             <picture><source type="image/avif" srcset="/PLU5uYpMDK-733.avif 733w"><source type="image/webp" srcset="/PLU5uYpMDK-733.webp 733w"><img loading="lazy" decoding="async" src="/PLU5uYpMDK-733.svg" alt="ProjectsIcon" class="invert-for-dark-mode" width="733" height="600"></picture>
             <div>
               <span class="card-title">Projects</span>
-              <p>Sneak previews and Reports of my work experiences.</p>
+              <p>Applied AI and engineering case studies from research, startups, enterprise GenAI, and visualization.</p>
             </div>
           </div>
         </a>
@@ -442,7 +488,7 @@ h6:has(.ha-placeholder):hover {
             <picture><source type="image/avif" srcset="/lPQ3muOcYv-480.avif 480w"><source type="image/webp" srcset="/lPQ3muOcYv-480.webp 480w"><img loading="lazy" decoding="async" src="/lPQ3muOcYv-480.svg" alt="CvIcon" class="invert-for-dark-mode" width="480" height="480"></picture>
             <div>
               <span class="card-title">About/CV</span>
-              <p>Overview of Educational Background and Job Experiences</p>
+              <p>A curated profile with experience, education, focus areas, and selected capabilities.</p>
             </div>
           </div>
         </a>
@@ -453,7 +499,7 @@ h6:has(.ha-placeholder):hover {
             <picture><source type="image/avif" srcset="/oPI2ffCQvJ-775.avif 775w"><source type="image/webp" srcset="/oPI2ffCQvJ-775.webp 775w"><img loading="lazy" decoding="async" src="/oPI2ffCQvJ-775.svg" alt="ContactIcon" class="invert-for-dark-mode" width="775" height="694"></picture>
             <div>
               <span class="card-title">Contact</span>
-              <p>Opportunities to reach out to me and sources for more content</p>
+              <p>Links for professional exchange, research collaboration, media requests, and current updates.</p>
             </div>
           </div>
         </a>
@@ -462,14 +508,15 @@ h6:has(.ha-placeholder):hover {
   </nav>
 </div>
 
+
 			</heading-anchors>
 		</main>
 
 		<footer>
-			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
+			<p>&copy; 2026 Carsten Felix Draschner, PhD</p>
 		</footer>
 
-		<!-- This page `/` was built on 2025-11-20T21:10:58.176Z -->
+		<!-- This page `/` was built on 2026-05-08T08:16:48.191Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

@@ -2,14 +2,51 @@
 <?xml-stylesheet href="pretty-atom-feed.xsl" type="text/xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>Carsten Felix Draschner - AI R&amp;D</title>
-  <subtitle>Various updates and insides into cutting edge AI Research and Development including AI Ethics and perspective from European Union.</subtitle>
+  <subtitle>Selected updates and insights into applied AI research and development, including foundation models, GenAI systems, AI ethics, and a European perspective.</subtitle>
   <link href="https://carstendraschner.github.io/feed/feed.xml" rel="self" />
   <link href="https://carstendraschner.github.io/blog/" />
-  <updated>2025-11-01T00:00:00Z</updated>
+  <updated>2025-12-03T00:00:00Z</updated>
   <id>https://carstendraschner.github.io/blog/</id>
   <author>
     <name>Carsten Felix Draschner</name>
   </author>
+  <entry>
+    <title>Nova 2.0 - Amazon AGI Foundation Model Release</title>
+    <link href="https://carstendraschner.github.io/blog/251203_nova_20_amazon_agi/" />
+    <updated>2025-12-03T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/251203_nova_20_amazon_agi/</id>
+    <content type="html">&lt;p&gt;Amazon AGI Foundation Models released at AWS re:Invent&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/ydnD-nUA2E-1688.avif 1688w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/ydnD-nUA2E-1688.webp 1688w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/ydnD-nUA2E-1688.png&quot; alt=&quot;Amazon Nova&quot; width=&quot;1688&quot; height=&quot;942&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Amazon AGI released the next generation of Nova foundation models&lt;/li&gt;
+&lt;li&gt;Nova 2.0 spans Lite, Pro, Sonic, Omni, Forge, and Act&lt;/li&gt;
+&lt;li&gt;Nova Lite can be tried for free through OpenRouter, with more details in Amazon Science and AWS resources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;nova-2-0-amazon-agi-foundation-models-released&quot;&gt;Nova 2.0 - Amazon AGI Foundation Models Released&lt;/h2&gt;
+&lt;p&gt;Its already an amazing time at Amazon AGI with great colleagues and here are officially the next generation of Nova Models presented at this years Amazon Web Services (AWS) Re:invent developed by the Amazon AGI in-house foundation model R&amp;amp;D efforts.&lt;/p&gt;
+&lt;p&gt;It is a family of Nova models:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Lite:&lt;/strong&gt; Cost Performance efficient, like Haiku/Flash/Mini&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pro:&lt;/strong&gt; Top Notch Model&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sonic:&lt;/strong&gt; Speech to Speech&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Omni:&lt;/strong&gt; Multimodality io&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Forge:&lt;/strong&gt; Trainable Models&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Act:&lt;/strong&gt; Agents&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Models are already in use at companies like Reddit, Inc., Sony, Cisco, Siemens, Sumo Logic, Trellis, Booking.com, Cosine AI, Nimbus Therapeutics, NRISG Nomura Research Institute, Principle, Amazon Leo, Hertz, 1Password (see Blogpost)&lt;/p&gt;
+&lt;p&gt;You can try Nova Lite for Free through Open Router (see References). If you are interested in the existing Usecases or the in-house Trainium Silicon Checkout the Video. More details available in Amazon Science or full video on YouTube&lt;/p&gt;
+&lt;p&gt;Looking already ahead to improve our next Gen of AI!&lt;/p&gt;
+&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Blogposts: &lt;a href=&quot;https://lnkd.in/ev87CCDC&quot;&gt;https://lnkd.in/ev87CCDC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Free API: Nova Lite for free at OpenRouter: &lt;a href=&quot;https://lnkd.in/eH5udrdC&quot;&gt;https://lnkd.in/eH5udrdC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: AWS re:Invent 2025 - Keynote with Matt Garman: &lt;a href=&quot;https://lnkd.in/eKriuvPx&quot;&gt;https://lnkd.in/eKriuvPx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bedrock: &lt;a href=&quot;https://lnkd.in/ehq7aQJd&quot;&gt;https://lnkd.in/ehq7aQJd&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Amazon Science Paper: &lt;a href=&quot;https://lnkd.in/e_Wi_X6p&quot;&gt;https://lnkd.in/e_Wi_X6p&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <title>Exciting New Chapter — Foundation Model Scientist at Amazon AGI ✨</title>
     <link href="https://carstendraschner.github.io/blog/251101_hello_amazon_agi_nova/" />
@@ -76,6 +113,60 @@ To my teammates, and especially to Michael Tannenbaum, Lars Flöer, Sebastian Sc
 &lt;p&gt;A new chapter is about to begin — I’ll soon share where I’ll be diving even deeper into &lt;strong&gt;foundation model development&lt;/strong&gt; 🤖&lt;/p&gt;
 &lt;p&gt;❤️ Thank you, Comma Soft, for everything.&lt;/p&gt;
 &lt;p&gt;#comma #Alan #gratitude #llm&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Alan - Full-Stack Enterprise GenAI and LLM Platform</title>
+    <link href="https://carstendraschner.github.io/projects/2025_Alan/" />
+    <updated>2025-10-01T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/projects/2025_Alan/</id>
+    <content type="html">&lt;p&gt;Alan is a sovereign enterprise GenAI platform by Comma Soft AG, built around secure LLM usage, company knowledge, retrieval augmented generation, evaluation, and deployment options for European organizations.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/UXAYbK_4C8-986.avif 986w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/UXAYbK_4C8-986.webp 986w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/UXAYbK_4C8-986.png&quot; alt=&quot;Alan project overview&quot; width=&quot;986&quot; height=&quot;668&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Full-stack GenAI platform for secure enterprise LLM usage&lt;/li&gt;
+&lt;li&gt;Focus on German and European requirements, data control, and GDPR-aware deployment&lt;/li&gt;
+&lt;li&gt;Technical work around RAG, model selection, fine-tuning, evaluation, alignment, and scalable inference&lt;/li&gt;
+&lt;li&gt;Built as a product and learning journey, not just a wrapper around existing chat models&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;context&quot;&gt;Context&lt;/h2&gt;
+&lt;p&gt;Alan was developed at Comma Soft AG as an enterprise GenAI platform for organizations that want to use Large Language Models with stronger control over their data, infrastructure, and business context. The public Alan documentation describes it as a software solution for using Generative AI and especially LLMs securely in organizations, with a focus on making AI accessible without requiring every user to understand the underlying technical complexity.&lt;/p&gt;
+&lt;p&gt;The motivation was not simply to add another chat interface. In my original post about the Alan development journey, I framed the question as: do we need another GenAI solution? The technical answer was that many enterprise use cases need more than access to a strong base model. They need data-flow control, secure hosting, on-premise or air-gapped deployment options, domain adaptation, knowledge enrichment, alignment choices, and evaluation methods that the team can actually trust.&lt;/p&gt;
+&lt;h2 id=&quot;what-made-the-project-interesting&quot;&gt;What made the project interesting&lt;/h2&gt;
+&lt;p&gt;Alan sits at the intersection of research, software engineering, enterprise architecture, and responsible AI product development. Public Alan materials emphasize secure deployment, German hosting, GDPR-compliant usage, on-premise operation, RAG, APIs, team collaboration, role management, and optional fine-tuning for company-specific requirements.&lt;/p&gt;
+&lt;p&gt;From my perspective, the most interesting technical work was around building an end-to-end GenAI system rather than a single model demo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Model and system design:&lt;/strong&gt; selecting, adapting, and combining models for enterprise use cases&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAG and knowledge enrichment:&lt;/strong&gt; deciding when to add knowledge through retrieval and when model adaptation is more appropriate&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Evaluation:&lt;/strong&gt; combining lightweight metrics, benchmarks, LLM-as-a-judge methods, safety checks, and human assessment&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Operational constraints:&lt;/strong&gt; making the stack useful under realistic infrastructure, latency, cost, and data protection requirements&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Air-gapped and on-premise scenarios:&lt;/strong&gt; showing that GenAI can also work in environments where cloud-only assumptions are not enough&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;my-contribution-areas&quot;&gt;My contribution areas&lt;/h2&gt;
+&lt;p&gt;During my time as Applied AI Scientist and Machine Learning Consultant at Comma Soft AG, I worked around the technical development and applied R&amp;amp;D of Alan and related GenAI projects. The work connected LLM training and fine-tuning, autonomous hybrid model evaluation, model selection, RAG, response verification, image GenAI, and scalability optimization.&lt;/p&gt;
+&lt;p&gt;Several topics from my blog posts came directly out of this work:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;why enterprise GenAI requires deliberate model selection instead of defaulting to the newest public model&lt;/li&gt;
+&lt;li&gt;how small changes in preprocessing, generation configuration, or benchmark data can ripple through an LLM creation pipeline&lt;/li&gt;
+&lt;li&gt;why German and European language requirements matter for tokenizer behavior, quality, cost, and trust&lt;/li&gt;
+&lt;li&gt;how smaller models, quantization, and optimized deployment can make GenAI practical beyond large GPU clusters&lt;/li&gt;
+&lt;li&gt;why evaluation has to be layered, because no single benchmark captures usefulness, safety, reliability, and domain fit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;lessons-learned&quot;&gt;Lessons learned&lt;/h2&gt;
+&lt;p&gt;The Alan project reinforced a pragmatic view of GenAI: the model is only one part of the product. For real organizations, the surrounding system matters just as much. Data governance, user workflows, integration, deployment, cost, latency, evaluation, documentation, and change management decide whether a powerful model becomes useful in practice.&lt;/p&gt;
+&lt;p&gt;It also showed how important it is to keep research curiosity close to product reality. New models, evaluation methods, agentic patterns, and RAG techniques move quickly. But enterprise systems need stability, transparency, and a clear view of the trade-offs. That tension made Alan an especially valuable project for me: it combined hands-on LLM engineering with the practical question of how organizations can adopt GenAI responsibly.&lt;/p&gt;
+&lt;h2 id=&quot;sources-and-related-posts&quot;&gt;Sources and related posts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://alan.de/&quot;&gt;Alan - sovereign AI platform by Comma Soft&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://app.alan.de/docs/en/about-alan&quot;&gt;About Alan - Alan Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://alan.de/features/&quot;&gt;Alan features&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://comma-soft.com/en/generative-ai-consulting/&quot;&gt;Comma Soft: Generative AI consulting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://comma-soft.com/en/humboldt-group/travel-report-02/&quot;&gt;Travel Report #02 - the journey to Comma Soft&#39;s own AI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_humboldt-travel-report-alan-llm-genai-activity-7208854388101005312-Xr_o?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;Original Alan development journey post&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://carstendraschner.github.io/blog/240903_sustainable_air_gapped_on_prem_llm_solution/&quot;&gt;Sustainable air-gapped on-prem LLM solution&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://carstendraschner.github.io/blog/250801_llm_evaluation/&quot;&gt;Understanding the levels of LLM evaluation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://carstendraschner.github.io/blog/241120_were_dealing_with_the_butterfly_effect_in_llm_creation_pipelines/&quot;&gt;Butterfly effect in LLM creation pipelines&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
   </entry>
   <entry>
@@ -225,6 +316,33 @@ At Comma Soft AG, we always validate the most reasonable approach to solve a pro
 🇪🇺 Running on infrastructure hosted in Germany with non–Big Tech providers maximizes legal, operational, and ethical comfort. For teams that can’t afford “maybe,” sovereignty is not optional.&lt;/p&gt;
 &lt;p&gt;❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
 &lt;p&gt;#artificialintelligence #euai #alan #microsoft #cloudact&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>OpenAI Open-Weight Models - Strong Signal, Still Not Open Source</title>
+    <link href="https://carstendraschner.github.io/blog/250801_openai_open_weight_models/" />
+    <updated>2025-08-01T00:00:00Z</updated>
+    <id>https://carstendraschner.github.io/blog/250801_openai_open_weight_models/</id>
+    <content type="html">&lt;p&gt;OpenAI open-weight models looked likely before the official announcement. The interesting part was not only the model sizes, but what such a release would mean for local inference, enterprise deployment, and the debate around &amp;quot;open&amp;quot; AI.&lt;/p&gt;
+&lt;h2 id=&quot;short-take&quot;&gt;Short Take&lt;/h2&gt;
+&lt;p&gt;OpenAI later confirmed the release of &lt;strong&gt;gpt-oss-120b&lt;/strong&gt; and &lt;strong&gt;gpt-oss-20b&lt;/strong&gt;. According to OpenAI, both are open-weight reasoning models under Apache 2.0, with the larger model designed for a single 80 GB GPU and the smaller model targeting systems with around 16 GB memory.&lt;/p&gt;
+&lt;p&gt;That is a strong signal for the open-weight ecosystem. It makes experimentation, local deployment, and private infrastructure use easier for many teams. It also puts pressure on the broader market, because frontier labs can no longer ignore the demand for models that users can run under their own control.&lt;/p&gt;
+&lt;h2 id=&quot;why-it-matters&quot;&gt;Why It Matters&lt;/h2&gt;
+&lt;p&gt;The practical point is deployment control. A capable 20B-class open-weight model can be relevant for consumer GPUs, edge devices, and enterprise environments where data residency or offline inference matters. A 120B-class model that fits on a single 80 GB GPU is interesting for organizations that already operate serious inference infrastructure.&lt;/p&gt;
+&lt;p&gt;The conceptual point is terminology. Open-weight is not the same as open source. Model weights, permissive licensing, and downloadable artifacts are valuable, but they do not necessarily make the full model creation process reproducible. Training data, filtering decisions, data mixtures, evaluation details, and alignment pipelines remain central to whether a model is truly open in the stronger scientific sense.&lt;/p&gt;
+&lt;h2 id=&quot;open-questions&quot;&gt;Open Questions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;How reproducible is the model creation process beyond access to weights?&lt;/li&gt;
+&lt;li&gt;How much of the safety and alignment behavior can be inspected, adapted, or verified by external teams?&lt;/li&gt;
+&lt;li&gt;Will these models meaningfully reduce dependence on closed APIs for enterprise GenAI use cases?&lt;/li&gt;
+&lt;li&gt;Does this release change expectations for other frontier labs?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;sources&quot;&gt;Sources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;LinkedIn post: &lt;a href=&quot;https://www.linkedin.com/posts/carsten-draschner_openai-artificialintelligence-activity-7356973094856499200-PvwK&quot;&gt;OpenAI open-weight model discussion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;OpenAI announcement: &lt;a href=&quot;https://openai.com/index/introducing-gpt-oss/&quot;&gt;Introducing gpt-oss&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;OpenAI model card: &lt;a href=&quot;https://openai.com/index/gpt-oss-model-card/&quot;&gt;gpt-oss-120b &amp;amp; gpt-oss-20b Model Card&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
   </entry>
   <entry>
@@ -598,130 +716,6 @@ This triggered questions around the reliability of AI benchmarks and the fairnes
 &lt;p&gt;From an R&amp;amp;D perspective, code generation is a fascinating area because it allows clear measurement of GenAI performance and enables reinforcement learning for continuous improvement. However, the debate about AI-generated code’s long-term impact—productivity versus technical debt—is ongoing. This might become a key space for reasoning and planning in self-improving “AGI.”&lt;/p&gt;
 &lt;p&gt;❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
 &lt;p&gt;#VibeCoding #CodeGeneration #ReinforcementLearning #GenAI #AGI #AlanDe&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>There is also technical foundation for thinking capability in Reasoning LLMs</title>
-    <link href="https://carstendraschner.github.io/blog/250301_llm_thinking_capabilities/" />
-    <updated>2025-03-01T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/250301_llm_thinking_capabilities/</id>
-    <content type="html">&lt;p&gt;Do LLMs Think – Or Is It Just Next Token Prediction? 🤔&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/-Sdkq63vdW-2510.avif 2510w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/-Sdkq63vdW-2510.webp 2510w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/-Sdkq63vdW-2510.png&quot; alt=&quot;Image 1&quot; width=&quot;2510&quot; height=&quot;1476&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Short explanation of reasoning models&lt;/li&gt;
-&lt;li&gt;Technical description: where is the potential for &amp;quot;thoughts&amp;quot; in transformers&lt;/li&gt;
-&lt;li&gt;My hypothesis on LLMs and thinking capabilities&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
-&lt;p&gt;Reasoning LLMs (like DeepSeek R1, Alibaba QwQ, or OpenAI oX) are currently at the center of the AI debate. They introduce a new dimension of scaling — inference-time compute — and rely on structured reasoning techniques such as Chain of Thought (CoT). This sparked my curiosity: can we go beyond &amp;quot;just next token prediction&amp;quot; and interpret their internal behavior as a form of technical thinking?&lt;/p&gt;
-&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
-&lt;p&gt;I looked at reasoning models and how they operate:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;They generate additional intermediate tokens to &amp;quot;rethink&amp;quot; steps before finalizing an answer.&lt;/li&gt;
-&lt;li&gt;Models are prompted to self-question (e.g., “wait, rethink…”).&lt;/li&gt;
-&lt;li&gt;Some UIs hide these intermediate steps, showing only the final result.&lt;/li&gt;
-&lt;li&gt;Inference costs are higher since more tokens are generated.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Then I explored how transformers might technically exhibit thinking-like behavior:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Assume all possible correct token sequences for a task.&lt;/li&gt;
-&lt;li&gt;Gather hidden representations before the LM head.&lt;/li&gt;
-&lt;li&gt;Treat these as high-dimensional pseudo-continuous sequences.&lt;/li&gt;
-&lt;li&gt;Normalize their lengths to define a solution subspace.&lt;/li&gt;
-&lt;li&gt;Transformers are trained to sample in this subspace.&lt;/li&gt;
-&lt;li&gt;Autoregressive generation traverses the space differently, but consistently within it.&lt;/li&gt;
-&lt;li&gt;With reasoning model training (RL + stable CoT), this target space becomes more robust.&lt;/li&gt;
-&lt;li&gt;IMHO: This is akin to &amp;quot;thinking&amp;quot; — the architecture of a solution exists before token generation; autoregression merely unfolds it.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
-&lt;p&gt;I believe reasoning models are not &lt;em&gt;just&lt;/em&gt; predicting the next token. Instead, they explore and stabilize a solution subspace. This rough “solution architecture” resembles thinking, where the model already has a structural outline before writing down the answer.&lt;/p&gt;
-&lt;p&gt;Questions I leave open:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Do LLMs already map themselves to &amp;quot;thoughts&amp;quot; in this sense?&lt;/li&gt;
-&lt;li&gt;Could diffusion-like sampling make responses even more coherent?&lt;/li&gt;
-&lt;li&gt;How much of the solution space is predetermined by the first token?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I’d love to hear your thoughts! We have controversial but highly productive debates at Comma Soft AG Alan.de ML team ❤️ Big shoutout to 3Blue1Brown for inspiring visual explanations!&lt;/p&gt;
-&lt;p&gt;❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
-&lt;p&gt;#artificialintelligence #reasoning #genai #machinelearning&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>DeepSeek has huge issues. Code on last Slide. Be careful!</title>
-    <link href="https://carstendraschner.github.io/blog/250203_deepseek_censorship/" />
-    <updated>2025-02-03T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/250203_deepseek_censorship/</id>
-    <content type="html">&lt;p&gt;DeepSeek Alignment and Censorship Concerns&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/Rj7n_l2sFQ-1806.avif 1806w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/Rj7n_l2sFQ-1806.webp 1806w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/Rj7n_l2sFQ-1806.png&quot; alt=&quot;Image 1&quot; width=&quot;1806&quot; height=&quot;1434&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;DeepSeek R1 alignment issues&lt;/li&gt;
-&lt;li&gt;Censorship on topics related to China&lt;/li&gt;
-&lt;li&gt;Use with caution&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
-&lt;p&gt;🤖 I was curious to have a hands-on session with the hyped DeepSeek Models.&lt;br&gt;
-🇨🇳 Smart engineers from China developed a model that competes at the top of the SOTA leaderboards.&lt;br&gt;
-🧐 I was wondering how the models behave in the alignment dimension, as this might be a distinctive factor when choosing open-weight models.&lt;br&gt;
-👨🏼‍💻 I chose not the 600B+ parameter model but a distilled 70B AWQ model, which runs easily for a try-out on one A100.&lt;/p&gt;
-&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done:&lt;/h2&gt;
-&lt;p&gt;❓ I prompted the model with questions about several countries, democracy, politics, ethics, and more.&lt;br&gt;
-🤗 You can recreate those results using the code on the last slide.&lt;/p&gt;
-&lt;h2 id=&quot;imho&quot;&gt;IMHO:&lt;/h2&gt;
-&lt;p&gt;🚫 The DeepSeek model has an alignment that stops it from saying anything critical about China itself, compared to other very similar prompts.&lt;br&gt;
-😳 I would be careful deploying that model without knowing what else might be an issue, especially when you use such models for function calling.&lt;br&gt;
-Be aware of which model you trust and why.&lt;br&gt;
-🧮 A Chinese quant company seems to have put a lot of effort into such adjustments, which have nothing to do with model performance or being good at answering questions correctly and safely.&lt;br&gt;
-🇪🇺 We develop Alan.de, a GenAI solution that runs fully on German servers and is developed and built from a European perspective by European engineers for European users.&lt;br&gt;
-❤️ Feel free to reach out and like if you want to see more of such content.&lt;/p&gt;
-&lt;p&gt;#artificialintelligence #deepseek #alan #aiethics&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>What a Wonderful Start, More to Come!</title>
-    <link href="https://carstendraschner.github.io/blog/250120_senior/" />
-    <updated>2025-01-20T00:00:00Z</updated>
-    <id>https://carstendraschner.github.io/blog/250120_senior/</id>
-    <content type="html">&lt;p&gt;My journey at Comma Soft AG and my recent promotion to Senior Level 🥳🥰&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://carstendraschner.github.io/img/1hnVE8vCIf-1574.avif 1574w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://carstendraschner.github.io/img/1hnVE8vCIf-1574.webp 1574w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://carstendraschner.github.io/img/1hnVE8vCIf-1574.png&quot; alt=&quot;Image 1&quot; width=&quot;1574&quot; height=&quot;818&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR ⏱️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Promotion to Senior Level&lt;/li&gt;
-&lt;li&gt;Leading AI R&amp;amp;D and Product Development&lt;/li&gt;
-&lt;li&gt;Building Alan.de for the European market&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;what-a-wonderful-start-more-to-come&quot;&gt;What a Wonderful Start, More to Come!&lt;/h2&gt;
-&lt;p&gt;Today, I’d love to say thank you to my wonderful team at Comma Soft AG, which made great experiences and learnings possible and resulted in a recent promotion to Senior Level 🥳🥰 What happened so far?&lt;/p&gt;
-&lt;h3 id=&quot;applied-ai-r-and-d&quot;&gt;Applied AI R&amp;amp;D&lt;/h3&gt;
-&lt;p&gt;🔬 Developing cutting edge technology to improve GenAI models, including data synthesis, benchmark construction, model training, and deployment in production environments + additional Advanced RAG for optimizing GenAI-based knowledge systems.&lt;/p&gt;
-&lt;h3 id=&quot;in-house-product-development&quot;&gt;In-house Product Development&lt;/h3&gt;
-&lt;p&gt;🏗️ Building Alan.de, which provides a trustworthy full-stack GenAI solution for the European market.&lt;/p&gt;
-&lt;h3 id=&quot;building-up-genai-team&quot;&gt;Building Up GenAI Team&lt;/h3&gt;
-&lt;p&gt;👥 Building-up, educating and managing GenAI team at customer sites.&lt;/p&gt;
-&lt;h3 id=&quot;support-open-source-development&quot;&gt;Support Open Source Development&lt;/h3&gt;
-&lt;p&gt;💻 Supporting existing AI open source community projects and repos with accepted and merged PRs.&lt;/p&gt;
-&lt;h3 id=&quot;solving-customers-real-world-use-cases&quot;&gt;Solving Customers Real-world Use Cases&lt;/h3&gt;
-&lt;p&gt;👨🏼‍💻 Implementing and supporting real-world use cases through AI &amp;amp; Data-driven solutions.&lt;/p&gt;
-&lt;h3 id=&quot;presentations&quot;&gt;Presentations&lt;/h3&gt;
-&lt;p&gt;🎤 Giving AI-Talks and &amp;quot;Ask Me Anything&amp;quot; sessions on GenAI, AI, and ML topics at customer sites.&lt;/p&gt;
-&lt;h3 id=&quot;in-house-recruiting-support&quot;&gt;In-house Recruiting Support&lt;/h3&gt;
-&lt;p&gt;🤝 Further developing the Comma team through recruiting support from my network and appearances at trade fairs.&lt;/p&gt;
-&lt;h3 id=&quot;strengthening-our-ai-tech-team&quot;&gt;Strengthening our AI-Tech-Team&lt;/h3&gt;
-&lt;p&gt;🌟 In a role as a buddy/mentor for several wonderful new colleagues.&lt;/p&gt;
-&lt;h3 id=&quot;education&quot;&gt;Education&lt;/h3&gt;
-&lt;p&gt;📚 Holding Data Science Stand-Ups and Presentations about Hands-On AI R&amp;amp;D Learnings and SOTA paper readings.&lt;/p&gt;
-&lt;h3 id=&quot;events&quot;&gt;Events&lt;/h3&gt;
-&lt;p&gt;🎪 Representing our AI R&amp;amp;D at conferences and events such as PyCon DE &amp;amp; PyData, Lamarr-Institut-Conference, WIFU-Stiftung-FUK, and Petersberger-Gespräche.&lt;/p&gt;
-&lt;h3 id=&quot;increase-follower-reach&quot;&gt;Increase Follower Reach&lt;/h3&gt;
-&lt;p&gt;📈 Growing my follower base from 800 to over 6000 tech followers within a year, alongside my new AI blog.&lt;/p&gt;
-&lt;h3 id=&quot;teambuilding&quot;&gt;Teambuilding&lt;/h3&gt;
-&lt;p&gt;❤️ Organizing &amp;amp; Enjoying amazing team events, sports and workations with colleagues who have become friends.&lt;/p&gt;
-&lt;h3 id=&quot;tough-ai-world-out-there&quot;&gt;Tough AI world out there&lt;/h3&gt;
-&lt;p&gt;😳 Especially in today&#39;s times after recent elections, for me a work environment where one doesn&#39;t have to be morally or politically flexible is insanely important. Great to have colleagues and a company with moral compass.&lt;/p&gt;
-&lt;p&gt;🥰 If you would love to join our team or cooperate, reach out to me. For more content of my work follow me on LinkedIn or check out my blog.&lt;/p&gt;
-&lt;p&gt;🚀 Looking forward to the challenges and opportunities ahead, and continuing to achieve great things together!&lt;/p&gt;
-&lt;p&gt;#cometocomma #artificialintelligence #aiineurope #alan #promotion&lt;/p&gt;
 </content>
   </entry>
 </feed>

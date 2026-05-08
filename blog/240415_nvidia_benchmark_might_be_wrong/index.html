@@ -1,11 +1,23 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>NVIDIA Benchmark might be WRONG cause it states - You lose money AND LLM inference speed if you add more NVIDIA A100. This NVIDIA Benchmark is NOT reliable.</title>
-		<meta name="description" content="Applied research findings &amp; ethical considerations in modern Artificial Intelligence.">
-		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			
+			
+			
+			<title>NVIDIA Benchmark might be WRONG cause it states - You lose money AND LLM inference speed if you add more NVIDIA A100. This NVIDIA Benchmark is NOT reliable. | Carsten Felix Draschner, PhD</title>
+			<meta name="description" content="Applied Scientist focused on foundation models, enterprise GenAI, scalable machine learning, knowledge graphs, responsible AI, publications, projects, and selected AI writing.">
+			<link rel="canonical" href="https://carstendraschner.github.io/blog/240415_nvidia_benchmark_might_be_wrong/">
+			<meta property="og:site_name" content="Carsten Felix Draschner, PhD">
+			<meta property="og:title" content="NVIDIA Benchmark might be WRONG cause it states - You lose money AND LLM inference speed if you add more NVIDIA A100. This NVIDIA Benchmark is NOT reliable. | Carsten Felix Draschner, PhD">
+			<meta property="og:description" content="Applied Scientist focused on foundation models, enterprise GenAI, scalable machine learning, knowledge graphs, responsible AI, publications, projects, and selected AI writing.">
+			<meta property="og:type" content="article">
+			<meta property="og:url" content="https://carstendraschner.github.io/blog/240415_nvidia_benchmark_might_be_wrong/">
+			<meta name="twitter:card" content="summary">
+			<meta name="twitter:title" content="NVIDIA Benchmark might be WRONG cause it states - You lose money AND LLM inference speed if you add more NVIDIA A100. This NVIDIA Benchmark is NOT reliable. | Carsten Felix Draschner, PhD">
+			<meta name="twitter:description" content="Applied Scientist focused on foundation models, enterprise GenAI, scalable machine learning, knowledge graphs, responsible AI, publications, projects, and selected AI writing.">
+			<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
 		
 		<style>/**
  * okaidia theme for JavaScript, CSS and HTML
@@ -258,12 +270,17 @@ pre[class*="language-diff-"] {
 
 html,
 body {
-	height: 100%;
+	min-height: 100%;
 	padding: 0;
 	margin: 0;
 	font-family: var(--font-family);
 	color: var(--text-color);
 	background-color: var(--background-color);
+}
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 html {
 	overflow-y: scroll;
@@ -318,9 +335,9 @@ a[href]:active {
 main {
 	padding: 1rem;
 	flex: 1;
-	max-width: 40em;
+	width: 100%;
+	max-width: 46em;
 	margin: 0 auto;
-	margin-bottom: var(--footer-height);
 }
 main :first-child {
 	margin-top: 0;
@@ -411,14 +428,15 @@ header {
 }
 
 .container {
-	display: flex; /* Hinzugefügt */
-	flex-direction: column; /* Hinzugefügt */
-	min-height: 100vh; /* Hinzugefügt */
+	display: flex;
+	flex-direction: column;
   }
 
 /* Nav */
 .nav {
 	display: flex;
+	flex-wrap: wrap;
+	gap: .5em 1em;
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -428,7 +446,7 @@ header {
 }
 .nav-item {
 	display: inline-block;
-	margin-right: 1em;
+	margin-right: 0;
 }
 .nav-item a[href]:not(:hover) {
 	text-decoration: none;
@@ -440,11 +458,11 @@ header {
 .card {
 	display: flex;
 	align-items: center;
-	border: 1px solid #ccc;
-	padding: 10px;
-	margin-bottom: 10px;
+	border: 1px solid var(--card-border-color);
+	padding: 12px;
+	margin-bottom: 12px;
 	border-radius: 8px;
-	background-color: var(--background-color);
+	background-color: var(--card-background-color);
 }
 .card img {
 	border-radius: 8px;
@@ -544,7 +562,34 @@ h6:has(.ha-placeholder):hover {
 .post-metadata time {
 	margin-right: 1em;
 }</style>
-	</head>
+			<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Person",
+				"name": "Carsten Felix Draschner",
+				"honorificSuffix": "PhD",
+				"url": "https://carstendraschner.github.io/",
+				"jobTitle": "Applied Scientist",
+				"worksFor": {
+					"@type": "Organization",
+					"name": "Amazon AGI - Nova"
+				},
+				"knowsAbout": [
+					"Foundation models",
+					"Generative AI",
+					"Large Language Models",
+					"Knowledge graphs",
+					"Scalable machine learning",
+					"Responsible AI"
+				],
+				"sameAs": [
+					"https://www.linkedin.com/in/carsten-draschner/",
+					"https://github.com/carstendraschner",
+					"https://www.researchgate.net/profile/Carsten-Draschner"
+				]
+			}
+			</script>
+		</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
@@ -640,10 +685,10 @@ h6:has(.ha-placeholder):hover {
 		</main>
 
 		<footer>
-			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
+			<p>&copy; 2026 Carsten Felix Draschner, PhD</p>
 		</footer>
 
-		<!-- This page `/blog/240415_nvidia_benchmark_might_be_wrong/` was built on 2025-11-20T21:10:58.174Z -->
+		<!-- This page `/blog/240415_nvidia_benchmark_might_be_wrong/` was built on 2026-05-08T08:16:48.188Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

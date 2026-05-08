@@ -2,402 +2,417 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
-		<loc>https://example.com/projects/2016_Chip_VR/</loc>
+		<loc>https://carstendraschner.github.io/projects/2016_Chip_VR/</loc>
 		<lastmod>2016-09-30</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/research/160901_bachelor_thesis_the_development_of_complexity_in_chip_design_and_its_visualization_within_virtual_reality/</loc>
+		<loc>https://carstendraschner.github.io/research/160901_bachelor_thesis_the_development_of_complexity_in_chip_design_and_its_visualization_within_virtual_reality/</loc>
 		<lastmod>2016-09-30</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/research/190401_smart_chef_evolving_recipes/</loc>
+		<loc>https://carstendraschner.github.io/research/190401_smart_chef_evolving_recipes/</loc>
 		<lastmod>2019-04-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/projects/2019_Menu_CV/</loc>
+		<loc>https://carstendraschner.github.io/projects/2019_Menu_CV/</loc>
 		<lastmod>2019-08-30</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/research/200901_distsim_scalable_distributed_in_memory/</loc>
+		<loc>https://carstendraschner.github.io/research/200901_distsim_scalable_distributed_in_memory/</loc>
 		<lastmod>2021-01-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/research/210401_literal2feature/</loc>
+		<loc>https://carstendraschner.github.io/research/210401_literal2feature/</loc>
 		<lastmod>2021-08-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/research/210501_distrdf2ml/</loc>
+		<loc>https://carstendraschner.github.io/research/210501_distrdf2ml/</loc>
 		<lastmod>2021-12-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/projects/2022_SANSA/</loc>
+		<loc>https://carstendraschner.github.io/projects/2022_SANSA/</loc>
 		<lastmod>2022-08-30</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/research/220902_ethical_and_sustainability/</loc>
+		<loc>https://carstendraschner.github.io/research/220902_ethical_and_sustainability/</loc>
 		<lastmod>2022-09-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/research/230701_sime4kg/</loc>
+		<loc>https://carstendraschner.github.io/research/230701_sime4kg/</loc>
 		<lastmod>2023-02-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/research/221214_scalable_distributed_machine_learning_for_knowledge_graphs/</loc>
+		<loc>https://carstendraschner.github.io/research/221214_scalable_distributed_machine_learning_for_knowledge_graphs/</loc>
 		<lastmod>2023-07-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240202_llama2_13b_is_faster_than_llama2_7b/</loc>
+		<loc>https://carstendraschner.github.io/blog/240202_llama2_13b_is_faster_than_llama2_7b/</loc>
 		<lastmod>2024-02-05</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240205_evil_llms_available_break_genai/</loc>
+		<loc>https://carstendraschner.github.io/blog/240205_evil_llms_available_break_genai/</loc>
 		<lastmod>2024-02-05</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240213_dalle_has_surprising_guardrails/</loc>
+		<loc>https://carstendraschner.github.io/blog/240213_dalle_has_surprising_guardrails/</loc>
 		<lastmod>2024-02-13</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240220_beaten_gpt4/</loc>
+		<loc>https://carstendraschner.github.io/blog/240220_beaten_gpt4/</loc>
 		<lastmod>2024-02-20</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240227_ever_wondered_about_open_source_llm_sizes/</loc>
+		<loc>https://carstendraschner.github.io/blog/240227_ever_wondered_about_open_source_llm_sizes/</loc>
 		<lastmod>2024-02-27</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240307_not_prompting_in_english/</loc>
+		<loc>https://carstendraschner.github.io/blog/240307_not_prompting_in_english/</loc>
 		<lastmod>2024-03-07</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240313_the_major_players_in_genai_are_facing_challenges/</loc>
+		<loc>https://carstendraschner.github.io/blog/240313_the_major_players_in_genai_are_facing_challenges/</loc>
 		<lastmod>2024-03-13</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240327_be_careful_when_you_are_using_llama/</loc>
+		<loc>https://carstendraschner.github.io/blog/240327_be_careful_when_you_are_using_llama/</loc>
 		<lastmod>2024-03-27</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240408_too_many_llms_how_to_keep_track_with_all/</loc>
+		<loc>https://carstendraschner.github.io/blog/240408_too_many_llms_how_to_keep_track_with_all/</loc>
 		<lastmod>2024-04-08</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240415_nvidia_benchmark_might_be_wrong/</loc>
+		<loc>https://carstendraschner.github.io/blog/240415_nvidia_benchmark_might_be_wrong/</loc>
 		<lastmod>2024-04-15</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240422_what_is_your_preferred_llm_family/</loc>
+		<loc>https://carstendraschner.github.io/blog/240422_what_is_your_preferred_llm_family/</loc>
 		<lastmod>2024-04-22</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240422_who_will_take_care_of_truly_low_resource_languages/</loc>
+		<loc>https://carstendraschner.github.io/blog/240422_who_will_take_care_of_truly_low_resource_languages/</loc>
 		<lastmod>2024-04-29</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240506_thanks_to_the_open_source_community/</loc>
+		<loc>https://carstendraschner.github.io/blog/240506_thanks_to_the_open_source_community/</loc>
 		<lastmod>2024-05-06</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240513_be_careful_when_you_speak_of_open_source_genai/</loc>
+		<loc>https://carstendraschner.github.io/blog/240513_be_careful_when_you_speak_of_open_source_genai/</loc>
 		<lastmod>2024-05-13</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240520_what_expectations_do_you_have_regarding_the_values_and_norms/</loc>
+		<loc>https://carstendraschner.github.io/blog/240520_what_expectations_do_you_have_regarding_the_values_and_norms/</loc>
 		<lastmod>2024-05-20</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240603_do_you_differentiate_ai_ethics/</loc>
+		<loc>https://carstendraschner.github.io/blog/240603_do_you_differentiate_ai_ethics/</loc>
 		<lastmod>2024-06-03</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240610_will_we_reach_agi_and_if/</loc>
+		<loc>https://carstendraschner.github.io/blog/240610_will_we_reach_agi_and_if/</loc>
 		<lastmod>2024-06-10</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240617_do_we_need_another_genai_solution_how_why/</loc>
+		<loc>https://carstendraschner.github.io/blog/240617_do_we_need_another_genai_solution_how_why/</loc>
 		<lastmod>2024-06-17</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240620_MixEval_doubts/</loc>
+		<loc>https://carstendraschner.github.io/blog/240620_MixEval_doubts/</loc>
 		<lastmod>2024-06-20</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240624_alternative_to_genai_creativity_watch_and_try/</loc>
+		<loc>https://carstendraschner.github.io/blog/240624_alternative_to_genai_creativity_watch_and_try/</loc>
 		<lastmod>2024-06-24</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240701_adjust_genai_responses_towards_more_ethical_behavior_possible/</loc>
+		<loc>https://carstendraschner.github.io/blog/240701_adjust_genai_responses_towards_more_ethical_behavior_possible/</loc>
 		<lastmod>2024-07-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240708_genai_what_is_plagiarism_its_impact/</loc>
+		<loc>https://carstendraschner.github.io/blog/240708_genai_what_is_plagiarism_its_impact/</loc>
 		<lastmod>2024-07-08</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240715_llms_big_vs_small_bigger_is_better_or_lets_not_waste_energy/</loc>
+		<loc>https://carstendraschner.github.io/blog/240715_llms_big_vs_small_bigger_is_better_or_lets_not_waste_energy/</loc>
 		<lastmod>2024-07-15</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240722_these_results_give_me_hope_for_sustainable_ai/</loc>
+		<loc>https://carstendraschner.github.io/blog/240722_these_results_give_me_hope_for_sustainable_ai/</loc>
 		<lastmod>2024-07-22</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240729_what_is_the_perfect_approach_to_adjust_an_llm_to_your_genai_use_case/</loc>
+		<loc>https://carstendraschner.github.io/blog/240729_what_is_the_perfect_approach_to_adjust_an_llm_to_your_genai_use_case/</loc>
 		<lastmod>2024-07-29</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240830_combining_the_hugging_face_model_platform_and_knowledge/</loc>
+		<loc>https://carstendraschner.github.io/blog/240830_combining_the_hugging_face_model_platform_and_knowledge/</loc>
 		<lastmod>2024-08-30</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240903_sustainable_air_gapped_on_prem_llm_solution/</loc>
+		<loc>https://carstendraschner.github.io/blog/240903_sustainable_air_gapped_on_prem_llm_solution/</loc>
 		<lastmod>2024-09-03</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240910_for_more_sustainability_transparency_in_genai_share/</loc>
+		<loc>https://carstendraschner.github.io/blog/240910_for_more_sustainability_transparency_in_genai_share/</loc>
 		<lastmod>2024-09-10</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240917_todays_research_proposal_how_to_achieve_real/</loc>
+		<loc>https://carstendraschner.github.io/blog/240917_todays_research_proposal_how_to_achieve_real/</loc>
 		<lastmod>2024-09-17</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/240924_where_science_meets_innovation_my_personal/</loc>
+		<loc>https://carstendraschner.github.io/blog/240924_where_science_meets_innovation_my_personal/</loc>
 		<lastmod>2024-09-24</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/241001_stop_adding_languages_to_llms_the_potential/</loc>
+		<loc>https://carstendraschner.github.io/blog/241001_stop_adding_languages_to_llms_the_potential/</loc>
 		<lastmod>2024-10-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/241008_choosing_the_right_llm_for_your_needs_key_considerations/</loc>
+		<loc>https://carstendraschner.github.io/blog/241008_choosing_the_right_llm_for_your_needs_key_considerations/</loc>
 		<lastmod>2024-10-08</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/241016_we_cannot_waste_time_and_resources_through_regenerating_genai_creations_genai_control_is_key_for_productivity/</loc>
+		<loc>https://carstendraschner.github.io/blog/241016_we_cannot_waste_time_and_resources_through_regenerating_genai_creations_genai_control_is_key_for_productivity/</loc>
 		<lastmod>2024-10-16</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/241025_a_genai_solution_tweak_to_rescue_ard_tagesschau_webpage/</loc>
+		<loc>https://carstendraschner.github.io/blog/241025_a_genai_solution_tweak_to_rescue_ard_tagesschau_webpage/</loc>
 		<lastmod>2024-10-25</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/241105_the_uncanny_valley_phenomenon_in_genai_face_synthesis/</loc>
+		<loc>https://carstendraschner.github.io/blog/241105_the_uncanny_valley_phenomenon_in_genai_face_synthesis/</loc>
 		<lastmod>2024-11-05</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/241113_new_official_osi_open_source_ai_definition_attacks_metas_llama_as_open_washing/</loc>
+		<loc>https://carstendraschner.github.io/blog/241113_new_official_osi_open_source_ai_definition_attacks_metas_llama_as_open_washing/</loc>
 		<lastmod>2024-11-13</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/241120_were_dealing_with_the_butterfly_effect_in_llm_creation_pipelines/</loc>
+		<loc>https://carstendraschner.github.io/blog/241120_were_dealing_with_the_butterfly_effect_in_llm_creation_pipelines/</loc>
 		<lastmod>2024-11-20</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/241127_Teuken_Review/</loc>
+		<loc>https://carstendraschner.github.io/blog/241127_Teuken_Review/</loc>
 		<lastmod>2024-11-27</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/241206_LLAMA33/</loc>
+		<loc>https://carstendraschner.github.io/blog/241206_LLAMA33/</loc>
 		<lastmod>2024-12-06</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/250105_blog/</loc>
+		<loc>https://carstendraschner.github.io/blog/250105_blog/</loc>
 		<lastmod>2025-01-05</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/250110_bluewhale/</loc>
+		<loc>https://carstendraschner.github.io/blog/250110_bluewhale/</loc>
 		<lastmod>2025-01-10</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/250120_senior/</loc>
+		<loc>https://carstendraschner.github.io/blog/250120_senior/</loc>
 		<lastmod>2025-01-20</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/250203_deepseek_censorship/</loc>
+		<loc>https://carstendraschner.github.io/blog/250203_deepseek_censorship/</loc>
 		<lastmod>2025-02-03</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/250301_llm_thinking_capabilities/</loc>
+		<loc>https://carstendraschner.github.io/blog/250301_llm_thinking_capabilities/</loc>
 		<lastmod>2025-03-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/250302_vibe_coding_experience/</loc>
+		<loc>https://carstendraschner.github.io/blog/250302_vibe_coding_experience/</loc>
 		<lastmod>2025-03-02</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/250401_llama4_release_issues/</loc>
+		<loc>https://carstendraschner.github.io/blog/250401_llama4_release_issues/</loc>
 		<lastmod>2025-04-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/250402_llama4_fraud/</loc>
+		<loc>https://carstendraschner.github.io/blog/250402_llama4_fraud/</loc>
 		<lastmod>2025-04-02</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/250501_commatalk_keynote/</loc>
+		<loc>https://carstendraschner.github.io/blog/250501_commatalk_keynote/</loc>
 		<lastmod>2025-05-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/250502_sleeperagents_mcp/</loc>
+		<loc>https://carstendraschner.github.io/blog/250502_sleeperagents_mcp/</loc>
 		<lastmod>2025-05-02</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/250503_aicrown/</loc>
+		<loc>https://carstendraschner.github.io/blog/250503_aicrown/</loc>
 		<lastmod>2025-05-03</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/250601_coke_context/</loc>
+		<loc>https://carstendraschner.github.io/blog/250601_coke_context/</loc>
 		<lastmod>2025-06-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/250701_context_risk/</loc>
+		<loc>https://carstendraschner.github.io/blog/250701_context_risk/</loc>
 		<lastmod>2025-07-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/250702_context_engineering_vlm/</loc>
+		<loc>https://carstendraschner.github.io/blog/250702_context_engineering_vlm/</loc>
 		<lastmod>2025-07-02</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/250704_local_optima_risk/</loc>
+		<loc>https://carstendraschner.github.io/blog/250704_local_optima_risk/</loc>
 		<lastmod>2025-07-04</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/250801_llm_evaluation/</loc>
+		<loc>https://carstendraschner.github.io/blog/250801_llm_evaluation/</loc>
 		<lastmod>2025-08-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/250802_cloudact_eu/</loc>
+		<loc>https://carstendraschner.github.io/blog/250801_openai_open_weight_models/</loc>
+		<lastmod>2025-08-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://carstendraschner.github.io/blog/250802_cloudact_eu/</loc>
 		<lastmod>2025-08-02</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/250803_mistral_co2/</loc>
+		<loc>https://carstendraschner.github.io/blog/250803_mistral_co2/</loc>
 		<lastmod>2025-08-03</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/250901_pretraining_data/</loc>
+		<loc>https://carstendraschner.github.io/blog/250901_pretraining_data/</loc>
 		<lastmod>2025-09-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/251001_chatgpt_usage/</loc>
+		<loc>https://carstendraschner.github.io/blog/251001_chatgpt_usage/</loc>
 		<lastmod>2025-10-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/about/</loc>
+		<loc>https://carstendraschner.github.io/projects/2025_Alan/</loc>
+		<lastmod>2025-10-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://carstendraschner.github.io/about/</loc>
 		<lastmod>2025-10-02</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/</loc>
+		<loc>https://carstendraschner.github.io/blog/</loc>
 		<lastmod>2025-10-02</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/contact/</loc>
+		<loc>https://carstendraschner.github.io/contact/</loc>
 		<lastmod>2025-10-02</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/</loc>
+		<loc>https://carstendraschner.github.io/</loc>
 		<lastmod>2025-10-02</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/projects/</loc>
+		<loc>https://carstendraschner.github.io/projects/</loc>
 		<lastmod>2025-10-02</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/research/</loc>
+		<loc>https://carstendraschner.github.io/research/</loc>
 		<lastmod>2025-10-02</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/tags/</loc>
+		<loc>https://carstendraschner.github.io/tags/</loc>
 		<lastmod>2025-10-02</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/251020_bye_comma/</loc>
+		<loc>https://carstendraschner.github.io/blog/251020_bye_comma/</loc>
 		<lastmod>2025-10-20</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/251101_hello_amazon_agi_nova/</loc>
+		<loc>https://carstendraschner.github.io/blog/251101_hello_amazon_agi_nova/</loc>
 		<lastmod>2025-11-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/feed/feed.xml</loc>
-		<lastmod>2025-11-20</lastmod>
+		<loc>https://carstendraschner.github.io/blog/251203_nova_20_amazon_agi/</loc>
+		<lastmod>2025-12-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://carstendraschner.github.io/feed/feed.xml</loc>
+		<lastmod>2026-05-08</lastmod>
 	</url>
 </urlset>

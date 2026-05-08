@@ -1,11 +1,23 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Carsten Felix Draschner, PhD</title>
-		<meta name="description" content="Applied research findings &amp; ethical considerations in modern Artificial Intelligence.">
-		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			
+			
+			
+			<title>Research on Scalable ML, Knowledge Graphs, and Responsible AI | Carsten Felix Draschner, PhD</title>
+			<meta name="description" content="Research by Carsten Felix Draschner on scalable distributed machine learning, knowledge graphs, semantic similarity, explainable AI, ethical AI, and sustainable ML.">
+			<link rel="canonical" href="https://carstendraschner.github.io/research/">
+			<meta property="og:site_name" content="Carsten Felix Draschner, PhD">
+			<meta property="og:title" content="Research on Scalable ML, Knowledge Graphs, and Responsible AI | Carsten Felix Draschner, PhD">
+			<meta property="og:description" content="Research by Carsten Felix Draschner on scalable distributed machine learning, knowledge graphs, semantic similarity, explainable AI, ethical AI, and sustainable ML.">
+			<meta property="og:type" content="website">
+			<meta property="og:url" content="https://carstendraschner.github.io/research/">
+			<meta name="twitter:card" content="summary">
+			<meta name="twitter:title" content="Research on Scalable ML, Knowledge Graphs, and Responsible AI | Carsten Felix Draschner, PhD">
+			<meta name="twitter:description" content="Research by Carsten Felix Draschner on scalable distributed machine learning, knowledge graphs, semantic similarity, explainable AI, ethical AI, and sustainable ML.">
+			<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Carsten Felix Draschner, PhD">
 		
 		<style>/* This is an arbitrary CSS string added to the bundle */
 /* Defaults */
@@ -90,12 +102,17 @@
 
 html,
 body {
-	height: 100%;
+	min-height: 100%;
 	padding: 0;
 	margin: 0;
 	font-family: var(--font-family);
 	color: var(--text-color);
 	background-color: var(--background-color);
+}
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 html {
 	overflow-y: scroll;
@@ -150,9 +167,9 @@ a[href]:active {
 main {
 	padding: 1rem;
 	flex: 1;
-	max-width: 40em;
+	width: 100%;
+	max-width: 46em;
 	margin: 0 auto;
-	margin-bottom: var(--footer-height);
 }
 main :first-child {
 	margin-top: 0;
@@ -243,14 +260,15 @@ header {
 }
 
 .container {
-	display: flex; /* Hinzugefügt */
-	flex-direction: column; /* Hinzugefügt */
-	min-height: 100vh; /* Hinzugefügt */
+	display: flex;
+	flex-direction: column;
   }
 
 /* Nav */
 .nav {
 	display: flex;
+	flex-wrap: wrap;
+	gap: .5em 1em;
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -260,7 +278,7 @@ header {
 }
 .nav-item {
 	display: inline-block;
-	margin-right: 1em;
+	margin-right: 0;
 }
 .nav-item a[href]:not(:hover) {
 	text-decoration: none;
@@ -272,11 +290,11 @@ header {
 .card {
 	display: flex;
 	align-items: center;
-	border: 1px solid #ccc;
-	padding: 10px;
-	margin-bottom: 10px;
+	border: 1px solid var(--card-border-color);
+	padding: 12px;
+	margin-bottom: 12px;
 	border-radius: 8px;
-	background-color: var(--background-color);
+	background-color: var(--card-background-color);
 }
 .card img {
 	border-radius: 8px;
@@ -376,7 +394,34 @@ h6:has(.ha-placeholder):hover {
 .post-metadata time {
 	margin-right: 1em;
 }</style>
-	</head>
+			<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Person",
+				"name": "Carsten Felix Draschner",
+				"honorificSuffix": "PhD",
+				"url": "https://carstendraschner.github.io/",
+				"jobTitle": "Applied Scientist",
+				"worksFor": {
+					"@type": "Organization",
+					"name": "Amazon AGI - Nova"
+				},
+				"knowsAbout": [
+					"Foundation models",
+					"Generative AI",
+					"Large Language Models",
+					"Knowledge graphs",
+					"Scalable machine learning",
+					"Responsible AI"
+				],
+				"sameAs": [
+					"https://www.linkedin.com/in/carsten-draschner/",
+					"https://github.com/carstendraschner",
+					"https://www.researchgate.net/profile/Carsten-Draschner"
+				]
+			}
+			</script>
+		</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
@@ -400,6 +445,8 @@ h6:has(.ha-placeholder):hover {
 				
 <h1 id="research">Research</h1>
 
+<p>My research background is in scalable distributed machine learning, knowledge graphs, semantic similarity, explainable AI, ethical AI, and sustainable ML. This page collects selected publications, theses, and research projects that connect algorithmic work with practical data and infrastructure constraints.</p>
+
 
 
 <ol reversed="" class="postlist">
@@ -416,8 +463,7 @@ h6:has(.ha-placeholder):hover {
 <li>Ethical and Sustainability Dimensions</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/research/221214_scalable_distributed_machine_learning_for_knowledge_graphs/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/10945">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/research/221214_scalable_distributed_machine_learning_for_knowledge_graphs/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/10945">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">SimE4KG - Distributed Explainable multi-modal Semantic Similarity Estimation for Knowledge Graphs</span>
@@ -431,8 +477,7 @@ h6:has(.ha-placeholder):hover {
 <li>SANSA stack integration</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/research/230701_sime4kg/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://doi.org/10.1142/S1793351X23600012">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/research/230701_sime4kg/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://doi.org/10.1142/S1793351X23600012">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Ethical and Sustainability considerations for Knowledge Graphs based Machine Learning</span>
@@ -446,8 +491,7 @@ h6:has(.ha-placeholder):hover {
 <li>Data insights, machine learning, training &amp; evaluation, deployment</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/research/220902_ethical_and_sustainability/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://ieeexplore.ieee.org/document/9939282">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/research/220902_ethical_and_sustainability/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://ieeexplore.ieee.org/document/9939282">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">DistRDF2ML - Scalable Distributed In-Memory Machine Learning Pipelines for RDF Knowledge Graphs</span>
@@ -461,8 +505,7 @@ h6:has(.ha-placeholder):hover {
 <li>Semantic structure for enhanced reusability, explainability, and reproducibility</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/research/210501_distrdf2ml/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://dl.acm.org/doi/10.1145/3459637.3481999">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/research/210501_distrdf2ml/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://dl.acm.org/doi/10.1145/3459637.3481999">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Literal2Feature - An automatic scalable RDF graph feature extractor</span>
@@ -476,8 +519,7 @@ h6:has(.ha-placeholder):hover {
 <li>Integration with the Semantic Analytics Stack</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/research/210401_literal2feature/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://youtu.be/bwYKVCDIPbE?si=fAuev5CPgs_LfMhU&amp;t=398">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/research/210401_literal2feature/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://youtu.be/bwYKVCDIPbE?si=fAuev5CPgs_LfMhU&amp;t=398">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">DistSim - Scalable Distributed in-Memory Semantic Similarity Estimation for RDF Knowledge Graphs</span>
@@ -491,8 +533,7 @@ h6:has(.ha-placeholder):hover {
 <li>SANSA stack integration</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/research/200901_distsim_scalable_distributed_in_memory/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://ieeexplore.ieee.org/document/9364473">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/research/200901_distsim_scalable_distributed_in_memory/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://ieeexplore.ieee.org/document/9364473">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">Smart Chef - Evolving Recipes</span>
@@ -507,8 +548,7 @@ h6:has(.ha-placeholder):hover {
 <li>University of Bonn</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/research/190401_smart_chef_evolving_recipes/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.researchgate.net/publication/357910428_SmartChef_Evolving_Recipes_Poster">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/research/190401_smart_chef_evolving_recipes/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://www.researchgate.net/publication/357910428_SmartChef_Evolving_Recipes_Poster">Source</a>)</li>
 
 	<li class="postlist-item">
 		<span class="postlist-link">The development of complexity in chip design and its visualization within Virtual Reality</span>
@@ -523,8 +563,7 @@ h6:has(.ha-placeholder):hover {
 <li>University of Bonn</li>
 </ul>
 </div>
-		(<a class="color-gray-50" href="/research/160901_bachelor_thesis_the_development_of_complexity_in_chip_design_and_its_visualization_within_virtual_reality/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://youtu.be/bwYKVCDIPbE?si=EflQEBoH0PjjDvKD&amp;t=373">Original-Websource</a>)
-	</li>
+			(<a class="color-gray-50" href="/research/160901_bachelor_thesis_the_development_of_complexity_in_chip_design_and_its_visualization_within_virtual_reality/">Read More</a>)&nbsp;&nbsp;(<a class="color-gray-50" href="https://youtu.be/bwYKVCDIPbE?si=EflQEBoH0PjjDvKD&amp;t=373">Source</a>)</li>
 
 </ol>
 
@@ -534,10 +573,10 @@ h6:has(.ha-placeholder):hover {
 		</main>
 
 		<footer>
-			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
+			<p>&copy; 2026 Carsten Felix Draschner, PhD</p>
 		</footer>
 
-		<!-- This page `/research/` was built on 2025-11-20T21:10:58.176Z -->
+		<!-- This page `/research/` was built on 2026-05-08T08:16:48.192Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>
