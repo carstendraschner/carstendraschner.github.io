@@ -1,11 +1,10 @@
 export default {
 	title: "Carsten Felix Draschner, PhD",
-	url: "https://example.com/",
+	url: "https://carstendraschner.github.io/",
 	language: "en",
-	description: "Applied research findings & ethical considerations in modern Artificial Intelligence.",
+	description: "Applied Scientist focused on foundation models, enterprise GenAI, scalable machine learning, knowledge graphs, responsible AI, publications, projects, and selected AI writing.",
 	author: {
 		name: "Carsten Felix Draschner",
-		email: "youremailaddress@example.com",
-		url: "https://example.com/about-me/"
+		url: "https://carstendraschner.github.io/about/"
 	}
 }

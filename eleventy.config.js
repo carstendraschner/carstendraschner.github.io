@@ -58,7 +58,7 @@ export default async function(eleventyConfig) {
 		metadata: {
 			language: "en",
 			title: "Carsten Felix Draschner - AI R&D",
-			subtitle: "Various updates and insides into cutting edge AI Research and Development including AI Ethics and perspective from European Union.",
+				subtitle: "Selected updates and insights into applied AI research and development, including foundation models, GenAI systems, AI ethics, and a European perspective.",
 			base: "https://carstendraschner.github.io/blog/",
 			author: {
 				name: "Carsten Felix Draschner"
@@ -104,15 +104,18 @@ export default async function(eleventyConfig) {
 
 	// Collections for blog and research
 	eleventyConfig.addCollection("blog", function(collectionApi) {
-		return collectionApi.getFilteredByGlob("./content/blog/**/*.md");
+		return collectionApi.getFilteredByGlob("./content/blog/**/*.md")
+			.sort((a, b) => a.date - b.date);
 	});
 
 	eleventyConfig.addCollection("research", function(collectionApi) {
-		return collectionApi.getFilteredByGlob("./content/research/**/*.md");
+		return collectionApi.getFilteredByGlob("./content/research/**/*.md")
+			.sort((a, b) => a.date - b.date);
 	});
 
 	eleventyConfig.addCollection("projects", function(collectionApi) {
-		return collectionApi.getFilteredByGlob("./content/projects/**/*.md");
+		return collectionApi.getFilteredByGlob("./content/projects/**/*.md")
+			.sort((a, b) => a.date - b.date);
 	});
 
 	// Features to make your build faster (when you need them)

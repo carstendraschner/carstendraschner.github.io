@@ -1,11 +1,23 @@
 <!doctype html>
 <html lang="{{ metadata.language }}">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{{ title or metadata.title }}</title>
-		<meta name="description" content="{{ description or metadata.description }}">
-		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			{% set pageTitle %}{% if title %}{{ title }} | {{ metadata.title }}{% else %}{{ metadata.title }}{% endif %}{% endset %}
+			{% set pageDescription %}{{ description or metadata.description }}{% endset %}
+			{% set absoluteUrl %}{{ page.url | htmlBaseUrl(metadata.url) }}{% endset %}
+			<title>{{ pageTitle }}</title>
+			<meta name="description" content="{{ pageDescription }}">
+			<link rel="canonical" href="{{ absoluteUrl }}">
+			<meta property="og:site_name" content="{{ metadata.title }}">
+			<meta property="og:title" content="{{ pageTitle }}">
+			<meta property="og:description" content="{{ pageDescription }}">
+			<meta property="og:type" content="{% if tags and 'posts' in tags %}article{% else %}website{% endif %}">
+			<meta property="og:url" content="{{ absoluteUrl }}">
+			<meta name="twitter:card" content="summary">
+			<meta name="twitter:title" content="{{ pageTitle }}">
+			<meta name="twitter:description" content="{{ pageDescription }}">
+			<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 
 		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
 		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
@@ -33,9 +45,36 @@
 		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
 		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
 
-		{#- Add the heading-anchors web component to the JavaScript bundle #}
-		{%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
-	</head>
+			{#- Add the heading-anchors web component to the JavaScript bundle #}
+			{%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
+			<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Person",
+				"name": "Carsten Felix Draschner",
+				"honorificSuffix": "PhD",
+				"url": "{{ metadata.url }}",
+				"jobTitle": "Applied Scientist",
+				"worksFor": {
+					"@type": "Organization",
+					"name": "Amazon AGI - Nova"
+				},
+				"knowsAbout": [
+					"Foundation models",
+					"Generative AI",
+					"Large Language Models",
+					"Knowledge graphs",
+					"Scalable machine learning",
+					"Responsible AI"
+				],
+				"sameAs": [
+					"https://www.linkedin.com/in/carsten-draschner/",
+					"https://github.com/carstendraschner",
+					"https://www.researchgate.net/profile/Carsten-Draschner"
+				]
+			}
+			</script>
+		</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
@@ -60,7 +99,7 @@
 		</main>
 
 		<footer>
-			<p>&copy; 2024 Carsten Felix Draschner, PhD</p>
+			<p>&copy; 2026 Carsten Felix Draschner, PhD</p>
 		</footer>
 
 		<!-- This page `{{ page.url | htmlBaseUrl }}` was built on {% currentBuildDate %} -->

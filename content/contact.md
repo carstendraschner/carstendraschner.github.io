@@ -3,9 +3,11 @@ const eleventyNavigation = {
 	key: "Contact",
 	order: 6
 };
+const title = "Contact Carsten Felix Draschner";
+const description = "Contact links for Carsten Felix Draschner, PhD, including LinkedIn, GitHub, and ResearchGate for professional exchange, research collaboration, media requests, and AI discussions.";
 ---
 # Contact
-Welcome! If you would like to get in touch with me or follow my work, here are the best ways to do so:
+The best way to reach me is LinkedIn. I am open to professional exchange around foundation models, GenAI systems, AI research, responsible AI, research collaboration, talks, and media requests.
 
 <div class="container">
       <nav class="card-navigation">
@@ -16,7 +18,7 @@ Welcome! If you would like to get in touch with me or follow my work, here are t
                 <img src="img/svg/linkedin-svgrepo-com.svg" alt="LinkedInIcon" class="invert-for-dark-mode">
                 <div>
                   <span class="card-title">LinkedIn</span>
-                  <p>Connect with me on LinkedIn to chat follow my content.</p>
+                  <p>Connect with me on LinkedIn and follow my latest posts.</p>
                 </div>
               </div>
             </a>
@@ -27,7 +29,7 @@ Welcome! If you would like to get in touch with me or follow my work, here are t
                 <img src="img/svg/github-svgrepo-com.svg" alt="GitHubIcon" class="invert-for-dark-mode">
                 <div>
                   <span class="card-title">GitHub</span>
-                  <p>Check out my (not Company-IP) projects.</p>
+                  <p>Check out selected public projects and experiments.</p>
                 </div>
               </div>
             </a>
@@ -38,7 +40,7 @@ Welcome! If you would like to get in touch with me or follow my work, here are t
                 <img src="img/svg/researchgate-svgrepo-com.svg" alt="ResearchGateIcon" class="invert-for-dark-mode">
                 <div>
                   <span class="card-title">Research Gate</span>
-                  <p>Visit my Research Gate profile to access my research.</p>
+                  <p>Visit my ResearchGate profile to access my research.</p>
                 </div>
               </div>
             </a>

@@ -3,8 +3,12 @@ const eleventyNavigation = {
 	key: "Blog",
 	order: 2
 };
+const title = "Writing on AI, Foundation Models, and GenAI";
+const description = "Selected writing by Carsten Felix Draschner on foundation models, GenAI systems, LLM evaluation, AI ethics, model selection, and applied AI research.";
 ---
-<h1>Blog Posts</h1>
+<h1>Writing</h1>
+
+<p>Selected posts on foundation models, GenAI systems, LLM evaluation, AI ethics, model selection, and applied AI research. Many posts started as LinkedIn reflections and are mirrored or expanded here for a more durable web archive. The newest short-form posts remain available on <a href="https://www.linkedin.com/in/carsten-draschner/recent-activity/all/">LinkedIn</a>.</p>
 
 {% set postslist = collections.blog %}
 {% include "postslist.njk" %}
